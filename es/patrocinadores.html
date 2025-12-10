@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="es-ar">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -25,64 +25,26 @@
 
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
-  <header class="navigation bg-tertiary">
-    <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-      <div class="container" style="display: block;">
-        <a class="navbar-brand" href="index.html">
-          <img loading="preload" decoding="async" class="img-fluid" width="130" src="../images/wer/logo_wer2024-h.png" alt="Wer en Buenos Aires">
-        </a>
-  
-        <!-- BOTON A ACM-->
-        <a class="important-button" href="https://dl.acm.org/doi/10.1145/3653324" target="_blank"
-           style="padding: 10px 20px; font-size: 14px; font-weight: bold; margin-right: 10px; background-color: #ffae00; color: 007bff; border-radius: 5px; text-decoration: none;">
-           WER in the ACM Latin America Special Section <span class="badge">Leer</span>
-        </a>
-        <a class="important-button" style="padding: 10px 20px; font-size: 14px; font-weight: bold; margin-right: 10px; background-color: #ffae00; color: 007bff; border-radius: 5px; text-decoration: none;" href="https://youtu.be/yqjo_wvIwFs" target="_blank">Keynote Speaker Fabiano Dalplaz <span class="badge">Ver video</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-between;">
-          <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
-            <li class="nav-item aling-le"> <a class="nav-link" href="index.html" style="padding: 10px 15px;">Inicio</a></li>
-            <li class="nav-item dropdown"> 
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 10px 15px;">Llamadas</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="track-regular.html">Regular Research Track (WER-RT)</a></li>
-                <li><a class="dropdown-item" href="track-requirements-tools.html">Software Requirements Tools Track (WER-SRTT)</a></li>
-                <li><a class="dropdown-item" href="track-industry.html">Industry Track (WER-IT)</a></li>
-                <li><a class="dropdown-item" href="track-masters-doctoral.html">Master's and Doctoral Track (WER-MDT)</a></li>
-                <li><a class="dropdown-item" href="track-tutorial.html">Tutorial Track (WER-TT)</a></li>
-                <li><a class="dropdown-item" href="track-journal-first.html">Journal First Track (WER-JFT)</a></li>
-                <li><a class="dropdown-item" href="track-students.html">Student Track (WER-ST)</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="artigos-aceitos.html" style="padding: 10px 15px;">Papers aceptados</a></li>
-            <li class="nav-item "> <a class="nav-link" href="programacao.html" style="padding: 10px 15px;">Programación</a></li>
-            <li class="nav-item "> <a class="nav-link" href="../es/palestrantes.html" style="padding: 10px 15px;">Conferencistas</a></li>
-            <li class="nav-item "> <a class="nav-link" href="organizacao.html" style="padding: 10px 15px;">Organización</a></li>
-            <li class="nav-item "> <a class="nav-link" href="patrocinadores.html" style="padding: 10px 15px;">Auspicios y Sponsor</a></li>
-            <li class="nav-item "> <a class="nav-link" href="../es/buenos-aires.html" style="padding: 10px 15px;">Buenos Aires</a></li>
-          </ul>
-  
-          <div class="d-flex align-items-center">
-            <a class="text-primary" href="../en/index.html" style="margin-right: 10px;">EN</a> |
-            <a class="text-primary" href="../pt/index.html" style="margin-left: 10px; margin-right: 10px;">PT</a>
-            <a href="inscricao.html" class="btn btn-outline-primary" style="padding: 8px 16px; font-size: 14px; margin-left: 10px;">Inscripción</a>
-            <a href="certificates.html" class="btn btn-danger" style="padding: 8px 16px; font-size: 14px; margin-left: 10px;">Certificates</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+   <!-- Navigation -->
+   <header class="navigation bg-tertiary">
+    <div id="navbar"></div>
+
+    <script>
+      $(function(){
+        $('#navbar').load('navbar.html')
+      })
+      
+
+      document.getElementById('change-lang').innerHTML = 'Chau'
+    </script>
   </header>
-        <!-- /navigation -->
-      
-      
+
+
   
     <section class="section testimonials overflow-hidden bg-tertiary">
       <div class="container">
@@ -106,7 +68,7 @@
             </div>
           </div>
         <div>
-      <div class="container mt-4">
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="section-title text-center">
@@ -314,46 +276,265 @@
               </div>
             </div>
           </div>
-           <!-- POLO IT -->
-      <div class="col-lg-6 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-1 d-flex align-items-center" style="min-height: 160px;">
-          <div class="d-block d-sm-flex align-items-center mb-0">
-            <img loading="lazy" decoding="async" src="../images/auspiciantes/Polo IT.png" alt="Polo IT" class="img-fluid" width="160" height="180">
-            <div class="mt-1 mt-sm-0 ms-0 ms-sm-4">
-              <h4 class="h4 mb-1">Polo IT</h4>
-              <p class="mb-0">Polo IT de la Ciudad de Buenos Aires</p>
+          <div class="col-lg-6 col-md-6 pt-1">
+            <div class="shadow rounded bg-white p-4 mt-1 d-flex align-items-center" style="min-height: 160px;">
+              <div class="d-block d-sm-flex align-items-center mb-0">
+                <img loading="lazy" decoding="async" src="../images/auspiciantes/Polo IT.png" alt="Polo IT" class="img-fluid" width="160" height="180">
+                <div class="mt-1 mt-sm-0 ms-0 ms-sm-4">
+                  <h4 class="h4 mb-1">Polo IT</h4>
+                  <p class="mb-0">Polo IT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="mb-5">
+            <h2 class="mb-4" style="line-height:1.5">Solicitação de Patrocinador para a Conferência Internacional WER 2024
+            </h2>
+            <p>O Congresso Internacional da Engenharia de Requisitos WER começou em 1998 como um Workshop de Engenharia de Requisitos e tem sido realizado todos os anos desde então, em diferentes cidades da América e da Península Ibérica. O WER está procurando outras cidades ao redor do mundo para sediar os próximos eventos.
+            </p>
+            <p>O WER é o melhor lugar para apresentar e discutir o progresso em pesquisa, desenvolvimento de software, padrões internacionais e ferramentas de software e suas aplicações no tema Engenharia de Requisitos (ER), bem como tendências futuras, tais como IA e ER, Ciência de Dados e ER, Robótica e ER, entre outros.</p>
+            <p>
+              O WER 2024 oferece um programa de alta qualidade que consiste em sessões de pesquisa, mini tutoriais, painel da indústria, sessões de doutorado e mestrado, pôsteres de estudantes, demonstrações de produtos da indústria, apresentações de estudos de caso para profissionais e palestrantes internacionais de alto nível.
+            </p>
+            <p>
+              O WER 2024 será uma conferência presencial com transmissão ao vivo das palestras principais e um espaço especial para enriquecer as discussões entre os participantes.
+            </p>
+            <p>
+              Em 2024, a 27ª edição será realizada na cidade de Buenos Aires, sediada pela Universidade de Belgrano. Esta nova edição é organizada por um Comitê Organizador Local formado pela Dra. Graciela Hadad (UB e UNO), Mg. Paula Angeleri (UB, UNLaM e UTN) e Dr. Leandro Antonelli (UNLP e UAI), e um importante Comitê Acadêmico Internacional.
+            </p>
+            <p>
+              Agradecemos por nos apoiar com patrocínio! Esperamos vê-lo na Universidade de Belgrano, Buenos Aires, Argentina!
+            </p>
+
+<!--
+       
+            <div class="content">
+              <table border="1">
+                <caption>Benefícios para patrocinadores</caption>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>Platinum</th>
+                        <th>Gold</th>
+                        <th>Silver</th>
+                        <th>Bronze</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banner durante o ano 2024 na Faculdade de Engenharia e Tecnologia da UB</td>
+                        <td>&#10004;</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                      <td>Banner em cada andar do evento</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>Banner no palco</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Logotipo no site</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>Divulgando apoio nas redes sociais</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                      <td>&#10004;</td>
+                    </tr>
+                    <tr>
+                      <td>Ingressos para assistir à cerimônia de abertura (*)</td>
+                      <td>15</td>
+                      <td>10</td>
+                      <td>5</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Inscrições para as Trilha da Indústria (*)</td>
+                      <td>8</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Conferência na cerimônia de abertura</td>
+                      <td>30 min</td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Conferência na Trilha da Indústria</td>
+                      <td>30 min</td>
+                      <td>30 min</td>
+                      <td>20 min</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Apresentações para estudantes de ciência da computação da UB, pós-evento</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <p>
+              (*) A entrada nos eventos serve como treinamento para o “Regime de Promoção da Economia do Conhecimento” da Argentina, será emitido recibo do valor total e fornecidos certificados de participação.
+            </p>
+-->
+            <h3>Para mais informação:</h3>
+            <p>Paula Angeleri paula.angeleri@ub.edu.ar</p>
+            <p>Graciela Hadad ghadad@comunidad.ub.edu.ar; </p>
+            <p>Leandro Antonelli lanto@lifia.info.unlp.edu.ar</p>
             </div>
           </div>
         </div>
       </div>
-    
-    
-        </div>
-      </div>
-    
-    
-      </div>
+    </div>
     </section>
-
     <div class="section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="mb-5">
-              <h2 class="mb-4" style="line-height:1.5">Pedido de Sponsor para la Conferencia Internacional WER 2024</h2>
-              <p>El Congreso Internacional de Ingeniería de Requisitos WER comenzó en 1998 como un Workshop de Ingeniería de Requisitos y se ha celebrado cada año desde entonces, en diferentes ciudades de América y de la Península Ibérica. WER está buscando otras ciudades del mundo para albergar los próximos eventos.
+              <h2 class="mb-4" style="line-height:1.5">Solicitação de Patrocinador para a Conferência Internacional WER 2024
+              </h2>
+              <p>O Congresso Internacional da Engenharia de Requisitos WER começou em 1998 como um Workshop de Engenharia de Requisitos e tem sido realizado todos os anos desde então, em diferentes cidades da América e da Península Ibérica. O WER está procurando outras cidades ao redor do mundo para sediar os próximos eventos.
               </p>
-              <p>WER es el mejor lugar para presentar y discutir el progreso en investigación, desarrollo de software, estándares internacionales y herramientas de software y sus aplicaciones en el tema de la Ingeniería de Requisitos (IR) y las tendencias futuras, como IA e IR, Ciencia de Datos e IR, Robótica e IR, entre otras.
+              <p>O WER é o melhor lugar para apresentar e discutir o progresso em pesquisa, desenvolvimento de software, padrões internacionais e ferramentas de software e suas aplicações no tema Engenharia de Requisitos (ER), bem como tendências futuras, tais como IA e ER, Ciência de Dados e ER, Robótica e ER, entre outros.</p>
+              <p>
+                O WER 2024 oferece um programa de alta qualidade que consiste em sessões de pesquisa, mini tutoriais, painel da indústria, sessões de doutorado e mestrado, pôsteres de estudantes, demonstrações de produtos da indústria, apresentações de estudos de caso para profissionais e palestrantes internacionais de alto nível.
               </p>
-              <p>WER 2024 ofrece un programa de alta calidad compuesto por sesiones de investigación, mini tutoriales, panel de la industria, sesiones de doctorado y maestría, posters de estudiantes, demostraciones de productos de la industria, presentaciones de estudios de casos para los profesionales, y oradores internacionales de alto nivel.
+              <p>
+                O WER 2024 será uma conferência presencial com transmissão ao vivo das palestras principais e um espaço especial para enriquecer as discussões entre os participantes.
               </p>
-              <p>WER 2024 será una conferencia presencial con transmisión en vivo de conferencias magistrales y un espacio especial para enriquecer las discusiones entre los asistentes.
+              <p>
+                Em 2024, a 27ª edição será realizada na cidade de Buenos Aires, sediada pela Universidade de Belgrano. Esta nova edição é organizada por um Comitê Organizador Local formado pela Dra. Graciela Hadad (UB e UNO), Mg. Paula Angeleri (UB, UNLaM e UTN) e Dr. Leandro Antonelli (UNLP e UAI), e um importante Comitê Acadêmico Internacional.
               </p>
-              <p>En el año 2024, se realizará la edición número 27 en la ciudad de Buenos Aires, siendo sede la Universidad de Belgrano. Esta nueva edición está organizada por un Comité Organizador Local conformado por la Dra. Graciela Hadad (UB y UNO), Mg. Paula Angeleri (UB, UNLaM y UTN) y Dr. Leandro Antonelli (UNLP y UAI), y un numeroso Comité Académico Internacional.
+              <p>
+                Agradecemos por nos apoiar com patrocínio! Esperamos vê-lo na Universidade de Belgrano, Buenos Aires, Argentina!
               </p>
-              <p>¡Te damos las gracias por apoyarnos con el patrocinio! ¡Esperamos verte en la Universidad de Belgrano, Buenos Aires, Argentina!
+  
+  <!--
+         
+              <div class="content">
+                <table border="1">
+                  <caption>Benefícios para patrocinadores</caption>
+                  <thead>
+                      <tr>
+                          <th> </th>
+                          <th>Platinum</th>
+                          <th>Gold</th>
+                          <th>Silver</th>
+                          <th>Bronze</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Banner durante o ano 2024 na Faculdade de Engenharia e Tecnologia da UB</td>
+                          <td>&#10004;</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+  
+                      </tr>
+                      <tr>
+                        <td>Banner em cada andar do evento</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                      </tr>
+                      <tr>
+                        <td>Banner no palco</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Logotipo no site</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                      </tr>
+                      <tr>
+                        <td>Divulgando apoio nas redes sociais</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                        <td>&#10004;</td>
+                      </tr>
+                      <tr>
+                        <td>Ingressos para assistir à cerimônia de abertura (*)</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>Inscrições para as Trilha da Indústria (*)</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Conferência na cerimônia de abertura</td>
+                        <td>30 min</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Conferência na Trilha da Indústria</td>
+                        <td>30 min</td>
+                        <td>30 min</td>
+                        <td>20 min</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Apresentações para estudantes de ciência da computação da UB, pós-evento</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+  
+                  </tbody>
+              </table>
+              <p>
+                (*) A entrada nos eventos serve como treinamento para o “Regime de Promoção da Economia do Conhecimento” da Argentina, será emitido recibo do valor total e fornecidos certificados de participação.
               </p>
-              <h3>Para más información:</h3>
+  -->
+              <h3>Para mais informação:</h3>
               <p>Paula Angeleri paula.angeleri@ub.edu.ar</p>
               <p>Graciela Hadad ghadad@comunidad.ub.edu.ar; </p>
               <p>Leandro Antonelli lanto@lifia.info.unlp.edu.ar</p>
@@ -362,6 +543,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="section">
 
     <!-- footer -->
     <footer>
@@ -385,10 +568,10 @@
             <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
               <ul class="list-unstyled list-inline mb-0 social-icons">
                 <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black"
-                    href="https://twitter.com/wer_2024_" target="_blank"><i class="fab fa-twitter"></i></a>
+                    href="https://twitter.com/wer_2023_" target="_blank"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li class="list-inline-item me-3"><a title="Explorer LinkedIn Profile" class="text-black"
-                    href="https://www.linkedin.com/in/wer2024/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    href="https://www.linkedin.com/in/wer2023/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
               </ul>
             </div>

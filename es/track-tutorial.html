@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="es-ar">
+
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
-  <title>WER 2024</title>
+  <title>WER2026 - Tutorial Track</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description" content="Workshop on Requirements Engineering">
+  <meta name="description" content="This is meta description">
   <meta name="author" content="Themefisher">
-  <link rel="shortcut icon" href="../images/wer/logo_wer2024.png" type="image/x-icon">
-  <link rel="icon" href="../images/wer/logo_wer2024.png" type="image/x-icon">
-  <meta name="google-site-verification" content="i-1b7eYSiYSvjZGvm-wlaceYNkWP6E6uVuHiqd5Hs4w" />
-  <meta name="google-site-verification" content="ogVzD0Gi9HVSVbUqjswqNiLDRD1t7KJ9L8RUyo-jdO0" />
-  <!-- theme meta -->
-  <meta name="theme-name" content="wallet" />
+  <link rel="shortcut icon" href="../images/wer/lwer.png" type="image/x-icon">
+  <link rel="icon" href="../images/wer/wer.png" type="image/x-icon">
 
   <!-- # Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,63 +25,24 @@
 
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
-  <!-- navigation -->
-  <header class="navigation bg-tertiary">
-    <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-      <div class="container" style="display: block;">
-        <a class="navbar-brand" href="index.html">
-          <img loading="preload" decoding="async" class="img-fluid" width="130" src="../images/wer/logo_wer2024-h.png" alt="Wer en Buenos Aires">
-        </a>
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+      <div id="navbar"></div>
   
-        <!-- BOTON A ACM-->
-        <a class="important-button" href="https://dl.acm.org/doi/10.1145/3653324" target="_blank"
-           style="padding: 10px 20px; font-size: 14px; font-weight: bold; margin-right: 10px; background-color: #ffae00; color: 007bff; border-radius: 5px; text-decoration: none;">
-           WER in the ACM Latin America Special Section <span class="badge">Leer</span>
-        </a>
-        <a class="important-button" style="padding: 10px 20px; font-size: 14px; font-weight: bold; margin-right: 10px; background-color: #ffae00; color: 007bff; border-radius: 5px; text-decoration: none;" href="https://youtu.be/yqjo_wvIwFs" target="_blank">Keynote Speaker Fabiano Dalplaz <span class="badge">Ver video</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <script>
+        $(function(){
+          $('#navbar').load('navbar.html')
+        })
+        
   
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-between;">
-          <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
-            <li class="nav-item aling-le"> <a class="nav-link" href="index.html" style="padding: 10px 15px;">Inicio</a></li>
-            <li class="nav-item dropdown"> 
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 10px 15px;">Llamadas</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="track-regular.html">Regular Research Track (WER-RT)</a></li>
-                <li><a class="dropdown-item" href="track-requirements-tools.html">Software Requirements Tools Track (WER-SRTT)</a></li>
-                <li><a class="dropdown-item" href="track-industry.html">Industry Track (WER-IT)</a></li>
-                <li><a class="dropdown-item" href="track-masters-doctoral.html">Master's and Doctoral Track (WER-MDT)</a></li>
-                <li><a class="dropdown-item" href="track-tutorial.html">Tutorial Track (WER-TT)</a></li>
-                <li><a class="dropdown-item" href="track-journal-first.html">Journal First Track (WER-JFT)</a></li>
-                <li><a class="dropdown-item" href="track-students.html">Student Track (WER-ST)</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="artigos-aceitos.html" style="padding: 10px 15px;">Papers aceptados</a></li>
-            <li class="nav-item "> <a class="nav-link" href="programacao.html" style="padding: 10px 15px;">Programación</a></li>
-            <li class="nav-item "> <a class="nav-link" href="../es/palestrantes.html" style="padding: 10px 15px;">Conferencistas</a></li>
-            <li class="nav-item "> <a class="nav-link" href="organizacao.html" style="padding: 10px 15px;">Organización</a></li>
-            <li class="nav-item "> <a class="nav-link" href="patrocinadores.html" style="padding: 10px 15px;">Auspicios y Sponsor</a></li>
-            <li class="nav-item "> <a class="nav-link" href="../es/buenos-aires.html" style="padding: 10px 15px;">Buenos Aires</a></li>
-          </ul>
-  
-          <div class="d-flex align-items-center">
-            <a class="text-primary" href="../en/index.html" style="margin-right: 10px;">EN</a> |
-            <a class="text-primary" href="../pt/index.html" style="margin-left: 10px; margin-right: 10px;">PT</a>
-            <a href="inscricao.html" class="btn btn-outline-primary" style="padding: 8px 16px; font-size: 14px; margin-left: 10px;">Inscripción</a>
-            <a href="certificates.html" class="btn btn-danger" style="padding: 8px 16px; font-size: 14px; margin-left: 10px;">Certificates</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- /navigation -->
+        document.getElementById('change-lang').innerHTML = 'Chau'
+      </script>
+    </header>
 
 
   <div class="section">
@@ -92,71 +50,61 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="mb-5">
-            <h2 class="mb-4" style="line-height:1.5"> Track de Tutoriales (WER-TT)
+            <h2 class="mb-4" style="line-height:1.5">Tutorial Track (WER-TT)
             </h2>
 
             <div class="content">
-              <h3 id="heading-1" class="text-success">Fechas importantes</h3>
+              <h3 id="heading-1" class="text-success">Datas importantes</h3>
               <ul>
-                <li>Presentación de título y resumen: <s>25/03/2024</s> <b>04/04/2024</b> &nbsp;<span style="background-color: red; color: azure;"> &nbsp;Hard deadline &nbsp;</span></li>
-                <li>Presentación del artículo: <s>01/04/2024</s> <b>04/04/2024</b> &nbsp;<span style="background-color: red; color: azure;"> &nbsp;Hard deadline &nbsp;</span></li>
-                <li>Notificación: <b>29/04/2024</b></li>
-                <li>Versión final: <s>13/05/2024</s><s>20/05/2024</s><b>31/05/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Nuevo! &nbsp;</span></li>
+                <li>Abstract Submission: <b>6 de Abril de 2026</b></li>
+                <li>Paper Submission: <b>13 de Abril de 2026</b></li>
+                <li>Notification: <b>11 de Maio de 2026</b></li>
+                <li>Camera-ready: <b>30 de Maio de 2026</b></li>
               </ul>
 
-              <h3 id="heading-1" class="text-success">Temas de interés</h3>
-              <p>Los temas de interés son los siguientes (la lista no es exhaustiva):</p>
+              <h3 id="heading-1" class="text-success">Tópicos de interesse</h3>
+              <p>Os tópicos de interesse não estão listados de forma exaustiva:</p>
               <ul>
-                <li>Obtención, análisis, documentación, gestión, trazabilidad, priorización, validación y verificación, negociación de requisitos;</li>
-                <li>Educación y capacitación en ingeniería de requisitos;</li>
-                <li>Ingeniería de requisitos para paradigmas de desarrollo de software específicos, tales como orientado a agentes, orientado a aspectos, orientado a modelos u orientado a servicios;</li>
-                <li>Ingeniería de requisitos enfocada a dominios específicos. Ej: entornos móviles, basados ​​en web, de seguridad, legales y militares;</li>
-                <li>Ingeniería de requisitos en metodologías ágiles;</li>
-                <li>Lenguajes, métodos, procesos y herramientas para especificar requisitos;</li>
-                <li>Ingeniería de software orientada a modelos;</li>
-                <li>Cumplimiento normativo.</li>
-            </ul>
+                <li>Elicitação, análise, documentação, gerenciamento, rastreabilidade, priorização, validação e verificação, negociação de requisitos;</li>
+                <li>Educação e treinamento em engenharia de requisitos;</li>
+                <li>Engenharia de requisitos para paradigmas de desenvolvimento de software específicos, como orientado a agentes, orientado a aspectos, orientado a modelos ou orientado a serviços;</li>
+                <li>Engenharia de requisitos orientada a domínios específicos. Ex: ambientes móveis, baseados na Web, segurança, Legal, militar;</li>
+                <li>Engenharia de requisitos em metodologias ágeis;</li>
+                <li>Linguagens, métodos, processos e ferramentas para especificação de requisitos;</li>
+                <li>Engenharia de software orientada a modelos;</li>
+                <li>Conformidade regulatória.</li>
+              </ul>
+
+              <h3 id="heading-1" class="text-success">Orientações para submissão</h3>
+              <p>Todos os artigos devem ser submetidos apenas no formato PDF através do sistema de submissão Easychair, e considerando o formato LNCS. Submissões podem ser escritas em Portugues, Espanhol ou Inglês.</p>
+              <p>Submissões para esta track devem incluir uma proposta para um tutorial de 3 horas. Essa proposta não deve exceder 2 páginas, formatadas de acordo com o <b><a
+                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
+                  </a></b>.</p>
             
+              <p>Qualquer artigo que exceda o limite de páginas, não esteja dentro do escopo da conferência ou não siga as diretrizes de formatação será rejeitado sem revisão.
+              </p>
+              <p>Todas as submissões serão revisadas por pelo menos três membros do Comitê do Programa.
+              </p>
+              <p>Todos os trabalhos aceitos serão publicados com Acesso Aberto através do repositório  <a
+                  style="font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); text-align: var(--bs-body-text-align);"
+                  href="http://wer.inf.puc-rio.br/WERpapers/">WERpapers</a>.</p>
+                </a><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2024">Submissão</a>
 
-            <h3 id="heading-1" class="text-success">Instrucciones para la presentación</h3>
-            <p>Todos los artículos deberán enviarse únicamente en formato PDF a través del sistema de envío <b></b><a
-                href="https://easychair.org/conferences/?conf=wer2024">Easychair</a>, y considerando el formato <b><a
-                  href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
-                </a></b>. Los envíos pueden estar escritos en portugués, español o inglés.</p>
-            <p>Las presentaciones para esta pista deben incluir una propuesta para un tutorial de 3 horas.
-               Esta propuesta no debe exceder las 2 páginas, formateadas según el formato de página <a
-                href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a>.
-            </p>
-            <p>Cualquier artículo que exceda el límite de páginas, no esté dentro del alcance de la conferencia o no
-              siga las directrices de formato será rechazado sin revisión.</p>
-              <p>
-                Todas las presentaciones serán revisadas por al menos tres miembros del Comité del Programa.
-            </p>
-
-            <p>Todos los trabajos aceptados serán publicados con Acceso Abierto a través del repositorio de <a
-                href="http://wer.inf.puc-rio.br/WERpapers/">WERpapers</a>.</p>
-            </a><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2024">Envío</a>
-            </p>
-
-              <h3 id="heading-1" class="text-success">Organización</h3>
+              <h3 id="heading-1" class="text-success">Organização</h3>
 
               <ul>
                 <li>
-                  <h4 id="heading-4">Coordinación del track</h4>
+                  <h4 id="heading-4">Coordenação da trilha</h4>
                   <ul>
-                    <li><b>Henrique Prado de Sá Sousa</b> -- Universidad Federal do Estado do Rio de Janeiro - Brasil
-                    </li>
-                    <li><b>María F. Pollo-Cattaneo</b> -- Universidad Tecnológica Nacional, Argentina.</li>
+                    <li><b>Maria Lencastre, Universidade de Pernambuco, Brasil</b></li>
+                    <li><b>Carla Silva, Universidade Federal de Pernambuco, Brasil</b></li>
                   </ul>
-                </li>
-                <li>
-                  <h4 id="heading-4">Comité del programa</h4>
-                  <ul>
-                    <li><b>Edgar Sarmiento</b> -- Universidad Nacional de San Agustín de Arequipa, Perú</li>
-                    <li><b>Eduardo Almentero</b> -- Universidad Tecnológica Nacional, Argentina.</li>
-                    <li><b>Roxana Portugal</b> -- Universidad Nacional de San Antonio del Cusco, Peru</li>
-                    <li><b>Tadeu Classe </b> -- Universidade Federal do Estado do Rio de Janeiro, Brasil.</li>
-                  </ul>
+                  <li>
+                    <h4 id="heading-4">Program Committee</h4>
+                    <ul>
+                      <li>Em breve</li>
+                    </ul>
+                  </li>
                 </li>
               </ul>
 
@@ -180,7 +128,7 @@
             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
               <ul class="list-unstyled list-inline mb-0 text-lg-center">
                 <li class="list-inline-item me-4 text-black">
-                  <h5><a href="mailto:organizacao.wer@gmail.com">Contacta con nosotros:
+                  <h5><a href="mailto:organizacao.wer@gmail.com">Contacte-nos:
                       organizacao.wer@gmail.com</a></h5>
                 </li>
               </ul>
@@ -188,10 +136,10 @@
             <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
               <ul class="list-unstyled list-inline mb-0 social-icons">
                 <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black"
-                    href="https://twitter.com/wer_2024_" target="_blank"><i class="fab fa-twitter"></i></a>
+                    href="https://twitter.com/wer_2023_" target="_blank"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li class="list-inline-item me-3"><a title="Explorer LinkedIn Profile" class="text-black"
-                    href="https://www.linkedin.com/in/wer2024/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    href="https://www.linkedin.com/in/wer2023/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
               </ul>
             </div>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 
 
-<html lang="es-ar">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
-  <title>WER2026 - Track de herramientas</title>
+  <title>WER2026 - Demonstrações de Ferramentas de Requisitos </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="description" content="This is meta description">
   <meta name="author" content="Themefisher">
-  <link rel="shortcut icon" href="../images/wer/wer.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../images/wer/lwer.png" type="image/x-icon">
   <link rel="icon" href="../images/wer/wer.png" type="image/x-icon">
 
   <!-- # Google Fonts -->
@@ -25,11 +25,12 @@
 
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-
-    <header class="navigation bg-tertiary">
+  <!-- Navigation -->
+  <header class="navigation bg-tertiary">
     <div id="navbar"></div>
 
     <script>
@@ -42,79 +43,95 @@
     </script>
   </header>
 
+
+
   <div class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="mb-5">
-            <h2 class="mb-4" style="line-height:1.5">Demostración de Herramientas en  Requisitos de Software (WER-SRTT)
+            <h2 class="mb-4" style="line-height:1.5">Demonstrações de Ferramentas de Requisitos (WER-SRTT)
             </h2>
 
             <div class="content">
-              <h3 id="heading-1" class="text-success">Fechas importantes</h3>
+              <h3 id="heading-1" class="text-success">Datas Importantes</h3>
               <ul>
-                <li>Envío de resumen: <s>25/03/2024</s> <b>04/04/2024</b> &nbsp;<span style="background-color: red; color: azure;"> &nbsp;Hard deadline &nbsp;</span></li>
-                <li>Envío de artículo: <s>20/03/2024</s> <s>04/04/2024</s> <b>04/04/2024</b> &nbsp;<span style="background-color: red; color: azure;"> &nbsp;Hard deadline &nbsp;</span></li>
-                <li>Notificación: <b>29/04/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Nuevo! &nbsp;</span></li>
-                <li>Documento corregido: <s>13/05/2024</s><s>20/05/2024</s><b>31/05/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Nuevo! &nbsp;</span>
-                </li>
-                <li>Envío de Vídeo: <s>13/05/2024</s><s>20/05/2024</s><b>31/05/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Nuevo! &nbsp;</span>
-                </li>
+                <li>Abstract Submission: <b>6 de Abril de 2026</b></li>
+                <li>Paper Submission: <b>13 de Abril de 2026</b></li>
+                <li>Notification: <b>11 de Maio de 2026</b></li>
+                <li>Camera-ready: <b>30 de Maio de 2026</b></li>
               </ul>
 
-              <h3 id="heading-1" class="text-success">Tópicos de interés</h3>
-              <p>Los problemas específicos a abordar pero no restringido a, son:</p>
+              <h3 id="heading-1" class="text-success">Tópicos de interesse</h3>
+              <p>Os temas específicos a serem abordados, mas não se limitando a, são:</p>
               <ul>
-                <li>Educción de requisitos de software</li>
-                <li>Gestión de requerimientos y trazabilidad</li>
-                <li>Negociación, compatibilización y priorización de requisitos</li>
-                <li>Verificación y Validación</li>
-                <li>Educación y capacitación en ingeniería de requerimientos</li>
-                <li>Gestión de requerimientos en paradigmas específicos (orientación a agentes, desarrollo dirigido por modelos, métodos ágiles, orientación a servicios)</li>
-                <li>Gestión de requerimientos en tiempos de pandemia</li>
-                <li>Gestión de requerimientos en computación ubicua (sistemas físico cibernéticos, ecosistemas de cosas, realidad extendida)</li>
-                <li>Desarrollo de lenguajes específicos de dominio, formalización y metamodelado</li>
-                <li>Personalización de herramientas para gestión de requisitos</li>
-                <li>Apoyo en aspectos legales, certificaciones y propiedad intelectual</li>
-            </ul>
-            
+                <li>Elicitação de requisitos;</li>
+                <li>Gestão de requisitos e rastreabilidade;</li>
+                <li>Negociação, compatibilização e priorização de requisitos;</li>
+                <li>Verificação e Validação;</li>
+                <li>Educação e treinamento em engenharia de requisitos;</li>
+                <li>Gestão de requisitos em paradigmas específicos (orientação a agentes, desenvolvimento guiado por modelos, métodos ágeis, orientação a serviços);</li>
+                <li>Gestão de requisitos em tempos de pandemia;</li>
+                <li>Gestão de requisitos para computação ubíqua (sistemas ciber-físicos, ecossistemas de coisas, realidade estendida);</li>
+                <li>Desenvolvimento de linguagens específicas de domínio, formalização e meta-modelagem;</li>
+                <li>Personalização de ferramentas para gestão de requisitos;</li>
+                <li>Apoio em aspectos legais, certificações e propriedade intelectual.</li>
+                <li>IA generativa e modelos de linguagem grande (LLMs) para engenharia de requisitos.</li>
+                <li>Elicitação, análise e validação de requisitos com suporte de IA.</li>
+                <li>Assistentes inteligentes para engenharia de requisitos.</li>
+                <li>Automação de tarefas de engenharia de requisitos usando IA generativa.</li>
+              </ul>
 
-              <h3 id="heading-1" class="text-success">Instrucciones para el envío de trabajos</h3>
-              <p>El WER es un importante foro de discusión de temas relevantes en el campo de la Ingeniería de Requisitos. Se celebra anualmente desde 1998 y ha alternado su organización y realización entre países de América Latina, Canadá, España y Portugal.
-              </p><p> La organización del evento WER-2024, invita a estudiantes de pregrado y postgrado de carrereras y programas de Ciencias de Computación e Informática a presentar demostraciones de sus prototipos de software en el ámbito de la gestión de requisitos de software. Sus trabajos deben constituir una novedad para el área y deben ser acompañados de una justificación y descripción en formato de artículo
-                <a
-                  href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
-                </a>,
-                 
-                 en un documento entre 5 y 8 páginas además de un vídeo de entre 2 y 4 minutos.
-                </p>
-                <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2024">Envío</a></p>
-               
-
-              <h3 id="heading-1" class="text-success">Organización</h3>
+              <h3 id="heading-1" class="text-success">Diretrizes de Submissão</h3>
+              <p>A Trilha de Ferramentas para Engenharia de Requisitos de Software (WER-SRTT) oferece a pesquisadores e profissionais um espaço dedicado para apresentar e demonstrar ferramentas que apoiem qualquer fase da Engenharia de Requisitos de Software. Esta trilha contempla tanto apresentações técnicas quanto demonstrações práticas, com demos ao vivo das ferramentas, destacando suas funcionalidades e aplicações no mundo real.</p>
+              <p>Pesquisadores são incentivados a submeter ferramentas oriundas de pesquisas aplicadas, enquanto profissionais da indústria são convidados a apresentar ferramentas comerciais ou proprietárias que tenham proporcionado melhorias em produtividade ou qualidade na Engenharia de Requisitos.</p>
+              <h3 id="heading-1" class="text-success">Requisitos de Submissão de Artigo e Vídeo</h3>
+              <p>As submissões devem incluir um artigo e um vídeo de demonstração, de acordo com as diretrizes abaixo.</p>
+              <h3 id="heading-1" class="text-success">Requisitos do Artigo</h3>
+              <ul>
+                <li>Deve ser original, inédito e não estar sob avaliação em nenhum outro evento ou periódico científico.</li>
+                <li>
+                  O conteúdo deve cobrir claramente:
+                  <ul>
+                    <li>A motivação ou o problema que a ferramenta se propõe a resolver</li>
+                    <li>Principais funcionalidades e público-alvo</li>
+                    <li>Exemplos de uso e capturas de tela da interface (quando aplicável)</li>
+                    <li>Arquitetura, componentes centrais e descrição da interface</li>
+                    <li>Breve comparação com ferramentas similares, e</li>
+                    <li>Tipo de licença do software (por exemplo, código aberto ou proprietário)</li>
+                    <li>As submissões devem seguir o formato LNCS e ter entre 5 e 8 páginas.</li>
+                  </ul>
+                </li>
+              </ul>
+              <h3 id="heading-1" class="text-success">Requisitos do Vídeo</h3>
+              <p>Vídeo de demonstração de 3 a 6 minutos, com narração no idioma do artigo, apresentando a ferramenta em funcionamento</p>
+              <p>O vídeo deve ser informativo e demonstrar visualmente as principais funcionalidades e benefícios da ferramenta</p>
+              <h3 id="heading-1" class="text-success">Processo de Submissão e Avaliação</h3>
+              <p>Todas as submissões que incluírem artigo e vídeo serão avaliadas por pelo menos três membros do comitê. Submissões que não apresentarem a combinação obrigatória de artigo e vídeo, estiverem fora do escopo ou violarem os critérios de originalidade serão rejeitadas sumariamente (desk-reject), e os chairs de trilhas relacionadas serão notificados.</p>
+              <p>Os autores são incentivados a fornecer links para código-fonte aberto e conjuntos de dados em repositórios digitais preservados (por exemplo, zenodo.org, figshare.com, softwareheritage.org). Para ferramentas proprietárias, os autores devem justificar o motivo de não disponibilizarem o código.</p>
+              <h3 id="heading-1" class="text-success">Critérios de Avaliação</h3>
+              <p>Cada submissão será avaliada com base em:</p>
+              <ul>
+                <li>Relevância da ferramenta para a Engenharia de Requisitos de Software</li>
+                <li>Inovação e contribuição em relação às ferramentas existentes</li>
+                <li>Clareza e qualidade da apresentação no artigo e no vídeo</li>
+                <li>Diálogo com os trabalhos relacionados da área</li>
+              </ul>
+              
+              <h3 id="heading-1" class="text-success">Organização</h3>
 
               <ul>
                 <li>
-                  <h4 id="heading-4">Chairs del track de herramientas en requisitos de software</h4>
+                  <h4 id="heading-4">Trilha Demonstrações de Ferramentas de Requisitos Chairs</h4>
                   <ul>
-                    <li><b>Gladys Kaplan</b> -- Universidad Nacional de La Matanza - AR</li>
-                    <li><b>Carlos Cares</b> -- Universidade Estadual do Rio de Janeiro - Brazil</li>
+                    <li>Rafael Parizi, Instituto Federal Farroupilha, Brasil</li>
+                    <li>Victor Santander, Universidade  Estadual do Oeste do Paraná, Brasil</li>
                   </ul>
                 </li>
                 <li>
-                  <h4 id="heading-4">Comité del programa</h4>
+                  <h4 id="heading-4">Program Committee</h4>
                   <ul>
-                    <li>Alicia Mon &#8212; Instituto Tecnologico de Buenos Aires, Argentina</li>
-                    <li>Ana Bustamante &#8212; Universidad de la frontera, Chile</li>
-                    <li>Bagazo Oriol &#8212; Universidad Politécnica de Cataluña, Spain</li>
-                    <li>Dante Carrizo &#8212; Universidad de atacama, Chile</li>
-                    <li>Horacio Del Giorgio &#8212; Universidad Nacional de La Matanza, Argentina</li>
-                    <li>Jorge Hochstetter &#8212; Universidad de la frontera, Chile</li>
-                    <li>Marcia Lucena &#8212; Universidad Federal del Río Grande del Norte, Brazil</li>
-                    <li>Maria José Escalona &#8212; Universidad de Sevilla, Spain</li>
-                    <li>Mauricio Diéguez &#8212; Universidad de la frontera, Chile</li>
-                    <li>Renata Guatelli &#8212; Universidad Nacional de La Matanza, Argentina</li>
-                    <li>Ricardo Gacitúa &#8212; Universidad de la frontera, Chile</li>
+                    <li>Em breve</li>
                   </ul>
                 </li>
               </ul>
@@ -141,7 +158,7 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <ul class="list-unstyled list-inline mb-0 text-lg-center">
               <li class="list-inline-item me-4 text-black">
-                <h5><a href="mailto:organizacao.wer@gmail.com">Contacta con nosotros:
+                <h5><a href="mailto:organizacao.wer@gmail.com">Contacte-nos:
                     organizacao.wer@gmail.com</a></h5>
               </li>
             </ul>
@@ -149,10 +166,10 @@
           <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
             <ul class="list-unstyled list-inline mb-0 social-icons">
               <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black"
-                  href="https://twitter.com/wer_2024_" target="_blank"><i class="fab fa-twitter"></i></a>
+                  href="https://twitter.com/wer_2023_" target="_blank"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="list-inline-item me-3"><a title="Explorer LinkedIn Profile" class="text-black"
-                  href="https://www.linkedin.com/in/wer2024/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  href="https://www.linkedin.com/in/wer2023/" target="_blank"><i class="fab fa-linkedin"></i></a>
               </li>
             </ul>
           </div>
