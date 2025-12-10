@@ -68,7 +68,7 @@
             <li class="nav-item "> <a class="nav-link" href="../es/palestrantes.html" style="padding: 10px 15px;">Conferencistas</a></li>
             <li class="nav-item "> <a class="nav-link" href="organizacao.html" style="padding: 10px 15px;">Organización</a></li>
             <li class="nav-item "> <a class="nav-link" href="patrocinadores.html" style="padding: 10px 15px;">Auspicios y Sponsor</a></li>
-            <li class="nav-item "> <a class="nav-link" href="../es/buenos-aires.html" style="padding: 10px 15px;">Buenos Aires</a></li>
+            <li class="nav-item "> <a class="nav-link" href="../es/venue.html" style="padding: 10px 15px;">Buenos Aires</a></li>
           </ul>
   
           <div class="d-flex align-items-center">
@@ -174,39 +174,15 @@
       </div>
     </div>
   </div>
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="row align-items-center mt-5 text-center text-md-start">
-          <div class="col-lg-4">
-            <a href="index.html">
-              <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="../images/wer/logo_wer2024-h.png"
-                alt="Wallet">
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <ul class="list-unstyled list-inline mb-0 text-lg-center">
-              <li class="list-inline-item me-4 text-black">
-                <h5><a href="mailto:organizacao.wer@gmail.com">Contacta con nosotros:
-                    organizacao.wer@gmail.com</a></h5>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
-            <ul class="list-unstyled list-inline mb-0 social-icons">
-              <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black"
-                  href="https://twitter.com/wer_2024_" target="_blank"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item me-3"><a title="Explorer LinkedIn Profile" class="text-black"
-                  href="https://www.linkedin.com/in/wer2024/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  </footer>
-  <!-- footer -->
+
+<!-- footer -->
+  <div id="footer"></div>
+    <script>
+      $(function(){
+        $('#footer').load('footer.html')
+      })
+    </script>
+<!-- footer -->
 
 
   <!-- # JS Plugins -->

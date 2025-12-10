@@ -233,20 +233,14 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-        <div class="footer bg-tertiary position-relative">
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9 text-center text-lg-start">
-                            <p class="mb-0">&copy; <span class="current-year">2024</span> <a href="http://wer.inf.puc-rio.br/WERpapers/">WERpapers</a>. Todos os Direitos Reservados.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- footer -->
+  <div id="footer"></div>
+    <script>
+      $(function(){
+        $('#footer').load('footer.html')
+      })
+    </script>
+<!-- footer -->
     
     <!-- # JS Plugins -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/si3oND/Pc5fQJA4uV6Q5MXZ2/5Aek5jwn5A/zx" crossorigin="anonymous"></script>
