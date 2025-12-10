@@ -1,15 +1,16 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
-  <title>WER 2024</title>
+  <title>WER2026 - Journal First</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description" content="Workshop on Requirements Engineering">
+  <meta name="description" content="This is meta description">
   <meta name="author" content="Themefisher">
-  <link rel="shortcut icon" href="../images/wer/logo_wer2024.png" type="image/x-icon">
-  <link rel="icon" href="../images/wer/logo_wer2024.png" type="image/x-icon">
-  <meta name="google-site-verification" content="i-1b7eYSiYSvjZGvm-wlaceYNkWP6E6uVuHiqd5Hs4w" />
-  <meta name="google-site-verification" content="ogVzD0Gi9HVSVbUqjswqNiLDRD1t7KJ9L8RUyo-jdO0" />
-  <!-- theme meta -->
-  <meta name="theme-name" content="wallet" />
+  <link rel="shortcut icon" href="../images/wer/lwer.png" type="image/x-icon">
+  <link rel="icon" href="../images/wer/wer.png" type="image/x-icon">
 
   <!-- # Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,96 +25,91 @@
 
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <header class="navigation bg-tertiary">
+
+   <!-- Navigation -->
+   <header class="navigation bg-tertiary">
     <div id="navbar"></div>
 
     <script>
       $(function(){
         $('#navbar').load('navbar.html')
       })
+      
 
       document.getElementById('change-lang').innerHTML = 'Chau'
     </script>
   </header>
-  <!-- /Navigation -->
 
 
-  <div class="section-sm">
+  <div class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="mb-5">
             <h2 class="mb-4" style="line-height:1.5">Journal First Track (WER-JFT)
             </h2>
-
             <div class="content">
-              <h3 id="heading-1" class="text-success">Fechas importantes</h3>
+              <h3 id="heading-1" class="text-success">Datas importantes</h3>
               <ul>
-                <li>Presentación de título y abstract del artículo original: <s> 19/02/2024</s><s>26/02/2024</s><s>11/03/2024</s><b>18/03/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Hard Deadline&nbsp;</span>
-                </li>
-                <li>Presentación del artículo: <s>04/03/2024</s><s>11/03/2024</s><b>18/03/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Hard Deadline&nbsp;</span>
-                </li>
-                <!-- <li>Presentación de Resumen y Artículo: </li> -->
-                <li>Notificación: <b> 29/04/2024 </b></li>
-                <li>Versión final: <s>20/05/2024</s><b>31/05/2024</b>&nbsp;<span style="background-color: red; color: azure;"> &nbsp;Nuevo! &nbsp;</span></li>
+                <li>Abstract Submission: <b>6 de Abril de 2026</b></li>
+                <li>Paper Submission: <b>13 de Abril de 2026</b></li>
+                <li>Notification: <b>11 de Maio de 2026</b></li>
+                <li>Camera-ready: <b>30 de Maio de 2026</b></li>
               </ul>
 
-              <h3 id="heading-1" class="text-success">Temas de interés </h3>
-              <p>Los temas de interés son los siguientes (la lista no es exhaustiva):</p>
+              <h3 id="heading-1" class="text-success">Tópicos de interesse</h3>
+              <p>Os tópicos de interesse não estão listados de forma exaustiva:</p>
               <ul>
-                <li>Elicitación, especificación, trazabilidad, priorización, validación, verificación y negociación de requisitos;</li>
-                <li>Educación y formación en ingeniería de requisitos;</li>
-                <li>Ingeniería de requisitos para paradigmas de desarrollo de software específicos, como los basados​​en agentes, aspectos, modelos o servicios;</li>
-                <li>Ingeniería de requisitos para dominios específicos como sostenibilidad, sistemas críticos, sistemas basados ​​en web o aplicaciones móviles;</li>
-                <li>Ingeniería de requisitos en metodologías Agile, DevOps y Inteligencia Artificial; 
-                </li>
-                <li>Herramientas de especificación de lenguajes, métodos, procesos y requisitos.</li>
-             
+                <li>Elicitação, especificação, rastreabilidade, priorização, validação, verificação e negociação de requisitos;</li>
+                <li>Educação e treinamento em engenharia de requisitos;</li>
+                <li>Engenharia de requisitos para paradigmas específicos de desenvolvimento de software, como agent-driven, aspect-driven, model-driven, ou service-driven;</li>
+                <li>Engenharia de requisitos para domínios específicos, como sustentabilidade, sistemas críticos, sistemas baseados na web ou aplicativos móveis;</li>
+                <li>Engenharia de requisitos em metodologias ágeis, DevOps e Inteligência Artificial; e</li>
+                <li>Linguagens, métodos, processos e ferramentas de especificação de requisitos.</li>
               </ul>
 
-              <h3 id="heading-1" class="text-success">Instrucciones para la presentación
-              </h3>
-
-              <p>Todos los artículos deben ser enviados únicamente en formato PDF a través del sistema de envío Easychair, y considerando el formato <b><a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"> LNCS
-                  </a></b>.  Las presentaciones deben estar escritas en portugués, español o inglés.
-                </p>
-              <p>Los artículos para este Track deben haber sido aceptados no antes del 1 de Enero de 2022. No deben haber sido presentados en otras conferencias como una contribución de Journal First y deben informar nuevos resultados de investigación.</p>
-
-              <p>ELos artículos no deben exceder las 2 páginas de acuerdo con el formato de página
-                <a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a></b> 
-                      y deben contener: Título, autores y afiliaciones, palabras clave, información sobre la revista y el factor de impacto, DOI y un resumen ampliado.
-              </p>
-             
-              <p>Cualquier artículo que exceda el límite de páginas, no esté dentro del alcance de la conferencia o no siga las pautas de formato será rechazado sin revisión.</p>
-              <p>Todas las presentaciones serán revisadas por al menos tres miembros del Comité del Programa.
+              <h3 id="heading-1" class="text-success">Orientações para submissão</h3>
+              <p>Todos os artigos devem ser submetidos apenas no formato PDF através do sistema de submissão Easychair, e considerando o formato <a
+                  href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a>.
+                  Submissões devem ser escritas em Português, Espanhol ou Inglês.
               </p>
 
-            <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2024">Envio</a>
+              <p>Artigos para esta Track devem ter sido aceitos não antes de 1 de Janeiro de 2026. 
+                Eles não devem ter sido apresentados em outras conferências como uma contribuição Journal First e devem relatar novos 
+                resultados de pesquisa.</p>
+
+              <p>Submissões não devem exceder 2 páginas formatadas de acordo com o LNCS page format e conter: 
+                Título, autores e afiliações, palavras-chave, journal e informação sobre o seu fator de impacto, DOI e um resumo estendido.</p>
+
+              <p>Qualquer artigo que exceda o limite de páginas, 
+                não esteja dentro do escopo da conferência ou não siga as diretrizes de formatação será rejeitado sem revisão.
               </p>
 
-              <h3 id="heading-1" class="text-success">Organización</h3>
+              <p>Todas as submissões serão revisadas por pelo menos três membros do Comitê do Programa.
+              </p>
 
+              <!-- <p>Todos los trabajos aceptados se publicarán con acceso abierto a través del repositorio <a
+                  href="http://wer.inf.puc-rio.br/WERpapers/">WERpapers</a>.</p> -->
+              <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2024">Submissão</a>
+              </p>
+
+              <h3 id="heading-1" class="text-success">Organização</h3>
               <ul>
                 <li>
-                  <h4 id="heading-4">Coordinación del track</h4>
+                  <h4 id="heading-4">Chairs </h4>
                   <ul>
-                    <li><b>Victor Santander </b> -- Universidade Estadual do Oeste do Paraná (Unioeste)
-                    </li>
-                    <li><b>Fábio Levy Siqueira </b> -- Escola Politécnica da Universidade de São Paulo (Poli-USP)
-                    </li>
+                    <li>Isabel Sofia Sousa Brito, Instituto Politécnico de Beja, Portugal</li>
+                    <li>Vera Werneck, Universidade do Estado do Rio (UERJ), Brasil</li>
                   </ul>
                 </li>
                 <li>
-                  <h4 id="heading-4">Comité del programa</h4>
+                  <h4 id="heading-4">Comitê do programa</h4>
                   <ul>
-                    <li>Jaelson Castro - Universidade Federal de Pernambuco, Brazil</li>
-                    <li>Julio Leite - Universidade Federal da Bahia, Brazil</li>
+                    <li>Em breve</li>
                   </ul>
                 </li>
               </ul>
@@ -132,6 +128,7 @@
       })
     </script>
 <!-- footer -->
+
 
     <!-- # JS Plugins -->
     <script src="../plugins/jquery/jquery.min.js"></script>
