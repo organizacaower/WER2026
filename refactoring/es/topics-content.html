@@ -1,163 +1,90 @@
-<h3 class="text-success mb-4">Temas de interés</h3>
+<h3 class="text-success">Temas de interés</h3>
 
-<div class="accordion" id="accordionTemas">
+<!-- Botón desplegable -->
+<button class="btn btn-outline-success mb-3" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#temasCollapse" 
+        aria-expanded="false" 
+        aria-controls="temasCollapse">
+  Ver temas
+</button>
 
-  <!-- 1 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="heading1">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse1">
-        <strong>Fundamentos y procesos de Ingeniería de Requisitos</strong>
-      </button>
-    </h2>
-    <div id="collapse1" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Elicitación, análisis, especificación, modelado, gestión, trazabilidad,
-        priorización, negociación, verificación y validación.
-      </div>
-    </div>
+<!-- Contenido colapsable -->
+<div class="collapse" id="temasCollapse">
+  <div class="card card-body">
+
+    <ul class="list-unstyled">
+
+      <li class="mb-3">
+        <h5><strong>Fundamentos y procesos de Ingeniería de Requisitos</strong></h5>
+        <p>
+          Elicitación, análisis, especificación, modelado, gestión, trazabilidad,
+          priorización, negociación, verificación y validación.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Métodos, técnicas y herramientas</strong></h5>
+        <p>
+          Lenguajes, procesos, herramientas, DSLs, metamodelado y soporte
+          automatizado para la gestión y especificación de requisitos.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Ingeniería de Requisitos basada en modelos</strong></h5>
+        <p>
+          Model-driven engineering, modelado de requisitos y enfoques basados en modelos.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Paradigmas y enfoques de desarrollo</strong></h5>
+        <p>
+          Requisitos en sistemas orientados a agentes, servicios, aspectos,
+          ecosistemas, sistemas-de-sistemas y estándares industriales.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Ingeniería de Requisitos en metodologías modernas</strong></h5>
+        <p>
+          Ágil, DevOps y gestión de requisitos en entornos distribuidos y dinámicos.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Dominios y sistemas emergentes</strong></h5>
+        <p>
+          Sistemas móviles y web, sistemas críticos, legales o militares,
+          sostenibilidad, sistemas ciberfísicos, IoT, computación ubicua y realidad extendida.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Inteligencia Artificial aplicada a la Ingeniería de Requisitos</strong></h5>
+        <p>
+          IA y LLMs para elicitación, análisis, validación, automatización y asistentes inteligentes.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Aspectos humanos, organizacionales y educativos</strong></h5>
+        <p>
+          Educación y formación, colaboración entre stakeholders y factores humanos
+          en la Ingeniería de Requisitos.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <h5><strong>Cumplimiento normativo y aspectos legales</strong></h5>
+        <p>
+          Regulaciones, certificaciones, estándares, cumplimiento y propiedad intelectual.
+        </p>
+      </li>
+
+    </ul>
+
   </div>
-
-  <!-- 2 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse2">
-        <strong>Métodos, técnicas y herramientas</strong>
-      </button>
-    </h2>
-    <div id="collapse2" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Lenguajes, procesos, herramientas, DSLs, metamodelado y soporte
-        automatizado para la gestión y especificación de requisitos.
-      </div>
-    </div>
-  </div>
-
-  <!-- 3 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse3">
-        <strong>Ingeniería de Requisitos basada en modelos</strong>
-      </button>
-    </h2>
-    <div id="collapse3" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Model-driven engineering, modelado de requisitos y enfoques basados en modelos.
-      </div>
-    </div>
-  </div>
-
-  <!-- 4 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse4">
-        <strong>Paradigmas y enfoques de desarrollo</strong>
-      </button>
-    </h2>
-    <div id="collapse4" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Requisitos en sistemas orientados a agentes, servicios, aspectos,
-        ecosistemas, sistemas-de-sistemas y estándares industriales.
-      </div>
-    </div>
-  </div>
-
-  <!-- 5 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse5">
-        <strong>Ingeniería de Requisitos en metodologías modernas</strong>
-      </button>
-    </h2>
-    <div id="collapse5" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Ágil, DevOps y gestión de requisitos en entornos distribuidos y dinámicos.
-      </div>
-    </div>
-  </div>
-
-  <!-- 6 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse6">
-        <strong>Dominios y sistemas emergentes</strong>
-      </button>
-    </h2>
-    <div id="collapse6" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Sistemas móviles y web, sistemas críticos, legales o militares,
-        sostenibilidad, sistemas ciberfísicos, IoT, computación ubicua y realidad extendida.
-      </div>
-    </div>
-  </div>
-
-  <!-- 7 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse7">
-        <strong>Inteligencia Artificial aplicada a la Ingeniería de Requisitos</strong>
-      </button>
-    </h2>
-    <div id="collapse7" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        IA y LLMs para elicitación, análisis, validación, automatización y asistentes inteligentes.
-      </div>
-    </div>
-  </div>
-
-  <!-- 8 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse8">
-        <strong>Aspectos humanos, organizacionales y educativos</strong>
-      </button>
-    </h2>
-    <div id="collapse8" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Educación y formación, colaboración entre stakeholders y factores humanos
-        en la Ingeniería de Requisitos.
-      </div>
-    </div>
-  </div>
-
-  <!-- 9 -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse9">
-        <strong>Cumplimiento normativo y aspectos legales</strong>
-      </button>
-    </h2>
-    <div id="collapse9" class="accordion-collapse collapse"
-         data-bs-parent="#accordionTemas">
-      <div class="accordion-body">
-        Regulaciones, certificaciones, estándares, cumplimiento y propiedad intelectual.
-      </div>
-    </div>
-  </div>
-
 </div>
