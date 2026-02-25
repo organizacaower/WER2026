@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WER2026 - Regular Research Track (WER-RT)</title>
+  <title>WER2026 - Track de investigación (WER-RT)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="description" content="This is meta description">
   <meta name="author" content="Themefisher">
@@ -49,7 +49,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="mb-5">
-            <h2 class="mb-4" style="line-height:1.5">Regular Research Track (WER-RT)</h2>
+            <h2 class="mb-4" style="line-height:1.5">Track de investigación (WER-RT)</h2>
 
             <div class="content">
               <h3 id="heading-1" class="text-success">Fechas importantes</h3>
@@ -60,45 +60,12 @@
                 <li>Versión final: <b>30 de Mayo de 2026</b></li>
               </ul>
 
-              <h3 id="heading-1" class="text-success">Temas de interés</h3>
-              <p>Los temas de interés son los siguientes (la lista no es exhaustiva):</p>
-              <ul>
-                <li>Recopilar, analizar y documentar, gestionar, asegurar la trazabilidad, priorizar, validar, verificar y negociar requisitos;</li>
-                <li>Educación y formación en ingeniería de requisitos;</li>
-                <li>Ingeniería de requisitos para paradigmas de desarrollo de software específicos, como orientado a agentes, orientado a aspectos, orientado a modelos u orientado a servicios;</li>
-                <li>Ingeniería de requisitos para campos específicos, como sistemas de aplicaciones móviles, basadas en web o de seguridad crítica;</li>
-                <li>Ingeniería de requisitos en metodologías ágiles;</li>
-                <li>Lenguajes, métodos, procesos y herramientas para la especificación de requisitos;</li>
-                <li>Ingeniería de software basada en modelos;</li>
-                <li>Cumplimiento normativo.</li>
-              </ul>
+              <!-- Topicos de interes -->
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
 
-              <h3 id="heading-1" class="text-success">Orientación para el envio</h3>
-
-              <p>Todos los artículos deben ser enviados en formato PDF por medio de Easychair considerando el formato <b></b><a
-                  href="https://easychair.org/conferences/?conf=wer2026">Easychair</a> e considerando o formato <b><a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
-                  </a></b>. Los envíos deben ser realizados en Portugues, Español o Inglés.</p>
-              <p>Se aceptan artículos que presenten hallazgos originales sobre investigación, docencia y perspectivas de la industria en todos los aspectos de la Ingeniería de Requisitos. El proceso de selección considerará la aplicabilidad y relevancia para la Ingeniería de Requisitos, así como su originalidad y claridad.</p>
-              <p>El proceso de revisión es doble cego. Todos los envíos (y materiales complementarios) deben anonimizarse adecuadamente según las siguientes directrices: Los nombres y las afiliaciones de los autores no deben ser visibles en ninguna parte del artículo. Los agradecimientos deben anonimizarse o eliminarse para el proceso de revisión. Se deben incluir autocitas cuando sea necesario, pero deben emplear la tercera persona. Por ejemplo, no se permite "como se muestra en nuestro estudio anterior [2]", mientras que "como se muestra en Smith et al. [2]" es aceptable (en este caso, la cita [2] NO rompe el anonimato). Los logotipos y otras afiliaciones organizacionales en las imágenes deben estar difuminados. Siga estas directrices para evitar que los envíos sean rechazados sin revisión.</p>
-              <!-- <p>El trabajo no debe superar las 14 páginas según el <b><a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">formato
-                    de pagina LNCS
-                  </a></b>.</p> -->
-              <p><b>Los artículos completos no deben exceder las 14 páginas, formateadas según el formato de página<b><a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a></b>.
-              </p>
-              <p>
-Cualquier artículo que exceda el límite de páginas, no esté dentro del alcance de la conferencia o no siga las pautas de formato será rechazado sin revisión.</p>
-              <p>Todas las presentaciones serán revisadas por al menos tres miembros del Comité del Programa.</p>
-
-              <p>Todos los trabajos aceptados serán publicados con libre acceso a través del repositorio <a
-                  href="https://werpapers.dimap.ufrn.br/">WERpapers</a>.</p>
-
-
-              <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Envío</a>
-              </p>
-              <p>Para más información, póngase en contacto con nosotros en la siguiente dirección: organizacao.wer@gmail.com</p>
+              
               <h3 id="heading-1" class="text-success">Organización</h3>
 
               <ul>
@@ -131,6 +98,9 @@ Cualquier artículo que exceda el límite de páginas, no esté dentro del alcan
       $(function(){
         $('#footer').load('footer.html')
       })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
     </script>
 <!-- footer -->
 
