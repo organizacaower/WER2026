@@ -54,47 +54,18 @@
             </h2>
             <div class="content">
               <h3 id="heading-1" class="text-success">Fechas importantes</h3>
-              <ul>
-                <li>Presentación de título y abstract del artículo: <b>6 de Abril de 2026</b></li>
-                <li>Presentación del artículo: <b>13 de Abril de 2026</b></li>
-                <li>Notificación: <b>11 de Mayo de 2026</b></li>
-                <li>Versión final: <b>30 de Mayo de 2026</b></li>
-              </ul>
+              <!-- Fechas -->
+              <ul id="fechas-lista"></ul>
+              <!-- INFORMACION ESPECIFICA DEL CFP -->
 
-              <h3 id="heading-1" class="text-success">Temas de interés</h3>
-              <p>Los temas de interés son los siguientes (la lista no es exhaustiva):</p>
-              <ul>
-                <li>Elicitación, especificación, trazabilidad, priorización, validación, verificación y negociación de requisitos;</li>
-                <li>Educación y formación en ingeniería de requisitos;</li>
-                <li>Ingeniería de requisitos para paradigmas de desarrollo de software específicos, como los basados​​en agentes, aspectos, modelos o servicios;</li>
-                <li>Ingeniería de requisitos para dominios específicos como sostenibilidad, sistemas críticos, sistemas basados ​​en web o aplicaciones móviles;</li>
-                <li>Ingeniería de requisitos en metodologías Agile, DevOps y Inteligencia Artificial; y</li>
-                <li>Herramientas de especificación de lenguajes, métodos, procesos y requisitos.</li>
-              </ul>
-
-              <h3 id="heading-1" class="text-success">Instrucciones para la presentación</h3>
-              <p>Todos los artículos deben ser enviados únicamente en formato PDF a través del sistema de envío Easychair, y considerando el formato<a
-                  href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a>.
-                   Las presentaciones deben estar escritas en portugués, español o inglés.
-              </p>
-
-              <p>Los artículos para este Track deben haber sido aceptados no antes del 1 de 
-                Enero de 2024. No deben haber sido presentados en otras conferencias como una contribución de Journal First y deben informar nuevos resultados de investigación.</p>
-
-              <p>ELos artículos no deben exceder las 2 páginas de acuerdo con el formato de página y deben contener: 
-                Título, autores y afiliaciones, palabras clave, información sobre la revista y el factor de impacto, DOI y un resumen ampliado.</p>
-
-              <p>Cualquier artículo que exceda el límite de páginas, no esté dentro del alcance de la conferencia 
-                o no siga las pautas de formato será rechazado sin revisión.
-              </p>
-
-              <p>Todas las presentaciones serán revisadas por al menos tres miembros del Comité del Programa.
-              </p>
-
-              <!-- <p>Todos los trabajos aceptados se publicarán con acceso abierto a través del repositorio <a
-                  href="https://werpapers.dimap.ufrn.br/">WERpapers</a>.</p> -->
-              <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Envío</a>
-              </p>
+              <!-- Topicos de interes -->
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
+              </div>
 
               <h3 id="heading-1" class="text-success">Organización</h3>
               <ul>
@@ -125,6 +96,12 @@
       $(function(){
         $('#footer').load('footer.html')
       })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
+      });
     </script>
 <!-- footer -->
 
@@ -134,6 +111,7 @@
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
     <script src="../plugins/slick/slick.min.js"></script>
     <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+    <script src="./js/cargar_fechas_jornal.js"></script>
 
     <!-- Main Script -->
     <script src="../js/script.js"></script>
