@@ -61,7 +61,10 @@
               <div class="content">
                 <div id="temas-container"></div>
               </div>
-
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
+              </div>
               
               <h3 id="heading-1" class="text-success">Organización</h3>
 
@@ -97,6 +100,9 @@
       })
       $(function(){
         $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
       });
     </script>
 <!-- footer -->
