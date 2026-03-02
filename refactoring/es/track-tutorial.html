@@ -55,40 +55,17 @@
 
             <div class="content">
               <h3 id="heading-1" class="text-success">Fechas importantes</h3>
-              <ul>
-                <li>Presentación de título y resumen: <b>6 de Abril de 2026</b></li>
-                <li>Presentación del artículo: <b>13 de Abril de 2026</b></li>
-                <li>Notificación: <b>11 de Mayo de 2026</b></li>
-                <li>Versión final: <b>30 de Mayo de 2026</b></li>
-              </ul>
+              <!-- Fechas -->
+              <ul id="fechas-lista"></ul>
+              <!-- INFORMACION ESPECIFICA DEL CFP -->
 
-              <h3 id="heading-1" class="text-success">Temas de interés</h3>
-              <p>Los temas de interés son los siguientes (la lista no es exhaustiva):</p>
-              <ul>
-                <li>Obtención, análisis, documentación, gestión, trazabilidad, priorización, validación y verificación, negociación de requisitos;</li>
-                <li>Educación y capacitación en ingeniería de requisitos;</li>
-                <li>Ingeniería de requisitos para paradigmas de desarrollo de software específicos, tales como orientado a agentes, orientado a aspectos, orientado a modelos u orientado a servicios;</li>
-                <li>Ingeniería de requisitos enfocada a dominios específicos. Ej: entornos móviles, basados ​​en web, de seguridad, legales y militares;</li>
-                <li>Ingeniería de requisitos en metodologías ágiles;</li>
-                <li>Lenguajes, métodos, procesos y herramientas para especificar requisitos;</li>
-                <li>Ingeniería de software orientada a modelos;</li>
-                <li>Cumplimiento normativo.</li>
-              </ul>
-
-              <h3 id="heading-1" class="text-success">Instrucciones para la presentación</h3>
-              <p>Todos los artículos deberán enviarse únicamente en formato PDF a través del sistema de envío Easychair, y considerando el formato LNCS . Los envíos pueden estar escritos en portugués, español o inglés.</p>
-              <p>Las presentaciones para esta pista deben incluir una propuesta para un tutorial de 3 horas. Esta propuesta no debe exceder las 2 páginas, formateadas según el formato de página <b><a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
-                  </a></b>.</p>
-            
-              <p>Cualquier artículo que exceda el límite de páginas, no esté dentro del alcance de la conferencia o no siga las directrices de formato será rechazado sin revisión.
-              </p>
-              <p>Todas las presentaciones serán revisadas por al menos tres miembros del Comité del Programa.
-              </p>
-              <p>Todos los trabajos aceptados serán publicados con Acceso Abierto a través del repositorio de   <a
-                  style="font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); text-align: var(--bs-body-text-align);"
-                  href="https://werpapers.dimap.ufrn.br/">WERpapers</a>.</p>
-                </a><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Envío</a>
+              <!-- Topicos de interes -->
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
 
               <h3 id="heading-1" class="text-success">Organización</h3>
 
@@ -115,11 +92,17 @@
     </div>
 
 <!-- footer -->
-  <div id="footer"></div>
+<div id="footer"></div>
     <script>
       $(function(){
         $('#footer').load('footer.html')
       })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
+      });
     </script>
 <!-- footer -->
 
@@ -129,6 +112,7 @@
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
     <script src="../plugins/slick/slick.min.js"></script>
     <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+    <script src="./js/cargar_fechas_tt.js"></script>
 
     <!-- Main Script -->
     <script src="../js/script.js"></script>
