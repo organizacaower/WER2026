@@ -3,7 +3,7 @@ fetch('../dates.json')   // <-- tu archivo JSON
   .then(response => response.json())
   .then(data => {
 
-    const rrt = data.ST;  
+    const rrt = data.SRTT;  
     const lista = document.getElementById('fechas-lista');
 
     const fechas = [
