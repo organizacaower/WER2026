@@ -1,165 +1,102 @@
-<!DOCTYPE html>
+fetch("../dates.json")
+  .then(res => res.json())
+  .then(data => {
 
-<html lang="es-ar">
+    // Detectar idioma en la URL
+    const parts = window.location.pathname.split("/");
+    const lang = parts[2] || "es"; // por defecto español
 
-<head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <meta charset="utf-8">
-  <title>WER 2026 - Workshop on Requirements Engineering</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description" content="Workshop on Requirements Engineering">
-  <meta name="author" content="Themefisher">
-  <link rel="shortcut icon" href="../images/wer/logo_wer2024.png" type="image/x-icon">
-  <link rel="icon" href="../images/wer/logo_wer2024.png" type="image/x-icon">
-  <meta name="google-site-verification" content="i-1b7eYSiYSvjZGvm-wlaceYNkWP6E6uVuHiqd5Hs4w" />
-  <meta name="google-site-verification" content="ogVzD0Gi9HVSVbUqjswqNiLDRD1t7KJ9L8RUyo-jdO0" />
-  <meta name="description" content="Official website of WER 2026 - Workshop on Requirements Engineering. Dates, submission deadlines and program.">
-  <link rel="canonical" href="https://organizacaower.github.io/WER2026/es/index.html">
- <!-- theme meta -->
- <meta name="theme-name" content="wallet"/>
+    // Crear formateador de fechas según idioma
+    const dateFormatter = new Intl.DateTimeFormat(lang, {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
 
- <!-- # Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    // Función para convertir fecha "9 de marzo de 2026"  
+    // en formato ISO para luego formatearla con Intl.DateTimeFormat
+    function parseSpanishDate(spanish) {
+      // Dividimos por espacios y extraemos partes
+      const parts = spanish.split(" ");
+      const day = parts[0];
+      const month = parts[2];
+      const year = parts[4];
 
- <!-- # CSS Plugins -->
- <link rel="stylesheet" href="../plugins/slick/slick.css">
- <link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
- <link rel="stylesheet" href="../plugins/font-awesome/brands.css">
- <link rel="stylesheet" href="../plugins/font-awesome/solid.css">
+      // Mapa simple de meses en español a número
+      const months = {
+        "enero": "01",
+        "febrero": "02",
+        "marzo": "03",
+        "abril": "04",
+        "mayo": "05",
+        "junio": "06",
+        "julio": "07",
+        "agosto": "08",
+        "septiembre": "09",
+        "octubre": "10",
+        "noviembre": "11",
+        "diciembre": "12"
+      };
 
- <!-- # Main Style Sheet -->
- <link rel="stylesheet" href="../css/style.css">
+      const mm = months[month.toLowerCase()];
+      return `${year}-${mm}-${day.padStart(2, "0")}T00:00:00`;
+    }
 
+    // Renderiza una fecha con badges
+    const renderFecha = (fechaObj) => {
+      let html = "";
 
-</head>
+      // Si hay estado original y extendido
+      if (fechaObj.status.includes("extended") && fechaObj.original) {
+        const origDate = new Date(parseSpanishDate(fechaObj.original));
+        html += `<del>${dateFormatter.format(origDate)}</del><br>`;
+      }
 
-<body>
-  <!-- Navigation -->
-  <header class="navigation bg-tertiary">
-    <div id="navbar"></div>
+      const actualDate = new Date(parseSpanishDate(fechaObj.actual));
+      html += `<strong>${dateFormatter.format(actualDate)}</strong>`;
 
-    <script>
-      $(function(){
-        $('#navbar').load('navbar.html')
-      })
+      if (fechaObj.status.includes("extended")) {
+        html += `<span class="badge bg-danger ms-2">NEW</span>`;
+      }
+      if (fechaObj.status.includes("hard")) {
+        html += `<span class="badge bg-dark ms-2">HARD DEADLINE</span>`;
+      }
 
-      document.getElementById('change-lang').innerHTML = 'Chau'
-    </script>
-  </header>
-  <!-- /Navigation -->
+      return html;
+    };
 
-<section class="bg-tertiary position-relative overflow-hidden">
-  <div class="container">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-lg-12">
-        <div class="ps-lg-5 text-center">
-        <img loading="lazy" decoding="async" src="../images/wer/banner-es.jpg" alt="banner image" class="w-120">
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</section> 
+    const ordenTracks = ["RRT", "SRTT", "IT", "MDT", "TT", "JFT", "ST"];
+    const thead = document.getElementById("tabla-head");
+    const tbody = document.getElementById("tabla-body");
 
+    // -------- Header --------
+    let headerHTML = `<tr><th></th>`;
+    ordenTracks.forEach(track => {
+      if (data[track]) {
+        headerHTML += `<th>${data[track].nombre}</th>`;
+      }
+    });
+    headerHTML += `</tr>`;
+    thead.innerHTML = headerHTML;
 
-<section class="about-section section-sm position-relative overflow-hidden">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-lg-7">
-        <div class="section-title">
-          <h3 class="text-success align-items-center">Fechas importantes</h3>
+    // -------- Filas --------
+    const filas = [
+      { key: "abstract", label: { es: "Presentación de Título y resumen", en: "Title & Abstract Submission", pt: "Submissão de Título e Resumo" }[lang] },
+      { key: "paper", label: { es: "Envío de artículo", en: "Paper Submission", pt: "Submissão de Artigo" }[lang] },
+      { key: "notification", label: { es: "Notificación", en: "Notification", pt: "Notificação" }[lang] },
+      { key: "cameraReady", label: { es: "Versión final", en: "Final Version", pt: "Versão Final" }[lang] }
+    ];
 
-            <table class="table table-bordered text-center align-middle bg-white text-dark shadow-sm rounded">
-              <thead id="tabla-head"></thead>
-              <tbody id="tabla-body"></tbody>
-            </table>
+    filas.forEach(fila => {
+      let rowHTML = `<tr><td><strong>${fila.label}</strong></td>`;
+      ordenTracks.forEach(track => {
+        if (data[track]) {
+          rowHTML += `<td>${renderFecha(data[track][fila.key])}</td>`;
+        }
+      });
+      rowHTML += `</tr>`;
+      tbody.innerHTML += rowHTML;
+    });
 
-            <script src="../js/generarTablaGenerico.js" defer></script>
-          </div>
-       </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-section section-sm position-relative overflow-hidden">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-
-        <div class="section-title">
-          <p class="text-primary text-uppercase fw-bold mb-3">Sobre</p>
-          <h1>WER 2026</h1>
-          <p>El WER es un importante foro de discusión de temas relevantes en el campo de la Ingeniería de Requisitos. Se celebra anualmente desde 1998 y ha alternado su organización y realización entre países de América Latina, Canadá, España y Portugal.</p>
-
-          <p>Son bienvenidos los trabajos que presenten resultados originales desde el punto de vista de la investigación, la docencia o la industria, en todos los aspectos de la Ingeniería de Requisitos. El evento cuenta con la presentación de trabajos científicos y ofrece una variedad de pistas, actividades y oportunidades para el debate y la interacción entre los participantes. Los artículos publicados en el WER son indexados por DBLP, organizados en un libro con ISBN y puestos a disposición en el repositorio <a
-                  class="text-primary"  href="https://werpapers.dimap.ufrn.br/">WERpapers.</a></p>
-
-          <p>En 2026, en su 29ª edición, el WER se celebrará en la Facultad Regional La Plata de la Universidad Tecnologica Nacional. </p>
-          <p> Se realiza en simultaneo con las Jornadas Argentinas de Informática (55 JAIIO) </p>
-          <p>Para más información, póngase en contacto con <a class="text-primary"  href="mailto:organizacao.wer@gmail.com">organizacao.wer@gmail.com.</a> </p>
-        </div>
-      </div>
-      <div class="col-lg-5 text-center text-lg-end">
-        <img loading="lazy" decoding="async" src="../images/wer/logoWER_conAnio_vertical.png" alt="About Ourselves" class="img-fluid">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-primary">
-  <div class="container ">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-lg-4">
-        <div class="section-title">
-          <p class="text-white text-uppercase bs-warning fw-bold mb-2">Fechas</p>
-          <h1 class="bs-pink">Reserva la fecha</h1>
-          <div class="content mb-0 mt-3">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="difference-of-us-item p-2 rounded mr-1 me-lg-4">
-          <div class="d-block d-sm-flex align-items-center m-2">
-            <!-- icono calendario -->
-            <div class="icon me-4 mb-4 mb-sm-0"> <i class="fas fa-sharp fa-calendar mt-4" style="font-size:40px; color: rgb(243, 233, 35);"></i>
-            </div>
-            <!-- /icono calendario -->
-            <div class="block">
-              <h3 class="mb-3 text-warning">11 a 13 de agosto de 2026</h3>
-              <h4 class="mb-1 text-white">Universidad Tecnológica Nacional</h4>
-                <h5>Av. del Petroleo Argentino esq. 124, B1923 Berisso, Provincia de Buenos Aires, Argentina</h5>
-                <p><a class="text-white"
-                      href="https://www.frlp.utn.edu.ar/como-llegar"
-                      target="_blank">¿Cómo llegar?</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- footer -->
-  <div id="footer"></div>
-    <script>
-      $(function(){
-        $('#footer').load('footer.html')
-      })
-    </script>
-<!-- footer -->
-
-
-<!-- # JS Plugins -->
-<script src="../plugins/jquery/jquery.min.js"></script>
-<script src="../plugins/bootstrap/bootstrap.min.js"></script>
-<script src="../plugins/slick/slick.min.js"></script>
-<script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
-
-<!-- Main Script -->
-<script src="../js/script.js"></script>
-
-</body>
-
-</html>
+  })
+  .catch(err => console.error("Error cargando fechas:", err));
