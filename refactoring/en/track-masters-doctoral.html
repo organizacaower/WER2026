@@ -49,41 +49,29 @@
             </h2>
 
             <div class="content">
-              <h3 class="text-success">Important Dates</h3>
-              <ul>
-                <li>Abstract submission deadline: <b>March 31st, 2026</b></li>
-                <li>Paper submission: <b>April 6th, 2026</b></li>
-                <li>Notification: <b>May 11th, 2026</b></li>
-                <li>Camera-ready: <b>May 30th, 2026</b></li>
-              </ul>
-
-              <h3 class="text-success">Topics of Interest</h3>
-              <p>Topics of interest are listed below. List is not exhaustive.:</p>
-              <ul>
-                <li>Requirements elicitation, analysis, documentation, management, traceability, prioritization, validation, verification, and negotiation;</li>
-                <li>Requirements engineering education and training;</li>
-                <li>Requirements engineering for specific software development paradigms, e.g., agent-driven, aspect-driven, model-driven, or service-driven;</li>
-                <li>Requirements engineering for specific fields, e.g., safety-critical, web-based or mobile application systems;</li>
-                <li>Requirements engineering in agile methodologies;</li>
-                <li>Requirements specification languages, methods, processes and tools;</li>
-                <li>Model-driven software engineering;</li>
-                <li>Regulatory compliance.</li>
-              </ul>
-
-              <h3 class="text-success">Submission Guidelines</h3>
-              <p>All papers must be submitted through the Easychair submission system in PDF format only, following <a
-                href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
-                format</a>.</p>
-              <p>Submissions must be written in Portuguese, Spanish, or English. Papers should not exceed 7 pages of content for Master's work, and 10 pages of content for Doctoral work.</p>
-              <p>Although this is not compulsory, we recommend that the research is at an intermediate stage so that experts' suggestions could be included in the MSc and PhD work. Works will receive feedback from the Program Committee including questions and suggestions about their content. Authors should use these comments to prepare the paper's final version.</p>
-              <p>During the event, the works selected must be presented by students. On this occasion, they will receive opinions and constructive criticism from a Guest Panel composed of researchers in the field of Requirements Engineering, as well as from the audience.</p>
-              <p>Any paper that exceeds the page limit, lies beyond the scope of the conference, or does not follow the
-                    formatting guidelines will be desk-rejected.</p>
-              <p>All submissions will be peer-reviewed by at least three members of the Program Committee.</p>
-              <p>All accepted papers will be published with Open Access through the <a
-                  href="https://werpapers.dimap.ufrn.br/">WERpapers</a> repository.</p>
-              </a><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Submission</a>
+              <h3 id="heading-1" class="text-success">Important dates</h3>
+              <!-- Fechas -->
+              <ul id="fechas-lista"></ul>
+              <!-- INFORMACION ESPECIFICA DEL CFP -->
+              <p>
+                It is recommended, although not mandatory, that the research be at an intermediate
+                stage so that the experts’ suggestions can be incorporated into the work.
               </p>
+
+              <p>
+                During the event, the selected papers must be presented by the students. In this
+                session, they will receive constructive feedback and positive critique from a panel
+                of invited experts in the field of Requirements Engineering, as well as from the audience.
+              </p>
+              <!-- Topicos de interes -->
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
+              </div>
+              
 
               <h3 class="text-success">Organization</h3>
               <h4 id="heading-4">Chairs</h4>
@@ -108,6 +96,12 @@
       $(function(){
         $('#footer').load('footer.html')
       })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
+      });
     </script>
 <!-- footer -->
 
@@ -117,6 +111,7 @@
   <script src="../plugins/bootstrap/bootstrap.min.js"></script>
   <script src="../plugins/slick/slick.min.js"></script>
   <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+  <script src="./js/cargar_fechas_mdt.js"></script>
 
   <!-- Main Script -->
   <script src="../js/script.js"></script>
