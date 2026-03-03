@@ -1,68 +1,51 @@
-fetch("../dates.json")
+fetch("../dates_ddmmaaaa.json")
   .then(res => res.json())
   .then(data => {
 
     const ordenTracks = ["RRT", "SRTT", "IT", "MDT", "TT", "JFT", "ST"];
-
     const thead = document.getElementById("tabla-head");
     const tbody = document.getElementById("tabla-body");
 
-    // Detectar idioma desde la URL
+    // Detectar idioma de la ruta
     const parts = window.location.pathname.split("/");
-    let lang = parts[2]; 
-    if (!["es", "en", "pt"].includes(lang)) {
-      lang = "es"; // fallback si no es uno de los esperados
-    }
+    let lang = parts[2];
+    if (!["es","en","pt"].includes(lang)) lang = "es";
 
-    // Preparar formateador de fechas según idioma
+    // Crear formateador de fecha para mostrar
     const dateFormatter = new Intl.DateTimeFormat(lang, {
       year: "numeric",
       month: "long",
       day: "numeric"
     });
 
-    // Función para parsear fecha del JSON (que están en español)
-    function parseDateString(str) {
-      const mapMonths = {
-        "enero":"01","febrero":"02","marzo":"03","abril":"04","mayo":"05",
-        "junio":"06","julio":"07","agosto":"08","septiembre":"09",
-        "octubre":"10","noviembre":"11","diciembre":"12"
-      };
-      const parts = str.split(" ");
-      const day = parts[0].padStart(2,"0");
-      const month = mapMonths[parts[2].toLowerCase()] || "01";
-      const year = parts[4];
-      return `${year}-${month}-${day}T00:00:00`;
+    // Parsea dd/mm/aaaa a Date
+    function parseDMY(str) {
+      const [dd, mm, yyyy] = str.split("/");
+      return new Date(`${yyyy}-${mm}-${dd}`);
     }
 
-    // Renderiza la fecha según idioma
-    const renderFecha = (fechaObj) => {
+    // Renderiza
+    function renderFecha(fechaObj) {
       let html = "";
       if (fechaObj.status.includes("extended") && fechaObj.original) {
-        html += `<del>${dateFormatter.format(new Date(parseDateString(fechaObj.original)))}</del><br>`;
+        html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
       }
-      html += `<strong>${dateFormatter.format(new Date(parseDateString(fechaObj.actual)))}</strong>`;
+      html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
 
-      if (fechaObj.status.includes("extended")) {
-        html += `<span class="badge bg-danger ms-2">NEW</span>`;
-      }
-      if (fechaObj.status.includes("hard")) {
-        html += `<span class="badge bg-dark ms-2">HARD DEADLINE</span>`;
-      }
+      if (fechaObj.status.includes("extended")) html += `<span class="badge bg-danger ms-2">NEW</span>`;
+      if (fechaObj.status.includes("hard")) html += `<span class="badge bg-dark ms-2">HARD DEADLINE</span>`;
       return html;
-    };
+    }
 
-    // Generar el header
+    // Header
     let headerHTML = `<tr><th></th>`;
     ordenTracks.forEach(track => {
-      if (data[track]) {
-        headerHTML += `<th>${data[track].nombre}</th>`;
-      }
+      if (data[track]) headerHTML += `<th>${data[track].nombre}</th>`;
     });
     headerHTML += `</tr>`;
     thead.innerHTML = headerHTML;
 
-    // Traducciones de las etiquetas de filas según idioma
+    // Etiquetas traducibles
     const labels = {
       es: {
         abstract: "Presentación de Título y resumen",
