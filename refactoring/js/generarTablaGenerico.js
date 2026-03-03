@@ -2,47 +2,44 @@ fetch("../dates.json")
   .then(res => res.json())
   .then(data => {
 
-    // Detectar idioma desde la URL
+    // Detectar idioma
     const parts = window.location.pathname.split("/");
-    const lang = parts[2] || "es"; // por defecto ES
+    let lang = parts[2] || "es";
 
-    // Diccionario de traducciones para las etiquetas de filas
-    const i18nLabels = {
-      es: {
-        abstract: "Presentación de Título y resumen",
-        paper: "Envío de artículo",
-        notification: "Notificación",
-        cameraReady: "Versión final"
-      },
-      en: {
-        abstract: "Title & Abstract Submission",
-        paper: "Paper Submission",
-        notification: "Notification",
-        cameraReady: "Final Version"
-      },
-      pt: {
-        abstract: "Submissão de Título e Resumo",
-        paper: "Submissão de Artigo",
-        notification: "Notificação",
-        cameraReady: "Versão Final"
-      }
-    };
+    // Verificar que lang sea un idioma soportado
+    const supported = Intl.DateTimeFormat.supportedLocalesOf([lang]);
+    if (supported.length === 0) {
+      lang = "es"; // fallback si no es válido
+    }
 
-    // Formateador de fechas según idioma
+    // Preparar formateador de fecha
     const dateFormatter = new Intl.DateTimeFormat(lang, {
       year: "numeric",
       month: "long",
       day: "numeric"
     });
 
+    function parseSpanishDate(spanish) {
+      const mapMonths = {
+        "enero":"01","febrero":"02","marzo":"03","abril":"04","mayo":"05",
+        "junio":"06","julio":"07","agosto":"08","septiembre":"09",
+        "octubre":"10","noviembre":"11","diciembre":"12"
+      };
+      const parts = spanish.split(" ");
+      const day = parts[0];
+      const month = mapMonths[parts[2].toLowerCase()] || "01";
+      const year = parts[4];
+      return `${year}-${month}-${day.padStart(2,"0")}T00:00:00`;
+    }
+
     const renderFecha = (fechaObj) => {
       let html = "";
 
       if (fechaObj.status.includes("extended") && fechaObj.original) {
-        html += `<del>${dateFormatter.format(new Date(fechaObj.original))}</del><br>`;
+        html += `<del>${dateFormatter.format(new Date(parseSpanishDate(fechaObj.original)))}</del><br>`;
       }
 
-      html += `<strong>${dateFormatter.format(new Date(fechaObj.actual))}</strong>`;
+      html += `<strong>${dateFormatter.format(new Date(parseSpanishDate(fechaObj.actual)))}</strong>`;
 
       if (fechaObj.status.includes("extended")) {
         html += `<span class="badge bg-danger ms-2">NEW</span>`;
@@ -54,39 +51,37 @@ fetch("../dates.json")
       return html;
     };
 
-    const ordenTracks = ["RRT", "SRTT", "IT", "MDT", "TT", "JFT", "ST"];
-
+    const ordenTracks = ["RRT","SRTT","IT","MDT","TT","JFT","ST"];
     const thead = document.getElementById("tabla-head");
     const tbody = document.getElementById("tabla-body");
 
-    // -------- Header --------
+    // Render header
     let headerHTML = `<tr><th></th>`;
     ordenTracks.forEach(track => {
       if (data[track]) {
-        headerHTML += `<th>${track}</th>`;
+        headerHTML += `<th>${data[track].nombre}</th>`;
       }
     });
     headerHTML += `</tr>`;
     thead.innerHTML = headerHTML;
 
-    // -------- Filas --------
-    const filas = [
-      { key: "abstract", label: i18nLabels[lang].abstract },
-      { key: "paper", label: i18nLabels[lang].paper },
-      { key: "notification", label: i18nLabels[lang].notification },
-      { key: "cameraReady", label: i18nLabels[lang].cameraReady }
-    ];
+    // Filas con etiquetas según idioma
+    const labels = {
+      abstract: { es:"Presentación de Título y resumen", en:"Title & Abstract Submission", pt:"Submissão de Título e Resumo" },
+      paper:    { es:"Envío de artículo", en:"Paper Submission", pt:"Submissão de Artigo" },
+      notification: { es:"Notificación", en:"Notification", pt:"Notificação" },
+      cameraReady:  { es:"Versión final", en:"Final Version", pt:"Versão Final" }
+    };
 
-    filas.forEach(fila => {
-      let rowHTML = `<tr><td><strong>${fila.label}</strong></td>`;
+    Object.keys(labels).forEach(key => {
+      let rowHTML = `<tr><td><strong>${labels[key][lang]}</strong></td>`;
       ordenTracks.forEach(track => {
         if (data[track]) {
-          rowHTML += `<td>${renderFecha(data[track][fila.key])}</td>`;
+          rowHTML += `<td>${renderFecha(data[track][key])}</td>`;
         }
       });
       rowHTML += `</tr>`;
       tbody.innerHTML += rowHTML;
     });
-
   })
   .catch(err => console.error("Error cargando fechas:", err));
