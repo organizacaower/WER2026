@@ -1,4 +1,4 @@
-fetch("../dates_ddmmaaaa.json")
+fetch("../fechas_formateadasa.json")
   .then(res => res.json())
   .then(data => {
 
