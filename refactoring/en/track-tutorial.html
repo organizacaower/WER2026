@@ -47,40 +47,18 @@
           <div class="mb-5">
             <h2 class="mb-4" style="line-height:1.5">Tutorial Track (WER-TT)</h2>
             <div class="content">
-              <h3 class="text-success">Important Dates</h3>
-              <ul>
-                <li>Abstract submission deadline: <b>April 6th, 2026</b></li>
-                <li>Paper submission: <b>April 13th, 2026</b></li>
-                <li>Notification: <b>May 11th, 2026</b></li>
-                <li>Camera-ready: <b>May 30th, 2026</b></li>
-              </ul>
-
-              <h3 class="text-success">Topics of Interest</h3>
-              <p>Topics of interest are listed below. List is not exhaustive.</p>
-              <ul>
-                <li>Requirements elicitation, analysis, documentation, management, traceability, prioritization,
-                  validation and verification, and negotiation;</li>
-                <li>Requirements engineering education and training;</li>
-                <li>Requirements engineering for specific software development paradigms, e.g., agent-driven, aspect-driven, model-driven, or service-driven paradigms;</li>
-                <li>Requirements engineering for specific domains, e.g., mobile and web-based environments; security, legal, and military fields;</li>
-                <li>Requirements engineering in agile methodologies;</li>
-                <li>Requirements specification languages, methods, processes, and tools;</li>
-                <li>Model-driven software engineering;</li>
-                <li>Regulatory compliance.</li>
-              </ul>
-
-              <h3 class="text-success">Submission Guidelines</h3>
-              <p>All papers must be submitted through the Easychair submission system in PDF format only, following LNCS format. Submissions can be written in Portuguese, Spanish, or English.</p>
-              <p>Submissions to this track must include a proposal for a 3-hour tutorial. Said proposal must not exceed 2 pages in length and must follow <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS format</a>.</p>
-              <p>Any paper that exceeds the page limit, lies beyond the scope of the conference, or does not follow the
-                formatting guidelines will be desk-rejected.</p>
-              <p>All submissions will be reviewed by at least three members of the Program Committee.</p>
-              <p>All accepted papers will be published with Open Access through the <a
-                  style="font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); text-align: var(--bs-body-text-align);"
-                  href="https://werpapers.dimap.ufrn.br/">WERpapers</a> repository.</p>
-              <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Submission</a>
-              </p>
-
+              <h3 id="heading-1" class="text-success">Important dates</h3>
+              <!-- Fechas -->
+              <ul id="fechas-lista"></ul>
+              <!-- INFORMACION ESPECIFICA DEL CFP -->
+              <p>The proposed tutorials should last 3 hours.</p>
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
+              </div>
               <h3 class="text-success">Organization</h3>
               <h4 id="heading-4">Chairs</h4>
               <ul>
@@ -104,6 +82,12 @@
       $(function(){
         $('#footer').load('footer.html')
       })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
+      });
     </script>
 <!-- footer -->
 
@@ -112,6 +96,7 @@
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
     <script src="../plugins/slick/slick.min.js"></script>
     <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+    <script src="./js/cargar_fechas_tt.js"></script>
 
     <!-- Main Script -->
     <script src="../js/script.js"></script>
