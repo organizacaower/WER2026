@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>WER2026 - Master's y Doctoral Track </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <link rel="shortcut icon" href="../images/wer/lwer.png" type="image/x-icon">
+  <link rel="icon" href="../images/wer/wer.png" type="image/x-icon">
+
+  <!-- # Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- # CSS Plugins -->
+  <link rel="stylesheet" href="../plugins/slick/slick.css">
+  <link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
+  <link rel="stylesheet" href="../plugins/font-awesome/brands.css">
+  <link rel="stylesheet" href="../plugins/font-awesome/solid.css">
+
+  <!-- # Main Style Sheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+      <div id="navbar"></div>
+  
+      <script>
+        $(function(){
+          $('#navbar').load('navbar.html')
+        })
+        
+  
+        document.getElementById('change-lang').innerHTML = 'Chau'
+      </script>
+    </header>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="mb-5">
+            <h2 class="mb-4" style="line-height:1.5">Track de trabajos Doctorales y de Maestría (WER-MDT)
+            </h2>
+
+            <div class="content">
+             <h3 id="heading-1" class="text-success">Fechas importantes</h3>
+              <!-- Fechas -->
+              <ul id="fechas-lista"></ul>
+              <!-- INFORMACION ESPECIFICA DEL CFP -->
+              <p>Es recomendado, aunque no es obligatorio, que la investigación se encuentre en un estado intermedio, de forma tal de que las sugerencias de los especialistas puedan ser consideradasnen los trabajos.</p>
+              <p>Durante el evento, los trabajos seleccionados deben ser presentados por los estudiantes. En esta ocasión, ellos recibirán una opinión y críticas positivas de un panel de invitados, compuesto por investigadores en el campo de la ingeniería de requerimientos, como así también de la audiencia.</p>
+              <!-- Topicos de interes -->
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
+              </div>
+
+            <h3 id="heading-1" class="text-success">Organización</h3>
+
+            <ul>
+              <li>
+                <h4 id="heading-4">Coordinación del track</h4>
+                <ul>
+                  <li><b>Márcia Lucena, Universidade Federal de Rio Grande do Norte, Brasil</li>
+                  <li><b>Renato Bulcão, Universidade Federal Goiás (UFG), Brasil</li><br>
+                </ul>
+              </li>
+              <li>
+                <h4 id="heading-4">Comite de programa</h4>
+                <ul>
+                  <li>En breve</li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+  <div id="footer"></div>
+    <script>
+      $(function(){
+        $('#footer').load('footer.html')
+      })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
+      });
+    </script>
+<!-- footer -->
+
+
+  <!-- # JS Plugins -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../plugins/slick/slick.min.js"></script>
+  <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+  <script src="./js/cargar_fechas_mdt.js"></script>
+
+  <!-- Main Script -->
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>
