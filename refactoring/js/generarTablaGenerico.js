@@ -1,7 +1,6 @@
-fetch("./fechas_formateadas.json")
+fetch("/wer2026/js/fechas_formateadas.json")
   .then(res => res.json())
   .then(data => {
-    console.log(data)
     const ordenTracks = ["RRT", "SRTT", "IT", "MDT", "TT", "JFT", "ST"];
     const thead = document.getElementById("tabla-head");
     const tbody = document.getElementById("tabla-body");
