@@ -1,4 +1,4 @@
-fetch("fechas_formateadas.json")
+fetch("../fechas_formateadas")
   .then(res => res.json())
   .then(data => {
     const ordenTracks = ["RRT", "SRTT", "IT", "MDT", "TT", "JFT", "ST"];
