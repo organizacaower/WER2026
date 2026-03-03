@@ -2,44 +2,58 @@ fetch("../dates.json")
   .then(res => res.json())
   .then(data => {
 
-    // Detectar idioma
+    // Detectar idioma en la URL
     const parts = window.location.pathname.split("/");
-    let lang = parts[2] || "es";
+    const lang = parts[2] || "es"; // por defecto español
 
-    // Verificar que lang sea un idioma soportado
-    const supported = Intl.DateTimeFormat.supportedLocalesOf([lang]);
-    if (supported.length === 0) {
-      lang = "es"; // fallback si no es válido
-    }
-
-    // Preparar formateador de fecha
+    // Crear formateador de fechas según idioma
     const dateFormatter = new Intl.DateTimeFormat(lang, {
       year: "numeric",
       month: "long",
       day: "numeric"
     });
 
+    // Función para convertir fecha "9 de marzo de 2026"  
+    // en formato ISO para luego formatearla con Intl.DateTimeFormat
     function parseSpanishDate(spanish) {
-      const mapMonths = {
-        "enero":"01","febrero":"02","marzo":"03","abril":"04","mayo":"05",
-        "junio":"06","julio":"07","agosto":"08","septiembre":"09",
-        "octubre":"10","noviembre":"11","diciembre":"12"
-      };
+      // Dividimos por espacios y extraemos partes
       const parts = spanish.split(" ");
       const day = parts[0];
-      const month = mapMonths[parts[2].toLowerCase()] || "01";
+      const month = parts[2];
       const year = parts[4];
-      return `${year}-${month}-${day.padStart(2,"0")}T00:00:00`;
+
+      // Mapa simple de meses en español a número
+      const months = {
+        "enero": "01",
+        "febrero": "02",
+        "marzo": "03",
+        "abril": "04",
+        "mayo": "05",
+        "junio": "06",
+        "julio": "07",
+        "agosto": "08",
+        "septiembre": "09",
+        "octubre": "10",
+        "noviembre": "11",
+        "diciembre": "12"
+      };
+
+      const mm = months[month.toLowerCase()];
+      return `${year}-${mm}-${day.padStart(2, "0")}T00:00:00`;
     }
 
+    // Renderiza una fecha con badges
     const renderFecha = (fechaObj) => {
       let html = "";
 
+      // Si hay estado original y extendido
       if (fechaObj.status.includes("extended") && fechaObj.original) {
-        html += `<del>${dateFormatter.format(new Date(parseSpanishDate(fechaObj.original)))}</del><br>`;
+        const origDate = new Date(parseSpanishDate(fechaObj.original));
+        html += `<del>${dateFormatter.format(origDate)}</del><br>`;
       }
 
-      html += `<strong>${dateFormatter.format(new Date(parseSpanishDate(fechaObj.actual)))}</strong>`;
+      const actualDate = new Date(parseSpanishDate(fechaObj.actual));
+      html += `<strong>${dateFormatter.format(actualDate)}</strong>`;
 
       if (fechaObj.status.includes("extended")) {
         html += `<span class="badge bg-danger ms-2">NEW</span>`;
@@ -51,11 +65,11 @@ fetch("../dates.json")
       return html;
     };
 
-    const ordenTracks = ["RRT","SRTT","IT","MDT","TT","JFT","ST"];
+    const ordenTracks = ["RRT", "SRTT", "IT", "MDT", "TT", "JFT", "ST"];
     const thead = document.getElementById("tabla-head");
     const tbody = document.getElementById("tabla-body");
 
-    // Render header
+    // -------- Header --------
     let headerHTML = `<tr><th></th>`;
     ordenTracks.forEach(track => {
       if (data[track]) {
@@ -65,23 +79,24 @@ fetch("../dates.json")
     headerHTML += `</tr>`;
     thead.innerHTML = headerHTML;
 
-    // Filas con etiquetas según idioma
-    const labels = {
-      abstract: { es:"Presentación de Título y resumen", en:"Title & Abstract Submission", pt:"Submissão de Título e Resumo" },
-      paper:    { es:"Envío de artículo", en:"Paper Submission", pt:"Submissão de Artigo" },
-      notification: { es:"Notificación", en:"Notification", pt:"Notificação" },
-      cameraReady:  { es:"Versión final", en:"Final Version", pt:"Versão Final" }
-    };
+    // -------- Filas --------
+    const filas = [
+      { key: "abstract", label: { es: "Presentación de Título y resumen", en: "Title & Abstract Submission", pt: "Submissão de Título e Resumo" }[lang] },
+      { key: "paper", label: { es: "Envío de artículo", en: "Paper Submission", pt: "Submissão de Artigo" }[lang] },
+      { key: "notification", label: { es: "Notificación", en: "Notification", pt: "Notificação" }[lang] },
+      { key: "cameraReady", label: { es: "Versión final", en: "Final Version", pt: "Versão Final" }[lang] }
+    ];
 
-    Object.keys(labels).forEach(key => {
-      let rowHTML = `<tr><td><strong>${labels[key][lang]}</strong></td>`;
+    filas.forEach(fila => {
+      let rowHTML = `<tr><td><strong>${fila.label}</strong></td>`;
       ordenTracks.forEach(track => {
         if (data[track]) {
-          rowHTML += `<td>${renderFecha(data[track][key])}</td>`;
+          rowHTML += `<td>${renderFecha(data[track][fila.key])}</td>`;
         }
       });
       rowHTML += `</tr>`;
       tbody.innerHTML += rowHTML;
     });
+
   })
   .catch(err => console.error("Error cargando fechas:", err));
