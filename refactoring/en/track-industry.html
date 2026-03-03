@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WER2026 - Industry Track</title>
+  <title>WER2026 - Industry Track </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="description" content="This is meta description">
   <meta name="author" content="Themefisher">
@@ -48,63 +48,19 @@
             <h2 class="mb-4" style="line-height:1.5">Industry Track (WER-IT)</h2>
 
             <div class="content">
-              <h3 class="text-success">Important Dates</h3>
-              <ul>
-                <li>Abstract submission deadline: <b>April 6th, 2026</b></li>
-                <li>Paper submission: <b>April 13th, 2026</b></li>
-                <li>Notification: <b>May 11th, 2026</b></li>
-                <li>Camera-ready: <b>May 30th, 2026</b></li>
-              </ul>
-
-              <h3 class="text-success">Topics of Interest</h3>
-              <p>Topics of interest are listed below. List is not exhaustive.:</p>
-              <ul>
-                <li>Requirements survey, collection, analysis, documentation, management, traceability, validation, verification, and commitment;</li>
-                <li>Requirements engineering education and training;</li>
-                <li>Requirements engineering for specific software development paradigms, e.g., industry-oriented, agent-oriented, scenario-oriented, model-driven, or service-oriented;</li>
-                <li>Requirements engineering for specific domains, e.g., mobile applications, web applications, or mission-critical applications;</li>
-                <li>Requirements engineering in agile methodologies;</li>
-                <li>Requirements specification languages, methods, and tools;</li>
-                <li>Model-oriented software engineering;</li>
-                <li>Compliance with legal and regulatory frameworks.</li>
-              </ul>
-
-              <h3 id="heading-1" class="text-success">Submission Guidelines</h3>
-              <p>
-                The Industry Track aims to promote cooperation between academia, industry, and the services sectors through posters, brief application reports, papers, and discussions. This track seeks to bring together professionals from these sectors to share their knowledge and experiences with the Requirements Engineering community. In addition to the above, the Industry Track will host papers that specifically report on problems and experiences related to Requirements Engineering and its tools in practice. These papers will be reviewed by an independent committee composed of industry representatives and evaluated based on their practical relevance rather than their scientific merit.
-              </p>
-              <p>
-                The Industry Track allows participants to present their latest initiatives, exchange experiences, and network with Requirements Engineering experts. Organizations are invited to present their practical cases to an international audience. The Industry Sector will include:
-              </p>
-              <ul>
-                <li>Case study presentations will be accepted for submission, and the most outstanding case will be eligible for the Requirements Engineering Innovation Award; and</li>
-                <li>Invited speakers to present and discuss future trends in Requirements Engineering.</li>
-              </ul>
-              <p>
-                Case study papers may have a maximum length of eight pages and must follow the 
-                <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a> page format. All papers must be submitted through the EasyChair submission system, in PDF format only. Submissions must be written in Portuguese, Spanish, or English. The paper title must be written in Portuguese, Spanish, and English.
-              </p>
-              <p>
-                Any paper that exceeds the page limit, is outside the scope of the conference, or does not follow the formatting guidelines will be rejected by the committee.
-              </p>
-              <p>Case study papers must include the following elements:</p>
-              <ul>
-                <li>Abstract</li>
-                <li>Introduction</li>
-                <li>Case description</li>
-                <li>Solution and results</li>
-                <li>Conclusion and lessons learned</li>
-                <li>References: At least 3 bibliographic references.</li>
-              </ul>
-              <p>
-                All submissions will be reviewed by at least three members of the Program Committee.
-              </p>
-              <p>
-                All accepted papers will be published with Open Access through the repository 
-                <b><a href="https://werpapers.dimap.ufrn.br/">WERpapers</a></b>.
-              </p>
-
-              </a><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Submission</a>
+              <h3 id="heading-1" class="text-success">Important dates</h3>
+              <!-- Fechas -->
+              <ul id="fechas-lista"></ul>
+              <!-- INFORMACION ESPECIFICA DEL CFP -->
+              <p>The Industry Track aims to foster collaboration between academia and industry.</p>
+              <!-- Topicos de interes -->
+              <div class="content">
+                <div id="temas-container"></div>
+              </div>
+              <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
+               <div class="content">
+                <div id="instrucciones-container"></div>
+              </div>
               
 
               <h3 class="text-success">Organization</h3>
@@ -127,10 +83,17 @@
 
 <!-- footer -->
   <div id="footer"></div>
+    <div id="footer"></div>
     <script>
       $(function(){
         $('#footer').load('footer.html')
       })
+      $(function(){
+        $('#temas-container').load('topics-content.html');
+      });
+      $(function(){
+        $('#instrucciones-container').load('submision-instruction.html');
+      });
     </script>
 <!-- footer -->
 
@@ -140,6 +103,7 @@
   <script src="../plugins/bootstrap/bootstrap.min.js"></script>
   <script src="../plugins/slick/slick.min.js"></script>
   <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+  <script src="./js/cargar_fechas_it.js"></script>
 
   <!-- Main Script -->
   <script src="../js/script.js"></script>
