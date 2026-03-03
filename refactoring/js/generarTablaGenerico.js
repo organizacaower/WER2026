@@ -6,12 +6,14 @@ fetch("../fechas_formateadas.json")
     const thead = document.getElementById("tabla-head");
     const tbody = document.getElementById("tabla-body");
 
-    // Detectar idioma de la ruta
+    // Detectar idioma desde la ruta actual
     const parts = window.location.pathname.split("/");
-    let lang = parts[2];
-    if (!["es","en","pt"].includes(lang)) lang = "es";
+    let lang = parts[2]; 
+    if (!["es", "en", "pt"].includes(lang)) {
+      lang = "es"; // fallback si no encuentra idioma válido
+    }
 
-    // Mapear idioma a locale completo
+    // Mapear idioma a un locale completo para Intl.DateTimeFormat
     const localeMap = {
       es: "es-ES",
       en: "en-US",
@@ -19,20 +21,20 @@ fetch("../fechas_formateadas.json")
     };
     const locale = localeMap[lang] || "es-ES";
 
-    // Crear formateador de fecha según idioma
+    // Crear formateador de fecha según idioma (Intl.DateTimeFormat)
     const dateFormatter = new Intl.DateTimeFormat(locale, {
       year: "numeric",
       month: "long",
       day: "numeric"
     });
 
-    // Parsea dd/mm/aaaa a Date
+    // Función para convertir dd/mm/aaaa → Date
     function parseDMY(str) {
       const [dd, mm, yyyy] = str.split("/");
       return new Date(`${yyyy}-${mm}-${dd}`);
     }
 
-    // Renderiza la celda de fecha
+    // Renderiza una celda de fecha
     function renderFecha(fechaObj) {
       let html = "";
       if (fechaObj.status.includes("extended") && fechaObj.original) {
@@ -44,7 +46,7 @@ fetch("../fechas_formateadas.json")
       return html;
     }
 
-    // Encabezado de la tabla
+    // Construir encabezado de tabla
     let headerHTML = `<tr><th></th>`;
     ordenTracks.forEach(track => {
       if (data[track]) headerHTML += `<th>${data[track].nombre}</th>`;
@@ -52,7 +54,7 @@ fetch("../fechas_formateadas.json")
     headerHTML += `</tr>`;
     thead.innerHTML = headerHTML;
 
-    // Diccionario de textos
+    // Etiquetas traducidas por idioma
     const labels = {
       es: {
         title: "Fechas Importantes",
@@ -77,11 +79,11 @@ fetch("../fechas_formateadas.json")
       }
     };
 
-    // Actualizar título
+    // Actualizar título de tabla automáticamente si existe un elemento con id="important-dates-title"
     const titleEl = document.getElementById("important-dates-title");
     if (titleEl) titleEl.textContent = labels[lang].title;
 
-    // Filas traducidas
+    // Generar filas de datos con traducciones
     const filas = [
       { key: "abstract", label: labels[lang].abstract },
       { key: "paper", label: labels[lang].paper },
