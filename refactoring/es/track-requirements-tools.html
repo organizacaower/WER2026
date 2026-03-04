@@ -28,7 +28,21 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
+<body data-track="SRTT">
+
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+      <div id="navbar"></div>
+  
+      <script>
+        $(function(){
+          $('#navbar').load('navbar.html')
+        })
+        
+  
+        document.getElementById('change-lang').innerHTML = 'Chau'
+      </script>
+    </header>
   <!-- Navigation -->
   <header class="navigation bg-tertiary">
     <div id="navbar"></div>
@@ -114,7 +128,7 @@
   <script src="../plugins/bootstrap/bootstrap.min.js"></script>
   <script src="../plugins/slick/slick.min.js"></script>
   <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
-  <script src="./js/cargar_fechas_rtt.js"></script>
+  <script src="../js/cfp_fechasGenerico.js"></script>
 
   <!-- Main Script -->
   <script src="../js/script.js"></script>
