@@ -21,7 +21,6 @@ fetch("../fechas_formateadas.json")
       pt: "pt-BR"
     };
     const locale = localeMap[lang];
-    console.log(locale)
 
     // Formateador con locale válido
     const dateFormatter = new Intl.DateTimeFormat(locale, {
