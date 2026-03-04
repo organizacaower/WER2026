@@ -20,7 +20,7 @@ fetch("../fechas_formateadas.json")
 
     // Si se encontró, usamos ese; si no, fallback a 'es'
     let lang = match ? match[1] : "es";
-    console.log("Idioma detectado:", lang);
+
 
     // 🔤 Mapear a locales completos para Intl.DateTimeFormat
     const localeMap = {
