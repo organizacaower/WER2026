@@ -28,16 +28,16 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
+<body data-track="SRTT">
   <!-- Navigation -->
   <header class="navigation bg-tertiary">
     <div id="navbar"></div>
 
     <script>
-      $(function(){
+      $(function () {
         $('#navbar').load('navbar.html')
       })
-      
+
 
       document.getElementById('change-lang').innerHTML = 'Chau'
     </script>
@@ -50,10 +50,10 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="mb-5">
-            <h2 class="mb-4" style="line-height:1.5">Track de herramientas en Requisitos de Software (WER-SRTT)</h2>
+            <h2 class="mb-4" style="line-height:1.5">Demonstrações de Ferramentas de Requisitos (WER-SRTT)</h2>
 
             <div class="content">
-              <h3 id="heading-1" class="text-success">Fechas importantes</h3>
+              <h3 id="heading-1" class="text-success">Datas Importantes</h3>
               <!-- Fechas -->
               <ul id="fechas-lista"></ul>
               <!-- INFORMACION ESPECIFICA DEL CFP -->
@@ -63,24 +63,24 @@
                 <div id="temas-container"></div>
               </div>
               <!-- Instrucciones de submision (Incrustamos porque son todos iguales)-->
-               <div class="content">
+              <div class="content">
                 <div id="instrucciones-container"></div>
               </div>
-              
-              <h3 id="heading-1" class="text-success">Organización</h3>
+
+              <h3 id="heading-1" class="text-success">Organização</h3>
 
               <ul>
                 <li>
-                  <h4 id="heading-4">Chairs del track Requirements Tools</h4>
+                  <h4 id="heading-4">Trilha Demonstrações de Ferramentas de Requisitos Chairs</h4>
                   <ul>
                     <li>Rafael Parizi, Instituto Federal Farroupilha, Brasil</li>
-                    <li>Victor Santander, Universidade  Estadual do Oeste do Paraná, Brasil</li>
+                    <li>Victor Santander, Universidade Estadual do Oeste do Paraná, Brasil</li>
                   </ul>
                 </li>
                 <li>
-                  <h4 id="heading-4">Comité de Programa</h4>
+                  <h4 id="heading-4">Program Committee</h4>
                   <ul>
-                    <li>En breve</li>
+                    <li>Em breve</li>
                   </ul>
                 </li>
               </ul>
@@ -93,20 +93,20 @@
   </div>
 
 
-<!-- footer -->
+  <!-- footer -->
   <div id="footer"></div>
-    <script>
-      $(function(){
-        $('#footer').load('footer.html')
-      })
-      $(function(){
-        $('#temas-container').load('topics-content.html');
-      });
-      $(function(){
-        $('#instrucciones-container').load('submision-instruction.html');
-      });
-    </script>
-<!-- footer -->
+  <script>
+    $(function () {
+      $('#footer').load('footer.html')
+    })
+    $(function () {
+      $('#temas-container').load('topics-content.html');
+    });
+    $(function () {
+      $('#instrucciones-container').load('submision-instruction.html');
+    });
+  </script>
+  <!-- footer -->
 
 
   <!-- # JS Plugins -->
@@ -118,7 +118,7 @@
 
   <!-- Main Script -->
   <script src="../js/script.js"></script>
-
+  <script src="../js/cfp_fechasGenerico.js"></script>
 </body>
 
 </html>
