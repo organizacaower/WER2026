@@ -6,13 +6,14 @@ fetch("../fechas_formateadas.json")
     const thead = document.getElementById("tabla-head");
     const tbody = document.getElementById("tabla-body");
 
-    // Detectar idioma en la URL
-    const parts = window.location.pathname.split("/");
-    let lang = parts[2];
-    if (!["es","en","pt"].includes(lang)) {
-      lang = "es"; // fallback
-    }
+    // Detectar idioma en la URL usando expresión regular
+    const url = window.location.pathname;
 
+    // Intentar encontrar 'es', 'en' o 'pt' en cualquier parte de la ruta
+    const match = url.match(/\/(es|en|pt)(?:\/|$)/);
+
+    // Si se encontró, usamos ese; si no, fallback a 'es'
+    let lang = match ? match[1] : "es";
     // Mapear a locales completos
     const localeMap = {
       es: "es-ES",
@@ -20,6 +21,7 @@ fetch("../fechas_formateadas.json")
       pt: "pt-BR"
     };
     const locale = localeMap[lang];
+    console.log(locale)
 
     // Formateador con locale válido
     const dateFormatter = new Intl.DateTimeFormat(locale, {
