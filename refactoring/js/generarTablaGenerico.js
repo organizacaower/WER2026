@@ -21,6 +21,7 @@ fetch("../fechas_formateadas.json")
       pt: "pt-BR"
     };
     const locale = localeMap[lang];
+    
 
     // Formateador con locale válido
     const dateFormatter = new Intl.DateTimeFormat(locale, {
@@ -31,7 +32,7 @@ fetch("../fechas_formateadas.json")
 
     function parseDMY(str) {
       const [dd, mm, yyyy] = str.split("/");
-      return new Date(+yyyy, +mm - 1, +dd);
+      return new Date(`${yyyy}-${mm}-${dd}`);
     }
 
     function renderFecha(fechaObj) {
