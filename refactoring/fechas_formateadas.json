@@ -7,19 +7,19 @@
       "status": ["extended"]
     },
     "paper": {
-      "original": null,
+      "original": ["10/03/2026","09/03/2026"],
       "actual": "16/03/2026",
-      "status": []
+      "status": ["extended"]
     },
     "notification": {
-      "original": null,
+      "original": ["10/03/2026","09/03/2026"],
       "actual": "11/05/2026",
-      "status": []
+      "status": ["extended"]
     },
     "cameraReady": {
-      "original": null,
+      "original": ["10/03/2026","09/03/2026"],
       "actual": "30/05/2026",
-      "status": []
+      "status": ["hard"]
     }
   },
   "SRTT": {
