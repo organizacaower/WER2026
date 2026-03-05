@@ -1,6 +1,6 @@
 //traduciones xd
 const countryTranslations = {
-  Brazil: {
+  Brasil: {
     es: "Brasil",
     en: "Brazil",
     pt: "Brasil"
@@ -10,7 +10,7 @@ const countryTranslations = {
     en: "Argentina",
     pt: "Argentina"
   },
-  Germany: {
+  Alemania: {
     es: "Alemania",
     en: "Germany",
     pt: "Alemanha"
