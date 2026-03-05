@@ -69,8 +69,8 @@ fetch("../fechas_formateadas.json")
           : [fechaObj.original];
       }
 
-      // Ordenar originales: más nueva → más vieja
-      originales.sort((a, b) => parseDMY(b) - parseDMY(a));
+      // Ordenar originales: viaja a nueva
+      originales.sort((a, b) => parseDMY(a) - parseDMY(b));
 
       // 👉 Fecha actual (siempre arriba)
       html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
