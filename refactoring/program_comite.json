@@ -8,5 +8,10 @@
     "name": "Persona Y",
     "institution": "Universidad Y",
     "country": "Argentina"
+  },
+  {
+    "name": "Persona Z",
+    "institution": "Universidad Z",
+    "country": "Alemania"
   }
 ]
