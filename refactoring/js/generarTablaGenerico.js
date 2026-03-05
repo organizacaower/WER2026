@@ -36,15 +36,41 @@ fetch("../fechas_formateadas.json")
       d.setDate(d.getDate() + 1);         // sumarle 1 al día
       return d
     }
+    function getUltimaFechaOriginal(original) {
+      if (!original) return null;
 
+      // Si es una sola fecha (string)
+      if (typeof original === "string") return original;
+
+      // Si es un arreglo de fechas ["dd/mm/yyyy", ...]
+      if (Array.isArray(original)) {
+        return original.reduce((max, curr) => {
+          return parseDMY(curr) > parseDMY(max) ? curr : max;
+        });
+      }
+
+      return null;
+    }
     function renderFecha(fechaObj) {
       let html = "";
-      if ((fechaObj.status.includes("extended") || (fechaObj.status.includes("hard"))) && fechaObj.original) {
-        html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
+
+      const ultimaOriginal = getUltimaFechaOriginal(fechaObj.original);
+
+      if (
+        (fechaObj.status.includes("extended") || fechaObj.status.includes("hard")) &&
+        ultimaOriginal
+      ) {
+        html += `<del>${dateFormatter.format(parseDMY(ultimaOriginal))}</del><br>`;
       }
+
       html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
-      if (fechaObj.status.includes("extended")) html += ` <span class="badge bg-warning ms-2">NEW</span>`;
-      if (fechaObj.status.includes("hard"))     html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
+
+      if (fechaObj.status.includes("extended"))
+        html += ` <span class="badge bg-warning ms-2">NEW</span>`;
+
+      if (fechaObj.status.includes("hard"))
+        html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
+
       return html;
     }
 
