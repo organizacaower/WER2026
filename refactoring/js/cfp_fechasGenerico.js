@@ -61,16 +61,18 @@ fetch("../fechas_formateadas.json")
     function renderFecha(fechaObj) {
       let html = "";
 
-      const ultimaOriginal = getUltimaOriginal(fechaObj.original);
-
-      if (
-        (fechaObj.status.includes("extended") ||
-         fechaObj.status.includes("hard")) &&
-        ultimaOriginal
-      ) {
-        html += `<del>${dateFormatter.format(parseDMY(ultimaOriginal))}</del><br>`;
+      // Normalizar originales a array
+      let originales = [];
+      if (fechaObj.original) {
+        originales = Array.isArray(fechaObj.original)
+          ? fechaObj.original
+          : [fechaObj.original];
       }
 
+      // Ordenar originales: más nueva → más vieja
+      originales.sort((a, b) => parseDMY(b) - parseDMY(a));
+
+      // 👉 Fecha actual (siempre arriba)
       html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
 
       if (fechaObj.status.includes("extended"))
@@ -78,6 +80,11 @@ fetch("../fechas_formateadas.json")
 
       if (fechaObj.status.includes("hard"))
         html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
+
+      // 👉 Fechas anteriores tachadas
+      originales.forEach(fecha => {
+        html += `<br><del>${dateFormatter.format(parseDMY(fecha))}</del>`;
+      });
 
       return html;
     }
