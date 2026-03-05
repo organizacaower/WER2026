@@ -39,7 +39,7 @@ fetch("../fechas_formateadas.json")
 
     function renderFecha(fechaObj) {
       let html = "";
-      if (fechaObj.status.includes("extended") && fechaObj.original) {
+      if ((fechaObj.status.includes("extended") || (fechaObj.status.includes("hard"))) && fechaObj.original) {
         html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
       }
       html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
