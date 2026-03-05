@@ -2,9 +2,9 @@
   "RRT": {
     "nombre": "Regular Research Track",
     "abstract": {
-      "original": null,
-      "actual": "09/03/2026",
-      "status": []
+      "original": "09/03/2026",
+      "actual": "10/03/2026",
+      "status": ["extended"]
     },
     "paper": {
       "original": null,
