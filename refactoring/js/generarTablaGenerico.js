@@ -43,8 +43,8 @@ fetch("../fechas_formateadas.json")
         html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
       }
       html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
-      if (fechaObj.status.includes("extended")) html += ` <span class="badge bg-danger ms-2">NEW</span>`;
-      if (fechaObj.status.includes("hard"))     html += ` <span class="badge bg-dark ms-2">HARD DEADLINE</span>`;
+      if (fechaObj.status.includes("extended")) html += ` <span class="badge bg-warning ms-2">NEW</span>`;
+      if (fechaObj.status.includes("hard"))     html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
       return html;
     }
 
