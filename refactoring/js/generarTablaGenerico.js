@@ -31,7 +31,7 @@ fetch("../fechas_formateadas.json")
 
     function parseDMY(str) {
       const [dd, mm, yyyy] = str.split("/");
-      return new Date(`${yyyy}-${mm}-${dd}`);
+      return new Date(`${yyyy}-${mm}-${dd + 1}`);
     }
 
     function renderFecha(fechaObj) {
