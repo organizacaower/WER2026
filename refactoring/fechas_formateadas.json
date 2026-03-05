@@ -25,9 +25,9 @@
   "SRTT": {
     "nombre": "Short Research Track",
     "abstract": {
-      "original": null,
-      "actual": "06/04/2026",
-      "status": []
+      "original": "06/04/2026",
+      "actual": "07/04/2026",
+      "status": ["hard"]
     },
     "paper": {
       "original": null,
