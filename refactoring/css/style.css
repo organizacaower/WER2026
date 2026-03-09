@@ -50,7 +50,10 @@
     scroll-behavior: smooth;
   }
 }
-
+.badge.bg-warning,
+.badge.bg-danger{
+  color: white;
+}
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
