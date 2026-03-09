@@ -51,28 +51,37 @@ fetch("../fechas_formateadas.json")
 
       return null;
     }
-    function renderFecha(fechaObj) {
-      let html = "";
+function renderFecha(fechaObj) {
+  let html = "";
 
-      const ultimaOriginal = getUltimaFechaOriginal(fechaObj.original);
+  if (
+    (fechaObj.status.includes("extended") || fechaObj.status.includes("hard")) &&
+    fechaObj.original
+  ) {
 
-      if (
-        (fechaObj.status.includes("extended") || fechaObj.status.includes("hard")) &&
-        ultimaOriginal
-      ) {
-        html += `<del>${dateFormatter.format(parseDMY(ultimaOriginal))}</del><br>`;
-      }
-
-      html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
-
-      if (fechaObj.status.includes("extended"))
-        html += ` <span class="badge bg-warning ms-2">NEW</span>`;
-
-      if (fechaObj.status.includes("hard"))
-        html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
-
-      return html;
+    // Si original es array → tachar todas
+    if (Array.isArray(fechaObj.original)) {
+      fechaObj.original.forEach(fecha => {
+        html += `<del>${dateFormatter.format(parseDMY(fecha))}</del><br>`;
+      });
+    } 
+    // Si es solo una fecha
+    else {
+      html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
     }
+  }
+
+  // fecha actual
+  html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
+
+  if (fechaObj.status.includes("extended"))
+    html += ` <span class="badge bg-warning ms-2">NEW</span>`;
+
+  if (fechaObj.status.includes("hard"))
+    html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
+
+  return html;
+}
 
     let headerHTML = `<tr><th></th>`;
     ordenTracks.forEach(track => {
