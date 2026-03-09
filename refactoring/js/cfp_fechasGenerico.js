@@ -74,11 +74,11 @@ fetch("../fechas_formateadas.json")
       
       // 👉 Fechas anteriores tachadas
       originales.forEach(fecha => {
-        html += `<del>${dateFormatter.format(parseDMY(fecha))}</del>`;
+        html += `<del>${dateFormatter.format(parseDMY(fecha))} </del>`;
       });
 
       // 👉 Fecha actual 
-      html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
+      html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))} </strong>`;
 
       if (fechaObj.status.includes("extended"))
         html += ` <span class="badge bg-warning ms-2">NEW</span>`;
