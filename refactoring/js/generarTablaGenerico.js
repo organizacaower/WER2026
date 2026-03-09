@@ -51,25 +51,25 @@ fetch("../fechas_formateadas.json")
 
       return null;
     }
-function renderFecha(fechaObj) {
-  let html = "";
+    function renderFecha(fechaObj) {
+      let html = "";
 
-  if (
-    (fechaObj.status.includes("extended") || fechaObj.status.includes("hard")) &&
-    fechaObj.original
-  ) {
+      if (
+        (fechaObj.status.includes("extended") || fechaObj.status.includes("hard")) &&
+        fechaObj.original
+      ) {
 
-    // Si original es array → tachar todas
-    if (Array.isArray(fechaObj.original)) {
-      fechaObj.original.forEach(fecha => {
-        html += `<del>${dateFormatter.format(parseDMY(fecha))}</del><br>`;
-      });
-    } 
-    // Si es solo una fecha
-    else {
-      html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
-    }
-  }
+        // Si original es array → tachar todas
+        if (Array.isArray(fechaObj.original)) {
+          fechaObj.original.forEach(fecha => {
+            html += `<del>${dateFormatter.format(parseDMY(fecha))}</del><br>`;
+          });
+        } 
+        // Si es solo una fecha
+        else {
+          html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
+        }
+      }
 
   // fecha actual
   html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;

@@ -83,7 +83,7 @@ fetch("../fechas_formateadas.json")
 
       // 👉 Fechas anteriores tachadas
       originales.forEach(fecha => {
-        html += `<br><del>${dateFormatter.format(parseDMY(fecha))}</del>`;
+        html += `<del>${dateFormatter.format(parseDMY(fecha))}</del>`;
       });
 
       return html;
