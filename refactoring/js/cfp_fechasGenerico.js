@@ -71,8 +71,13 @@ fetch("../fechas_formateadas.json")
 
       // Ordenar originales: viaja a nueva
       originales.sort((a, b) => parseDMY(a) - parseDMY(b));
+      
+      // 👉 Fechas anteriores tachadas
+      originales.forEach(fecha => {
+        html += `<del>${dateFormatter.format(parseDMY(fecha))}</del>`;
+      });
 
-      // 👉 Fecha actual (siempre arriba)
+      // 👉 Fecha actual 
       html += `<strong>${dateFormatter.format(parseDMY(fechaObj.actual))}</strong>`;
 
       if (fechaObj.status.includes("extended"))
@@ -80,11 +85,6 @@ fetch("../fechas_formateadas.json")
 
       if (fechaObj.status.includes("hard"))
         html += ` <span class="badge bg-danger ms-2">HARD DEADLINE</span>`;
-
-      // 👉 Fechas anteriores tachadas
-      originales.forEach(fecha => {
-        html += `<del>${dateFormatter.format(parseDMY(fecha))}</del>`;
-      });
 
       return html;
     }
