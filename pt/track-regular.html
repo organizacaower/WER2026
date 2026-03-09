@@ -26,7 +26,7 @@
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  </head>
+</head>
 
 <body>
   <!-- Navigation -->
@@ -34,10 +34,10 @@
     <div id="navbar"></div>
 
     <script>
-      $(function(){
+      $(function () {
         $('#navbar').load('navbar.html')
       })
-      
+
 
       document.getElementById('change-lang').innerHTML = 'Chau'
     </script>
@@ -54,7 +54,12 @@
             <div class="content">
               <h3 id="heading-1" class="text-success">Datas importantes</h3>
               <ul>
-                <li>Submissão de Título e Resumo: <b>9 de março de 2026</b></li>
+                <li>Submissão de Título e Resumo: <s>9 de março de 2026</s>
+                  <b>16 de março de 2026</b>
+                  <span style="background:red; color:white; padding:2px 6px; font-size:12px; border-radius:3px;">
+                    New Deadline
+                  </span>
+                </li>
                 <li>Submissão do Artigo: <b>16 de março de 2026</b></li>
                 <li>Notificação: <b>11 de maio de 2026</b></li>
                 <li>Versão final: <b>30 de maio de 2026</b></li>
@@ -63,10 +68,13 @@
               <h3 id="heading-1" class="text-success">Tópicos de interesse</h3>
               <p>Os tópicos de interesse não estão listados de forma exaustiva:</p>
               <ul>
-                <li>Levantamento, análise e documentação, gerenciamento, rastreabilidade, priorização, validação, verificação e negociação de requisitos;</li>
+                <li>Levantamento, análise e documentação, gerenciamento, rastreabilidade, priorização, validação,
+                  verificação e negociação de requisitos;</li>
                 <li>Educação e treinamento em engenharia de requisitos;</li>
-                <li>Engenharia de requisitos para paradigmas de desenvolvimento de software específicos, como orientado a agentes, orientado a aspectos, orientado a modelos ou orientado a serviços;</li>
-                <li>Engenharia de requisitos para campos específicos, como sistemas de aplicativos móveis, baseados na Web ou de segurança crítica;</li>
+                <li>Engenharia de requisitos para paradigmas de desenvolvimento de software específicos, como orientado
+                  a agentes, orientado a aspectos, orientado a modelos ou orientado a serviços;</li>
+                <li>Engenharia de requisitos para campos específicos, como sistemas de aplicativos móveis, baseados na
+                  Web ou de segurança crítica;</li>
                 <li>Engenharia de requisitos em metodologias ágeis;</li>
                 <li>Linguagens, métodos, processos e ferramentas para especificação de requisitos;</li>
                 <li>Engenharia de software orientada a modelos;</li>
@@ -79,12 +87,23 @@
                   href="https://easychair.org/conferences/?conf=wer2026">Easychair</a> e considerando o formato <b><a
                     href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS
                   </a></b>. Submissões devem ser escritas em Portugues, Espanhol ou Inglês.</p>
-              <p>Artigos apresentando resultados originais sobre pesquisa, ensino e pontos de vista da indústria em todos os aspectos da Engenharia de Requisitos são bem-vindos. O processo de seleção considerará aplicabilidade e relevância para Engenharia de Requisitos, originalidade e clareza.</p>
-              <p>O processo de revisão é Double-blind. Todas as submissões (e materiais suplementares) devem ser adequadamente anonimizados de acordo com as seguintes diretrizes: Os nomes e afiliações dos autores não devem estar visíveis em nenhum lugar do artigo. Os agradecimentos devem ser anonimizados ou removidos para o processo de revisão. As autocitações devem ser incluídas quando necessário, mas devem usar a terceira pessoa. Por exemplo, "como mostrado em nosso estudo anterior [2]" não é permitido, enquanto "como mostrado em Smith et al. [2]" é aceitável (em neste caso, a citação [2] NÃO quebra o anonimato). Os logotipos e outras afiliações organizacionais nas imagens devem ser desfocados. Siga estas diretrizes para evitar que os envios sejam rejeitados sem revisão.</p>
-              <p><b>Artigos completos <b>não devem exceder 14 páginas</b>, formatados de acordo com o formato da página <b><a
-                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a></b>.
+              <p>Artigos apresentando resultados originais sobre pesquisa, ensino e pontos de vista da indústria em
+                todos os aspectos da Engenharia de Requisitos são bem-vindos. O processo de seleção considerará
+                aplicabilidade e relevância para Engenharia de Requisitos, originalidade e clareza.</p>
+              <p>O processo de revisão é Double-blind. Todas as submissões (e materiais suplementares) devem ser
+                adequadamente anonimizados de acordo com as seguintes diretrizes: Os nomes e afiliações dos autores não
+                devem estar visíveis em nenhum lugar do artigo. Os agradecimentos devem ser anonimizados ou removidos
+                para o processo de revisão. As autocitações devem ser incluídas quando necessário, mas devem usar a
+                terceira pessoa. Por exemplo, "como mostrado em nosso estudo anterior [2]" não é permitido, enquanto
+                "como mostrado em Smith et al. [2]" é aceitável (em neste caso, a citação [2] NÃO quebra o anonimato).
+                Os logotipos e outras afiliações organizacionais nas imagens devem ser desfocados. Siga estas diretrizes
+                para evitar que os envios sejam rejeitados sem revisão.</p>
+              <p><b>Artigos completos <b>não devem exceder 14 páginas</b>, formatados de acordo com o formato da página
+                  <b><a
+                      href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a></b>.
               </p>
-              <p>Qualquer artigo que exceda o limite de páginas, não esteja dentro do escopo da conferência ou não siga as diretrizes de formatação será rejeitado sem revisão.</p>
+              <p>Qualquer artigo que exceda o limite de páginas, não esteja dentro do escopo da conferência ou não siga
+                as diretrizes de formatação será rejeitado sem revisão.</p>
               <p>Todas as submissões serão revisadas por pelo menos três membros do Comitê do Programa.</p>
 
               <p>Todos os trabalhos aceitos serão publicados com Acesso Aberto através do repositório <a
@@ -93,7 +112,8 @@
 
               <p><a class="btn btn-primary mt-3" href="https://easychair.org/conferences/?conf=wer2026">Submissão</a>
               </p>
-              <p>Para informações adicionais por favor entrar em contato através do endereço: organizacao.wer@gmail.com</p>
+              <p>Para informações adicionais por favor entrar em contato através do endereço: organizacao.wer@gmail.com
+              </p>
               <h3 id="heading-1" class="text-success">Organização</h3>
 
               <ul>
@@ -102,7 +122,8 @@
                   </h4>
                   <ul>
                     <li>Marcela Ridao, Universidad Nacional del Centro de la Provincia de Buenos Aires, Argentina</li>
-                    <li>Henrique Prado de Sá Sousa,Universidade Federal do Estado do Rio de Janeiro (UNIRIO), Brasil</li>
+                    <li>Henrique Prado de Sá Sousa,Universidade Federal do Estado do Rio de Janeiro (UNIRIO), Brasil
+                    </li>
                     <li>Pablo Thomas, Universidad Nacional de La Plata, Argentina</li>
                   </ul>
                 </li>
@@ -120,14 +141,14 @@
       </div>
     </div>
 
-<!-- footer -->
-  <div id="footer"></div>
+    <!-- footer -->
+    <div id="footer"></div>
     <script>
-      $(function(){
+      $(function () {
         $('#footer').load('footer.html')
       })
     </script>
-<!-- footer -->
+    <!-- footer -->
 
     <!-- # JS Plugins -->
     <script src="../plugins/jquery/jquery.min.js"></script>
