@@ -1,16 +1,46 @@
 //traduciones xd
 const countryTranslations = {
-  Brasil: {
+  BR: {
     es: "Brasil",
     en: "Brazil",
     pt: "Brasil"
   },
-  Argentina: {
+  AR: {
     es: "Argentina",
     en: "Argentina",
     pt: "Argentina"
   },
-  Alemania: {
+  ES: {
+    es: "España",
+    en: "España",
+    pt: "España"
+  },
+  CL: {
+    es: "Chile",
+    en: "Chile",
+    pt: "Chile"
+  },
+  UY: {
+    es: "Uruguay",
+    en: "Uruguay",
+    pt: "Uruguay"
+  },
+  EC: {
+    es: "Ecuador",
+    en: "Ecuador",
+    pt: "Ecuador"
+  },
+  PT: {
+    es: "Portugal",
+    en: "Portugal",
+    pt: "Portugal"
+  },
+  PE: {
+    es: "Peru",
+    en: "Peru",
+    pt: "Peru"
+  },
+  DE: {
     es: "Alemania",
     en: "Germany",
     pt: "Alemanha"
