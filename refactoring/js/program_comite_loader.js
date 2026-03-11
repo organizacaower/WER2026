@@ -73,10 +73,8 @@ async function loadCommittee(){
   const pageTrack = document.body.getAttribute("data-track");
 
   // convertir a formato del JSON
-  console.log("TRACK PAGINA: " + pageTrack)
   const jsonTrack = "WER-" + pageTrack;
-  console.log(jsonTrack)
-
+  const cantidad  = 0
   try{
 
     const response = await fetch("../program_comite.json");
@@ -88,9 +86,9 @@ async function loadCommittee(){
       .filter(person => person.track == jsonTrack)
       .forEach(person => {
 
-        console.log("PERSONA" + jsonTrack)
+
         const countries = translateCountries(person.country,lang);
-        console.log("COUNTRIES" + countries)
+        cantidad = cantidad + 1;
 
         const li = document.createElement("li");
         li.textContent =
@@ -102,6 +100,7 @@ async function loadCommittee(){
   }catch(error){
     console.error("Error cargando comité:",error);
   }
+  console.log("Cantidad de miembros del comité: " + cantidad);
 }
 
 document.addEventListener("DOMContentLoaded",loadCommittee);
