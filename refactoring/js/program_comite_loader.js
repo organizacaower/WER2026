@@ -55,31 +55,49 @@ function getLanguageFromURL() {
 
   return "en"; // besto
 }
-function translateCountry(country, lang) {
-  return countryTranslations[country]?.[lang] || country;
+function translateCountries(countryString,lang){
+
+  const codes = countryString.split(",").map(c => c.trim());
+
+  return codes
+    .map(code => countryTranslations[code]?.[lang] || code)
+    .join(", ");
 }
 
-async function loadCommittee() {
+async function loadCommittee(){
+
   const lang = getLanguageFromURL();
   const list = document.getElementById("committee-list");
 
-  try {
+  // id del body: RT
+  const pageTrack = document.body.id;
+
+  // convertir a formato del JSON
+  const jsonTrack = "WER-" + pageTrack;
+
+  try{
+
     const response = await fetch("../program_comite.json");
     const committee = await response.json();
 
     list.innerHTML = "";
 
-    committee.forEach(person => {
-      const country = translateCountry(person.country, lang);
+    committee
+      .filter(person => person.track === jsonTrack)
+      .forEach(person => {
 
-      const li = document.createElement("li");
-      li.textContent = `${person.name}, ${person.institution}, ${country}`;
-      list.appendChild(li);
-    });
+        const countries = translateCountries(person.country,lang);
 
-  } catch (error) {
-    console.error("Error cargando comité:", error);
+        const li = document.createElement("li");
+        li.textContent =
+          `${person.name}, ${person.institution}, ${countries}`;
+
+        list.appendChild(li);
+      });
+
+  }catch(error){
+    console.error("Error cargando comité:",error);
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadCommittee);
+document.addEventListener("DOMContentLoaded",loadCommittee);
