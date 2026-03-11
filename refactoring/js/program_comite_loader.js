@@ -70,9 +70,10 @@ async function loadCommittee(){
   const list = document.getElementById("committee-list");
 
   // id del body: RRT
-  const pageTrack = document.body.id;
+  const pageTrack = document.body.getAttribute("data-track");
 
   // convertir a formato del JSON
+  console.log("TRACK PAGINA: " + pageTrack)
   const jsonTrack = "WER-" + pageTrack;
   console.log(jsonTrack)
 
