@@ -74,7 +74,7 @@ async function loadCommittee(){
 
   // convertir a formato del JSON
   const jsonTrack = "WER-" + pageTrack;
-  const cantidad  = 0
+  let cantidad  = 0
   try{
 
     const response = await fetch("../program_comite.json");
