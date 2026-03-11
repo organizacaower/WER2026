@@ -12,23 +12,23 @@ const countryTranslations = {
   },
   ES: {
     es: "España",
-    en: "España",
-    pt: "España"
+    en: "Spain",
+    pt: "Espanha"
   },
   CL: {
     es: "Chile",
-    en: "Chile",
-    pt: "Chile"
+    en: "Chili",
+    pt: "Pimentão"
   },
   UY: {
     es: "Uruguay",
     en: "Uruguay",
-    pt: "Uruguay"
+    pt: "Uruguai"
   },
   EC: {
     es: "Ecuador",
     en: "Ecuador",
-    pt: "Ecuador"
+    pt: "Equador"
   },
   PT: {
     es: "Portugal",
