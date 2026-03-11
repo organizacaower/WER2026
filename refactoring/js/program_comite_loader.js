@@ -69,11 +69,12 @@ async function loadCommittee(){
   const lang = getLanguageFromURL();
   const list = document.getElementById("committee-list");
 
-  // id del body: RT
+  // id del body: RRT
   const pageTrack = document.body.id;
 
   // convertir a formato del JSON
   const jsonTrack = "WER-" + pageTrack;
+  console.log(jsonTrack)
 
   try{
 
@@ -81,12 +82,14 @@ async function loadCommittee(){
     const committee = await response.json();
 
     list.innerHTML = "";
-
+    
     committee
-      .filter(person => person.track === jsonTrack)
+      .filter(person => person.track == jsonTrack)
       .forEach(person => {
 
+        console.log("PERSONA" + jsonTrack)
         const countries = translateCountries(person.country,lang);
+        console.log("COUNTRIES" + countries)
 
         const li = document.createElement("li");
         li.textContent =
