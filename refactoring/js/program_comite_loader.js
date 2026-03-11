@@ -17,8 +17,8 @@ const countryTranslations = {
   },
   CL: {
     es: "Chile",
-    en: "Chili",
-    pt: "Pimentão"
+    en: "Chile",
+    pt: "Chile"
   },
   UY: {
     es: "Uruguay",
