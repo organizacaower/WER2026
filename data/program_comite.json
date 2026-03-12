@@ -1,0 +1,706 @@
+[
+  {
+    "name": "Camilo Almendra",
+    "email": "camilo.almendra@ufc.br",
+    "track": "WER-IT",
+    "institution": "Universidade Federal do Ceará",
+    "acronimo": "UFC",
+    "country": "BR"
+  },
+  {
+    "name": "Enrique Fernández",
+    "email": "enfernandez@uno.edu.ar",
+    "track": "WER-IT",
+    "institution": "Universidad Nacional del Oeste",
+    "acronimo": "UNO",
+    "country": "AR"
+  },
+  {
+    "name": "Henrique Prado de Sá Sousa",
+    "email": "hsousa@uniriotec.br",
+    "track": "WER-IT",
+    "institution": "Universidade Federal do Estado do Rio de Janeiro",
+    "acronimo": "UNIRIO",
+    "country": "BR"
+  },
+  {
+    "name": "Jéssyka Vilela",
+    "email": "jffv@cin.ufpe.br",
+    "track": "WER-IT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Jorge Hochstetter-Diez",
+    "email": "jorge.hochstetter@ufrontera.cl",
+    "track": "WER-IT",
+    "institution": "Universidad de La Frontera",
+    "acronimo": "UFRO",
+    "country": "CL"
+  },
+  {
+    "name": "Juan Pablo Carvallo",
+    "email": "jpcarvallo@gmail.com",
+    "track": "WER-IT",
+    "institution": "Universidad Católica de Cuenca",
+    "acronimo": "UCACUE",
+    "country": "EC"
+  },
+  {
+    "name": "Karla Donato Fook",
+    "email": "karla@ita.br",
+    "track": "WER-IT",
+    "institution": "Instituto Tecnológico de Aeronáutica",
+    "acronimo": "ITA",
+    "country": "BR"
+  },
+  {
+    "name": "Leandro Antonelli",
+    "email": "lanto@lifia.info.unlp.edu.ar",
+    "track": "WER-IT",
+    "institution": "Universidad Nacional de La Plata",
+    "acronimo": "UNLP",
+    "country": "AR"
+  },
+  {
+    "name": "Luiz Eduardo Galvão Martins",
+    "email": "martinsleg@hotmail.com",
+    "track": "WER-IT",
+    "institution": "Universidade Federal de São Paulo",
+    "acronimo": "UNIFESP",
+    "country": "BR"
+  },
+  {
+    "name": "Marcia Lucena",
+    "email": "marcia.lucena@gmail.com",
+    "track": "WER-IT",
+    "institution": "Universidade Federal do Rio Grande do Norte",
+    "acronimo": "UFRN",
+    "country": "BR"
+  },
+  {
+    "name": "Marcelo Martin Marciszack",
+    "email": "marciszack@gmail.com",
+    "track": "WER-IT",
+    "institution": "Universidad Tecnológica Nacional",
+    "acronimo": "UTN",
+    "country": "AR"
+  },
+  {
+    "name": "María Alejandra Ochoa",
+    "email": "mochoa@uno.edu.ar",
+    "track": "WER-IT",
+    "institution": "Universidad Nacional del Oeste - Huenei IT Services",
+    "acronimo": "UNO",
+    "country": "AR"
+  },
+  {
+    "name": "Julio Cesar Leite",
+    "email": "julioleite@ufba.br",
+    "track": "WER-JFT",
+    "institution": "Universidade Federal da Bahia",
+    "acronimo": "UFBA",
+    "country": "BR"
+  },
+  {
+    "name": "Johnny Marques",
+    "email": "johnny@ita.br",
+    "track": "WER-JFT",
+    "institution": "Instituto Tecnológico de Aeronáutica",
+    "acronimo": "ITA",
+    "country": "BR"
+  },
+  {
+    "name": "Jaelson Castro",
+    "email": "jbc@cin.ufpe.br",
+    "track": "WER-JFT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Oscar Pastor",
+    "email": "opastor@dsic.upv.es",
+    "track": "WER-JFT",
+    "institution": "Universitat Politècnica de València",
+    "acronimo": "UPV",
+    "country": "ES"
+  },
+  {
+    "name": "Fernanda Alencar",
+    "email": "fernandaalenc@gmail.com",
+    "track": "WER-MDT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Carla Silva",
+    "email": "ctlls@cin.ufpe.br",
+    "track": "WER-MDT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Vera Werneck",
+    "email": "vera@ime.uerj.br",
+    "track": "WER-MDT",
+    "institution": "Universidade do Estado do Rio de Janeiro",
+    "acronimo": "UERJ",
+    "country": "BR"
+  },
+  {
+    "name": "Isabel Brito",
+    "email": "isabel.sofia@ipbeja.pt",
+    "track": "WER-MDT",
+    "institution": "Instituto Politécnico de Beja",
+    "acronimo": "IPBeja",
+    "country": "PT"
+  },
+  {
+    "name": "Edna Canedo",
+    "email": "ednacanedo@unb.br",
+    "track": "WER-MDT",
+    "institution": "Universidade de Brasilia",
+    "acronimo": "UnB",
+    "country": "BR"
+  },
+  {
+    "name": "Bruno Souza",
+    "email": "bpsouza@cos.ufrj.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Rio de Janeiro",
+    "acronimo": "UFRJ",
+    "country": "BR"
+  },
+  {
+    "name": "Francisco Ferreira",
+    "email": "francisco.henrique@ufjf.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Rio de Janeiro",
+    "acronimo": "UFRJ",
+    "country": "BR"
+  },
+  {
+    "name": "Rodrigo Zacarias",
+    "email": "rodrigo.zacarias@edu.unirio.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Estado do Rio de Janeiro",
+    "acronimo": "UNIRIO",
+    "country": "BR"
+  },
+  {
+    "name": "Gladys Kaplan",
+    "email": "gladyskaplan@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional de La Matanza",
+    "acronimo": "UNLaM",
+    "country": "AR"
+  },
+  {
+    "name": "Ariel Pasini",
+    "email": "apasini@lidi.info.unlp.edu.ar",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional de La Plata",
+    "acronimo": "UNLP",
+    "country": "AR"
+  },
+  {
+    "name": "María Celia Elizalde",
+    "email": "melizalde@uno.edu.ar",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional del Oeste",
+    "acronimo": "UNO",
+    "country": "AR"
+  },
+  {
+    "name": "Rodrigo Santos",
+    "email": "rps@uniriotec.br",
+    "track": "WER-RRT",
+    "institution": "Universidade do Estado do Rio de Janeiro",
+    "acronimo": "UERJ",
+    "country": "BR"
+  },
+  {
+    "name": "Edgar Sarmiento",
+    "email": "edgarsc22@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Pontifícia Universidade Católica do Rio de Janeiro",
+    "acronimo": "PUC-Rio",
+    "country": "BR"
+  },
+  {
+    "name": "Lyrene Silva",
+    "email": "lyrene@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Rio Grande do Norte",
+    "acronimo": "UFRN",
+    "country": "BR"
+  },
+  {
+    "name": "Vitor E. Silva Souza",
+    "email": "vitor.souza@ufes.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Espírito Santo",
+    "acronimo": "UFES",
+    "country": "BR"
+  },
+  {
+    "name": "Pedro Valderas",
+    "email": "pvalderas@dsic.upv.es",
+    "track": "WER-RRT",
+    "institution": "Universitat Politècnica de València",
+    "acronimo": "UPV",
+    "country": "ES"
+  },
+  {
+    "name": "Rafael Parizi",
+    "email": "rafael.parizi@iffarroupilha.edu.br",
+    "track": "WER-RRT",
+    "institution": "Instituto Federal de Educação Ciência e Tecnologia Farroupilha",
+    "acronimo": "IFFar",
+    "country": "BR"
+  },
+  {
+    "name": "Odette Passos",
+    "email": "odette@ufam.edu.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Amazonas",
+    "acronimo": "UFAM",
+    "country": "BR"
+  },
+  {
+    "name": "Oscar Pastor",
+    "email": "opastor@dsic.upv.es",
+    "track": "WER-RRT",
+    "institution": "Universitat Politècnica de València",
+    "acronimo": "UPV",
+    "country": "ES"
+  },
+  {
+    "name": "Mariana Peixoto",
+    "email": "mariana.peixoto@upe.br",
+    "track": "WER-RRT",
+    "institution": "Universidade de Pernambuco",
+    "acronimo": "UPE",
+    "country": "BR"
+  },
+  {
+    "name": "Fernando Pinciroli",
+    "email": "fernando.pinciroli@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidad Champagnat",
+    "acronimo": "UCH",
+    "country": "AR"
+  },
+  {
+    "name": "Roxana Portugal",
+    "email": "roxana.portugal@ifkw.lmu.de",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional de San Antonio Abad del Cusco - Ludwig Maximilian Universität München",
+    "acronimo": "UNSAAC - LMU",
+    "country": "PE, DE"
+  },
+  {
+    "name": "Carme Quer",
+    "email": "carme.quer@upc.edu",
+    "track": "WER-RRT",
+    "institution": "Universitat Politècnica de Catalunya",
+    "acronimo": "UPC",
+    "country": "ES"
+  },
+  {
+    "name": "Guillermo Rodriguez",
+    "email": "exarodriguez@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional del Centro",
+    "acronimo": "UNICEN",
+    "country": "AR"
+  },
+  {
+    "name": "Juan Sanchez",
+    "email": "jsanchez@dsic.upv.es",
+    "track": "WER-RRT",
+    "institution": "Universitat Politècnica de València",
+    "acronimo": "UPV",
+    "country": "ES"
+  },
+  {
+    "name": "Victor Santander",
+    "email": "vfasantander@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade Estadual do Oeste do Paraná",
+    "acronimo": "Unioeste",
+    "country": "BR"
+  },
+  {
+    "name": "Paulo Malcher",
+    "email": "paulo.malcher@ufra.edu.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal Rural da Amazônia",
+    "acronimo": "UFRA",
+    "country": "BR"
+  },
+  {
+    "name": "Johnny Marques",
+    "email": "johnny@ita.br",
+    "track": "WER-RRT",
+    "institution": "Instituto Tecnológico de Aeronáutica",
+    "acronimo": "ITA",
+    "country": "BR"
+  },
+  {
+    "name": "Leonardo Marques",
+    "email": "lcm@icomp.ufam.edu.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Amazonas",
+    "acronimo": "UFAM",
+    "country": "BR"
+  },
+  {
+    "name": "Jobson Massollar",
+    "email": "jobson@uniriotec.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Estado do Rio de Janeiro",
+    "acronimo": "UNIRIO",
+    "country": "BR"
+  },
+  {
+    "name": "Debora Paiva",
+    "email": "dmbpaiva@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal de Mato Grosso do Sul",
+    "acronimo": "UFMS",
+    "country": "BR"
+  },
+  {
+    "name": "Marisa Daniela Panizzi",
+    "email": "marisa.panizzi@unahur.edu.ar",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional de Hurlingham",
+    "acronimo": "UNAHUR",
+    "country": "AR"
+  },
+  {
+    "name": "Awdren Fontão",
+    "email": "awdren.fontao@ufms.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal de Mato Grosso do Sul",
+    "acronimo": "UFMS",
+    "country": "BR"
+  },
+  {
+    "name": "Savio Freire",
+    "email": "savio.freire@ifce.edu.br",
+    "track": "WER-RRT",
+    "institution": "Instituto Federal do Ceará",
+    "acronimo": "IF",
+    "country": "BR"
+  },
+  {
+    "name": "Enyo Gonçalves",
+    "email": "enyo@ufc.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Ceará",
+    "acronimo": "UFC",
+    "country": "BR"
+  },
+  {
+    "name": "Graciela Dora Susana Hadad",
+    "email": "ghadad@uno.edu.ar",
+    "track": "WER-RRT",
+    "institution": "Universidad Nacional del Oeste",
+    "acronimo": "UNO",
+    "country": "AR"
+  },
+  {
+    "name": "Julio Cesar Leite",
+    "email": "julioleite@ufba.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal da Bahia",
+    "acronimo": "UFBA",
+    "country": "BR"
+  },
+  {
+    "name": "Maria Lencastre",
+    "email": "mlpmcda@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade de Pernambuco",
+    "acronimo": "UPE",
+    "country": "BR"
+  },
+  {
+    "name": "Fábio Levy Siqueira",
+    "email": "levy.siqueira@usp.br",
+    "track": "WER-RRT",
+    "institution": "Escola Politécnica da Universidade de São Paulo",
+    "acronimo": "POLI",
+    "country": "BR"
+  },
+  {
+    "name": "Marcia Lucena",
+    "email": "marciaj@dimap.ufrn.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Rio Grande do Norte",
+    "acronimo": "UFRN",
+    "country": "BR"
+  },
+  {
+    "name": "Jaelson Castro",
+    "email": "jbc@cin.ufpe.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Emanuel Coutinho",
+    "email": "emanuel@virtual.ufc.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Ceará",
+    "acronimo": "UFC",
+    "country": "BR"
+  },
+  {
+    "name": "Gilberto Cysneiros Filho",
+    "email": "g.cysneiros@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal Rural de Pernambuco",
+    "acronimo": "UFRPE",
+    "country": "BR"
+  },
+  {
+    "name": "Andrea Delgado",
+    "email": "adelgado@fing.edu.uy",
+    "track": "WER-RRT",
+    "institution": "Universidad de la República",
+    "acronimo": "Udelar",
+    "country": "UY"
+  },
+  {
+    "name": "Edna Dias Canedo",
+    "email": "ednacanedo@unb.br",
+    "track": "WER-RRT",
+    "institution": "Universidade de Brasilia",
+    "acronimo": "UnB",
+    "country": "BR"
+  },
+  {
+    "name": "Camilo Almendra",
+    "email": "camilo.almendra@ufc.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Ceará",
+    "acronimo": "UFC",
+    "country": "BR"
+  },
+  {
+    "name": "Carina Alves",
+    "email": "carinafrota@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Jorge Barreiros",
+    "email": "jmsousa@isec.pt",
+    "track": "WER-RRT",
+    "institution": "Universidade NOVA de Lisboa",
+    "acronimo": "NOVA",
+    "country": "PT"
+  },
+  {
+    "name": "Gláucia Braga E Silva",
+    "email": "glaucia@ufv.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal de Viçosa",
+    "acronimo": "UFV",
+    "country": "BR"
+  },
+  {
+    "name": "Renato Bulcão-Neto",
+    "email": "rbulcao@ufg.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal de Goiás",
+    "acronimo": "UFG",
+    "country": "BR"
+  },
+  {
+    "name": "Maria Istela Cagnin",
+    "email": "istela.machado@ufms.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Mato Grosso do Sul",
+    "acronimo": "UFMS",
+    "country": "BR"
+  },
+  {
+    "name": "Vera Werneck",
+    "email": "vera@ime.uerj.br",
+    "track": "WER-RRT",
+    "institution": "Universidade do Estado do Rio de Janeiro",
+    "acronimo": "UERJ",
+    "country": "BR"
+  },
+  {
+    "name": "Ana Oran",
+    "email": "ana.oran@icomp.ufam.edu.br",
+    "track": "WER-SRTT",
+    "institution": "Universidade Federal do Amazonas",
+    "acronimo": "UFAM",
+    "country": "BR"
+  },
+  {
+    "name": "Gladys Kaplan",
+    "email": "gladyskaplan@gmail.com",
+    "track": "WER-SRTT",
+    "institution": "Universidad Nacional de La Matanza",
+    "acronimo": "UNLaM",
+    "country": "AR"
+  },
+  {
+    "name": "Jorge Hochstetter",
+    "email": "jorge.hochstetter@ufrontera.cl",
+    "track": "WER-SRTT",
+    "institution": "Universidad de La Frontera",
+    "acronimo": "UFRO",
+    "country": "CL"
+  },
+  {
+    "name": "Samuel Sepulveda",
+    "email": "samuel.sepulveda@ufrontera.cl",
+    "track": "WER-SRTT",
+    "institution": "Universidad de La Frontera",
+    "acronimo": "UFRO",
+    "country": "CL"
+  },
+  {
+    "name": "Carla Silva",
+    "email": "ctlls@cin.ufpe.br",
+    "track": "WER-SRTT",
+    "institution": "Universidade Federal de Pernambuco",
+    "acronimo": "UFPE",
+    "country": "BR"
+  },
+  {
+    "name": "Letícia Machado",
+    "email": "leticia.machado@inf.ufrgs.br",
+    "track": "WER-SRTT",
+    "institution": "Universidade Federal do Rio Grande do Sul",
+    "acronimo": "UFRGS",
+    "country": "BR"
+  },
+  {
+    "name": "Leandro Antonelli",
+    "email": "lanto@lifia.info.unlp.edu.ar",
+    "track": "WER-SRTT",
+    "institution": "Universidad Nacional de La Plata",
+    "acronimo": "UNLP",
+    "country": "AR"
+  },
+  {
+    "name": "Sidgley Andrade",
+    "email": "Sidgleyandrade@utfpr.edu.br",
+    "track": "WER-SRTT",
+    "institution": "Universidade Tecnológica Federal do Paraná",
+    "acronimo": "UTFPR",
+    "country": "BR"
+  },
+  {
+    "name": "Ivonei Freiras",
+    "email": "ivonei.silva@unioeste.br",
+    "track": "WER-SRTT",
+    "institution": "Universidade Estadual do Oeste do Paraná",
+    "acronimo": "Unioeste",
+    "country": "BR"
+  },
+  {
+    "name": "Gabriela Velazquez",
+    "email": "gabriela.velazquez@unahur.edu.ar",
+    "track": "WER-ST",
+    "institution": "Universidad Nacional de Hurlingham",
+    "acronimo": "UNAHUR",
+    "country": "AR"
+  },
+  {
+    "name": "Alberto Sebastian",
+    "email": "alberto.sebastian@comunidad.ub.edu.ar",
+    "track": "WER-ST",
+    "institution": "Universidad de Belgrano",
+    "acronimo": "UB",
+    "country": "AR"
+  },
+  {
+    "name": "Ezequiel Moyano",
+    "email": "emoyano@untdf.edu.ar",
+    "track": "WER-ST",
+    "institution": "Universidad Nacional de Tierra del Fuego",
+    "acronimo": "UNTDF",
+    "country": "AR"
+  },
+  {
+    "name": "Paola Britos",
+    "email": "pbritos@unrn.edu.ar",
+    "track": "WER-ST",
+    "institution": "Universidad Nacional de Río Negro",
+    "acronimo": "UNRN",
+    "country": "AR"
+  },
+  {
+    "name": "Enrique Fernandez",
+    "email": "enfernandez@uno.edu.ar",
+    "track": "WER-ST",
+    "institution": "Universidad Nacional del Oeste",
+    "acronimo": "UNO",
+    "country": "AR"
+  },
+  {
+    "name": "Emanuel Irrazábal",
+    "email": "emanuelirrazabal@gmail.com",
+    "track": "WER-ST",
+    "institution": "Universidad Nacional del Nordeste",
+    "acronimo": "UNNE",
+    "country": "AR"
+  },
+  {
+    "name": "Edgar Sarmiento",
+    "email": "esarmientoca@unsa.edu.pe",
+    "track": "WER-TT",
+    "institution": "Pontifícia Universidade Católica do Rio de Janeiro",
+    "acronimo": "PUC-Rio",
+    "country": "BR"
+  },
+  {
+    "name": "Sidgley Andrade",
+    "email": "sidgleyandrade@utfpr.edu.br",
+    "track": "WER-TT",
+    "institution": "Universidade Tecnológica Federal do Paraná",
+    "acronimo": "UTFPR",
+    "country": "BR"
+  },
+  {
+    "name": "Victor Santander",
+    "email": "vfasantander@gmail.com",
+    "track": "WER-TT",
+    "institution": "Universidade Estadual do Oeste do Paraná",
+    "acronimo": "Unioeste",
+    "country": "BR"
+  },
+  {
+    "name": "Ivonei Silva",
+    "email": "ifsse3@gmail.com",
+    "track": "WER-TT",
+    "institution": "Universidade Estadual do Oeste do Paraná",
+    "acronimo": "Unioeste",
+    "country": "BR"
+  },
+  {
+    "name": "Eduardo Almentero",
+    "email": "ekalmentero@gmail.com",
+    "track": "WER-TT",
+    "institution": "Universidade Federal Rural do Rio de Janeiro",
+    "acronimo": "UFRRJ",
+    "country": "BR"
+  }
+]
