@@ -101,7 +101,6 @@ async function loadCommittee(){
   }catch(error){
     console.error("Error cargando comité:",error);
   }
-  console.log("Cantidad de miembros del comité: " + cantidad);
 }
 
 document.addEventListener("DOMContentLoaded",loadCommittee);
