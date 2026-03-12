@@ -61,7 +61,7 @@ function translateCountries(countryString,lang){
 
   return codes
     .map(code => countryTranslations[code]?.[lang] || code)
-    .join(", ");
+    .join(" - ");
 }
 
 async function loadCommittee(){
@@ -84,6 +84,7 @@ async function loadCommittee(){
     
     committee
       .filter(person => person.track == jsonTrack)
+      .sort((a, b) => a.name.localeCompare(b.name))
       .forEach(person => {
 
 
