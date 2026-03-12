@@ -61,7 +61,7 @@ function translateCountries(countryString,lang){
 
   return codes
     .map(code => countryTranslations[code]?.[lang] || code)
-    .join(", ");
+    .join(" - ");
 }
 
 async function loadCommittee(){
