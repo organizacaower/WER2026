@@ -79,7 +79,6 @@ async function loadCommittee(){
 
     const response = await fetch("../data/program_comite.json");
     const committee = await response.json();
-    console.log("Contenido JSON:", committee);
 
     list.innerHTML = "";
     
