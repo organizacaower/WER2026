@@ -77,7 +77,7 @@ async function loadCommittee(){
   let cantidad  = 0
   try{
 
-    const response = await fetch("https://organizacaower.github.io/WER2026/data/program_comite.json");
+    const response = await fetch("../data/program_comite.json");
     const committee = await response.json();
 
     list.innerHTML = "";
