@@ -2,32 +2,32 @@
   "RRT": {
     "nombre": "Regular Research Track",
     "abstract": {
-      "original": ["10/03/2026","09/03/2026"],
-      "actual": "11/03/2026",
-      "status": ["extended"]
-    },
-    "paper": {
-      "original": ["10/03/2026","09/03/2026"],
+      "original": ["09/03/2026"],
       "actual": "16/03/2026",
       "status": ["extended"]
     },
-    "notification": {
-      "original": ["10/03/2026","09/03/2026"],
-      "actual": "11/05/2026",
+    "paper": {
+      "original": ["16/03/2026","09/03/2026"],
+      "actual": "23/03/2026",
       "status": ["extended"]
     },
+    "notification": {
+      "original": null,
+      "actual": "11/05/2026",
+      "status": []
+    },
     "cameraReady": {
-      "original": ["10/03/2026","09/03/2026"],
+      "original": null,
       "actual": "30/05/2026",
-      "status": ["hard"]
+      "status": []
     }
   },
   "SRTT": {
     "nombre": "Short Research Track",
     "abstract": {
-      "original": "06/04/2026",
-      "actual": "07/04/2026",
-      "status": ["hard"]
+      "original": null,
+      "actual": "06/04/2026",
+      "status": []
     },
     "paper": {
       "original": null,
