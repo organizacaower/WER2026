@@ -126,7 +126,7 @@ fetch("../fechas_formateadas.json")
     filas.forEach(fila => {
       let rowHTML = `<tr><td><strong>${fila.label}</strong></td>`;
       ordenTracks.forEach(track => {
-        if (data[track]) rowHTML += `<td>${renderFecha(data[track][fila.key])}</td>`;
+        if (data[track]) rowHTML += `<td style="white-space: nowrap;">${renderFecha(data[track][fila.key])}</td>`;
       });
       rowHTML += `</tr>`;
       tbody.innerHTML += rowHTML;
