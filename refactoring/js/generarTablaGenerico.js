@@ -52,6 +52,9 @@ fetch("../fechas_formateadas.json")
     }
     function renderFecha(fechaObj) {
       let html = "";
+      const fechasOrdenadas = [...fechaObj.original].sort((a, b) => {
+        return parseDMY(a) - parseDMY(b);
+      });
 
       if (
         (fechaObj.status.includes("extended") || fechaObj.status.includes("hard")) &&
@@ -60,7 +63,7 @@ fetch("../fechas_formateadas.json")
 
         // Si original es array → tachar todas
         if (Array.isArray(fechaObj.original)) {
-          fechaObj.original.forEach(fecha => {
+         fechasOrdenadas.forEach(fecha => {
             html += `<del>${dateFormatter.format(parseDMY(fecha))}</del><br>`;
           });
         } 
