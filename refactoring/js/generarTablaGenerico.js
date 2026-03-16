@@ -25,14 +25,13 @@ fetch("../fechas_formateadas.json")
 
     // Formateador con locale válido
     const dateFormatter = new Intl.DateTimeFormat(locale, {
-      year: "numeric",
       month: "long",
       day: "numeric"
     });
 
     function parseDMY(str) {
-      const [dd, mm] = str.split("/");
-      const d = new Date(`${mm}-${dd}`); // clonar la fecha original
+      const [dd, mm, yyyy] = str.split("/");
+      const d = new Date(`${yyyy}-${mm}-${dd}`); // clonar la fecha original
       d.setDate(d.getDate() + 1);         // sumarle 1 al día
       return d
     }
