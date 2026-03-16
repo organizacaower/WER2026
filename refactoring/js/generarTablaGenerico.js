@@ -25,7 +25,6 @@ fetch("../fechas_formateadas.json")
 
     // Formateador con locale válido
     const dateFormatter = new Intl.DateTimeFormat(locale, {
-      year: "numeric",
       month: "long",
       day: "numeric"
     });
@@ -61,10 +60,20 @@ fetch("../fechas_formateadas.json")
 
         // Si original es array → tachar todas
         if (Array.isArray(fechaObj.original)) {
-          fechaObj.original.forEach(fecha => {
-            html += `<del>${dateFormatter.format(parseDMY(fecha))}</del><br>`;
-          });
-        } 
+
+            const fechasOrdenadas = [...fechaObj.original].sort((a, b) => {
+              return parseDMY(a) - parseDMY(b);
+            });
+
+            fechasOrdenadas.forEach(fecha => {
+              html += `<del>${dateFormatter.format(parseDMY(fecha))}</del><br>`;
+            });
+
+          } else if (typeof fechaObj.original === "string") {
+
+            html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
+
+          }
         // Si es solo una fecha
         else {
           html += `<del>${dateFormatter.format(parseDMY(fechaObj.original))}</del><br>`;
@@ -127,7 +136,7 @@ fetch("../fechas_formateadas.json")
     filas.forEach(fila => {
       let rowHTML = `<tr><td><strong>${fila.label}</strong></td>`;
       ordenTracks.forEach(track => {
-        if (data[track]) rowHTML += `<td>${renderFecha(data[track][fila.key])}</td>`;
+        if (data[track]) rowHTML += `<td style="white-space: nowrap;">${renderFecha(data[track][fila.key])}</td>`;
       });
       rowHTML += `</tr>`;
       tbody.innerHTML += rowHTML;
