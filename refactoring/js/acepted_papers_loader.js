@@ -29,6 +29,7 @@ fetch("../articulos_aceptados.json")
           <button class="btn btn-sm btn-primary" onclick="abrirModal(${index})">
             Ver más
           </button>
+          <a hred="${paper.file_name}">Ver paper completo</a>
         </li>
       `;
     }
