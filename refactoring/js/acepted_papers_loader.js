@@ -1,4 +1,4 @@
-fetch("../data/papers.json")
+fetch("../articulos_aceptados.json")
   .then(res => res.json())
   .then(data => {
 
