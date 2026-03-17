@@ -2,13 +2,13 @@
   "RRT": {
     "nombre": "Regular Research Track",
     "abstract": {
-      "original": ["09/03/2026"],
-      "actual": "16/03/2026",
+      "original": ["16/03/2026","09/03/2026"],
+      "actual": "31/03/2026",
       "status": ["extended"]
     },
     "paper": {
-      "original": ["16/03/2026"],
-      "actual": "23/03/2026",
+      "original": ["23/03/2026","16/03/2026"],
+      "actual": "31/03/2026",
       "status": ["extended"]
     },
     "notification": {
