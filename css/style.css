@@ -44,7 +44,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+.badge.bg-warning,
+.badge.bg-danger{
+  color: white;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
