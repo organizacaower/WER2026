@@ -29,7 +29,6 @@ fetch("../articulos_aceptados.json")
           <button class="btn btn-sm btn-primary" onclick="abrirModal(${index})">
             Ver más
           </button>
-          <a hred="${paper.file_name}">Ver paper completo</a>
         </li>
       `;
     }
@@ -76,6 +75,11 @@ function abrirModal(index) {
 
   document.getElementById("modalAbstract").innerText =
     paper.abstract || "No disponible";
+    document.getElementById("paper-link").innerHTML = `
+  <a href="${paper.file_name}" target="_blank" class="btn btn-primary">
+    Ver paper
+  </a>
+`;
 
   // Bootstrap modal
   const modal = new bootstrap.Modal(document.getElementById('paperModal'));
