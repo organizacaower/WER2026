@@ -112,5 +112,23 @@
   "paper_session": "JFT",
   "doi": "10.1000/jft001",
   "paginas": { "inicial": 61, "final": 70 }
+},
+{
+  "track": "RRT",
+  "title": "Exploring LLMs for User Story Extraction from Mockups",
+  "authors": [
+    { "apellido": "Firmenich", "nombre": "Diego" },
+    { "apellido": "Antonelli", "nombre": "Leandro" },
+    { "apellido": "Pazos", "nombre": "Bruno" },
+    { "apellido": "Lozada", "nombre": "Fabricio" },
+    { "apellido": "Morales", "nombre": "Leonardo" }
+  ],
+  "keywords": "User stories; high-fidelity mockups; language extended lexicon; requirements engineering",
+  "abstract": "User stories are one of the most widely used artifacts in the software industry to define functional requirements. In parallel, the use of high-fidelity mockups facilitates end-user participation in defining their needs. In this work, we explore how combining these techniques with large language models (LLMs) enables agile and automated generation of user stories from mockups. To this end, we present a case study that analyzes the ability of LLMs to extract user stories from high-fidelity mockups, both with and without the inclusion of a glossary of the Language Extended Lexicon (LEL) in the prompts. Our results demonstrate that incorporating the LEL significantly enhances the accuracy and suitability of the generated user stories. This approach represents a step forward in the integration of AI into requirements engineering, with the potential to improve communication between users and developers.",
+  "language": "EN",
+  "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202509.pdf",
+  "paper_session": "RRT",
+  "doi": "10.29327/1588952.28-10"
 }
+
 ]
