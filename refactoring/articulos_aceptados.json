@@ -1,62 +1,81 @@
 [
   {
     "track": "RRT",
-    "title": "Paper del track RT",
+    "title": "PRIM-UI: un método para integrar patrones de interacción en la etapa de requerimientos",
     "authors": [
-      { "apellido": "Apellido X", "nombre": "Nombre X" },
-      { "apellido": "Apellido Y", "nombre": "Nombre Y" }
+      { "apellido": "Delgado", "nombre": "Jonathan" },
+      { "apellido": "Antonelli", "nombre": "Leandro" },
+      { "apellido": "Firmenich", "nombre": "Diego" }
     ],
     "doi": "10.1000/rrt001",
     "paginas": { "inicial": 1, "final": 10 }
   },
   {
     "track": "MDT",
-    "title": "Paper del track MDT",
+    "title": "CATCOMPEDU - Elaboração de um Catálogo de Requisitos Não-Funcionais para o Desenvolvimento de Jogos Digitais para o ensino de Computação – Anos Iniciais",
     "authors": [
-      { "apellido": "Apellido A", "nombre": "Nombre A" },
-      { "apellido": "Apellido B", "nombre": "Nombre B" }
+      { "apellido": "Morgenroth", "nombre": "Alexssandro" },
+      { "apellido": "Araya Santander", "nombre": "Victor Francisco" }
     ],
     "doi": "10.1000/mdt001",
     "paginas": { "inicial": 11, "final": 20 }
   },
   {
     "track": "TT",
-    "title": "Paper del track TT",
+    "title": "Gestión de los Requisitos: Aspectos Técnicos",
     "authors": [
-      { "apellido": "Apellido C", "nombre": "Nombre C" },
-      { "apellido": "Apellido D", "nombre": "Nombre D" }
+      { "apellido": "Leite", "nombre": "Julio Cesar" },
+      { "apellido": "Hadad", "nombre": "Graciela Dora Susana" },
+      { "apellido": "Doorn", "nombre": "Jorge Horacio" }
     ],
     "doi": "10.1000/tt001",
     "paginas": { "inicial": 21, "final": 30 }
   },
   {
     "track": "IT",
-    "title": "Paper del track IT",
+    "title": "Utilizing LLMs for Early-Stage Qualities Elicitation: A Study on Responsible Fact-Checking in Journalism",
     "authors": [
-      { "apellido": "Apellido E", "nombre": "Nombre E" },
-      { "apellido": "Apellido F", "nombre": "Nombre F" }
+      { "apellido": "Portugal", "nombre": "Roxana" },
+      { "apellido": "Silva", "nombre": "Lyrene F." },
+      { "apellido": "Prado", "nombre": "Henrique" },
+      { "apellido": "Almentero", "nombre": "Eduardo" }
     ],
     "doi": "10.1000/it001",
     "paginas": { "inicial": 31, "final": 40 }
   },
   {
     "track": "SRTT",
-    "title": "Paper del track SRTT",
+    "title": "appSCE: uma Ferramenta para Classificação da qualidade de evidências usadas em Casos de Garantia de Segurança",
     "authors": [
-      { "apellido": "Apellido G", "nombre": "Nombre G" },
-      { "apellido": "Apellido H", "nombre": "Nombre H" }
+      { "apellido": "Alves Junior", "nombre": "Mozart de Melo" },
+      { "apellido": "Fernandes", "nombre": "Sandeison Silva" },
+      { "apellido": "Castro", "nombre": "Jaelson" },
+      { "apellido": "Oliveira", "nombre": "Alvaro" },
+      { "apellido": "Nunes", "nombre": "Aldo" }
     ],
     "doi": "10.1000/srtt001",
     "paginas": { "inicial": 41, "final": 50 }
   },
   {
     "track": "ST",
-    "title": "Paper del track ST",
+    "title": "Aligning Early and Late Requirements Through Ontologies",
     "authors": [
-      { "apellido": "Apellido I", "nombre": "Nombre I" },
-      { "apellido": "Apellido J", "nombre": "Nombre J" }
+      { "apellido": "Ramalho", "nombre": "Ricardo" },
+      { "apellido": "França", "nombre": "Juliana B.S." }
     ],
     "doi": "10.1000/st001",
     "paginas": { "inicial": 51, "final": 60 }
-  }
+  },
+  {
+  "track": "JFT",
+  "title": "PRIUS: Applying Gamification to User Stories Prioritization",
+  "authors": [
+    { "apellido": "Lencastre", "nombre": "Maria" },
+    { "apellido": "Silva", "nombre": "Daniel" },
+    { "apellido": "Pimentel", "nombre": "Joao Henrique" },
+    { "apellido": "Castro", "nombre": "Jaelson" }
+  ],
+  "doi": "10.1000/jft001",
+  "paginas": { "inicial": 61, "final": 70 }
+}
 ]
