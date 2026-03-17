@@ -1,0 +1,62 @@
+[
+  {
+    "track": "RRT",
+    "title": "Paper del track RT",
+    "authors": [
+      { "apellido": "Apellido X", "nombre": "Nombre X" },
+      { "apellido": "Apellido Y", "nombre": "Nombre Y" }
+    ],
+    "doi": "10.1000/rrt001",
+    "paginas": { "inicial": 1, "final": 10 }
+  },
+  {
+    "track": "MDT",
+    "title": "Paper del track MDT",
+    "authors": [
+      { "apellido": "Apellido A", "nombre": "Nombre A" },
+      { "apellido": "Apellido B", "nombre": "Nombre B" }
+    ],
+    "doi": "10.1000/mdt001",
+    "paginas": { "inicial": 11, "final": 20 }
+  },
+  {
+    "track": "TT",
+    "title": "Paper del track TT",
+    "authors": [
+      { "apellido": "Apellido C", "nombre": "Nombre C" },
+      { "apellido": "Apellido D", "nombre": "Nombre D" }
+    ],
+    "doi": "10.1000/tt001",
+    "paginas": { "inicial": 21, "final": 30 }
+  },
+  {
+    "track": "IT",
+    "title": "Paper del track IT",
+    "authors": [
+      { "apellido": "Apellido E", "nombre": "Nombre E" },
+      { "apellido": "Apellido F", "nombre": "Nombre F" }
+    ],
+    "doi": "10.1000/it001",
+    "paginas": { "inicial": 31, "final": 40 }
+  },
+  {
+    "track": "SRTT",
+    "title": "Paper del track SRTT",
+    "authors": [
+      { "apellido": "Apellido G", "nombre": "Nombre G" },
+      { "apellido": "Apellido H", "nombre": "Nombre H" }
+    ],
+    "doi": "10.1000/srtt001",
+    "paginas": { "inicial": 41, "final": 50 }
+  },
+  {
+    "track": "ST",
+    "title": "Paper del track ST",
+    "authors": [
+      { "apellido": "Apellido I", "nombre": "Nombre I" },
+      { "apellido": "Apellido J", "nombre": "Nombre J" }
+    ],
+    "doi": "10.1000/st001",
+    "paginas": { "inicial": 51, "final": 60 }
+  }
+]
