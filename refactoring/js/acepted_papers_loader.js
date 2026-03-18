@@ -1,12 +1,8 @@
-fetch("../articulos_aceptados.json")
-  .then(res => res.json())
-  .then(data => {
-
-    const container = document.getElementById("papers-container");
-    const url = window.location.pathname;
-    const match = url.match(/\/(es|en|pt)(?:\/|$)/);
-    const lang = match ? match[1] : "es";
-    const translations = {
+const container = document.getElementById("papers-container");
+const url = window.location.pathname;
+const match = url.match(/\/(es|en|pt)(?:\/|$)/);
+const lang = match ? match[1] : "es";
+const translations = {
       es: {
         verMas: "Ver más",
         verPaper: "Ver paper",
@@ -24,7 +20,7 @@ fetch("../articulos_aceptados.json")
       }
     };
 
-    const trackNames = {
+const trackNames = {
       es: {
         RRT: "Track de investigación (WER-RT)",
         SRTT: "Track de herramientas en Requisitos de Software (WER-SRTT)",
@@ -54,7 +50,12 @@ fetch("../articulos_aceptados.json")
       }
     };
 
-    const ordenTracks = ["RRT","JFT","MDT","TT","IT","SRTT","ST"];
+ const ordenTracks = ["RRT","JFT","MDT","TT","IT","SRTT","ST"];
+fetch("../articulos_aceptados.json")
+  .then(res => res.json())
+  .then(data => {
+
+    
 
     function formatearAutores(authors) {
       return authors.map(a => `${a.nombre} ${a.apellido}`).join(", ");
