@@ -3,22 +3,28 @@ const url = window.location.pathname;
 const match = url.match(/\/(es|en|pt)(?:\/|$)/);
 const lang = match ? match[1] : "es";
 const translations = {
-      es: {
-        verMas: "Ver más",
-        verPaper: "Ver paper",
-        noDisponible: "No disponible"
-      },
-      en: {
-        verMas: "View more",
-        verPaper: "View paper",
-        noDisponible: "Not available"
-      },
-      pt: {
-        verMas: "Ver mais",
-        verPaper: "Ver artigo",
-        noDisponible: "Não disponível"
-      }
-    };
+  es: {
+    verMas: "Ver más",
+    verPaper: "Ver paper",
+    noDisponible: "No disponible",
+    autores: "Autores:",
+    abstract: "Resumen:"
+  },
+  en: {
+    verMas: "View more",
+    verPaper: "View paper",
+    noDisponible: "Not available",
+    autores: "Authors:",
+    abstract: "Abstract:"
+  },
+  pt: {
+    verMas: "Ver mais",
+    verPaper: "Ver artigo",
+    noDisponible: "Não disponível",
+    autores: "Autores:",
+    abstract: "Resumo:"
+  }
+};
 
 const trackNames = {
       es: {
@@ -49,8 +55,7 @@ const trackNames = {
         ST: "Trilha de Estudantes (WER-ST)"
       }
     };
-
- const ordenTracks = ["RRT","JFT","MDT","TT","IT","SRTT","ST"];
+const ordenTracks = ["RRT","JFT","MDT","TT","IT","SRTT","ST"];
 fetch("../articulos_aceptados.json")
   .then(res => res.json())
   .then(data => {
@@ -109,6 +114,10 @@ fetch("../articulos_aceptados.json")
 // 🔥 función que abre el modal
 function abrirModal(index) {
   const paper = window.papersData[index];
+  document.getElementById("label-authors").innerText =
+  translations[lang].autores;
+  document.getElementById("label-abstract").innerText =
+  translations[lang].abstract;
 
   document.getElementById("modalTitle").innerText = paper.title;
 
