@@ -11,9 +11,7 @@
     "abstract":"La fase de requisitos es importante para el éxito de un proyecto de software, ya que un levantamiento bien definido evita costos altos por correcciones y asegura productos alineados con las expectativas del usuario. Sin embargo, el enfoque tradicional suele centrarse en requisitos funcionales y no funcionales, ignorando la interacción del usuario, lo que genera interfaces (UI) poco usables. Este trabajo propone un nuevo enfoque que incorpora patrones de interacción validados en la fase de requisitos para optimizar el diseño de UI. La metodología consta de tres etapas: 1) identificación sistemática de patrones de interacción relevantes para el dominio, 2) análisis contextual de requisitos y 3) mapeo de patrones a requisitos mediante validación heurística. Se evaluó mediante un caso de estudio en una aplicación web para actualización de datos con validación biométrica, con doce requisitos implementados por un equipo de cinco desarrolladores. Los resultados preliminares muestran que los patrones optimizaron la estructura de la UI y la retroalimentación, alineando requisitos con estándares de usabilidad. Los resultados sugieren que el enfoque no solo alinea el diseño con mejores prácticas, sino que también ofrece beneficios medibles en eficiencia y mantenibilidad. Futuros estudios podrían cuantificar su impacto con métricas como SUS y explorar su escalabilidad en sistemas complejos, integrar sistemáticamente las pautas de accesibilidad WCAG, y el uso de aprendizaje automático para recomendación adaptativa de patrones.",
     "language":"ES",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202514.pdf",
-    "paper_session": "RRT",
-    "doi": "10.1000/rrt001",
-    "paginas": { "inicial": 1, "final": 10 }
+    "paper_session": "Regular Research Track (RRT) - Sesión 2"
   },
   {
     "track": "MDT",
@@ -26,9 +24,7 @@
     "abstract":"Como qualquer outro software, os jogos digitais devem ser desenvolvidos com base em modelos de sistemas. Assim, a aplicação de técnicas da Engenharia de Requisitos é fundamental para garantir a qualidade e a agilidade na construção desses produtos, cada vez mais demandados pelo mercado do entretenimento e âmbito educacional. Considerando a abordagem de desenvolvimento de Jogos Digitais, a perspectiva da Engenharia de Requisitos e o ensino de Computação plugada para estudantes de 6 a 10 anos, este projeto de pesquisa tem como objetivo o desenvolvimento e a avaliação de um catálogo de Requisitos Não-Funcionais para o desenvolvimento de Jogos Digitais Educacionais para o ensino de Computação nos Anos Iniciais do Ensino Fundamental. Como base teórica privilegiaram-se os pressupostos teóricos, legais e pedagógicos que sustentam a implementação da Computação na Educação Básica brasileira, para esta pesquisa, será enaltecida a etapa dos Anos Iniciais do Ensino Fundamental. Além disso, fazem parte da fundamentação, as definições e classificações, multidisciplinaridade e as arquiteturas do Desenvolvimento de Jogos Digitais. A estruturação do catálogo será baseada no NFR Framework.",
     "language":"PT",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202525.pdf",
-    "paper_session": "MDT",
-    "doi": "10.1000/mdt001",
-    "paginas": { "inicial": 11, "final": 20 }
+    "paper_session": "Regular Research Track (RRT) - Sesión 2"
   },
   {
     "track": "TT",
@@ -42,9 +38,7 @@
      "abstract":"En todo proceso, su gestión es una actividad distinguible e interdependiente de las demás. La gestión se ocupa de regular el proceso. Es muy importante tener siempre presente que la gestión no solo debe actuar correctivamente ante aquellos problemas internos derivados de dificultades en cumplir los planes, sino que también debe atender circunstancias externas que influyen en el proceso que está siendo gestionado. Esto ocurre porque usualmente el contexto evoluciona y en ocasiones esa evolución atenta contra el cumplimiento de los objetivos perseguidos. En ambos casos la gestión requiere disponer de métricas adecuadas que permitan controlar y tomar decisiones. Por otro lado, la gestión no solo establece las métricas a usar, sino también los métodos, técnicas y herramientas a emplear en el proceso de requisitos con base en el contexto de aplicación, y los objetivos, plazos y costos acordados, entre otros factores. En este tutorial, se presentan las actividades que hacen a la gestión del proceso de requisitos y sus productos, la configuración y los cambios, el uso de métricas y la selección de métodos, técnicas y herramientas que den soporte al proceso.",
     "language":"ES",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202500_1.pdf",
-    "paper_session": "TT",
-    "doi": "10.1000/tt001",
-    "paginas": { "inicial": 21, "final": 30 }
+    "paper_session": "Regular Research Track (RRT) - Sesión 2"
   },
   {
     "track": "IT",
@@ -59,9 +53,7 @@
     "abstract":"Requirements elicitation is the process through which engineers interact with information sources to acquire knowledge about a specific domain. In the early stages of software projects, it is uncommon for engineers to elicit non-functional requirements (NFRs) as first-class requirements, as this often demands time and articulation that stakeholders may not readily provide. Large Language Models (LLMs), such as ChatGPT, trained on massive textual datasets, offer a promising opportunity to support this process by generating coherent and context-relevant information about qualities that are key to a given domain problem. In this study, we explore the potential of ChatGPT as an information source for eliciting NFRs related to responsible fact-checking in journalism. Using a previously constructed reference model - developed by the first co-author during a series of Design Thinking sessions with journalism professionals - as a gold standard, three requirements engineering experts, none of whom were familiar with the domain, conducted individual chat sessions with ChatGPT and independently constructed Softgoal Interdependency Graphs (SIGs). Our findings go beyond a simple comparison with the gold standard. While some softgoals consistently emerged across sessions (e.g., trust, accuracy, transparency), participants also uncovered quality concerns such as integrity, dignity, and fairness - elements not explicitly included in the original model. These highlight risks that fact-checking practices must proactively mitigate and offer a broader understanding of relevant qualities in the domain. Additionally, the absence of certain softgoals from the LLM-generated models underscores the importance of human–AI collaboration to improve the completeness and contextual richness of SIGs.",
     "language":"EN",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202528.pdf",
-    "paper_session": "IT",
-    "doi": "10.1000/it001",
-    "paginas": { "inicial": 31, "final": 40 }
+    "paper_session": "Regular Research Track (RRT) - Sesión 2"
   },
   {
     "track": "SRTT",
@@ -77,9 +69,7 @@
     "abstract":"Os Casos de Garantia de Segurança (CGS) tornaram-se elementos es- senciais e indispensáveis na certificação de segurança em diversos domínios de sistemas críticos. Esses processos de certificação são rigorosos e exigem argu- mentos sólidos, sustentados por um conjunto de evidências de alta qualidade que comprovem a segurança e a adequação do sistema ao seu ambiente de uso específico. No entanto, a avaliação dessas evidências frequentemente depende do julgamento humano, o que pode estar sujeito a vieses cognitivos, comprome- tendo a validade dos argumentos apresentados. Este trabalho apresenta o appS- CE (App for Safety Classification of Evidence), uma ferramenta de código aberto, acessível via web, que segue uma arquitetura cliente-servidor e utiliza tecnologias como TypeScript, React Native, Node.js e Firebase Firestore. O ap- pSCE apoia a abordagem Classify Evidence, que visa classificar a qualidade das evidências de segurança utilizadas na construção dos CGS. O objetivo do aplicativo é facilitar o controle e gerenciamento da classificação das evidências, tornando-as mais dinâmicas e acessíveis, e, desta, contribuir para uma comuni- cação mais eficaz e confiável entre os stakeholders envolvidos.",
     "language":"PT",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202520.pdf",
-    "paper_session": "SRTT",
-    "doi": "10.1000/srtt001",
-    "paginas": { "inicial": 41, "final": 50 }
+    "paper_session": "Regular Research Track (RRT) - Sesión 2"
   },
   {
     "track": "ST",
@@ -92,9 +82,7 @@
     "abstract":"Los contextos actuales entorno a la Ingeniería de Requisitos se caracterizan por la priorización de la recuperación de los requisitos funcionales y no funcionales en el marco de grandes volúmenes de datos. Los data warehouse y la ciencia de datos gestionan grandes cantidades de información que cambian con frecuencia. Si bien se estudian y se analizan tendencias, las empresas no están exentas a esta situación, ya que podrían enfrentar problemas de escalabilidad, consistencia y competitividad, así como la posible pérdida de trazabilidad de requisitos, los cuales se actualizan constantemente. En este sentido, la gestión eficiente de la priorización de los requisitos no solo es esencial, sino una necesidad fundamental que puede resultar crítica en el desarrollo de software. Existen múltiples factores que influyen en este desafío, pero dos de los motivos más relevantes son, por un lado, la optimización del análisis inteligencia empresarial, asegurando que se ajuste a los tiempos, costos y el mantenimiento actualizado de los requisitos prioritarios en el desarrollo de software, ya sean funcionales o no funcionales, así como también la documentación correspondiente. Por otro lado, la necesidad de garantizar que la trazabilidad del desarrollo de un sistema de software no se vea comprometida. En este contexto, en el presente artículo se comparan dos técnicas de indexación para la recuperación de datos: la indexación completa y la indexación incremental. Se aplica este análisis al contexto específico de la extracción y priorización de requisitos en entornos de Big Data, destacando beneficios como la mejora de la calidad y consistencias de la información obtenida, la rapidez en los procesos de recuperación y priorización de requisitos bajo criterios explícitos de clasificación -aspecto crucial para metodologías ágiles- y, finalmente la optimización y la reducción de tiempos para garantizar que los requisitos se mantengan actualizados",
     "language":"EN",
     "file_name": "https://organizacaower.github.io/wer2025/files/articles/WER_2025_paper_60-camera%20ready.pdf",
-    "paper_session": "ST",
-    "doi": "10.1000/st001",
-    "paginas": { "inicial": 51, "final": 60 }
+    "paper_session": "Regular Research Track (RRT) - Sesión 2"
   },
   {
   "track": "JFT",
@@ -109,9 +97,7 @@
   "abstract":"The prioritization of user stories is a critical activity in software development, as it directly impacts the delivery of value to customers and the overall success of the project. However, traditional prioritization techniques can be time-consuming and may not always engage stakeholders effectively. In this paper, we present PRIUS (Prioritization of User Stories), a gamified approach to user story prioritization that aims to enhance stakeholder engagement and improve the efficiency of the prioritization process. PRIUS incorporates game design elements such as points, badges, and leaderboards to motivate stakeholders to actively participate in the prioritization process. We conducted a case study with a software development team to evaluate the effectiveness of PRIUS compared to traditional prioritization methods. The results indicate that PRIUS not only increased stakeholder engagement but also led to more accurate prioritization decisions, ultimately contributing to a more successful project outcome. Future work will explore the integration of machine learning techniques to further enhance the prioritization process and provide personalized recommendations based on stakeholder preferences and historical data.",
   "language":"EN",
   "file_name": "https://dl.acm.org/doi/abs/10.1145/3642964.3642967",
-  "paper_session": "JFT",
-  "doi": "10.1000/jft001",
-  "paginas": { "inicial": 61, "final": 70 }
+  "paper_session": "Regular Research Track (RRT) - Sesión 2"
 },
 {
   "track": "RRT",
@@ -127,8 +113,7 @@
   "abstract": "User stories are one of the most widely used artifacts in the software industry to define functional requirements. In parallel, the use of high-fidelity mockups facilitates end-user participation in defining their needs. In this work, we explore how combining these techniques with large language models (LLMs) enables agile and automated generation of user stories from mockups. To this end, we present a case study that analyzes the ability of LLMs to extract user stories from high-fidelity mockups, both with and without the inclusion of a glossary of the Language Extended Lexicon (LEL) in the prompts. Our results demonstrate that incorporating the LEL significantly enhances the accuracy and suitability of the generated user stories. This approach represents a step forward in the integration of AI into requirements engineering, with the potential to improve communication between users and developers.",
   "language": "EN",
   "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202509.pdf",
-  "paper_session": "RRT",
-  "doi": "10.29327/1588952.28-10"
+  "paper_session": "Regular Research Track (RRT) - Sesión 2"
 }
 
 ]
