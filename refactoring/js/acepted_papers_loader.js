@@ -67,17 +67,17 @@ fetch("../articulos_aceptados.json")
     }
 
     // 🔥 crear cada paper con botón
-    function crearPaperHTML(paper, index) {
-    return `
-      <li>
-        <b>${paper.title}</b>
-        <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
-        <button class="btn btn-sm btn-primary" onclick="abrirModal(${index})">
-          ${translations[lang].verMas}
-        </button>
-      </li>
-    `;
-  }
+    function crearPaperHTML(paper) {
+  return `
+    <li>
+      <b>${paper.title}</b>
+      <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
+      <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
+        ${translations[lang].verMas}
+      </button>
+    </li>
+  `;
+}
 
     // Guardamos data global para usar en modal
     window.papersData = data;
@@ -100,8 +100,7 @@ fetch("../articulos_aceptados.json")
       const ul = document.createElement("ul");
 
       tracks[track].forEach(paper => {
-        ul.innerHTML += crearPaperHTML(paper, globalIndex);
-        globalIndex++;
+        ul.innerHTML += crearPaperHTML(paper);
       });
 
       container.appendChild(title);
@@ -112,8 +111,7 @@ fetch("../articulos_aceptados.json")
   });
 
 // 🔥 función que abre el modal
-function abrirModal(index) {
-  const paper = window.papersData[index];
+function abrirModal(paper) {
   document.getElementById("label-authors").innerText =
   translations[lang].autores;
   document.getElementById("label-abstract").innerText =
