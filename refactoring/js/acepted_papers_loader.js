@@ -25,13 +25,33 @@ fetch("../articulos_aceptados.json")
     };
 
     const trackNames = {
-      "RRT": "Regular Research Track (WER-RT)",
-      "JFT": "Journal First Track (WER-JFT)",
-      "MDT": "Master's and Doctoral Track (WER-MDT)",
-      "TT": "Tutorial Track (WER-TT)",
-      "IT": "Industry Track (WER-IT)",
-      "SRTT": "Software Requirements Tools Track (WER-SRTT)",
-      "ST": "Student's Track (WER-ST)"
+      es: {
+        RRT: "Track de investigación (WER-RT)",
+        SRTT: "Track de herramientas en Requisitos de Software (WER-SRTT)",
+        IT: "Track de la Industria (WER-IT)",
+        MDT: "Track de trabajos Doctorales y de Maestría (WER-MDT)",
+        TT: "Track de Tutoriales (WER-TT)",
+        JFT: "Journal First Track (WER-JFT)",
+        ST: "Track de Estudiantes (WER-ST)"
+      },
+      en: {
+        RRT: "Regular Research Track (WER-RT)",
+        SRTT: "Software Requirements Tools Track (WER-SRTT)",
+        IT: "Industry Track (WER-IT)",
+        MDT: "Master's and Doctoral Track (WER-MDT)",
+        TT: "Tutorial Track (WER-TT)",
+        JFT: "Journal First Track (WER-JFT)",
+        ST: "Student's Track (WER-ST)"
+      },
+      pt: {
+        RRT: "Trilha de Pesquisa (WER-RT)",
+        SRTT: "Trilha de Ferramentas de Requisitos de Software (WER-SRTT)",
+        IT: "Trilha da Indústria (WER-IT)",
+        MDT: "Trilha de Mestrado e Doutorado (WER-MDT)",
+        TT: "Trilha de Tutoriais (WER-TT)",
+        JFT: "Journal First Track (WER-JFT)",
+        ST: "Trilha de Estudantes (WER-ST)"
+      }
     };
 
     const ordenTracks = ["RRT","JFT","MDT","TT","IT","SRTT","ST"];
@@ -69,7 +89,7 @@ fetch("../articulos_aceptados.json")
 
       const title = document.createElement("h3");
       title.className = "text-success";
-      title.innerText = trackNames[track];
+      title.innerText = trackNames[lang][track];
 
       const ul = document.createElement("ul");
 
