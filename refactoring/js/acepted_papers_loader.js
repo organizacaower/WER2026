@@ -3,6 +3,26 @@ fetch("../articulos_aceptados.json")
   .then(data => {
 
     const container = document.getElementById("papers-container");
+    const url = window.location.pathname;
+    const match = url.match(/\/(es|en|pt)(?:\/|$)/);
+    const lang = match ? match[1] : "es";
+    const translations = {
+      es: {
+        verMas: "Ver más",
+        verPaper: "Ver paper",
+        noDisponible: "No disponible"
+      },
+      en: {
+        verMas: "View more",
+        verPaper: "View paper",
+        noDisponible: "Not available"
+      },
+      pt: {
+        verMas: "Ver mais",
+        verPaper: "Ver artigo",
+        noDisponible: "Não disponível"
+      }
+    };
 
     const trackNames = {
       "RRT": "Regular Research Track (WER-RT)",
@@ -22,16 +42,16 @@ fetch("../articulos_aceptados.json")
 
     // 🔥 crear cada paper con botón
     function crearPaperHTML(paper, index) {
-      return `
-        <li>
-          <b>${paper.title}</b>
-          <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
-          <button class="btn btn-sm btn-primary" onclick="abrirModal(${index})">
-            Ver más
-          </button>
-        </li>
-      `;
-    }
+    return `
+      <li>
+        <b>${paper.title}</b>
+        <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
+        <button class="btn btn-sm btn-primary" onclick="abrirModal(${index})">
+          ${translations[lang].verMas}
+        </button>
+      </li>
+    `;
+  }
 
     // Guardamos data global para usar en modal
     window.papersData = data;
@@ -70,18 +90,21 @@ function abrirModal(index) {
   const paper = window.papersData[index];
 
   document.getElementById("modalTitle").innerText = paper.title;
+
   document.getElementById("modalAuthors").innerText =
     paper.authors.map(a => `${a.nombre} ${a.apellido}`).join(", ");
 
   document.getElementById("modalAbstract").innerText =
-    paper.abstract || "No disponible";
-    document.getElementById("paper-link").innerHTML = `
-  <a href="${paper.file_name}" target="_blank" class="btn btn-primary">
-    Ver paper
-  </a>
-`;
+    paper.abstract || translations[lang].noDisponible;
 
-  // Bootstrap modal
+  document.getElementById("paper-link").innerHTML = `
+    <div class="text-end">
+      <a href="${paper.file_name}" target="_blank" class="btn btn-primary">
+        ${translations[lang].verPaper}
+      </a>
+    </div>
+  `;
+
   const modal = new bootstrap.Modal(document.getElementById('paperModal'));
   modal.show();
 }
