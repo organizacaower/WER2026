@@ -65,7 +65,7 @@ const trackNames = {
   }
 };
 
-const ordenTracks = ["RTT","JFT","MDT","TT","IT","SRTT","ST"];
+const ordenTracks = ["RRT","JFT","MDT","TT","IT","SRTT","ST"];
 
 fetch("../articulos_aceptados.json")
   .then(res => res.json())
