@@ -1,5 +1,5 @@
 
-fetch('../data/programacao.json')
+fetch('../program.json')
   .then(res => res.json())
   .then(data => {
     const tabla = document.getElementById("tabla-programa");
