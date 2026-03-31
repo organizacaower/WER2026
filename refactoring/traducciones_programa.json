@@ -1,57 +1,103 @@
 {
-  "dias": [
-    {
-      "dia": "Quarta-feira",
-      "fecha": "7 de agosto",
-      "eventos": [
-        { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
-        { "hora": "09:00 - 09:30", "titulo": "Cerimônia de abertura" },
-        { "hora": "09:30 - 10:30", "titulo": "Palestrante principal: Fabiano Dalpiaz" },
-        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
-        { "hora": "11:30 - 13:00", "titulo": "Requirement Tools Track" },
-        { "hora": "11:30 - 13:00", "titulo": "Research Track - Session 1" },
+  "es": {
+    "quartafeira": "Miércoles",
+    "quintafeira": "Jueves",
+    "sextafeira": "Viernes",
 
-        { "hora": "13:00 - 14:30", "titulo": "Almoço", "tipo": "break" },
+    "cadastro": "Registro",
+    "cerimoniadeabertura": "Apertura",
 
-        { "hora": "14:30 - 16:00", "titulo": "Research Track - Session 2" },
-        { "hora": "16:00 - 16:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
-        { "hora": "16:30 - 18:00", "titulo": "Master's and Doctoral Track" }
-      ]
-    },
-    {
-      "dia": "Quinta-feira",
-      "fecha": "8 de agosto",
-      "eventos": [
-        { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
-        { "hora": "09:00 - 10:00", "titulo": "Palestrante principal - Industry: Jorge Ceballos" },
-        { "hora": "10:00 - 10:20", "titulo": "Industry Track - Session 1" },
-        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
-        { "hora": "11:00 - 13:00", "titulo": "Industry Track - Session 2" },
+    "palestranteprincipalfabianodalpiaz": "Conferencia Principal - Fabiano Dalpiaz",
+    "palestranteprincipalindustryjorgeceballos": "Conferencia Principal Industria - Jorge Ceballos",
+    "palestranteprincipalalejandrooliveros": "Conferencia Principal - Alejandro Oliveros",
 
-        { "hora": "13:00 - 14:30", "titulo": "Almoço", "tipo": "break" },
+    "intervalocoffeebreak": "Coffee Break",
 
-        { "hora": "14:30 - 16:00", "titulo": "Research Track - Session 3" },
-        { "hora": "16:00 - 16:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
-        { "hora": "16:30 - 18:00", "titulo": "Research Track - Session 4" }
-      ]
-    },
-    {
-      "dia": "Sexta-feira",
-      "fecha": "9 de agosto",
-      "eventos": [
-        { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
-        { "hora": "09:00 - 10:00", "titulo": "Palestrante principal: Alejandro Oliveros" },
-        { "hora": "10:00 - 10:30", "titulo": "Journal First Track - Session 1" },
-        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
-        { "hora": "11:00 - 13:00", "titulo": "Research Track - Session 5" },
+    "requirementtoolstrack": "Track Requirement Tools",
 
-        { "hora": "13:00 - 14:30", "titulo": "Almoço", "tipo": "break" },
+    "researchtracksession1": "Sesión Técnica 1",
+    "researchtracksession2": "Sesión Técnica 2",
+    "researchtracksession3": "Sesión Técnica 3",
+    "researchtracksession4": "Sesión Técnica 4",
+    "researchtracksession5": "Sesión Técnica 5",
+    "researchtracksession6": "Sesión Técnica 6",
 
-        { "hora": "14:30 - 16:00", "titulo": "Research Track - Session 6" },
-        { "hora": "16:00 - 16:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
-        { "hora": "16:30 - 16:45", "titulo": "Journal First Track - Session 2" },
-        { "hora": "16:45 - 17:10", "titulo": "Cerimônia de encerramento e premiação" }
-      ]
-    }
-  ]
+    "industrytracksession1": "Sesión Industria 1",
+    "industrytracksession2": "Sesión Industria 2",
+
+    "journalfirsttracksession1": "Journal First - Sesión 1",
+    "journalfirsttracksession2": "Journal First - Sesión 2",
+
+    "mastersanddoctoraltrack": "Track Maestría y Doctorado",
+
+    "cerimoniadeencerramentoepremiacao": "Clausura y premiación"
+  },
+
+  "en": {
+    "quartafeira": "Wednesday",
+    "quintafeira": "Thursday",
+    "sextafeira": "Friday",
+
+    "cadastro": "Registration",
+    "cerimoniadeabertura": "Opening Ceremony",
+
+    "palestranteprincipalfabianodalpiaz": "Keynote - Fabiano Dalpiaz",
+    "palestranteprincipalindustryjorgeceballos": "Industry Keynote - Jorge Ceballos",
+    "palestranteprincipalalejandrooliveros": "Keynote - Alejandro Oliveros",
+
+    "intervalocoffeebreak": "Coffee Break",
+
+    "requirementtoolstrack": "Requirement Tools Track",
+
+    "researchtracksession1": "Research Track - Session 1",
+    "researchtracksession2": "Research Track - Session 2",
+    "researchtracksession3": "Research Track - Session 3",
+    "researchtracksession4": "Research Track - Session 4",
+    "researchtracksession5": "Research Track - Session 5",
+    "researchtracksession6": "Research Track - Session 6",
+
+    "industrytracksession1": "Industry Track - Session 1",
+    "industrytracksession2": "Industry Track - Session 2",
+
+    "journalfirsttracksession1": "Journal First Track - Session 1",
+    "journalfirsttracksession2": "Journal First Track - Session 2",
+
+    "mastersanddoctoraltrack": "Master's and Doctoral Track",
+
+    "cerimoniadeencerramentoepremiacao": "Closing Ceremony and Awards"
+  },
+
+  "pt": {
+    "quartafeira": "Quarta-feira",
+    "quintafeira": "Quinta-feira",
+    "sextafeira": "Sexta-feira",
+
+    "cadastro": "Cadastro",
+    "cerimoniadeabertura": "Cerimônia de abertura",
+
+    "palestranteprincipalfabianodalpiaz": "Palestrante principal: Fabiano Dalpiaz",
+    "palestranteprincipalindustryjorgeceballos": "Palestrante principal - Industry: Jorge Ceballos",
+    "palestranteprincipalalejandrooliveros": "Palestrante principal: Alejandro Oliveros",
+
+    "intervalocoffeebreak": "Intervalo/Coffee-break",
+
+    "requirementtoolstrack": "Requirement Tools Track",
+
+    "researchtracksession1": "Research Track - Session 1",
+    "researchtracksession2": "Research Track - Session 2",
+    "researchtracksession3": "Research Track - Session 3",
+    "researchtracksession4": "Research Track - Session 4",
+    "researchtracksession5": "Research Track - Session 5",
+    "researchtracksession6": "Research Track - Session 6",
+
+    "industrytracksession1": "Industry Track - Session 1",
+    "industrytracksession2": "Industry Track - Session 2",
+
+    "journalfirsttracksession1": "Journal First Track - Session 1",
+    "journalfirsttracksession2": "Journal First Track - Session 2",
+
+    "mastersanddoctoraltrack": "Master's and Doctoral Track",
+
+    "cerimoniadeencerramentoepremiacao": "Cerimônia de encerramento e premiação"
+  }
 }
