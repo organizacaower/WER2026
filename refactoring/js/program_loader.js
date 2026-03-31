@@ -16,16 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const tabla = document.getElementById("tabla-programa");
 
-    // 🔥 traducción usando TEXTO como clave
-    const tDia = (texto) =>
-      traducciones?.[lang]?.dias?.[texto] ||
-      traducciones?.es?.dias?.[texto] ||
-      texto;
+    // 🔥 NORMALIZAR TEXTO → clave
+    const normalize = (str) =>
+      str
+        ?.toLowerCase()
+        .normalize("NFD")                 // quita tildes
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, "");             // quita espacios
 
-    const tEvento = (texto) =>
-      traducciones?.[lang]?.eventos?.[texto] ||
-      traducciones?.es?.eventos?.[texto] ||
-      texto;
+    // 🔥 TRADUCTOR
+    const t = (texto) => {
+      const key = normalize(texto);
+      return traducciones?.[lang]?.[key]
+          || traducciones?.es?.[key]
+          || texto;
+    };
 
     let html = "<thead><tr>";
 
@@ -33,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     programa.dias.forEach(dia => {
       html += `
         <th class="bg-dark text-white">
-          ${tDia(dia.dia)}, ${dia.fecha}
+          ${t(dia.dia)}, ${dia.fecha}
         </th>`;
     });
 
@@ -53,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         html += `
           <p class="${clase}">
-            <b>${ev.hora || ""}</b> ${tEvento(ev.titulo)}
+            <b>${ev.hora || ""}</b> ${t(ev.titulo)}
           </p>
         `;
       });
