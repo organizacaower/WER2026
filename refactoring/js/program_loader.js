@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ? match[1]
     : (document.documentElement.lang || "es");
 
-  console.log("LANG:", lang);
+  
 
   Promise.all([
     fetch('../program.json').then(res => res.json()),
