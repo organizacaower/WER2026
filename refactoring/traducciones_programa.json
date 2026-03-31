@@ -10,7 +10,7 @@
     "palestranteprincipalfabianodalpiaz": "Conferencia Principal - Fabiano Dalpiaz",
     "palestranteprincipalindustryjorgeceballos": "Conferencia Principal Industria - Jorge Ceballos",
     "palestranteprincipalalejandrooliveros": "Conferencia Principal - Alejandro Oliveros",
-
+    "almoco": "Almuerzo",
     "intervalocoffeebreak": "Coffee Break",
 
     "requirementtoolstrack": "Track Requirement Tools",
@@ -37,6 +37,7 @@
     "quartafeira": "Wednesday",
     "quintafeira": "Thursday",
     "sextafeira": "Friday",
+    "almoco": "Lunch",
 
     "cadastro": "Registration",
     "cerimoniadeabertura": "Opening Ceremony",
@@ -71,7 +72,7 @@
     "quartafeira": "Quarta-feira",
     "quintafeira": "Quinta-feira",
     "sextafeira": "Sexta-feira",
-
+    "almoco": "Almoco",
     "cadastro": "Cadastro",
     "cerimoniadeabertura": "Cerimônia de abertura",
 
