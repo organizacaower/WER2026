@@ -27,6 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // 🔥 TRADUCTOR
     const t = (texto) => {
       const key = normalize(texto);
+      if (traducciones?.[lang]?.[key]
+          || traducciones?.es?.[key]
+          || texto) {
+            console.log("NO COINCIDE")
+            console.log(key)
+            console.log(texto)
+          }
+      console.log()
       return traducciones?.[lang]?.[key]
           || traducciones?.es?.[key]
           || texto;
