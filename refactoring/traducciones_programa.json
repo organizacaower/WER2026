@@ -1,71 +1,57 @@
 {
-  "es": {
-    "miercoles": "Miércoles",
-    "jueves": "Jueves",
-    "viernes": "Viernes",
-    "registro": "Registro",
-    "apertura": "Apertura",
-    "keynote1": "Conferencia Principal 1",
-    "keynote2": "Conferencia Principal 2",
-    "keynote3": "Conferencia Principal 3",
-    "coffee": "Coffee Break",
-    "sesion1": "Sesión Técnica 1",
-    "sesion2": "Sesión Técnica 2",
-    "sesion3": "Sesión Técnica 3",
-    "sesion4": "Sesión Técnica 4",
-    "sesion5": "Sesión Técnica 5",
-    "sesion6": "Sesión Técnica 6",
-    "sesion7": "Sesión Técnica 7",
-    "almuerzo": "Almuerzo",
-    "panel": "Panel de Discusión",
-    "workshop": "Workshop",
-    "cierre": "Sesión de Cierre",
-    "clausura": "Clausura"
-  },
-  "en": {
-    "miercoles": "Wednesday",
-    "jueves": "Thursday",
-    "viernes": "Friday",
-    "registro": "Registration",
-    "apertura": "Opening",
-    "keynote1": "Keynote 1",
-    "keynote2": "Keynote 2",
-    "keynote3": "Keynote 3",
-    "coffee": "Coffee Break",
-    "sesion1": "Technical Session 1",
-    "sesion2": "Technical Session 2",
-    "sesion3": "Technical Session 3",
-    "sesion4": "Technical Session 4",
-    "sesion5": "Technical Session 5",
-    "sesion6": "Technical Session 6",
-    "sesion7": "Technical Session 7",
-    "almuerzo": "Lunch",
-    "panel": "Panel Discussion",
-    "workshop": "Workshop",
-    "cierre": "Closing Session",
-    "clausura": "Closing Ceremony"
-  },
-  "pt": {
-    "miercoles": "Quarta-feira",
-    "jueves": "Quinta-feira",
-    "viernes": "Sexta-feira",
-    "registro": "Registro",
-    "apertura": "Abertura",
-    "keynote1": "Palestra Principal 1",
-    "keynote2": "Palestra Principal 2",
-    "keynote3": "Palestra Principal 3",
-    "coffee": "Intervalo para café",
-    "sesion1": "Sessão Técnica 1",
-    "sesion2": "Sessão Técnica 2",
-    "sesion3": "Sessão Técnica 3",
-    "sesion4": "Sessão Técnica 4",
-    "sesion5": "Sessão Técnica 5",
-    "sesion6": "Sessão Técnica 6",
-    "sesion7": "Sessão Técnica 7",
-    "almuerzo": "Almoço",
-    "panel": "Painel de Discussão",
-    "workshop": "Workshop",
-    "cierre": "Sessão de Encerramento",
-    "clausura": "Encerramento"
-  }
+  "dias": [
+    {
+      "dia": "Quarta-feira",
+      "fecha": "7 de agosto",
+      "eventos": [
+        { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
+        { "hora": "09:00 - 09:30", "titulo": "Cerimônia de abertura" },
+        { "hora": "09:30 - 10:30", "titulo": "Palestrante principal: Fabiano Dalpiaz" },
+        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "11:30 - 13:00", "titulo": "Requirement Tools Track" },
+        { "hora": "11:30 - 13:00", "titulo": "Research Track - Session 1" },
+
+        { "hora": "13:00 - 14:30", "titulo": "Almoço", "tipo": "break" },
+
+        { "hora": "14:30 - 16:00", "titulo": "Research Track - Session 2" },
+        { "hora": "16:00 - 16:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "16:30 - 18:00", "titulo": "Master's and Doctoral Track" }
+      ]
+    },
+    {
+      "dia": "Quinta-feira",
+      "fecha": "8 de agosto",
+      "eventos": [
+        { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
+        { "hora": "09:00 - 10:00", "titulo": "Palestrante principal - Industry: Jorge Ceballos" },
+        { "hora": "10:00 - 10:20", "titulo": "Industry Track - Session 1" },
+        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "11:00 - 13:00", "titulo": "Industry Track - Session 2" },
+
+        { "hora": "13:00 - 14:30", "titulo": "Almoço", "tipo": "break" },
+
+        { "hora": "14:30 - 16:00", "titulo": "Research Track - Session 3" },
+        { "hora": "16:00 - 16:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "16:30 - 18:00", "titulo": "Research Track - Session 4" }
+      ]
+    },
+    {
+      "dia": "Sexta-feira",
+      "fecha": "9 de agosto",
+      "eventos": [
+        { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
+        { "hora": "09:00 - 10:00", "titulo": "Palestrante principal: Alejandro Oliveros" },
+        { "hora": "10:00 - 10:30", "titulo": "Journal First Track - Session 1" },
+        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "11:00 - 13:00", "titulo": "Research Track - Session 5" },
+
+        { "hora": "13:00 - 14:30", "titulo": "Almoço", "tipo": "break" },
+
+        { "hora": "14:30 - 16:00", "titulo": "Research Track - Session 6" },
+        { "hora": "16:00 - 16:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "16:30 - 16:45", "titulo": "Journal First Track - Session 2" },
+        { "hora": "16:45 - 17:10", "titulo": "Cerimônia de encerramento e premiação" }
+      ]
+    }
+  ]
 }
