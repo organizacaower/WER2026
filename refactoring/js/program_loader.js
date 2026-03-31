@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // detectar idioma (URL o <html lang>)
   const url = window.location.pathname;
   const match = url.match(/\/(es|en|pt)(?:\/|$)/);
   const lang = match
@@ -9,36 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("LANG:", lang);
 
-  // cargar ambos JSON en paralelo
   Promise.all([
-    fetch('../program.json').then(res => {
-      if (!res.ok) throw new Error("Error cargando program.json");
-      return res.json();
-    }),
-    fetch('../traducciones_programa.json').then(res => {
-      if (!res.ok) throw new Error("Error cargando traducciones_programa.json");
-      return res.json();
-    })
+    fetch('../program.json').then(res => res.json()),
+    fetch('../traducciones_programa.json').then(res => res.json())
   ])
   .then(([programa, traducciones]) => {
 
     const tabla = document.getElementById("tabla-programa");
 
-    if (!tabla) {
-      console.error("No existe #tabla-programa");
-      return;
-    }
+    // 🔥 traducción usando TEXTO como clave
+    const tDia = (texto) =>
+      traducciones?.[lang]?.dias?.[texto] ||
+      traducciones?.es?.dias?.[texto] ||
+      texto;
 
-    // helper traducción
-    const tDia = (id) =>
-      traducciones?.[lang]?.dias?.[id] ||
-      traducciones?.es?.dias?.[id] ||
-      id;
-
-    const tEvento = (id) =>
-      traducciones?.[lang]?.eventos?.[id] ||
-      traducciones?.es?.eventos?.[id] ||
-      id;
+    const tEvento = (texto) =>
+      traducciones?.[lang]?.eventos?.[texto] ||
+      traducciones?.es?.eventos?.[texto] ||
+      texto;
 
     let html = "<thead><tr>";
 
@@ -46,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     programa.dias.forEach(dia => {
       html += `
         <th class="bg-dark text-white">
-          ${tDia(dia.dia_id)}, ${dia.fecha}
+          ${tDia(dia.dia)}, ${dia.fecha}
         </th>`;
     });
 
@@ -56,12 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     programa.dias.forEach(dia => {
       html += "<td>";
 
-      if (!dia.eventos) {
-        html += "</td>";
-        return;
-      }
-
-      dia.eventos.forEach(ev => {
+      dia.eventos?.forEach(ev => {
 
         let clase = "";
 
@@ -71,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         html += `
           <p class="${clase}">
-            <b>${ev.hora || ""}</b> ${tEvento(ev.titulo_id)}
+            <b>${ev.hora || ""}</b> ${tEvento(ev.titulo)}
           </p>
         `;
       });
@@ -84,8 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     tabla.innerHTML = html;
 
   })
-  .catch(error => {
-    console.error("Error general:", error);
-  });
+  .catch(err => console.error("ERROR:", err));
 
 });
