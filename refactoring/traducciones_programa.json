@@ -13,22 +13,22 @@
     "almoco": "Almuerzo",
     "intervalocoffeebreak": "Coffee Break",
 
-    "requirementtoolstrack": "Track Requirement Tools",
+    "requirementtoolstrack": "Requirement Tools Track",
 
-    "researchtracksession1": "Sesión Técnica 1",
-    "researchtracksession2": "Sesión Técnica 2",
-    "researchtracksession3": "Sesión Técnica 3",
-    "researchtracksession4": "Sesión Técnica 4",
-    "researchtracksession5": "Sesión Técnica 5",
-    "researchtracksession6": "Sesión Técnica 6",
+    "researchtracksession1": "Research Track - Session 1",
+    "researchtracksession2": "Research Track - Session 2",
+    "researchtracksession3": "Research Track - Session 3",
+    "researchtracksession4": "Research Track - Session 4",
+    "researchtracksession5": "Research Track - Session 5",
+    "researchtracksession6": "Research Track - Session 6",
 
-    "industrytracksession1": "Sesión Industria 1",
-    "industrytracksession2": "Sesión Industria 2",
+    "industrytracksession1": "Industry Track - Session 1",
+    "industrytracksession2": "Industry Track - Session 2",
 
-    "journalfirsttracksession1": "Journal First - Sesión 1",
-    "journalfirsttracksession2": "Journal First - Sesión 2",
+    "journalfirsttracksession1": "Journal First Track - Session 1",
+    "journalfirsttracksession2": "Journal First Track - Session 2",
 
-    "mastersanddoctoraltrack": "Track Maestría y Doctorado",
+    "mastersanddoctoraltrack": "Master's and Doctoral Track",
 
     "cerimoniadeencerramentoepremiacao": "Clausura y premiación"
   },
