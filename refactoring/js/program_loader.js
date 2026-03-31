@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     programa.dias.forEach(dia => {
       html += `
         <th class="bg-dark text-white">
-          ${t(dia.dia)}, ${dia.fecha}
+          ${t(dia.dia)}, ${t(dia.fecha)}
         </th>`;
     });
 
