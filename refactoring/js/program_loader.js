@@ -8,7 +8,7 @@ fetch('../program.json')
     const url = window.location.pathname;
     const match = url.match(/\/(es|en|pt)(?:\/|$)/);
     const lang = match ? match[1] : "es";
-
+    console.log("LANG:", lang);
     // helper de traducción (con fallback)
     const t = (obj) => obj?.[lang] || obj?.es || "";
 
