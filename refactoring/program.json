@@ -1,7 +1,7 @@
 {
   "dias": [
     {
-      "dia": "Quarta-feira",
+      "dia": "quartafeira",
       "fecha": "7 de agosto",
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "dia": "Quinta-feira",
+      "dia": "quintafeira",
       "fecha": "8 de agosto",
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "dia": "Sexta-feira",
+      "dia": "sextafeira",
       "fecha": "9 de agosto",
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
