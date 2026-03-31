@@ -1,0 +1,36 @@
+{
+  "dias": [
+    {
+      "dia": "Quarta-feira",
+      "fecha": "07/08/2026",
+      "eventos": [
+        {
+          "hora": "08:30 - 09:00",
+          "titulo": "Cadastro",
+          "tipo": "normal"
+        },
+        {
+          "hora": "09:00 - 09:30",
+          "titulo": "Cerimônia de abertura",
+          "tipo": "normal"
+        },
+        {
+          "hora": "10:30 - 11:00",
+          "titulo": "Coffee-break",
+          "tipo": "break"
+        }
+      ]
+    },
+    {
+      "dia": "Quinta-feira",
+      "fecha": "08/08/2026",
+      "eventos": [
+        {
+          "hora": "09:00 - 10:00",
+          "titulo": "Palestrante principal",
+          "tipo": "normal"
+        }
+      ]
+    }
+  ]
+}
