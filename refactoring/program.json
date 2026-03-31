@@ -3,7 +3,11 @@
     {
       "dia": "Quarta-feira",
       "fecha": "07/08/2026",
-      "eventos": [
+      "manana": [
+        {
+          "tipo": "lugar",
+          "titulo": "Auditório Roca"
+        },
         {
           "hora": "08:30 - 09:00",
           "titulo": "Cadastro",
@@ -15,19 +19,215 @@
           "tipo": "normal"
         },
         {
+          "hora": "09:30 - 10:30",
+          "titulo": "Palestrante principal: Fabiano Dalpiaz",
+          "tipo": "normal"
+        },
+        {
           "hora": "10:30 - 11:00",
-          "titulo": "Coffee-break",
+          "titulo": "Intervalo / Coffee-break",
           "tipo": "break"
+        },
+        {
+          "hora": "11:00 - 11:30",
+          "titulo": "Requirement Tools Track",
+          "tipo": "normal"
+        },
+        {
+          "hora": "11:30 - 13:00",
+          "titulo": "Research Track - Session 1",
+          "tipo": "normal"
+        }
+      ],
+      "tarde": [
+        {
+          "tipo": "bloque",
+          "salas": [
+            {
+              "nombre": "Auditório Roca",
+              "eventos": [
+                {
+                  "hora": "14:30 - 16:00",
+                  "titulo": "Research Track - Session 2",
+                  "tipo": "normal"
+                },
+                {
+                  "hora": "16:00 - 16:30",
+                  "titulo": "Intervalo / Coffee-break",
+                  "tipo": "break"
+                },
+                {
+                  "hora": "16:30 - 18:00",
+                  "titulo": "Master's and Doctoral Track",
+                  "tipo": "normal"
+                }
+              ]
+            },
+            {
+              "nombre": "Sala de aula 9.1",
+              "eventos": [
+                {
+                  "hora": "14:30 - 16:00",
+                  "titulo": "Tutorial 1 - Session 1",
+                  "tipo": "normal"
+                },
+                {
+                  "hora": "16:00 - 16:30",
+                  "titulo": "Intervalo",
+                  "tipo": "break"
+                },
+                {
+                  "hora": "16:30 - 18:00",
+                  "titulo": "Tutorial 1 - Session 2",
+                  "tipo": "normal"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
+
     {
       "dia": "Quinta-feira",
       "fecha": "08/08/2026",
-      "eventos": [
+      "manana": [
+        {
+          "tipo": "lugar",
+          "titulo": "Auditório Roca"
+        },
+        {
+          "hora": "08:30 - 09:00",
+          "titulo": "Cadastro",
+          "tipo": "normal"
+        },
         {
           "hora": "09:00 - 10:00",
-          "titulo": "Palestrante principal",
+          "titulo": "Palestrante principal - Industry: Jorge Ceballos",
+          "tipo": "normal"
+        },
+        {
+          "hora": "10:00 - 10:20",
+          "titulo": "Industry Track - Session 1",
+          "tipo": "normal"
+        },
+        {
+          "hora": "10:30 - 11:00",
+          "titulo": "Intervalo / Coffee-break",
+          "tipo": "break"
+        },
+        {
+          "hora": "11:00 - 13:00",
+          "titulo": "Industry Track - Session 2",
+          "tipo": "normal"
+        }
+      ],
+      "tarde": [
+        {
+          "tipo": "bloque",
+          "salas": [
+            {
+              "nombre": "Auditório Roca",
+              "eventos": [
+                {
+                  "hora": "14:30 - 16:00",
+                  "titulo": "Research Track - Session 3",
+                  "tipo": "normal"
+                },
+                {
+                  "hora": "16:00 - 16:30",
+                  "titulo": "Intervalo / Coffee-break",
+                  "tipo": "break"
+                },
+                {
+                  "hora": "16:30 - 18:00",
+                  "titulo": "Research Track - Session 4",
+                  "tipo": "normal"
+                }
+              ]
+            },
+            {
+              "nombre": "Sala de aula 9.1",
+              "eventos": [
+                {
+                  "hora": "14:30 - 16:00",
+                  "titulo": "Tutorial 2 - Session 1",
+                  "tipo": "normal"
+                },
+                {
+                  "hora": "16:00 - 16:30",
+                  "titulo": "Intervalo",
+                  "tipo": "break"
+                },
+                {
+                  "hora": "16:30 - 18:00",
+                  "titulo": "Tutorial 2 - Session 2",
+                  "tipo": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "dia": "Sexta-feira",
+      "fecha": "09/08/2026",
+      "manana": [
+        {
+          "tipo": "lugar",
+          "titulo": "Auditório Roca"
+        },
+        {
+          "hora": "08:30 - 09:00",
+          "titulo": "Cadastro",
+          "tipo": "normal"
+        },
+        {
+          "hora": "09:00 - 10:00",
+          "titulo": "Palestrante principal: Alejandro Oliveros",
+          "tipo": "normal"
+        },
+        {
+          "hora": "10:00 - 10:30",
+          "titulo": "Journal First Track - Session 1",
+          "tipo": "normal"
+        },
+        {
+          "hora": "10:30 - 11:00",
+          "titulo": "Intervalo / Coffee-break",
+          "tipo": "break"
+        },
+        {
+          "hora": "11:00 - 13:00",
+          "titulo": "Research Track - Session 5",
+          "tipo": "normal"
+        }
+      ],
+      "tarde": [
+        {
+          "tipo": "lugar",
+          "titulo": "Auditório Roca"
+        },
+        {
+          "hora": "14:30 - 16:00",
+          "titulo": "Research Track - Session 6",
+          "tipo": "normal"
+        },
+        {
+          "hora": "16:00 - 16:30",
+          "titulo": "Intervalo / Coffee-break",
+          "tipo": "break"
+        },
+        {
+          "hora": "16:30 - 16:45",
+          "titulo": "Journal First Track - Session 2",
+          "tipo": "normal"
+        },
+        {
+          "hora": "16:45 - 17:10",
+          "titulo": "Cerimônia de encerramento e premiação",
           "tipo": "normal"
         }
       ]
