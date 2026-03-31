@@ -1,8 +1,16 @@
-
 fetch('../program.json')
   .then(res => res.json())
   .then(data => {
+
     const tabla = document.getElementById("tabla-programa");
+
+    // detectar idioma desde URL
+    const url = window.location.pathname;
+    const match = url.match(/\/(es|en|pt)(?:\/|$)/);
+    const lang = match ? match[1] : "es";
+
+    // helper de traducción (con fallback)
+    const t = (obj) => obj?.[lang] || obj?.es || "";
 
     let html = "<thead><tr>";
 
@@ -10,7 +18,7 @@ fetch('../program.json')
     data.dias.forEach(dia => {
       html += `
         <th class="bg-dark text-white">
-          ${dia.dia}, ${dia.fecha}
+          ${t(dia.dia)}, ${dia.fecha}
         </th>`;
     });
 
@@ -30,7 +38,7 @@ fetch('../program.json')
 
         html += `
           <p class="${clase}">
-            <b>${ev.hora}</b> ${ev.titulo}
+            <b>${ev.hora || ""}</b> ${t(ev.titulo)}
           </p>
         `;
       });

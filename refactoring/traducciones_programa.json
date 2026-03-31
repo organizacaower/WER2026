@@ -1,0 +1,235 @@
+{
+  "dias": [
+    {
+      "dia": {
+        "es": "Miércoles",
+        "en": "Wednesday",
+        "pt": "Quarta-feira"
+      },
+      "fecha": "23/09/2026",
+      "eventos": [
+        {
+          "hora": "08:30",
+          "titulo": {
+            "es": "Registro",
+            "en": "Registration",
+            "pt": "Registro"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "09:00",
+          "titulo": {
+            "es": "Apertura",
+            "en": "Opening",
+            "pt": "Abertura"
+          }
+        },
+        {
+          "hora": "10:00",
+          "titulo": {
+            "es": "Conferencia Principal 1",
+            "en": "Keynote 1",
+            "pt": "Palestra Principal 1"
+          }
+        },
+        {
+          "hora": "11:00",
+          "titulo": {
+            "es": "Coffee Break",
+            "en": "Coffee Break",
+            "pt": "Intervalo para café"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "11:30",
+          "titulo": {
+            "es": "Sesión Técnica 1",
+            "en": "Technical Session 1",
+            "pt": "Sessão Técnica 1"
+          }
+        },
+        {
+          "hora": "13:00",
+          "titulo": {
+            "es": "Almuerzo",
+            "en": "Lunch",
+            "pt": "Almoço"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "14:30",
+          "titulo": {
+            "es": "Sesión Técnica 2",
+            "en": "Technical Session 2",
+            "pt": "Sessão Técnica 2"
+          }
+        },
+        {
+          "hora": "16:00",
+          "titulo": {
+            "es": "Coffee Break",
+            "en": "Coffee Break",
+            "pt": "Intervalo para café"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "16:30",
+          "titulo": {
+            "es": "Panel de Discusión",
+            "en": "Panel Discussion",
+            "pt": "Painel de Discussão"
+          }
+        }
+      ]
+    },
+    {
+      "dia": {
+        "es": "Jueves",
+        "en": "Thursday",
+        "pt": "Quinta-feira"
+      },
+      "fecha": "24/09/2026",
+      "eventos": [
+        {
+          "hora": "09:00",
+          "titulo": {
+            "es": "Conferencia Principal 2",
+            "en": "Keynote 2",
+            "pt": "Palestra Principal 2"
+          }
+        },
+        {
+          "hora": "10:00",
+          "titulo": {
+            "es": "Sesión Técnica 3",
+            "en": "Technical Session 3",
+            "pt": "Sessão Técnica 3"
+          }
+        },
+        {
+          "hora": "11:00",
+          "titulo": {
+            "es": "Coffee Break",
+            "en": "Coffee Break",
+            "pt": "Intervalo para café"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "11:30",
+          "titulo": {
+            "es": "Sesión Técnica 4",
+            "en": "Technical Session 4",
+            "pt": "Sessão Técnica 4"
+          }
+        },
+        {
+          "hora": "13:00",
+          "titulo": {
+            "es": "Almuerzo",
+            "en": "Lunch",
+            "pt": "Almoço"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "14:30",
+          "titulo": {
+            "es": "Sesión Técnica 5",
+            "en": "Technical Session 5",
+            "pt": "Sessão Técnica 5"
+          }
+        },
+        {
+          "hora": "16:00",
+          "titulo": {
+            "es": "Coffee Break",
+            "en": "Coffee Break",
+            "pt": "Intervalo para café"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "16:30",
+          "titulo": {
+            "es": "Workshop",
+            "en": "Workshop",
+            "pt": "Workshop"
+          }
+        }
+      ]
+    },
+    {
+      "dia": {
+        "es": "Viernes",
+        "en": "Friday",
+        "pt": "Sexta-feira"
+      },
+      "fecha": "25/09/2026",
+      "eventos": [
+        {
+          "hora": "09:00",
+          "titulo": {
+            "es": "Conferencia Principal 3",
+            "en": "Keynote 3",
+            "pt": "Palestra Principal 3"
+          }
+        },
+        {
+          "hora": "10:00",
+          "titulo": {
+            "es": "Sesión Técnica 6",
+            "en": "Technical Session 6",
+            "pt": "Sessão Técnica 6"
+          }
+        },
+        {
+          "hora": "11:00",
+          "titulo": {
+            "es": "Coffee Break",
+            "en": "Coffee Break",
+            "pt": "Intervalo para café"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "11:30",
+          "titulo": {
+            "es": "Sesión Técnica 7",
+            "en": "Technical Session 7",
+            "pt": "Sessão Técnica 7"
+          }
+        },
+        {
+          "hora": "13:00",
+          "titulo": {
+            "es": "Almuerzo",
+            "en": "Lunch",
+            "pt": "Almoço"
+          },
+          "tipo": "break"
+        },
+        {
+          "hora": "14:30",
+          "titulo": {
+            "es": "Sesión de Cierre",
+            "en": "Closing Session",
+            "pt": "Sessão de Encerramento"
+          }
+        },
+        {
+          "hora": "16:00",
+          "titulo": {
+            "es": "Clausura",
+            "en": "Closing Ceremony",
+            "pt": "Encerramento"
+          }
+        }
+      ]
+    }
+  ]
+}
