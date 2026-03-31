@@ -2,7 +2,7 @@
   "dias": [
     {
       "dia": "quartafeira",
-      "fecha": "7 de agosto",
+      "fecha": "7agosto",
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
         { "hora": "09:00 - 09:30", "titulo": "Cerimônia de abertura" },
@@ -20,7 +20,7 @@
     },
     {
       "dia": "quintafeira",
-      "fecha": "8 de agosto",
+      "fecha": "8agosto",
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
         { "hora": "09:00 - 10:00", "titulo": "palestranteprincipalindustryjorgeceballos" },
@@ -37,7 +37,7 @@
     },
     {
       "dia": "sextafeira",
-      "fecha": "9 de agosto",
+      "fecha": "9agosto",
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
         { "hora": "09:00 - 10:00", "titulo": "palestranteprincipalalejandrooliveros" },

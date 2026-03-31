@@ -1,5 +1,8 @@
 {
   "es": {
+    "7agosto":"7 de Agosto",
+    "8agosto":"8 de Agosto",
+    "9agosto":"9 de Agosto",
     "quartafeira": "Miércoles",
     "quintafeira": "Jueves",
     "sextafeira": "Viernes",
@@ -38,6 +41,9 @@
     "quintafeira": "Thursday",
     "sextafeira": "Friday",
     "almoco": "Lunch",
+    "7agosto":"August 7", 
+    "8agosto":"August 8", 
+    "9agosto":"August 9",
 
     "cadastro": "Registration",
     "cerimoniadeabertura": "Opening Ceremony",
@@ -69,6 +75,9 @@
   },
 
   "pt": {
+    "7agosto":"7 de Agosto",
+    "8agosto":"8 de Agosto",
+    "9agosto":"9 de Agosto",
     "quartafeira": "Quarta-feira",
     "quintafeira": "Quinta-feira",
     "sextafeira": "Sexta-feira",
