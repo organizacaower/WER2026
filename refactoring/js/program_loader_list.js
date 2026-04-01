@@ -23,10 +23,10 @@ function t(key) {
   return traducciones[lang]?.[k] || key;
 }
 
-// 🎯 MAPEO track → programa
+// 🎯 MAPEO track → programa (🔥 FIX AQUÍ)
 function obtenerClavePrograma(paper) {
-  const match = paper.paper_session.match(/(\d+)/);
-  const session = match ? match[1] : "";
+  const match = paper.paper_session?.match(/(\d+)/);
+  const session = match ? match[1] : null;
 
   const trackMap = {
     "RRT": "researchtrack",
@@ -39,7 +39,13 @@ function obtenerClavePrograma(paper) {
 
   const base = trackMap[paper.track] || "";
 
-  return normalizarKey(`${base}session${session}`);
+  // ✔ con sesión
+  if (session) {
+    return normalizarKey(`${base}session${session}`);
+  }
+
+  // ✔ sin sesión → solo track
+  return normalizarKey(base);
 }
 
 // 📦 agrupar papers
@@ -101,12 +107,20 @@ function renderPrograma() {
 
       const claveEvento = normalizarKey(evento.titulo);
 
-      // 🔥 insertar papers si existen
-      if (papersPorSesion[claveEvento]) {
+      // 🔥 buscar papers (con fallback a track)
+      let papersEvento = papersPorSesion[claveEvento];
+
+      if (!papersEvento) {
+        const claveTrack = claveEvento.replace(/session\d+/, "");
+        papersEvento = papersPorSesion[claveTrack];
+      }
+
+      // render
+      if (papersEvento) {
 
         html += `<ul>`;
 
-        papersPorSesion[claveEvento].forEach(paper => {
+        papersEvento.forEach(paper => {
 
           const autores = paper.authors
             .map(a => `${a.nombre} ${a.apellido}`)
@@ -116,7 +130,6 @@ function renderPrograma() {
             <li>
               <b>${paper.title}</b><br>
               <small>${autores}</small><br>
-             
             </li>
           `;
         });
