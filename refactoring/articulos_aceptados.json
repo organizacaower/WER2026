@@ -38,7 +38,7 @@
      "abstract":"En todo proceso, su gestión es una actividad distinguible e interdependiente de las demás. La gestión se ocupa de regular el proceso. Es muy importante tener siempre presente que la gestión no solo debe actuar correctivamente ante aquellos problemas internos derivados de dificultades en cumplir los planes, sino que también debe atender circunstancias externas que influyen en el proceso que está siendo gestionado. Esto ocurre porque usualmente el contexto evoluciona y en ocasiones esa evolución atenta contra el cumplimiento de los objetivos perseguidos. En ambos casos la gestión requiere disponer de métricas adecuadas que permitan controlar y tomar decisiones. Por otro lado, la gestión no solo establece las métricas a usar, sino también los métodos, técnicas y herramientas a emplear en el proceso de requisitos con base en el contexto de aplicación, y los objetivos, plazos y costos acordados, entre otros factores. En este tutorial, se presentan las actividades que hacen a la gestión del proceso de requisitos y sus productos, la configuración y los cambios, el uso de métricas y la selección de métodos, técnicas y herramientas que den soporte al proceso.",
     "language":"ES",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202500_1.pdf",
-    "paper_session": "Regular Research Track (RRT) - Sesión 2"
+    "paper_session": "Tutorial Track (TT)"
   },
   {
     "track": "IT",
@@ -53,7 +53,7 @@
     "abstract":"Requirements elicitation is the process through which engineers interact with information sources to acquire knowledge about a specific domain. In the early stages of software projects, it is uncommon for engineers to elicit non-functional requirements (NFRs) as first-class requirements, as this often demands time and articulation that stakeholders may not readily provide. Large Language Models (LLMs), such as ChatGPT, trained on massive textual datasets, offer a promising opportunity to support this process by generating coherent and context-relevant information about qualities that are key to a given domain problem. In this study, we explore the potential of ChatGPT as an information source for eliciting NFRs related to responsible fact-checking in journalism. Using a previously constructed reference model - developed by the first co-author during a series of Design Thinking sessions with journalism professionals - as a gold standard, three requirements engineering experts, none of whom were familiar with the domain, conducted individual chat sessions with ChatGPT and independently constructed Softgoal Interdependency Graphs (SIGs). Our findings go beyond a simple comparison with the gold standard. While some softgoals consistently emerged across sessions (e.g., trust, accuracy, transparency), participants also uncovered quality concerns such as integrity, dignity, and fairness - elements not explicitly included in the original model. These highlight risks that fact-checking practices must proactively mitigate and offer a broader understanding of relevant qualities in the domain. Additionally, the absence of certain softgoals from the LLM-generated models underscores the importance of human–AI collaboration to improve the completeness and contextual richness of SIGs.",
     "language":"EN",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202528.pdf",
-    "paper_session": "Tutorial Track (TT)"
+    "paper_session": "Industry Track (IT) - Sesión 1"
   },
   {
     "track": "SRTT",
