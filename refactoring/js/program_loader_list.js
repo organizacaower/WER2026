@@ -31,7 +31,7 @@ function obtenerClavePrograma(paper) {
     "RRT": "researchtrack",
     "IT": "industrytrack",
     "JFT": "journalfirsttrack",
-    "SRTT": "requirementstoolstrack",
+    "SRTT": "requirementtoolstrack",
     "TT": "tutorialtrack",
     "MDT": "mastersanddoctoraltrack",
     "ST":"studentstrack"
