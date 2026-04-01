@@ -114,9 +114,6 @@ function renderPrograma() {
 
       if (!papersEvento) {
         const claveTrack = claveEvento.replace(/session\d+/, "");
-        console.log(claveTrack)
-        console.log(papersPorSesion[claveTrack])
-        console.log(papersPorSesion)
         papersEvento = papersPorSesion[claveTrack];
       }
 
