@@ -11,7 +11,7 @@
     "abstract":"La fase de requisitos es importante para el éxito de un proyecto de software, ya que un levantamiento bien definido evita costos altos por correcciones y asegura productos alineados con las expectativas del usuario. Sin embargo, el enfoque tradicional suele centrarse en requisitos funcionales y no funcionales, ignorando la interacción del usuario, lo que genera interfaces (UI) poco usables. Este trabajo propone un nuevo enfoque que incorpora patrones de interacción validados en la fase de requisitos para optimizar el diseño de UI. La metodología consta de tres etapas: 1) identificación sistemática de patrones de interacción relevantes para el dominio, 2) análisis contextual de requisitos y 3) mapeo de patrones a requisitos mediante validación heurística. Se evaluó mediante un caso de estudio en una aplicación web para actualización de datos con validación biométrica, con doce requisitos implementados por un equipo de cinco desarrolladores. Los resultados preliminares muestran que los patrones optimizaron la estructura de la UI y la retroalimentación, alineando requisitos con estándares de usabilidad. Los resultados sugieren que el enfoque no solo alinea el diseño con mejores prácticas, sino que también ofrece beneficios medibles en eficiencia y mantenibilidad. Futuros estudios podrían cuantificar su impacto con métricas como SUS y explorar su escalabilidad en sistemas complejos, integrar sistemáticamente las pautas de accesibilidad WCAG, y el uso de aprendizaje automático para recomendación adaptativa de patrones.",
     "language":"ES",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202514.pdf",
-    "paper_session": "Regular Research Track (RRT) - Sesión 2"
+    "paper_session": "Regular Research Track (RRT) - Sesión 1"
   },
   {
     "track": "MDT",
@@ -24,7 +24,7 @@
     "abstract":"Como qualquer outro software, os jogos digitais devem ser desenvolvidos com base em modelos de sistemas. Assim, a aplicação de técnicas da Engenharia de Requisitos é fundamental para garantir a qualidade e a agilidade na construção desses produtos, cada vez mais demandados pelo mercado do entretenimento e âmbito educacional. Considerando a abordagem de desenvolvimento de Jogos Digitais, a perspectiva da Engenharia de Requisitos e o ensino de Computação plugada para estudantes de 6 a 10 anos, este projeto de pesquisa tem como objetivo o desenvolvimento e a avaliação de um catálogo de Requisitos Não-Funcionais para o desenvolvimento de Jogos Digitais Educacionais para o ensino de Computação nos Anos Iniciais do Ensino Fundamental. Como base teórica privilegiaram-se os pressupostos teóricos, legais e pedagógicos que sustentam a implementação da Computação na Educação Básica brasileira, para esta pesquisa, será enaltecida a etapa dos Anos Iniciais do Ensino Fundamental. Além disso, fazem parte da fundamentação, as definições e classificações, multidisciplinaridade e as arquiteturas do Desenvolvimento de Jogos Digitais. A estruturação do catálogo será baseada no NFR Framework.",
     "language":"PT",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202525.pdf",
-    "paper_session": "Regular Research Track (RRT) - Sesión 2"
+    "paper_session": "Regular Research Track (RRT) - Sesión 1"
   },
   {
     "track": "TT",

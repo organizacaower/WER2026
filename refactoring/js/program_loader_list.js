@@ -116,9 +116,7 @@ function renderPrograma() {
             <li>
               <b>${paper.title}</b><br>
               <small>${autores}</small><br>
-              <a href="${paper.file_name}" target="_blank">
-                Ver paper
-              </a>
+             
             </li>
           `;
         });
