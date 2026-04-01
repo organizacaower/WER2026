@@ -23,11 +23,12 @@ function t(key) {
   return traducciones[lang]?.[k] || key;
 }
 
-// 🎯 MAPEO track → programa (🔥 FIX AQUÍ)
+
 function obtenerClavePrograma(paper) {
   const match = paper.paper_session?.match(/(\d+)/);
   const session = match ? match[1] : null;
-
+  console.log(match);
+  console.log(session);
   const trackMap = {
     "RRT": "researchtrack",
     "IT": "industrytrack",
