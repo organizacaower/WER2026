@@ -27,8 +27,6 @@ function t(key) {
 function obtenerClavePrograma(paper) {
   const match = paper.paper_session?.match(/(\d+)/);
   const session = match ? match[1] : null;
-  console.log(match);
-  console.log(session);
   const trackMap = {
     "RRT": "researchtrack",
     "IT": "industrytrack",
@@ -43,7 +41,9 @@ function obtenerClavePrograma(paper) {
 
   // ✔ con sesión
   if (session) {
+    console.log(normalizarKey(`${base}session${session}`));
     return normalizarKey(`${base}session${session}`);
+
   }
 
   // ✔ sin sesión → solo track
