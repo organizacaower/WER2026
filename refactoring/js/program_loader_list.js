@@ -41,7 +41,6 @@ function obtenerClavePrograma(paper) {
 
   // ✔ con sesión
   if (session) {
-    console.log(normalizarKey(`${base}session${session}`));
     return normalizarKey(`${base}session${session}`);
 
   }
