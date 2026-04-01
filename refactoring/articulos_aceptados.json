@@ -24,7 +24,7 @@
     "abstract":"Como qualquer outro software, os jogos digitais devem ser desenvolvidos com base em modelos de sistemas. Assim, a aplicação de técnicas da Engenharia de Requisitos é fundamental para garantir a qualidade e a agilidade na construção desses produtos, cada vez mais demandados pelo mercado do entretenimento e âmbito educacional. Considerando a abordagem de desenvolvimento de Jogos Digitais, a perspectiva da Engenharia de Requisitos e o ensino de Computação plugada para estudantes de 6 a 10 anos, este projeto de pesquisa tem como objetivo o desenvolvimento e a avaliação de um catálogo de Requisitos Não-Funcionais para o desenvolvimento de Jogos Digitais Educacionais para o ensino de Computação nos Anos Iniciais do Ensino Fundamental. Como base teórica privilegiaram-se os pressupostos teóricos, legais e pedagógicos que sustentam a implementação da Computação na Educação Básica brasileira, para esta pesquisa, será enaltecida a etapa dos Anos Iniciais do Ensino Fundamental. Além disso, fazem parte da fundamentação, as definições e classificações, multidisciplinaridade e as arquiteturas do Desenvolvimento de Jogos Digitais. A estruturação do catálogo será baseada no NFR Framework.",
     "language":"PT",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202525.pdf",
-    "paper_session": "Regular Research Track (RRT) - Sesión 1"
+    "paper_session": "Masters and Doctoral Track (MDT)"
   },
   {
     "track": "TT",
@@ -69,7 +69,7 @@
     "abstract":"Os Casos de Garantia de Segurança (CGS) tornaram-se elementos es- senciais e indispensáveis na certificação de segurança em diversos domínios de sistemas críticos. Esses processos de certificação são rigorosos e exigem argu- mentos sólidos, sustentados por um conjunto de evidências de alta qualidade que comprovem a segurança e a adequação do sistema ao seu ambiente de uso específico. No entanto, a avaliação dessas evidências frequentemente depende do julgamento humano, o que pode estar sujeito a vieses cognitivos, comprome- tendo a validade dos argumentos apresentados. Este trabalho apresenta o appS- CE (App for Safety Classification of Evidence), uma ferramenta de código aberto, acessível via web, que segue uma arquitetura cliente-servidor e utiliza tecnologias como TypeScript, React Native, Node.js e Firebase Firestore. O ap- pSCE apoia a abordagem Classify Evidence, que visa classificar a qualidade das evidências de segurança utilizadas na construção dos CGS. O objetivo do aplicativo é facilitar o controle e gerenciamento da classificação das evidências, tornando-as mais dinâmicas e acessíveis, e, desta, contribuir para uma comuni- cação mais eficaz e confiável entre os stakeholders envolvidos.",
     "language":"PT",
     "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202520.pdf",
-    "paper_session": "Regular Research Track (RRT) - Sesión 2"
+    "paper_session": "Requirements tools track"
   },
   {
     "track": "ST",
@@ -82,7 +82,7 @@
     "abstract":"Los contextos actuales entorno a la Ingeniería de Requisitos se caracterizan por la priorización de la recuperación de los requisitos funcionales y no funcionales en el marco de grandes volúmenes de datos. Los data warehouse y la ciencia de datos gestionan grandes cantidades de información que cambian con frecuencia. Si bien se estudian y se analizan tendencias, las empresas no están exentas a esta situación, ya que podrían enfrentar problemas de escalabilidad, consistencia y competitividad, así como la posible pérdida de trazabilidad de requisitos, los cuales se actualizan constantemente. En este sentido, la gestión eficiente de la priorización de los requisitos no solo es esencial, sino una necesidad fundamental que puede resultar crítica en el desarrollo de software. Existen múltiples factores que influyen en este desafío, pero dos de los motivos más relevantes son, por un lado, la optimización del análisis inteligencia empresarial, asegurando que se ajuste a los tiempos, costos y el mantenimiento actualizado de los requisitos prioritarios en el desarrollo de software, ya sean funcionales o no funcionales, así como también la documentación correspondiente. Por otro lado, la necesidad de garantizar que la trazabilidad del desarrollo de un sistema de software no se vea comprometida. En este contexto, en el presente artículo se comparan dos técnicas de indexación para la recuperación de datos: la indexación completa y la indexación incremental. Se aplica este análisis al contexto específico de la extracción y priorización de requisitos en entornos de Big Data, destacando beneficios como la mejora de la calidad y consistencias de la información obtenida, la rapidez en los procesos de recuperación y priorización de requisitos bajo criterios explícitos de clasificación -aspecto crucial para metodologías ágiles- y, finalmente la optimización y la reducción de tiempos para garantizar que los requisitos se mantengan actualizados",
     "language":"EN",
     "file_name": "https://organizacaower.github.io/wer2025/files/articles/WER_2025_paper_60-camera%20ready.pdf",
-    "paper_session": "Regular Research Track (RRT) - Sesión 2"
+    "paper_session": "Student track"
   },
   {
   "track": "JFT",
