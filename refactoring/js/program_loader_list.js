@@ -109,10 +109,12 @@ function renderPrograma() {
       const claveEvento = normalizarKey(evento.titulo);
 
       // 🔥 buscar papers (con fallback a track)
+      console.log(claveEvento)
       let papersEvento = papersPorSesion[claveEvento];
 
       if (!papersEvento) {
         const claveTrack = claveEvento.replace(/session\d+/, "");
+        console.log(claveTrack)
         papersEvento = papersPorSesion[claveTrack];
       }
 
