@@ -41,6 +41,7 @@
       "eventos": [
         { "hora": "08:30 - 09:00", "titulo": "Cadastro" },
         { "hora": "09:00 - 10:00", "titulo": "palestranteprincipalalejandrooliveros" },
+        { "hora": "09:00 - 10:00", "titulo": "tutorialtrack" },
         { "hora": "10:00 - 10:30", "titulo": "journalfirsttracksession1" },
         { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
         { "hora": "11:00 - 13:00", "titulo": "researchtracksession5" },

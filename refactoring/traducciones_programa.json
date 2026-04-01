@@ -15,6 +15,8 @@
     "palestranteprincipalalejandrooliveros": "Conferencia Principal - Alejandro Oliveros",
     "almoco": "Almuerzo",
     "intervalocoffeebreak": "Coffee Break",
+    "tutorialtrack":"Tutorial Track",
+    "studentstrack":"Student Track",
 
     "requirementtoolstrack": "Requirement Tools Track",
 
@@ -47,6 +49,7 @@
 
     "cadastro": "Registration",
     "cerimoniadeabertura": "Opening Ceremony",
+    "tutorialtrack":"Tutorial Track",
 
     "palestranteprincipalfabianodalpiaz": "Keynote - Fabiano Dalpiaz",
     "palestranteprincipalindustryjorgeceballos": "Industry Keynote - Jorge Ceballos",
@@ -55,6 +58,7 @@
     "intervalocoffeebreak": "Coffee Break",
 
     "requirementtoolstrack": "Requirement Tools Track",
+    "studentstrack":"Student Track",
 
     "researchtracksession1": "Research Track - Session 1",
     "researchtracksession2": "Research Track - Session 2",
@@ -84,6 +88,8 @@
     "almoco": "Almoço",
     "cadastro": "Cadastro",
     "cerimoniadeabertura": "Cerimônia de abertura",
+    "tutorialtrack":"Tutorial Track",
+    "studentstrack":"Student Track",
 
     "palestranteprincipalfabianodalpiaz": "Palestrante principal: Fabiano Dalpiaz",
     "palestranteprincipalindustryjorgeceballos": "Palestrante principal - Industry: Jorge Ceballos",

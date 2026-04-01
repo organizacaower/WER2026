@@ -32,9 +32,10 @@ function obtenerClavePrograma(paper) {
     "RRT": "researchtrack",
     "IT": "industrytrack",
     "JFT": "journalfirsttrack",
-    "SRTT": "shortresearchtrack",
+    "SRTT": "requirementstoolstrack",
     "TT": "tutorialtrack",
-    "MDT": "mastersanddoctoraltrack"
+    "MDT": "mastersanddoctoraltrack",
+    "ST":"studentstrack"
   };
 
   const base = trackMap[paper.track] || "";
