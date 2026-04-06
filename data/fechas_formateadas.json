@@ -25,14 +25,14 @@
   "SRTT": {
     "nombre": "Software Requirement Tools Track",
     "abstract": {
-      "original": null,
-      "actual": "06/04/2026",
-      "status": []
+      "original": ["06/04/2026"],
+      "actual": "13/04/2026",
+      "status":["extended"]
     },
     "paper": {
-      "original": null,
-      "actual": "13/04/2026",
-      "status": []
+      "original": ["13/04/2026"],
+      "actual": "27/04/2026",
+      "status": ["extended"]
     },
     "notification": {
       "original": null,
@@ -48,14 +48,14 @@
   "IT": {
     "nombre": "Industry Track",
     "abstract": {
-      "original": null,
-      "actual": "06/04/2026",
-      "status": []
+      "original": ["06/04/2026"],
+      "actual": "13/04/2026",
+      "status": ["extended"]
     },
     "paper": {
-      "original": null,
-      "actual": "13/04/2026",
-      "status": []
+      "original": ["13/04/2026"],
+      "actual": "27/04/2026",
+      "status": ["extended"]
     },
     "notification": {
       "original": null,
@@ -71,13 +71,13 @@
   "MDT": {
     "nombre": "Master Doctoral Track",
     "abstract": {
-      "original": ["31/03/2026"],
-      "actual": "06/04/2026",
+      "original": ["31/03/2026","06/04/2026"],
+      "actual": "13/04/2026",
       "status": ["extended"]
     },
     "paper": {
-      "original":["06/04/2026"],
-      "actual": "13/04/2026",
+      "original":["06/04/2026","13/04/2026"],
+      "actual": "27/04/2026",
       "status": ["extended"]
     },
     "notification": {
@@ -94,14 +94,14 @@
   "TT": {
     "nombre": "Tutorial Track",
     "abstract": {
-      "original": null,
-      "actual": "06/04/2026",
-      "status": []
+      "original": ["06/04/2026"],
+      "actual": "13/04/2026",
+      "status": ["extended"]
     },
     "paper": {
-      "original": null,
-      "actual": "13/04/2026",
-      "status": []
+      "original": ["13/04/2026"],
+      "actual": "27/04/2026",
+      "status": ["extended"]
     },
     "notification": {
       "original": null,
@@ -117,14 +117,14 @@
   "JFT": {
     "nombre": "Journal First Track",
     "abstract": {
-      "original": null,
-      "actual": "06/04/2026",
-      "status": []
+      "original": ["06/04/2026"],
+      "actual": "13/04/2026",
+      "status": ["extended"]
     },
     "paper": {
-      "original": null,
-      "actual": "13/04/2026",
-      "status": []
+      "original": ["13/04/2026"],
+      "actual": "27/04/2026",
+      "status": ["extended"]
     },
     "notification": {
       "original": null,
