@@ -150,9 +150,9 @@ function renderPrograma() {
 // cargar datos
 async function cargarDatos() {
   const [progRes, tradRes, papersRes] = await Promise.all([
-    fetch("../program.json"),
-    fetch("../traducciones_programa.json"),
-    fetch("../articulos_aceptados.json")
+    fetch("../data/program.json"),
+    fetch("../data/traducciones_programa.json"),
+    fetch("../data/articulos_aceptados.json")
   ]);
 
   programa = await progRes.json();

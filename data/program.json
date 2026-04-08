@@ -1,0 +1,26 @@
+{
+  "dias": [
+    {
+      "dia": "quartafeira",
+      "fecha": "7agosto",
+      "eventos": [
+        { "hora": "14:00 - 15:30", "titulo": "panelndustria" }
+        
+      ]
+    },
+    {
+      "dia": "quintafeira",
+      "fecha": "8agosto",
+      "eventos": [
+        
+      ]
+    },
+    {
+      "dia": "sextafeira",
+      "fecha": "9agosto",
+      "eventos": [
+        
+      ]
+    }
+  ]
+}
