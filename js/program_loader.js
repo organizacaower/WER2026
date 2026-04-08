@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
   Promise.all([
-    fetch('../program.json').then(res => res.json()),
-    fetch('../traducciones_programa.json').then(res => res.json())
+    fetch('../data/program.json').then(res => res.json()),
+    fetch('../data/traducciones_programa.json').then(res => res.json())
   ])
   .then(([programa, traducciones]) => {
 
