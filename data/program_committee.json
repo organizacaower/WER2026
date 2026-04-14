@@ -247,6 +247,14 @@
     "acronimo": "UFES",
     "country": "BR"
   },
+    {
+    "name": "Eduardo Almentero",
+    "email": "eduardo.almentero@ufrrj.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal Rural do Rio de Janeiro",
+    "acronimo": "UFRRJ",
+    "country": "BR"
+  },
   {
     "name": "Pedro Valderas",
     "email": "pvalderas@dsic.upv.es",
