@@ -4,7 +4,17 @@
       "dia": "quartafeira",
       "fecha": "7agosto",
       "eventos": [
-        { "hora": "14:00 - 15:30", "titulo": "panelindustria" }
+        { "hora": "09:00 - 10:30", "titulo": "sesionjaiio" },
+        { "hora": "10:30 - 11:00", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "11:00 - 12:30", "titulo": "sesionjaiio" },
+        { "hora": "12:30 - 13:30", "titulo": "almoco", "tipo": "break" },
+        { "hora": "13:30 - 15:00", "titulo": "sesionjaiio" },
+        { "hora": "14:00 - 15:30", "titulo": "panelindustria" },
+        { "hora": "15:30 - 15:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "13:30 - 15:00", "titulo": "sesionjaiio" }
+        
+        
+
         
       ]
     },

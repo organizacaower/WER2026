@@ -35,7 +35,10 @@
 
     "mastersanddoctoraltrack": "Master's and Doctoral Track",
 
-    "cerimoniadeencerramentoepremiacao": "Clausura y premiación"
+    "cerimoniadeencerramentoepremiacao": "Clausura y premiación",
+    "sesionjaiio": "Sesión - JAIIO",
+    "keynoteplenario":"Keynote Plenario - JAIIO",
+    "actividadculturalplenario":"Actividad Cultural Plenario - JAIIO"
   },
 
   "en": {
@@ -76,7 +79,10 @@
 
     "mastersanddoctoraltrack": "Master's and Doctoral Track",
 
-    "cerimoniadeencerramentoepremiacao": "Closing Ceremony and Awards"
+    "cerimoniadeencerramentoepremiacao": "Closing Ceremony and Awards",
+    "sesionjaiio": "Session - JAIIO",
+    "keynoteplenario":"Keynote Plenary - JAIIO",
+    "actividadculturalplenario":"Plenary Cultural Activity - JAIIO"
   },
 
   "pt": {
@@ -116,6 +122,9 @@
 
     "mastersanddoctoraltrack": "Master's and Doctoral Track",
 
-    "cerimoniadeencerramentoepremiacao": "Cerimônia de encerramento e premiação"
+    "cerimoniadeencerramentoepremiacao": "Cerimônia de encerramento e premiação",
+    "sesionjaiio": "Sessão - JAIIO",
+    "keynoteplenario":"Palestrante Plenário - JAIIO",
+    "actividadculturalplenario":"Atividade Cultural Plenária - JAIIO"
   }
 }
