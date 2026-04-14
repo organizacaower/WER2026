@@ -25,8 +25,8 @@
   "SRTT": {
     "nombre": "Software Requirement Tools Track",
     "abstract": {
-      "original": ["06/04/2026"],
-      "actual": "13/04/2026",
+      "original": ["13/04/2026","06/04/2026"],
+      "actual": "27/04/2026",
       "status":["extended"]
     },
     "paper": {
@@ -48,8 +48,8 @@
   "IT": {
     "nombre": "Industry Track",
     "abstract": {
-      "original": ["06/04/2026"],
-      "actual": "13/04/2026",
+      "original": ["13/04/2026","06/04/2026"],
+      "actual": "27/04/2026",
       "status": ["extended"]
     },
     "paper": {
@@ -68,11 +68,11 @@
       "status": []
     }
   },
-  "MDT": {
+  "MDT": { 
     "nombre": "Master Doctoral Track",
     "abstract": {
-      "original": ["31/03/2026","06/04/2026"],
-      "actual": "13/04/2026",
+      "original": ["13/04/2026","31/03/2026","06/04/2026"],
+      "actual": "27/04/2026",
       "status": ["extended"]
     },
     "paper": {
@@ -94,8 +94,8 @@
   "TT": {
     "nombre": "Tutorial Track",
     "abstract": {
-      "original": ["06/04/2026"],
-      "actual": "13/04/2026",
+      "original": ["13/04/2026","06/04/2026"],
+      "actual": "27/04/2026",
       "status": ["extended"]
     },
     "paper": {
@@ -117,8 +117,8 @@
   "JFT": {
     "nombre": "Journal First Track",
     "abstract": {
-      "original": ["06/04/2026"],
-      "actual": "13/04/2026",
+      "original": ["13/04/2026","06/04/2026"],
+      "actual": "27/04/2026",
       "status": ["extended"]
     },
     "paper": {
