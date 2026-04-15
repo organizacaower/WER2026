@@ -710,5 +710,13 @@
     "institution": "Universidade Federal Rural do Rio de Janeiro",
     "acronimo": "UFRRJ",
     "country": "BR"
+  },
+  {
+    "name": "Tadeu Moreira de Classe",
+    "email": "rps@uniriotec.br",
+    "track": "WER-RRT",
+    "institution": "Universidade Federal do Rio de Janeiro",
+    "acronimo": "UFRJ",
+    "country": "BR"
   }
 ]
