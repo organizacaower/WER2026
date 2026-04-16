@@ -705,7 +705,7 @@
   },
   {
     "name": "Eduardo Almentero",
-    "email": "ekalmentero@gmail.com",
+    "email": "almentero@ufrrj.br",
     "track": "WER-TT",
     "institution": "Universidade Federal Rural do Rio de Janeiro",
     "acronimo": "UFRRJ",
@@ -713,10 +713,18 @@
   },
   {
     "name": "Tadeu Moreira de Classe",
-    "email": "rps@uniriotec.br",
+    "email": "tadeu.classe@uniriotec.br",
     "track": "WER-RRT",
     "institution": "Universidade Federal do Rio de Janeiro",
     "acronimo": "UFRJ",
+    "country": "BR"
+  },
+  {
+    "name": "Claudia Cappelli",
+    "email": "claudia.cappelli@gmail.com",
+    "track": "WER-RRT",
+    "institution": "Universidade Estadual do Rio de Janeiro",
+    "acronimo": "UERJ",
     "country": "BR"
   }
 ]
