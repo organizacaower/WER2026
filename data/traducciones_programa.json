@@ -38,7 +38,9 @@
     "cerimoniadeencerramentoepremiacao": "Clausura y premiación",
     "sesionjaiio": "Sesión - JAIIO",
     "keynoteplenario":"Keynote Plenario - JAIIO",
-    "actividadculturalplenario":"Actividad Cultural Plenario - JAIIO"
+    "actividadculturalplenario":"Actividad Cultural Plenario - JAIIO",
+    "industrytools": "Industry Track (IT) & Software Requirements Tools Track (SRTT) - WER 2025",
+    "tutorialcontinuacion": "Tutorial - continuación - WER 2025"
   },
 
   "en": {
@@ -82,7 +84,9 @@
     "cerimoniadeencerramentoepremiacao": "Closing Ceremony and Awards",
     "sesionjaiio": "Session - JAIIO",
     "keynoteplenario":"Keynote Plenary - JAIIO",
-    "actividadculturalplenario":"Plenary Cultural Activity - JAIIO"
+    "actividadculturalplenario":"Plenary Cultural Activity - JAIIO",
+    "industrytools": "Industry Track (IT) & Software Requirements Tools Track (SRTT) - WER 2025",
+    "tutorialcontinuacion": "Tutorial - continuation - WER 2025"
   },
 
   "pt": {
@@ -125,6 +129,8 @@
     "cerimoniadeencerramentoepremiacao": "Cerimônia de encerramento e premiação",
     "sesionjaiio": "Sessão - JAIIO",
     "keynoteplenario":"Palestrante Plenário - JAIIO",
-    "actividadculturalplenario":"Atividade Cultural Plenária - JAIIO"
+    "actividadculturalplenario":"Atividade Cultural Plenária - JAIIO",
+    "industrytools": "Industry Track (IT) & Software Requirements Tools Track (SRTT) - WER 2025",
+    "tutorialcontinuacion": "Tutorial - continuação - WER 2025"
   }
 }

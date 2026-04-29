@@ -13,7 +13,10 @@
         { "hora": "15:30 - 15:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
         { "hora": "15:30 - 17:00", "titulo": "sesionjaiio" },
         { "hora": "17:15 - 18:00", "titulo": "keynoteplenario" },
-        { "hora": "18:15 - 19:00", "titulo": "actividadculturalplenario" }
+        { "hora": "18:15 - 19:00", "titulo": "actividadculturalplenario" },
+        { "hora": "14:30 - 16:00", "titulo": "researchtracksession3" },
+        { "hora": "16:00 - 16:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "16:30 - 18:30", "titulo": "researchtracksession4" }
         
         
 
@@ -24,6 +27,14 @@
       "dia": "quintafeira",
       "fecha": "8agosto",
       "eventos": [
+        { "hora": "08:00 - 09:00", "titulo": "cadastro" },
+        { "hora": "09:00 - 10:30", "titulo": "panelindustria" },
+        { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "11:00 - 12:30", "titulo": "industrytools" },
+        { "hora": "12:30 - 14:30", "titulo": "almoco", "tipo": "break" },
+        { "hora": "14:30 - 16:00", "titulo": "researchtracksession3" },
+        { "hora": "16:00 - 16:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "16:30 - 18:30", "titulo": "researchtracksession4" }
         
       ]
     },
@@ -31,6 +42,15 @@
       "dia": "sextafeira",
       "fecha": "9agosto",
       "eventos": [
+        { "hora": "08:00 - 09:00", "titulo": "cadastro" },
+      { "hora": "09:00 - 10:30", "titulo": "tutorialtrack" },
+      { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
+      { "hora": "11:00 - 12:30", "titulo": "tutorialcontinuacion" },
+      { "hora": "12:30 - 14:30", "titulo": "almoco", "tipo": "break" },
+      { "hora": "14:30 - 16:00", "titulo": "researchtracksession5" },
+      { "hora": "16:00 - 16:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
+      { "hora": "16:30 - 18:00", "titulo": "researchtracksession6" },
+      { "hora": "18:00 - 18:30", "titulo": "cerimoniadeencerramentoepremiacao" }
         
       ]
     }
