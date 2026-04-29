@@ -18,7 +18,7 @@
     "tutorialtrack":"Tutorial Track",
     "studentstrack":"Student Track",
 
-    "requirementtoolstrack": "Requirement Tools Track",
+    "requirementtoolstrack": "Requirement Tools Track - WER 2025",
 
     "researchtracksession1": "Research Track - Sesión 1 - WER 2025",
     "researchtracksession2": "Research Track - Sesión 2 - WER 2025",
@@ -27,13 +27,14 @@
     "researchtracksession5": "Research Track - Sesión 5 - WER 2025",
     "researchtracksession6": "Research Track - Sesión 6 - WER 2025",
 
-    "industrytracksession1": "Industry Track - Sesión 1",
-    "industrytracksession2": "Industry Track - Sesión 2",
+    "industrytracksession1": "Industry Track - Sesión 1 - WER 2025",
+    "industrytracksession2": "Industry Track - Sesión 2 - WER 2025" 
+    ,
 
-    "journalfirsttracksession1": "Journal First Track - Sesión 1",
-    "journalfirsttracksession2": "Journal First Track - Sesión 2",
+    "journalfirsttracksession1": "Journal First Track - Sesión 1 - WER 2025",
+    "journalfirsttracksession2": "Journal First Track - Sesión 2 - WER 2025",
 
-    "mastersanddoctoraltrack": "Master's and Doctoral Track",
+    "mastersanddoctoraltrack": "Master's and Doctoral Track - WER 2025",
 
     "cerimoniadeencerramentoepremiacao": "Clausura y premiación",
     "sesionjaiio": "Sesión - JAIIO",
@@ -73,8 +74,8 @@
     "researchtracksession5": "Research Track - Session 5 - WER 2025",
     "researchtracksession6": "Research Track - Session 6 - WER 2025",
 
-    "industrytracksession1": "Industry Track - Session 1",
-    "industrytracksession2": "Industry Track - Session 2",
+    "industrytracksession1": "Industry Track - Session 1 - WER 2025",
+    "industrytracksession2": "Industry Track - Session 2 - WER 2025",
 
     "journalfirsttracksession1": "Journal First Track - Session 1",
     "journalfirsttracksession2": "Journal First Track - Session 2",
