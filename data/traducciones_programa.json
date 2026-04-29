@@ -1,8 +1,8 @@
 {
   "es": {
-    "7agosto":"7 de Agosto",
-    "8agosto":"8 de Agosto",
-    "9agosto":"9 de Agosto",
+    "7agosto":"11 de Agosto",
+    "8agosto":"12 de Agosto",
+    "9agosto":"13 de Agosto",
     "quartafeira": "Miércoles",
     "quintafeira": "Jueves",
     "sextafeira": "Viernes",
@@ -46,9 +46,9 @@
     "quintafeira": "Thursday",
     "sextafeira": "Friday",
     "almoco": "Lunch",
-    "7agosto":"August 7", 
-    "8agosto":"August 8", 
-    "9agosto":"August 9",
+    "7agosto":"August 11", 
+    "8agosto":"August 12", 
+    "9agosto":"August 13",
 
     "cadastro": "Registration",
     "cerimoniadeabertura": "Opening Ceremony",
@@ -86,9 +86,9 @@
   },
 
   "pt": {
-    "7agosto":"7 de Agosto",
-    "8agosto":"8 de Agosto",
-    "9agosto":"9 de Agosto",
+    "7agosto":"11 de Agosto",
+    "8agosto":"12 de Agosto",
+    "9agosto":"13 de Agosto",
     "quartafeira": "Quarta-feira",
     "quintafeira": "Quinta-feira",
     "sextafeira": "Sexta-feira",
