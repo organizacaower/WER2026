@@ -14,9 +14,6 @@
         { "hora": "15:30 - 17:00", "titulo": "sesionjaiio" },
         { "hora": "17:15 - 18:00", "titulo": "keynoteplenario" },
         { "hora": "18:15 - 19:00", "titulo": "actividadculturalplenario" },
-        { "hora": "14:30 - 16:00", "titulo": "researchtracksession3" },
-        { "hora": "16:00 - 16:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "16:30 - 18:30", "titulo": "researchtracksession4" }
         
         
 
