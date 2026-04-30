@@ -53,7 +53,18 @@
     scroll-behavior: smooth;
   }
 }
+/* Tabla del programa generada de forma dinamica */
+#tabla-programa {
+  table-layout: fixed;
+  width: 100%;
+}
 
+#tabla-programa th,
+#tabla-programa td {
+  width: 25%;
+  vertical-align: top;
+}
+ /* Fin tabla programa */
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
