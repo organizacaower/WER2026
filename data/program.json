@@ -10,7 +10,7 @@
         { "hora": "12:30 - 13:30", "titulo": "almocoh", "tipo": "break" },
         { "hora": "13:30 - 15:00", "titulo": "sesionjaiio" },
         { "hora": "14:00 - 15:30", "titulo": "panelindustria" },
-        { "hora": "15:30 - 15:30", "titulo": "Intervalo/Coffee-break", "tipo": "break" },
+        { "hora": "15:30 - 15:30", "titulo": "Intervalo/Coffee-breakh", "tipo": "break" },
         { "hora": "15:30 - 17:00", "titulo": "sesionjaiio" },
         { "hora": "17:15 - 18:00", "titulo": "keynoteplenario" },
         { "hora": "18:15 - 19:00", "titulo": "actividadculturalplenario" }
