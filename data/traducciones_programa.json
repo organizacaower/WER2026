@@ -7,13 +7,14 @@
     "quintafeira": "Jueves",
     "sextafeira": "Viernes",
 
-    "cadastro": "Registro - WER",
+    "cadastro": "Registro - WER 2025",
     "cerimoniadeabertura": "Apertura - WER",
     "panelindustria":"Panel de la Industria - WER 2026",
     "palestranteprincipalfabianodalpiaz": "Conferencia Principal - Fabiano Dalpiaz - WER",
     "palestranteprincipalindustryjorgeceballos": "Conferencia Principal Industria - Jorge Ceballos - WER",
     "palestranteprincipalalejandrooliveros": "Conferencia Principal - Alejandro Oliveros - WER",
-    "almoco": "Almuerzo",
+    "almoco": "Almuerzo - WER 2025",
+    "almocoh": "Almuerzo - JAIIO 2026",
     "intervalocoffeebreak": "Coffee Break - WER 2025",
     "intervalocoffeebreakh": "Coffee Break - WER 2026",
     "tutorialtrack":"Tutorial Track - WER 2025" ,
@@ -37,7 +38,7 @@
 
     "mastersanddoctoraltrack": "Master's and Doctoral Track - WER 2025",
 
-    "cerimoniadeencerramentoepremiacao": "Clausura y premiación",
+    "cerimoniadeencerramentoepremiacao": "Clausura y premiació - WER2025",
     "sesionjaiio": "Sesión - JAIIO 2026",
     "keynoteplenario":"Keynote Plenario - JAIIO 2026",
     "actividadculturalplenario":"Actividad Cultural Plenario - JAIIO 2026",
@@ -49,12 +50,13 @@
     "quartafeira": "Wednesday",
     "quintafeira": "Thursday",
     "sextafeira": "Friday",
-    "almoco": "Lunch",
+    "almoco": "Lunch - WER 2025",
+    "almocoh": "Lunch - JAIIO 2026",
     "7agosto":"August 11", 
     "8agosto":"August 12", 
     "9agosto":"August 13",
 
-    "cadastro": "Registration - WER",
+    "cadastro": "Registration - WER 2025",
     "cerimoniadeabertura": "Opening Ceremony - WER",
     "tutorialtrack":"Tutorial Track - WER 2025",
     "panelindustria":"Industry Panel - WER 2026",
@@ -84,7 +86,7 @@
 
     "mastersanddoctoraltrack": "Master's and Doctoral Track",
 
-    "cerimoniadeencerramentoepremiacao": "Closing Ceremony and Awards",
+    "cerimoniadeencerramentoepremiacao": "Closing Ceremony and Awards - WER 2025",
     "sesionjaiio": "Session - JAIIO 2026",
     "keynoteplenario":"Keynote Plenary - JAIIO 2026",
     "actividadculturalplenario":"Plenary Cultural Activity - JAIIO 2026",
@@ -99,8 +101,9 @@
     "quartafeira": "Quarta-feira",
     "quintafeira": "Quinta-feira",
     "sextafeira": "Sexta-feira",
-    "almoco": "Almoço",
-    "cadastro": "Cadastro - WER",
+    "almoco": "Almoço - WER 2025",
+    "almocoh": "Almoço - JAIIO 2026",
+    "cadastro": "Cadastro - WER 2025",
     "cerimoniadeabertura": "Cerimônia de abertura - WER",
     "tutorialtrack":"Tutorial Track - WER 2025" ,
     "studentstrack":"Student Track - WER 2025",
@@ -130,7 +133,7 @@
 
     "mastersanddoctoraltrack": "Master's and Doctoral Track",
 
-    "cerimoniadeencerramentoepremiacao": "Cerimônia de encerramento e premiação",
+    "cerimoniadeencerramentoepremiacao": "Cerimônia de encerramento e premiação - WER 2025",
     "sesionjaiio": "Sessão - JAIIO 2026",
     "keynoteplenario":"Palestrante Plenário - JAIIO 2026",
     "actividadculturalplenario":"Atividade Cultural Plenária - JAIIO 2026",
