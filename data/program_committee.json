@@ -112,6 +112,14 @@
     "country": "BR"
   },
   {
+    "name": "Johnny Marques",
+    "email": "johnny@ita.br",
+    "track": "WER-MDT",
+    "institution": "Instituto Tecnológico de Aeronáutica",
+    "acronimo": "ITA",
+    "country": "BR"
+  },
+  {
     "name": "Jaelson Castro",
     "email": "jbc@cin.ufpe.br",
     "track": "WER-JFT",
@@ -455,6 +463,14 @@
     "acronimo": "UFRN",
     "country": "BR"
   },
+    {
+    "name": "Marcia Lucena",
+    "email": "marciaj@dimap.ufrn.br",
+    "track": "WER-MDT",
+    "institution": "Universidade Federal do Rio Grande do Norte",
+    "acronimo": "UFRN",
+    "country": "BR"
+  },
   {
     "name": "Jaelson Castro",
     "email": "jbc@cin.ufpe.br",
@@ -496,6 +512,22 @@
     "country": "BR"
   },
   {
+    "name": "João Pimentel",
+    "email": "joaozinho@gmail.com",
+    "track": "WER-MDT",
+    "institution": "Universidade Federal Rural de Pernambuco",
+    "acronimo": "UFRPE",
+    "country": "BR"
+  },
+  {
+    "name": "Sabrina Marczak",
+    "email": "marczak.sabrina@gmail.com",
+    "track": "WER-MDT",
+    "institution": "Pontifícia Universidade Católica do Rio de Janeiro",
+    "acronimo": "PUC-Rio",
+    "country": "BR"
+  },
+  {
     "name": "Camilo Almendra",
     "email": "camilo.almendra@ufc.br",
     "track": "WER-RRT",
@@ -531,6 +563,14 @@
     "name": "Renato Bulcão-Neto",
     "email": "rbulcao@ufg.br",
     "track": "WER-RRT",
+    "institution": "Universidade Federal de Goiás",
+    "acronimo": "UFG",
+    "country": "BR"
+  },
+  {
+    "name": "Renato Bulcão-Neto",
+    "email": "rbulcao@ufg.br",
+    "track": "WER-MDT",
     "institution": "Universidade Federal de Goiás",
     "acronimo": "UFG",
     "country": "BR"
