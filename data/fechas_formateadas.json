@@ -81,9 +81,9 @@
       "status": ["extended"]
     },
     "notification": {
-      "original": null,
-      "actual": "11/05/2026",
-      "status": []
+      "original": ["11/05/2026"],
+      "actual": "18/05/2026",
+      "status": ["extended"]
     },
     "cameraReady": {
       "original": null,
