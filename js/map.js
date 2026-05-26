@@ -5,37 +5,20 @@
   }).addTo(map);
 
 
-  // 🔥 FIX CLAVE
-  setTimeout(function () {
-    map.invalidateSize();
-  }, 200);
+const lugares = [
+  { nombre: "UTN", coords: [-34.92066, -57.95439] },
+  { nombre: "Info UNLP", coords: [-34.90348, -57.9376558] },
+  { nombre: "Plaza", coords: [-34.9211, -57.9545] },
+  { nombre: "Ezeiza", coords: [-34.8222, -58.5358] },
+  { nombre: "Aeroparque", coords: [-34.5592, -58.4156] }
+];
 
-  // UTN FRLP
-  L.marker([-34.9042599, -57.9262465])
-    .addTo(map)
-    .bindPopup("UTN FRLP (WER)");
+const markers = [];
 
-  // Facultad de Informática UNLP
-  L.marker([-34.90348, -57.9376558])
-    .addTo(map)
-    .bindPopup("Facultad de Informática UNLP");
+lugares.forEach(l => {
+  const m = L.marker(l.coords).addTo(map).bindPopup(l.nombre);
+  markers.push(m);
+});
 
-  // Plaza Moreno
-  L.marker([-34.9211, -57.9545])
-    .addTo(map)
-    .bindPopup("Plaza Moreno / Catedral");
-
-  // Hoteles (ejemplo centrado)
-  L.marker([-34.9230, -57.9560])
-    .addTo(map)
-    .bindPopup("Zona de Hoteles");
-
-  // Aeropuerto Ezeiza
-  L.marker([-34.8222, -58.5358])
-    .addTo(map)
-    .bindPopup("Aeropuerto Ezeiza");
-
-  // Aeroparque
-  L.marker([-34.5592, -58.4156])
-    .addTo(map)
-    .bindPopup("Aeroparque");
+const group = L.featureGroup(markers);
+map.fitBounds(group.getBounds());
