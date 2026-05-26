@@ -101,6 +101,11 @@
               </tbody>
             </table>
           </div>
+          <h2 style="text-align:center;">Mapa Turístico</h2>
+          <div id="map"></div>
+          <!-- Leaflet JS -->
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 
         </div>
 
@@ -120,6 +125,11 @@
 <!-- footer -->
 
 <style>
+   #map {
+      height: 600px;
+      width: 100%;
+      border-radius: 10px;
+    }
   .tabla-hoteles thead {
     background-color: #0cdcfc; /* celeste */
     color: white;
@@ -148,6 +158,7 @@
 
 <!-- Main Script -->
 <script src="../js/script.js"></script>
+<script src="../js/map.js"></script>
 
 </body>
 
