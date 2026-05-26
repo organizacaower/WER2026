@@ -80,52 +80,55 @@
                         <h2 class="mb-4 text-center">Inscripciones</h2>
 
                         <div class="table-responsive">
-                        <table class="table table-bordered text-center tabla-inscripciones">
-                            <thead>
-                            <tr>
-                                <th>Tipo</th>
-                                <th>Categoría</th>
-                                <th>Argentino</th>
-                                <th>Extranjero</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <!-- Autor -->
-                            <tr>
-                                <td rowspan="5"><strong>Autor</strong></td>
-                                <td>Research Track</td>
-                                <td rowspan="4">80.000 AR$</td>
-                                <td rowspan="4">55 USD</td>
-                            </tr>
-                            <tr>
-                                <td>Software Requirements Tools Track</td>
-                            </tr>
-                            <tr>
-                                <td>Industry Track</td>
-                            </tr>
-                            <tr>
-                                <td>Master’s and Doctoral Track</td>
-                            </tr>
-                            <tr>
-                                <td>Student Track</td>
-                                <td>20.000 AR$</td>
-                                <td>15 USD</td>
-                            </tr>
+                        <h2 class="mb-4 text-center">Inscripciones</h2>
 
-                            <!-- Asistente -->
-                            <tr>
-                                <td rowspan="2"><strong>Asistente</strong></td>
-                                <td>Solo WER (no incluye JAIIO)</td>
-                                <td>64.000 AR$</td>
-                                <td>45 USD</td>
-                            </tr>
-                            <tr>
-                                <td>JAIIO (incluye acceso WER)</td>
-                                <td><a href="#">Link JAIIO</a></td>
-                                <td><a href="#">Link JAIIO</a></td>
-                            </tr>
-                            </tbody>
-                        </table>
+                            <table class="table table-bordered text-center tabla-inscripciones">
+                                <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Categoría</th>
+                                    <th>Argentino</th>
+                                    <th>Extranjero</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <!-- Autor -->
+                                <tr>
+                                    <td rowspan="5"><strong>Autor</strong></td>
+                                    <td>Research Track</td>
+                                    <td rowspan="4">80.000 AR$</td>
+                                    <td rowspan="4">55 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Software Requirements Tools Track</td>
+                                </tr>
+                                <tr>
+                                    <td>Industry Track</td>
+                                </tr>
+                                <tr>
+                                    <td>Master’s and Doctoral Track</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Track</td>
+                                    <td>20.000 AR$</td>
+                                    <td>15 USD</td>
+                                </tr>
+
+                                <!-- Asistente -->
+                                <tr>
+                                    <td rowspan="2"><strong>Asistente</strong></td>
+                                    <td>Solo WER (no incluye JAIIO)</td>
+                                    <td>64.000 AR$</td>
+                                    <td>45 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>JAIIO (incluye acceso WER)</td>
+                                    <td><a href="#">Link JAIIO</a></td>
+                                    <td><a href="#">Link JAIIO</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
                         </div>
                     </div>
                 </div>
@@ -176,6 +179,32 @@
             </div>
     </footer>
     <!-- footer -->
+<style>
+  .tabla-inscripciones thead {
+    background-color: #0cdcfc; /* mismo celeste */
+    color: white;
+  }
+
+  .tabla-inscripciones tbody tr:nth-child(even) {
+    background-color: #f2f9fc; /* blanco azulado */
+  }
+
+  .tabla-inscripciones tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .tabla-inscripciones td, 
+  .tabla-inscripciones th {
+    vertical-align: middle;
+    color: #333;
+  }
+
+  /* mejora visual para celdas combinadas */
+  .tabla-inscripciones td[rowspan] {
+    font-weight: bold;
+    background-color: #e6f7fb;
+  }
+</style>
 
 
     <!-- # JS Plugins -->
