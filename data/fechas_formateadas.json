@@ -140,13 +140,13 @@
   "ST": {
     "nombre": "Student Track",
     "abstract": {
-      "original": null,
-      "actual": "18/05/2026",
+      "original": ["18/05/2026"],
+      "actual": "01/06/2026",
       "status": []
     },
     "paper": {
-      "original": null,
-      "actual": "25/05/2026",
+      "original": ["25/05/2026"],
+      "actual": "01/06/2026",
       "status": []
     },
     "notification": {
