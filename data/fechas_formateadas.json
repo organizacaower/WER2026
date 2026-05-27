@@ -142,12 +142,12 @@
     "abstract": {
       "original": ["18/05/2026"],
       "actual": "01/06/2026",
-      "status": []
+      "status": ["extended"]
     },
     "paper": {
       "original": ["25/05/2026"],
       "actual": "01/06/2026",
-      "status": []
+      "status": ["extended"]
     },
     "notification": {
       "original": null,
