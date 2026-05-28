@@ -29,260 +29,159 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<!-- Navigation -->
-<header class="navigation bg-tertiary">
-    <div id="navbar"></div>
-
-    <script>
-        $(function () {
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+        <div id="navbar"></div>
+    
+        <script>
+          $(function(){
             $('#navbar').load('navbar.html')
-        })
+          })
+          
+    
+          document.getElementById('change-lang').innerHTML = 'Chau'
+        </script>
+      </header>
 
 
-        document.getElementById('change-lang').innerHTML = 'Chau'
-    </script>
-</header>
-
-
-<section class="overflow-hidden">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mx-auto">
-                <div class="content">
-                    <h2>Inscrição para autores</h2>
-                    <ul>
-                        <li><s>Valor de inscrição para autores: <b>80.000 pesos argentinos</b></s></li>
-                        <li><s>Prazo de inscrição de autores: <b>15/Junho/2024</b></s></li>
-                        <li><s>Você deve preencher o seguinte formulário para se registrar: <a
-                                    href="#"><b>Formulário</b></a></s></li>
-                        <li><s>Em até 5 dias úteis após o preenchimento do formulário, você receberá um e-mail com as
-                                instruções para efetuar o pagamento.</s></li>
-
-                    </ul>
-                    <h2>Inscrição para profissionais</h2>
-                    <ul>
-                        <li>Valor de inscrição antecipada: <b>40.000 pesos argentinos</b></li>
-                        <li>Prazo de inscrição antecipada: <b>15/Julho/2024</b></li>
-                        <li>Valor de inscrição após o prazo antecipado: <b>50.000 pesos argentinos</b></li>
-                        <li>Você deve usar o seguinte link para se registrar: <a
-                                href="https://www.eventbrite.com.ar/e/27th-workshop-on-requirements-engineering-wer2024-tickets-912811994247?aff=oddtdtcreator"><b>Link</b></a>
-                        </li>
-                    </ul>
-                    <h2>Inscrição para estudante de graduação e pós-graduação</h2>
-                    <ul>
-                        <li>Valor de inscrição: <b>28.000 pesos argentinos</b></li>
-                        <li>Você deve usar o seguinte link para se registrar: <a
-                                href="https://www.eventbrite.com.ar/e/27th-workshop-on-requirements-engineering-wer2024-tickets-912811994247?aff=oddtdtcreator"><b>Link</b></a>
-                        </li>
-                    </ul>
-                    <h2>Tutorial: Poniendo en práctica PRO-RE-DT, un Proceso de Elicitación de Requisitos Basado en
-                        Design Thinking
-                    </h2>
-                    <p>Autores: Ezequiel Kahan, Marcela Genero and Alejandro Oliveros
-                    </p>
-                    <p>El objetivo de este tutorial es abordar los desafíos de la elicitación de requisitos, explorar el
-                        rol de DT en este contexto y fundamentalmente, presentar el proceso PRO-RE-DT, poniendo en
-                        práctica algunas de sus actividades y técnicas.
-                    </p>
-                    <p>Los principales objetivos de aprendizaje para los participantes son:</p>
-                    <ul>
-                        <li>Adquirir conocimientos generales sobre la elicitación de requisitos</li>
-                        <li>Conocer algunos de los desafíos de la elicitación de requisitos</li>
-                        <li>Adquirir conocimientos generales de DT</li>
-                        <li>Entender el aporte del mismo a los desafíos presentados en la elicitación de requisitos</li>
-                        <li>Conocer un proceso de elicitación de requisitos basado en DT, que intenta resolver estos
-                            desafíos.</li>
-                    </ul>
-                    <a
-                        href="https://www.eventbrite.com.ar/e/tutorial-1-proceso-de-elicitacion-de-requisitos-basado-en-design-thinking-tickets-936660636177">Inscrição</a>
-
-                    <h2>Tutorial: Uso de Natural Language Processing y Machine Learning para la Gestión de
-                        Requerimientos</h2>
-                    <p>Autores: Juliana Delle Ville, Giuliana Maltempo, Roxana Portugal, Leandro Antonelli</p>
-                    <p>Este tutorial está destinado a personas con conocimiento en programación y se darán conceptos
-                        teóricos y se brindaran ejemplos de aplicación. Los temas que se trataran en el tutorial son los
-                        siguientes:</p>
-                    <ul>
-                        <li>Natural Language for Requirements Engineering (NL4RE)</li>
-                        <li>Introducción al text mining. Lenguaje Natural.</li>
-                        <li>Explotación de información vía reglas. Spacy pipeline. Rule-based Matcher. Entities.
-                            Dependency Matcher</li>
-                        <li>Explotación de información vía algoritmos de Machine Learning.</li>
-                        <li>Machine Learning. Modelos supervisados y no supervisados. Error cuadrático medio. Descenso
-                            del gradiente. </li>
-                        <li>Preprocesamiento. Normalización. Stopwords. Stemming. Lemmatizing.</li>
-                        <li>Algunas herramientas. Named Entity Recognition Comparación de Similitud. Categorización.
-                            Word desambiguation. Modelado de tópicos</li>
-                    </ul>
-                    <a
-                        href="https://www.eventbrite.com.ar/e/tutorial-2-uso-de-nlp-y-machine-learning-para-la-gestion-de-requerimientos-tickets-944377537637">Inscrição</a>
-                    <p>
-                        <3< /p>
-
-
-
-                            <h3>Para mais informação:</h3>
-                            <p>Paula Angeleri <a href="mailto:paula.angeleri@ub.edu.ar">paula.angeleri@ub.edu.ar</a></p>
-                            <p>Graciela Hadad <a href="mailto:ghadad@comunidad.ub.edu.ar">ghadad@comunidad.ub.edu.ar</a>
-                            </p>
-                            <p>Leandro Antonelli <a
-                                    href="mailto:lanto@lifia.info.unlp.edu.ar">lanto@lifia.info.unlp.edu.ar</a></p>
-                            <!-- <table>
-                            <thead>
-                                <tr>
-                                    <th class="bg-dark text-white">Categoría</th>
-                                    <th class="bg-dark text-white">1º Fecha</th>
-                                    <th class="bg-dark text-white">2º Fecha</th>
-                                    <th class="bg-dark text-white">3º Fecha</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-black text-lg-end">Fecha</td>
-                                    <td class="bg-success text-white">24/07</td>
-                                    <td class="bg-warning text-white">07/08</td>
-                                    <td class="bg-danger text-white">15/08</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Autor*</b>
-                                    </td>
-                                    <td>
-                                        R$230,00
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr class="bg-light">
-                                    <td>
-                                        <b>Profesional</b>
-                                    </td>
-                                    <td>
-                                        R$250,00
-                                    </td>
-                                    <td>
-                                        R$300,00
-                                    </td>
-                                    <td>
-                                        R$330,00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Estudiante - Graduación</b>
-                                    </td>
-                                    <td>
-                                        R$60,00
-                                    </td>
-                                    <td>
-                                        R$80,00
-                                    </td>
-                                    <td>
-                                        R$100,00
-                                    </td>
-                                </tr>
-                                <tr class="bg-light">
-                                    <td>
-                                        <b>Estudiante - Graduado</b>
-                                    </td>
-                                    <td>
-                                        R$30,00
-                                    </td>
-                                    <td>
-                                        R$40,00
-                                    </td>
-                                    <td>
-                                        R$50,00
-                                    </td>
-                                </tr>
-                                <tr class="bg-primary" style="color: aliceblue;">
-                                    <td>
-                                        <b>Professionals - Tecnopuc</b>
-                                    </td>
-                                    <td>
-                                        --
-                                    </td>
-                                    <td>
-                                        --
-                                    </td>
-                                    <td>
-                                        R$50,00***
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
+    <section class="overflow-hidden">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 mx-auto">
                     <div class="content">
-                        <a href="https://doity.com.br/workshop-de-engenharia-de-requisitos#registration" target="_blank"
-                            class="btn btn-outline-primary text-black">Register</a>
+                        <h2>Inscrição WER 2026</h2>
+                        <p>O autor deve efetuar uma inscrição para cada artigo aceito.</p>
+                        <p>Os dados necessários são:</p>
+                        <ul>
+                            <li><b>Dados pessoais</b>
+                            <ul>
+                                <li>Nome</li>
+                                <li>Sobrenome</li>
+                                <li>Email</li>
+                                <li>Afiliação</li>
+                                <li>Nacionalidade</li>
+                                <li>Função: Autor ou Assistente</li>
+                                <li>Identificação: Carteira de Identidade ou Passaporte</li>
+                            </ul></li>
+                            <li><b>Dados de cobrança</b>
+                            <ul>
+                                <li>Fatura em nome de (Universidade, Empresa, Pessoa física)</li>
+                                <li>Endereço do pagador (Cidade, CEP, Província/Estado, País)</li>
+                                <li>Número de CUIT / CUIL (Argentina) / número de identificação fiscal (estrangeiro)</li>
+                                <li>Alguma observação específica que deva constar na fatura (opcional)</li>
+                            </ul></li>
+                            <li><b>Se você é o autor</b>
+                            <ul>
+                                <li>ID do artigo</li>
+                                <li>Título do artigo</li>
+                                <li>Track: Research track, Software Requirements Tools track, Industry track, Master’s and Doctoral track, Student track</li>
+                            </ul></li>
+                        </ul>
+
+                        <div class="table-responsive">
+                        <h2 class="mb-4 text-center">Inscrição</h2>
+
+                            <table class="table table-bordered text-center tabla-inscripciones">
+                                <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Categoría</th>
+                                    <th>Argentino</th>
+                                    <th>Estrangeiro</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <!-- Autor -->
+                                <tr>
+                                    <td rowspan="5"><strong>Autor</strong></td>
+                                    <td>Research Track</td>
+                                    <td rowspan="4">80.000 AR$</td>
+                                    <td rowspan="4">55 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Software Requirements Tools Track</td>
+                                </tr>
+                                <tr>
+                                    <td>Industry Track</td>
+                                </tr>
+                                <tr>
+                                    <td>Master’s and Doctoral Track</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Track</td>
+                                    <td>20.000 AR$</td>
+                                    <td>15 USD</td>
+                                </tr>
+
+                                <!-- Asistente -->
+                                <tr>
+                                    <td rowspan="2"><strong>Assistente</strong></td>
+                                    <td>Apenas WER (não inclui JAIIO)</td>
+                                    <td>64.000 AR$</td>
+                                    <td>45 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>JAIIO (inclui acesso WER)</td>
+                                    <td><a href="https://55jaiio.sadio.org.ar/inscripcion-y-aranceles">Link JAIIO</a></td>
+                                    <td><a href="https://55jaiio.sadio.org.ar/inscripcion-y-aranceles">Link JAIIO</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <p>Link para o formulário de inscrição: Em breve</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <p>*Cada artículo aceptado debe estar asociado a una entrada en la categoría de Auto.</p>
-            <p>**Los inscritos como Profesionales del Tecnopuc solo tendrán acceso a las actividades del jueves 17/08.
-            </p>
-        </div> -->
-</section>
-
-
-<!-- footer -->
-<footer class="section-sm">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="row align-items-center mt-5 text-center text-md-start">
-                <div class="col-lg-4">
-                    <a href="index.html">
-                        <img loading="prelaod" decoding="async" class="img-fluid" width="160"
-                            src="../images/wer/logo_wer2024-h.png" alt="Wallet">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                    <ul class="list-unstyled list-inline mb-0 text-lg-center">
-                        <li class="list-inline-item me-4 text-black">
-                            <h5><a href="mailto:organizacao.wer@gmail.com">Contate-nos:
-                                    organizacao.wer@gmail.com</a></h5>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
-                    <ul class="list-unstyled list-inline mb-0 social-icons">
-                        <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black"
-                                href="https://x.com/WER_workshop" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item me-3"><a title="Explorer LinkedIn Profile" class="text-black"
-                                href="https://www.linkedin.com/in/wer-workshop" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li class="list-inline-item me-3">
-                            <a title="Explorer Instagram Profile" class="text-black"
-                                href=https://www.instagram.com/werworkshop/ target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-</footer>
+
+    </section>
+
+
 <!-- footer -->
+  <div id="footer"></div>
+    <script>
+      $(function(){
+        $('#footer').load('footer.html')
+      })
+    </script>
+<!-- footer -->
+<style>
+  .tabla-inscripciones thead {
+    background-color: #0cdcfc; /* mismo celeste */
+    color: white;
+  }
+
+  .tabla-inscripciones tbody tr:nth-child(even) {
+    background-color: #f2f9fc; /* blanco azulado */
+  }
+
+  .tabla-inscripciones tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .tabla-inscripciones td, 
+  .tabla-inscripciones th {
+    vertical-align: middle;
+    color: #333;
+  }
+
+  /* mejora visual para celdas combinadas */
+  .tabla-inscripciones td[rowspan] {
+    background-color: #e6f7fb;
+  }
+</style>
 
 
-<!-- # JS Plugins -->
-<script src="../plugins/jquery/jquery.min.js"></script>
-<script src="../plugins/bootstrap/bootstrap.min.js"></script>
-<script src="../plugins/slick/slick.min.js"></script>
-<script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+    <!-- # JS Plugins -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="../plugins/slick/slick.min.js"></script>
+    <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
 
-<!-- Main Script -->
-<script src="../js/script.js"></script>
+    <!-- Main Script -->
+    <script src="../js/script.js"></script>
 
 </body>
 
