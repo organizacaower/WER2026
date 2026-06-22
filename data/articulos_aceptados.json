@@ -10,6 +10,7 @@
     "abstract": "Abstract del paper 1.",
     "language": "ES",
     "file_name": "https://example.com/paper1.pdf",
+    "acepted": true,
     "paper_session": "Session 1"
   },
   {
@@ -23,6 +24,7 @@
     "abstract": "Abstract del paper 2.",
     "language": "EN",
     "file_name": "https://example.com/paper2.pdf",
+    "acepted": true,
     "paper_session": "Session 2"
   },
   {
@@ -35,6 +37,7 @@
     "abstract": "Abstract del paper 3.",
     "language": "ES",
     "file_name": "https://example.com/paper3.pdf",
+    "acepted": true,
     "paper_session": "Session 3"
   },
   {
@@ -49,6 +52,7 @@
     "abstract": "Abstract del paper 4.",
     "language": "EN",
     "file_name": "https://example.com/paper4.pdf",
+    "acepted": true,
     "paper_session": "Session 4"
   },
   {
@@ -61,6 +65,7 @@
     "abstract": "Abstract del paper 5.",
     "language": "PT",
     "file_name": "https://example.com/paper5.pdf",
+    "acepted": true,
     "paper_session": "Session 5"
   },
   {
@@ -74,6 +79,35 @@
     "abstract": "Abstract del paper 6.",
     "language": "EN",
     "file_name": "https://example.com/paper6.pdf",
+    "acepted": true,
+    "paper_session": "Session 6"
+  },
+  {
+    "track": "ST Not Acepted ",
+    "title": "Paper 7",
+    "authors": [
+      { "apellido": "Autor", "nombre": "1" },
+      { "apellido": "Autor", "nombre": "2" }
+    ],
+    "keywords": "keyword1; keyword2",
+    "abstract": "Abstract del paper 7.",
+    "language": "EN",
+    "file_name": "",
+    "acepted": false,
+    "paper_session": "Session 6"
+  },
+  {
+    "track": "ST Not Acepted 2",
+    "title": "Paper 8",
+    "authors": [
+      { "apellido": "Autor", "nombre": "1" },
+      { "apellido": "Autor", "nombre": "2" }
+    ],
+    "keywords": "keyword1; keyword2",
+    "abstract": "Abstract del paper 8.",
+    "language": "EN",
+    "file_name": "",
+    "acepted": false,
     "paper_session": "Session 6"
   }
 ]

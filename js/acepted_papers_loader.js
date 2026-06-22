@@ -87,10 +87,10 @@ fetch("../data/articulos_aceptados.json")
       `;
     }
 
-    // 🔥 FILTRADO POR TRACK
-    let filteredData = data;
+    // 🔥 FILTRADO POR ACCEPTED Y TRACK
+    let filteredData = data.filter(p => p.acepted);
     if (selectedTrack) {
-      filteredData = data.filter(p => p.track === selectedTrack);
+      filteredData = filteredData.filter(p => p.track === selectedTrack);
     }
 
     // guardar global para modal
