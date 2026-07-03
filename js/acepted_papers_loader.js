@@ -76,13 +76,15 @@ fetch("../data/articulos_aceptados.json")
     }
 
     function crearPaperHTML(paper) {
+      // boton comentado
       return `
         <li>
           <b>${paper.title}</b>
+          <!--  
           <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
-          <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
-            ${translations[lang].verMas}
-          </button>
+         <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
+          ${translations[lang].verMas} 
+        </button> -->
         </li>
       `;
     }
