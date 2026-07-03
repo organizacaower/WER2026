@@ -1,53 +1,53 @@
 {
   "dias": [
     {
-      "dia": "quartafeira",
-      "fecha": "7agosto",
+      "dia": "martes",
+      "fecha": "11agosto",
       "eventos": [
-        { "hora": "09:00 - 10:30", "titulo": "sesionjaiio" },
-        { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreakh", "tipo": "break" },
-        { "hora": "11:00 - 12:30", "titulo": "sesionjaiio" },
-        { "hora": "12:30 - 13:30", "titulo": "almocoh", "tipo": "break" },
-        { "hora": "13:30 - 15:00", "titulo": "sesionjaiio" },
-        { "hora": "14:00 - 15:30", "titulo": "panelindustria" },
-        { "hora": "15:30 - 15:30", "titulo": "intervalocoffeebreakh", "tipo": "break" },
-        { "hora": "15:30 - 17:00", "titulo": "sesionjaiio" },
-        { "hora": "17:15 - 18:00", "titulo": "keynoteplenario" },
-        { "hora": "18:15 - 19:00", "titulo": "actividadculturalplenario" }
-        
-        
-
-        
-      ]
-    },
-    {
-      "dia": "quintafeira",
-      "fecha": "8agosto",
-      "eventos": [
-        { "hora": "08:00 - 09:00", "titulo": "cadastro" },
+        { "hora": "08:45 - 09:00", "titulo": "acreditacion" },
+        { "hora": "09:00 - 09:30", "titulo": "apertura" },
+        { "hora": "09:30 - 10:30", "titulo": "keynotejaelsoncastro" },
         { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "11:00 - 12:30", "titulo": "industrytools" },
-        { "hora": "12:30 - 14:30", "titulo": "almoco", "tipo": "break" },
-        { "hora": "14:30 - 16:00", "titulo": "researchtracksession3" },
-        { "hora": "16:00 - 16:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "16:30 - 18:30", "titulo": "researchtracksession4" }
-        
+        { "hora": "11:00 - 12:20", "titulo": "researchtracksession1" },
+        { "hora": "12:20 - 13:40", "titulo": "almoco", "tipo": "break" },
+        { "hora": "13:40 - 15:00", "titulo": "researchtracksession2" },
+        { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "15:30 - 16:50", "titulo": "researchtracksession3" },
+        { "hora": "17:00 - 17:40", "titulo": "reunioncomitedeorganizacion" },
+        { "hora": "20:00", "titulo": "cena" }
       ]
     },
     {
-      "dia": "sextafeira",
-      "fecha": "9agosto",
+      "dia": "miercoles",
+      "fecha": "12agosto",
       "eventos": [
-        { "hora": "08:00 - 09:00", "titulo": "cadastro" },
-      { "hora": "09:00 - 10:30", "titulo": "tutorialtrack" },
-      { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
-      { "hora": "11:00 - 12:30", "titulo": "tutorialcontinuacion" },
-      { "hora": "12:30 - 14:30", "titulo": "almoco", "tipo": "break" },
-      { "hora": "14:30 - 16:00", "titulo": "researchtracksession5" },
-      { "hora": "16:00 - 16:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
-      { "hora": "16:30 - 18:00", "titulo": "researchtracksession6" },
-      { "hora": "18:00 - 18:30", "titulo": "cerimoniadeencerramentoepremiacao" }
-        
+        { "hora": "08:45 - 09:00", "titulo": "acreditacion" },
+        { "hora": "09:00 - 10:00", "titulo": "keynoteezequielkahan" },
+        { "hora": "10:00 - 10:30", "titulo": "industryandsrtt" },
+        { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "11:00 - 12:20", "titulo": "researchtracksession4" },
+        { "hora": "12:20 - 13:40", "titulo": "almoco", "tipo": "break" },
+        { "hora": "13:40 - 15:00", "titulo": "panelindustria" },
+        { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "15:30 - 16:50", "titulo": "researchtracksession5" },
+        { "hora": "20:00", "titulo": "cena" }
+      ]
+    },
+    {
+      "dia": "jueves",
+      "fecha": "13agosto",
+      "eventos": [
+        { "hora": "08:45 - 09:00", "titulo": "acreditacion" },
+        { "hora": "09:00 - 10:00", "titulo": "keynotesebastianuchitel" },
+        { "hora": "10:00 - 10:30", "titulo": "mastersanddoctoraltracksession1" },
+        { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "11:00 - 11:45", "titulo": "mastersanddoctoraltracksession2" },
+        { "hora": "11:45 - 12:30", "titulo": "tutorialtrack" },
+        { "hora": "12:30 - 13:30", "titulo": "almoco", "tipo": "break" },
+        { "hora": "13:30 - 15:00", "titulo": "tutorialcontinuacion" },
+        { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
+        { "hora": "15:30 - 16:50", "titulo": "researchtracksession6" },
+        { "hora": "17:00 - 17:30", "titulo": "cerimoniadeencerramiento" }
       ]
     }
   ]
