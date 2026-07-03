@@ -88,7 +88,7 @@ fetch("../data/articulos_aceptados.json")
     }
 
     // 🔥 FILTRADO POR ACCEPTED Y TRACK
-    let filteredData = data.filter(p => p.acepted);
+    let filteredData = data.filter(p => true);
     if (selectedTrack) {
       filteredData = filteredData.filter(p => p.track === selectedTrack);
     }
