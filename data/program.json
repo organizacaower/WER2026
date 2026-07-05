@@ -12,8 +12,7 @@
         { "hora": "12:20 - 13:40", "titulo": "almoco", "tipo": "break" },
         { "hora": "13:40 - 15:00", "titulo": "researchtracksession2" },
         { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "15:30 - 16:50", "titulo": "researchtracksession3" },
-        { "hora": "17:00 - 17:40", "titulo": "reunioncomitedeorganizacion" },
+        { "hora": "15:30 - 17:10", "titulo": "researchtracksession3" },
         { "hora": "20:00", "titulo": "cena" }
       ]
     },
@@ -29,7 +28,8 @@
         { "hora": "12:20 - 13:40", "titulo": "almoco", "tipo": "break" },
         { "hora": "13:40 - 15:00", "titulo": "panelindustria" },
         { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "15:30 - 16:50", "titulo": "researchtracksession5" },
+        { "hora": "15:30 - 17:10", "titulo": "researchtracksession5" },
+        { "hora": "17:10 - 17:40", "titulo": "reunioncomitedeorganizacion" },
         { "hora": "20:00", "titulo": "cena" }
       ]
     },
@@ -37,17 +37,15 @@
       "dia": "jueves",
       "fecha": "13agosto",
       "eventos": [
-        { "hora": "08:45 - 09:00", "titulo": "acreditacion" },
         { "hora": "09:00 - 10:00", "titulo": "keynotesebastianuchitel" },
         { "hora": "10:00 - 10:30", "titulo": "mastersanddoctoraltracksession1" },
         { "hora": "10:30 - 11:00", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "11:00 - 11:45", "titulo": "mastersanddoctoraltracksession2" },
-        { "hora": "11:45 - 12:30", "titulo": "tutorialtrack" },
-        { "hora": "12:30 - 13:30", "titulo": "almoco", "tipo": "break" },
+        { "hora": "11:00 - 12:15", "titulo": "mastersanddoctoraltracksession2" },
+        { "hora": "12:15 - 13:30", "titulo": "almoco", "tipo": "break" },
         { "hora": "13:30 - 15:00", "titulo": "tutorialcontinuacion" },
         { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
-        { "hora": "15:30 - 16:50", "titulo": "researchtracksession6" },
-        { "hora": "17:00 - 17:30", "titulo": "cerimoniadeencerramiento" }
+        { "hora": "15:30 - 16:15", "titulo": "tutorialtrack" },
+        { "hora": "16:15 - 16:45", "titulo": "cerimoniadeencerramiento" }
       ]
     }
   ]
