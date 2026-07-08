@@ -13,7 +13,7 @@
     "abstract": "Abstract del paper 1.",
     "language": "ES",
     "file_name": "https://example.com/paper1.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession4"
   },
   {
     "track": "RRT",
@@ -27,7 +27,7 @@
     "abstract": "Abstract del paper 2.",
     "language": "ES",
     "file_name": "https://example.com/paper2.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession3"
   },
   {
     "track": "RRT",
@@ -44,7 +44,7 @@
     "abstract": "Abstract del paper 3.",
     "language": "ES",
     "file_name": "https://example.com/paper3.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession3"
   },
   {
     "track": "RRT",
@@ -58,7 +58,7 @@
     "abstract": "Abstract del paper 4.",
     "language": "ES",
     "file_name": "https://example.com/paper4.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession3"
   },
   {
     "track": "RRT",
@@ -72,7 +72,7 @@
     "abstract": "Abstract del paper 5.",
     "language": "EN",
     "file_name": "https://example.com/paper5.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession3"
   },
   {
     "track": "RRT",
@@ -87,7 +87,7 @@
     "abstract": "Abstract del paper 6.",
     "language": "ES",
     "file_name": "https://example.com/paper6.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession4"
   },
   {
     "track": "RRT",
@@ -101,7 +101,7 @@
     "abstract": "Abstract del paper 7.",
     "language": "EN",
     "file_name": "https://example.com/paper7.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession5"
   },
   {
     "track": "RRT",
@@ -115,7 +115,7 @@
     "abstract": "Abstract del paper 8.",
     "language": "EN",
     "file_name": "https://example.com/paper8.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession1"
   },
   {
     "track": "RRT",
@@ -128,7 +128,7 @@
     "abstract": "Abstract del paper 9.",
     "language": "EN",
     "file_name": "https://example.com/paper9.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession1"
   },
   {
     "track": "RRT",
@@ -140,7 +140,7 @@
     "abstract": "Abstract del paper 10.",
     "language": "ES",
     "file_name": "https://example.com/paper10.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession3"
   },
   {
     "track": "RRT",
@@ -153,7 +153,7 @@
     "abstract": "Abstract del paper 11.",
     "language": "PT",
     "file_name": "https://example.com/paper11.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession2"
   },
   {
     "track": "RRT",
@@ -166,7 +166,7 @@
     "abstract": "Abstract del paper 12.",
     "language": "EN",
     "file_name": "https://example.com/paper12.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession5"
   },
   {
     "track": "MDT",
@@ -180,7 +180,7 @@
     "abstract": "Abstract del paper 13.",
     "language": "ES",
     "file_name": "https://example.com/paper13.pdf",
-    "paper_session": "TBA"
+    "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "RRT",
@@ -195,7 +195,7 @@
     "abstract": "Abstract del paper 14.",
     "language": "EN",
     "file_name": "https://example.com/paper14.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession4"
   },
   {
     "track": "RRT",
@@ -209,7 +209,7 @@
     "abstract": "Abstract del paper 15.",
     "language": "EN",
     "file_name": "https://example.com/paper15.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession2"
   },
   {
     "track": "RRT",
@@ -225,7 +225,7 @@
     "abstract": "Abstract del paper 16.",
     "language": "EN",
     "file_name": "https://example.com/paper16.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession2"
   },
   {
     "track": "RRT",
@@ -239,7 +239,7 @@
     "abstract": "Abstract del paper 17.",
     "language": "ES",
     "file_name": "https://example.com/paper17.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession5"
   },
   {
     "track": "RRT",
@@ -254,7 +254,7 @@
     "abstract": "Abstract del paper 18.",
     "language": "EN",
     "file_name": "https://example.com/paper18.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession5"
   },
   {
     "track": "RRT",
@@ -270,7 +270,7 @@
     "abstract": "Abstract del paper 19.",
     "language": "EN",
     "file_name": "https://example.com/paper19.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession1"
   },
   {
     "track": "RRT",
@@ -283,7 +283,7 @@
     "abstract": "Abstract del paper 20.",
     "language": "PT",
     "file_name": "https://example.com/paper20.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession5"
   },
   {
     "track": "RRT",
@@ -299,7 +299,7 @@
     "abstract": "Abstract del paper 21.",
     "language": "PT",
     "file_name": "https://example.com/paper21.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession4"
   },
   {
     "track": "RRT",
@@ -313,7 +313,7 @@
     "abstract": "Abstract del paper 22.",
     "language": "PT",
     "file_name": "https://example.com/paper22.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession2"
   },
   {
     "track": "RRT",
@@ -328,7 +328,7 @@
     "abstract": "Abstract del paper 23.",
     "language": "PT",
     "file_name": "https://example.com/paper23.pdf",
-    "paper_session": "TBA"
+    "paper_session": "researchtracksession1"
   },
   {
     "track": "MDT",
@@ -342,7 +342,7 @@
     "abstract": "Abstract del paper 24.",
     "language": "EN",
     "file_name": "https://example.com/paper24.pdf",
-    "paper_session": "TBA"
+    "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "MDT",
@@ -355,7 +355,7 @@
     "abstract": "Abstract del paper 25.",
     "language": "PT",
     "file_name": "https://example.com/paper25.pdf",
-    "paper_session": "TBA"
+    "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "IT",
@@ -372,7 +372,7 @@
     "abstract": "Abstract del paper 26.",
     "language": "EN",
     "file_name": "https://example.com/paper26.pdf",
-    "paper_session": "TBA"
+    "paper_session": "industryandsrtt"
   },
   {
     "track": "MDT",
@@ -386,7 +386,7 @@
     "abstract": "Abstract del paper 27.",
     "language": "ES",
     "file_name": "https://example.com/paper27.pdf",
-    "paper_session": "TBA"
+    "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "MDT",
@@ -400,7 +400,7 @@
     "abstract": "Abstract del paper 28.",
     "language": "PT",
     "file_name": "https://example.com/paper28.pdf",
-    "paper_session": "TBA"
+    "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "IT",
@@ -415,7 +415,7 @@
     "abstract": "Abstract del paper 29.",
     "language": "EN",
     "file_name": "https://example.com/paper29.pdf",
-    "paper_session": "TBA"
+    "paper_session": "industryandsrtt"
   },
   {
     "track": "SRTT",
@@ -430,6 +430,6 @@
     "abstract": "Abstract del paper 30.",
     "language": "ES",
     "file_name": "https://example.com/paper30.pdf",
-    "paper_session": "TBA"
+    "paper_session": "industryandsrtt"
   }
 ]
