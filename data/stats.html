@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>WER2026 - Estadísticas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <link rel="shortcut icon" href="../images/wer/lwer.png" type="image/x-icon">
+  <link rel="icon" href="../images/wer/wer.png" type="image/x-icon">
+
+  <!-- # Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- # CSS Plugins -->
+  <link rel="stylesheet" href="../plugins/slick/slick.css">
+  <link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
+  <link rel="stylesheet" href="../plugins/font-awesome/brands.css">
+  <link rel="stylesheet" href="../plugins/font-awesome/solid.css">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- # Main Style Sheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <style>
+    .stats-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    
+    .stats-card h3 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+    
+    .stats-summary {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    .stats-summary h5 {
+      color: #6c757d;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    
+    .stats-summary h2 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin: 0;
+    }
+    
+    .stats-summary.primary h2 {
+      color: #0984e3;
+    }
+    
+    .stats-summary.success h2 {
+      color: #28a745;
+    }
+    
+    .stats-summary.warning h2 {
+      color: #fdcb6e;
+    }
+    
+    #map {
+      height: 500px;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    
+    canvas {
+      max-height: 400px;
+    }
+  </style>
+</head>
+
+<body data-track="IT">
+
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+      <div id="navbar"></div>
+  
+      <script>
+        $(function(){
+          $('#navbar').load('../es/navbar.html')
+        })
+        
+  
+        document.getElementById('change-lang').innerHTML = 'Chau'
+      </script>
+    </header>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="mb-5">
+            <h1>Estadísticas 2026</h1>
+            <h3>Ojo que tienen datos ficticios y todavía no está enlazado al json</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Estadísticas -->
+  <div class="section pt-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- Resumen rápido -->
+          <div class="row mb-4">
+            <div class="col-md-4 mb-3">
+              <div class="stats-summary primary">
+                <h5>Total de submissions</h5>
+                <h2>187</h2>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="stats-summary success">
+                <h5>Tasa de aceptación</h5>
+                <h2>38%</h2>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="stats-summary warning">
+                <h5>Países representados</h5>
+                <h2>24</h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila de gráficos -->
+          <div class="row mb-4">
+            <div class="col-md-6 mb-4">
+              <div class="stats-card">
+                <h3>Aceptados vs Rechazados</h3>
+                <canvas id="pieChart"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="stats-card">
+                <h3>Participantes por País</h3>
+                <canvas id="barChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="row">
+            <div class="col-12">
+              <div class="stats-card">
+                <h3>Universidades Participantes</h3>
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+    <div id="footer"></div>
+    <script>
+      $(function(){
+        $('#footer').load('../es/footer.html')
+      })
+    </script>
+    
+<!-- footer -->
+
+
+  <!-- # JS Plugins -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../plugins/slick/slick.min.js"></script>
+  <script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="../js/script.js"></script>
+  
+  <!-- Estadísticas Script -->
+  <script src="../js/stats_drawer.js"></script>
+
+</body>
+
+</html>

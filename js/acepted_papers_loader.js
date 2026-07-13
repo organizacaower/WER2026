@@ -76,21 +76,24 @@ fetch("../data/articulos_aceptados.json")
     }
 
     function crearPaperHTML(paper) {
+      // boton comentado
       return `
         <li>
           <b>${paper.title}</b>
           <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
-          <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
-            ${translations[lang].verMas}
-          </button>
+          <!--  
+         <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
+          ${translations[lang].verMas} 
+        </button>
+         -->
         </li>
       `;
     }
 
-    // 🔥 FILTRADO POR TRACK
-    let filteredData = data;
+    // 🔥 FILTRADO POR ACCEPTED Y TRACK
+    let filteredData = data.filter(p => true);
     if (selectedTrack) {
-      filteredData = data.filter(p => p.track === selectedTrack);
+      filteredData = filteredData.filter(p => p.track === selectedTrack);
     }
 
     // guardar global para modal
