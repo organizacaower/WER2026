@@ -30,12 +30,12 @@ function obtenerClavePrograma(paper) {
   const trackMap = {
     "RRT": "researchtrack",
     "IT": "industryandsrtt",
-    "IT1": "industrytrack",
+    "IT1": "industry",
     "JFT": "journalfirsttrack",
     "SRTT": "industryandsrtt",
     "TT": "tutorialtrack",
     "MDT": "mastersanddoctoraltrack",
-    "ST":"studentstrack"
+    "ST": "studentstrack"
   };
 
   const base = trackMap[paper.track] || "";
@@ -110,7 +110,7 @@ function renderPrograma() {
       const claveEvento = normalizarKey(evento.titulo);
 
       // 🔥 buscar papers (con fallback a track)
-     
+
       let papersEvento = papersPorSesion[claveEvento];
 
       if (!papersEvento) {
