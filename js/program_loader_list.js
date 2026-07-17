@@ -30,6 +30,7 @@ function obtenerClavePrograma(paper) {
   const trackMap = {
     "RRT": "researchtrack",
     "IT": "industryandsrtt",
+    "IT": "industrytrack",
     "JFT": "journalfirsttrack",
     "SRTT": "industryandsrtt",
     "TT": "tutorialtrack",
