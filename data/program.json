@@ -13,6 +13,8 @@
         { "hora": "13:40 - 15:00", "titulo": "researchtracksession2" },
         { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
         { "hora": "15:30 - 17:10", "titulo": "researchtracksession3" },
+        { "hora": "17:10 - 17:20", "titulo": "industry" },
+        { "hora": "17:20 - 18:00", "titulo": "reunioncomitedeorganizacion" },
         { "hora": "20:00", "titulo": "cena" }
       ]
     },
@@ -29,7 +31,7 @@
         { "hora": "13:40 - 15:00", "titulo": "panelindustria" },
         { "hora": "15:00 - 15:30", "titulo": "intervalocoffeebreak", "tipo": "break" },
         { "hora": "15:30 - 17:10", "titulo": "researchtracksession5" },
-        { "hora": "17:10 - 17:40", "titulo": "reunioncomitedeorganizacion" },
+        { "hora": "17:10 - 17:40", "titulo": "cerimoniaadw" },
         { "hora": "20:00", "titulo": "cena" }
       ]
     },

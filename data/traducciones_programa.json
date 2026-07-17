@@ -20,6 +20,7 @@
     "researchtracksession6": "Research Track - Sesión 6",
     "almoco": "Almuerzo",
     "industryandsrtt": "Industry Track + Software Requirements Tools Track",
+    "industry": "Industry Track",
     "panelindustria": "Panel de la Industria",
     "mastersanddoctoraltracksession1": "Master's and Doctoral Track",
     "mastersanddoctoraltracksession2": "Master's and Doctoral Track - Sesión 2",
@@ -27,6 +28,7 @@
     "tutorialcontinuacion": "Tutorial - continuación",
     "reunioncomitedeorganizacion": "Reunión Comité de Organización",
     "cerimoniadeencerramiento": "Cierre",
+    "cerimoniaadw": "Premiacion y presentación WER 2027",
     "cena": "Cena"
   },
   "en": {
@@ -42,6 +44,7 @@
     "keynoteezequielkahan": "Keynote Speaker - Ezequiel Kahan",
     "keynotesebastianuchitel": "Keynote Speaker - Sebastian Uchitel",
     "intervalocoffeebreak": "Coffee Break",
+    "industry": "Industry Track",
     "researchtracksession1": "Research Track - Session 1",
     "researchtracksession2": "Research Track - Session 2",
     "researchtracksession3": "Research Track - Session 3",
@@ -56,6 +59,7 @@
     "tutorialtrack": "Tutorial",
     "tutorialcontinuacion": "Tutorial - continuation",
     "reunioncomitedeorganizacion": "Organization Committee Meeting",
+    "cerimoniaadw": "Awards and WER 2027 presentation",
     "cerimoniadeencerramiento": "Closing Ceremony",
     "cena": "Dinner"
   },
@@ -80,12 +84,14 @@
     "researchtracksession6": "Research Track - Sessão 6",
     "almoco": "Almoço",
     "industryandsrtt": "Industry Track + Software Requirements Tools Track",
+    "industry": "Industry Track",
     "panelindustria": "Painel da Indústria",
     "mastersanddoctoraltracksession1": "Master's and Doctoral Track",
     "mastersanddoctoraltracksession2": "Master's and Doctoral Track - Sessão 2",
     "tutorialtrack": "Tutorial",
     "tutorialcontinuacion": "Tutorial - continuação",
     "reunioncomitedeorganizacion": "Reunião da Comissão de Organização",
+    "cerimoniaadw": "Premiação e apresentação WER 2027",
     "cerimoniadeencerramiento": "Encerramento",
     "cena": "Jantar"
   }
