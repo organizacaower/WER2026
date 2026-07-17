@@ -29,9 +29,9 @@ function obtenerClavePrograma(paper) {
   const session = match ? match[1] : null;
   const trackMap = {
     "RRT": "researchtrack",
-    "IT": "industrytrack",
+    "IT": "industryandsrtt",
     "JFT": "journalfirsttrack",
-    "SRTT": "requirementtoolstrack",
+    "SRTT": "industryandsrtt",
     "TT": "tutorialtrack",
     "MDT": "mastersanddoctoraltrack",
     "ST":"studentstrack"
