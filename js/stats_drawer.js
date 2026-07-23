@@ -165,6 +165,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // 4. Process Section 2: Miembros del Comité de Programa
+    // Deduplicate PC members for overall PC summary & country distribution (Unique people count)
+    const uniquePcMembers = {};
     const allPcCountriesMap = {};
     const pcTrackStats = {};
 
@@ -185,17 +187,32 @@ document.addEventListener("DOMContentLoaded", async () => {
         m.country.split(',').forEach(c => {
           const cleanC = c.trim();
           if (cleanC) {
-            allPcCountriesMap[cleanC] = (allPcCountriesMap[cleanC] || 0) + 1;
             pcTrackStats[t].paises.add(cleanC);
           }
         });
       }
+
+      // Unique member deduplication for overall PC stats & PC Pie Chart
+      const pcKey = (m.email || "").trim().toLowerCase() || (m.name || "").trim().toLowerCase();
+      if (!uniquePcMembers[pcKey]) {
+        uniquePcMembers[pcKey] = m;
+        if (m.country) {
+          m.country.split(',').forEach(c => {
+            const cleanC = c.trim();
+            if (cleanC) {
+              allPcCountriesMap[cleanC] = (allPcCountriesMap[cleanC] || 0) + 1;
+            }
+          });
+        }
+      }
     });
 
-    // Populate PC Cantidad Total
+    const uniquePcCount = Object.keys(uniquePcMembers).length;
+
+    // Populate PC Cantidad Total (Personas unívocas)
     const pcTotalCantidadElem = document.getElementById("pc-total-cantidad");
     if (pcTotalCantidadElem) {
-      pcTotalCantidadElem.innerText = `${pcData.length} miembros`;
+      pcTotalCantidadElem.innerText = `${uniquePcCount} miembros`;
     }
 
     // Populate PC Países (lista)
@@ -209,7 +226,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       `).join("");
     }
 
-    // Render Chart 3: PC Countries Pie Chart
+    // Render Chart 3: PC Countries Pie Chart (per unique PC member)
     if (document.getElementById("chartPcCountries") && typeof Chart !== "undefined") {
       const sortedPcPairs = Object.entries(allPcCountriesMap).sort((a, b) => b[1] - a[1]);
       const pcLabels = sortedPcPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
