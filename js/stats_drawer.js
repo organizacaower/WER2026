@@ -1,4 +1,4 @@
-// stats_drawer.js - WER2026 Statistics Generator from todos_paper.json & program_committee.json
+// stats_drawer.js - WER2026 Statistics Generator with Chart.js & Leaflet
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -106,93 +106,57 @@ document.addEventListener("DOMContentLoaded", async () => {
       "gilda.romero@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115]
     };
 
-    // 3. Process Per Track Stats
-    const allTracks = ["WER-RT", "WER-IT", "WER-MDT", "WER-SRTT", "WER-ST", "WER-JFT", "WER-TT"];
+    // 3. Process Section 1: Por cada Track (Papers)
+    const paperTracks = ["WER-RT", "WER-IT", "WER-MDT", "WER-SRTT", "WER-ST"];
     const trackStats = {};
 
-    allTracks.forEach(t => {
+    paperTracks.forEach(t => {
       trackStats[t] = {
         key: t,
         name: trackNames[t] || t,
         enviados: 0,
-        aceptados: 0,
-        pc_count: 0,
-        pc_paises: new Set()
+        aceptados: 0
       };
     });
 
     papersData.forEach(p => {
       const t = p.Track;
-      if (trackStats[t]) {
-        trackStats[t].enviados += 1;
-        if (p.Decision === "ACCEPT") {
-          trackStats[t].aceptados += 1;
-        }
+      if (!trackStats[t]) {
+        trackStats[t] = { key: t, name: trackNames[t] || t, enviados: 0, aceptados: 0 };
+      }
+      trackStats[t].enviados += 1;
+      if (p.Decision === "ACCEPT") {
+        trackStats[t].aceptados += 1;
       }
     });
 
-    pcData.forEach(m => {
-      const rawT = m.track;
-      const t = trackPcMap[rawT] || rawT;
-      if (trackStats[t]) {
-        trackStats[t].pc_count += 1;
-        if (m.country) {
-          m.country.split(',').forEach(c => {
-            const cleanC = c.trim();
-            if (cleanC) trackStats[t].pc_paises.add(cleanC);
-          });
-        }
-      }
-    });
-
-    // Render Track Section in HTML
+    // Render "Por cada Track" Cards
     const tracksContainer = document.getElementById("tracks-container");
     if (tracksContainer) {
       tracksContainer.innerHTML = "";
-      allTracks.forEach(tKey => {
+      Object.keys(trackStats).forEach(tKey => {
         const tData = trackStats[tKey];
-        const pcCountriesArray = Array.from(tData.pc_paises).sort();
-        const pcCountriesListHtml = pcCountriesArray.length > 0
-          ? pcCountriesArray.map(c => `<span class="badge bg-light text-dark border me-1 mb-1 p-2">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>`).join(" ")
-          : '<span class="text-muted small">Sin información de países</span>';
-
         const col = document.createElement("div");
-        col.className = "col-lg-6 mb-4";
+        col.className = "col-lg-4 col-md-6 mb-4";
         col.innerHTML = `
           <div class="card h-100 border-0 shadow-sm custom-track-card">
-            <div class="card-header bg-primary text-white border-0 py-3">
-              <h4 class="h5 mb-0 font-weight-bold text-white">${tData.name}</h4>
+            <div class="card-header border-0 py-3 text-center" style="background-color: #0984e3 !important; color: #ffffff !important;">
+              <h4 class="h5 mb-0 font-weight-bold" style="color: #ffffff !important;">${tData.name}</h4>
             </div>
-            <div class="card-body">
-              
-              <!-- Subsección papers -->
-              <div class="mb-3 p-3 rounded bg-light border-start border-4 border-info">
-                <h6 class="fw-bold text-dark mb-2 me-2"><i class="fas fa-file-alt me-2 text-info"></i>papers</h6>
-                <div class="row text-center mt-2">
+            <div class="card-body p-4">
+              <div class="p-3 rounded bg-light border-start border-4 border-info">
+                <h6 class="fw-bold text-dark mb-3"><i class="fas fa-file-alt me-2 text-info"></i>papers</h6>
+                <div class="row text-center">
                   <div class="col-6">
                     <div class="small text-muted text-uppercase fw-bold">enviados</div>
-                    <div class="fs-3 fw-bold text-primary">${tData.enviados}</div>
+                    <div class="fs-2 fw-bold" style="color: #0984e3 !important;">${tData.enviados}</div>
                   </div>
                   <div class="col-6">
                     <div class="small text-muted text-uppercase fw-bold">aceptados</div>
-                    <div class="fs-3 fw-bold text-success">${tData.aceptados}</div>
+                    <div class="fs-2 fw-bold" style="color: #28a745 !important;">${tData.aceptados}</div>
                   </div>
                 </div>
               </div>
-
-              <!-- Subsección miembros del comité de programa -->
-              <div class="p-3 rounded bg-light border-start border-4 border-warning">
-                <h6 class="fw-bold text-dark mb-2"><i class="fas fa-user-shield me-2 text-warning"></i>miembros del comité de programa</h6>
-                <div class="mb-2">
-                  <span class="small text-muted text-uppercase fw-bold me-2">cantidad:</span>
-                  <span class="badge bg-warning text-dark fs-6">${tData.pc_count} miembros</span>
-                </div>
-                <div>
-                  <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
-                  <div class="d-flex flex-wrap mt-1">${pcCountriesListHtml}</div>
-                </div>
-              </div>
-
             </div>
           </div>
         `;
@@ -200,12 +164,184 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 
-    // 4. Process Authors, Universities & Countries for Total Section
+    // 4. Process Section 2: Miembros del Comité de Programa
+    const uniquePcMembers = {};
+    const allPcCountriesMap = {};
+    const pcTrackStats = {};
+
+    pcData.forEach(m => {
+      const rawT = m.track;
+      const t = trackPcMap[rawT] || rawT;
+      
+      if (!pcTrackStats[t]) {
+        pcTrackStats[t] = {
+          name: trackNames[t] || t,
+          cantidad: 0,
+          paises: new Set()
+        };
+      }
+      
+      pcTrackStats[t].cantidad += 1;
+      if (m.country) {
+        m.country.split(',').forEach(c => {
+          const cleanC = c.trim();
+          if (cleanC) {
+            pcTrackStats[t].paises.add(cleanC);
+          }
+        });
+      }
+
+      // Unique member deduplication for overall PC stats & PC Pie Chart
+      const pcKey = (m.email || "").trim().toLowerCase() || (m.name || "").trim().toLowerCase();
+      if (!uniquePcMembers[pcKey]) {
+        uniquePcMembers[pcKey] = m;
+        if (m.country) {
+          m.country.split(',').forEach(c => {
+            const cleanC = c.trim();
+            if (cleanC) {
+              allPcCountriesMap[cleanC] = (allPcCountriesMap[cleanC] || 0) + 1;
+            }
+          });
+        }
+      }
+    });
+
+    const uniquePcCount = Object.keys(uniquePcMembers).length;
+
+    // Populate PC Cantidad Total (Personas unívocas)
+    const pcTotalCantidadElem = document.getElementById("pc-total-cantidad");
+    if (pcTotalCantidadElem) {
+      pcTotalCantidadElem.innerText = `${uniquePcCount} miembros`;
+      pcTotalCantidadElem.style.cssText = "background-color: #0984e3 !important; color: #ffffff !important; font-size: 1.25rem !important; font-weight: 700 !important; padding: 8px 20px !important; border-radius: 20px !important;";
+    }
+
+    // Populate PC Países (lista)
+    const pcPaisesListaElem = document.getElementById("pc-paises-lista");
+    if (pcPaisesListaElem) {
+      const sortedPcCountries = Object.keys(allPcCountriesMap).sort();
+      pcPaisesListaElem.innerHTML = sortedPcCountries.map(c => `
+        <span class="badge me-1 mb-1 p-2 fs-6" style="background-color: #e0f2fe !important; color: #0369a1 !important; border: 1px solid #7dd3fc !important; font-weight: 600 !important;">
+          ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
+        </span>
+      `).join("");
+    }
+
+    // Render Chart 3: PC Countries Pie Chart
+    if (document.getElementById("chartPcCountries") && typeof Chart !== "undefined") {
+      const sortedPcPairs = Object.entries(allPcCountriesMap).sort((a, b) => b[1] - a[1]);
+      const pcLabels = sortedPcPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
+      const pcValues = sortedPcPairs.map(([, val]) => val);
+      const pcColors = ['#00b4d8', '#0284c7', '#38bdf8', '#50e3c2', '#71c7ec', '#00cec9', '#818cf8', '#a5f3fc', '#38bdf8'];
+
+      new Chart(document.getElementById("chartPcCountries").getContext("2d"), {
+        type: 'doughnut',
+        data: {
+          labels: pcLabels,
+          datasets: [{
+            data: pcValues,
+            backgroundColor: pcColors.slice(0, pcValues.length),
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'right', labels: { font: { family: 'Rubik', size: 12 }, padding: 10 } },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                  const val = context.raw;
+                  const pct = ((val / total) * 100).toFixed(1);
+                  return `${context.label}: ${val} (${pct}%)`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Populate PC breakdown per track with BRIGHT BLUE HEADERS and HIGH-CONTRAST BLUE BADGES
+    const pcBreakdownElem = document.getElementById("pc-tracks-breakdown");
+    if (pcBreakdownElem) {
+      pcBreakdownElem.innerHTML = "";
+      Object.keys(pcTrackStats).forEach(tKey => {
+        const pcTData = pcTrackStats[tKey];
+        const pcCountriesArray = Array.from(pcTData.paises).sort();
+        const pcCountriesHtml = pcCountriesArray.map(c => `
+          <span class="badge me-1 mb-1 p-1" style="background-color: #f8f9fa !important; color: #212529 !important; border: 1px solid #dee2e6 !important; font-weight: 500 !important;">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>
+        `).join(" ");
+
+        const col = document.createElement("div");
+        col.className = "col-lg-4 col-md-6 mb-4";
+        col.innerHTML = `
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-header border-0 py-2 text-center" style="background-color: #00b4d8 !important; color: #ffffff !important; font-weight: bold !important;">
+              ${pcTData.name}
+            </div>
+            <div class="card-body p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small text-muted text-uppercase fw-bold">cantidad:</span>
+                <span class="badge" style="background-color: #0984e3 !important; color: #ffffff !important; font-size: 0.95rem !important; font-weight: 700 !important; padding: 6px 14px !important; border-radius: 20px !important;">${pcTData.cantidad} miembros</span>
+              </div>
+              <div>
+                <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
+                <div class="d-flex flex-wrap">${pcCountriesHtml}</div>
+              </div>
+            </div>
+          </div>
+        `;
+        pcBreakdownElem.appendChild(col);
+      });
+    }
+
+    // 5. Process Section 3: Total (Autores, Universidades & Países de Papers ACEPTADOS)
+    const acceptedPapers = papersData.filter(p => p.Decision === "ACCEPT");
+    const totalEnviados = papersData.length;
+    const totalAceptados = acceptedPapers.length;
+    const totalRechazados = totalEnviados - totalAceptados;
+
+    // Render Chart 1: Aceptados vs Rechazados
+    if (document.getElementById("chartAcceptanceRate") && typeof Chart !== "undefined") {
+      new Chart(document.getElementById("chartAcceptanceRate").getContext("2d"), {
+        type: 'doughnut',
+        data: {
+          labels: ['Aceptados', 'Rechazados'],
+          datasets: [{
+            data: [totalAceptados, totalRechazados],
+            backgroundColor: ['#28a745', '#dc3545'],
+            borderColor: ['#1e7e34', '#bd2130'],
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { font: { family: 'Rubik', size: 12 } } },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                  const val = context.raw;
+                  const pct = ((val / total) * 100).toFixed(1);
+                  return `${context.label}: ${val} (${pct}%)`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Process Accepted Authors
     const allAuthors = {};
     const universities = {};
-    const authorCountries = new Set();
+    const authorCountriesMap = {};
 
-    papersData.forEach(p => {
+    acceptedPapers.forEach(p => {
       const rawAuthors = (p.Authors || "").replace(/\n/g, " ");
       const authorList = rawAuthors.split(",").flatMap(a => a.includes(" and ") ? a.split(" and ") : [a]).map(a => a.trim()).filter(Boolean);
       const mailsList = (p.Mails || "").replace(/\n/g, " ").split(",").map(m => m.trim().toLowerCase()).filter(Boolean);
@@ -245,7 +381,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (!allAuthors[key]) {
           allAuthors[key] = r;
           if (r.country) {
-            r.country.split(',').forEach(c => authorCountries.add(c.trim()));
+            r.country.split(',').forEach(c => {
+              const cleanC = c.trim();
+              if (cleanC) authorCountriesMap[cleanC] = (authorCountriesMap[cleanC] || 0) + 1;
+            });
           }
 
           const instName = r.inst;
@@ -264,33 +403,71 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     });
 
-    // Populate Total Quick Numbers
+    // Total Quick Numbers
     const totalEnviadosElem = document.getElementById("total-enviados");
     const totalAceptadosElem = document.getElementById("total-aceptados");
     const totalAutoresElem = document.getElementById("total-autores");
     const totalAutoresBadgeElem = document.getElementById("total-autores-badge");
 
-    const totalEnviados = papersData.length;
-    const totalAceptados = papersData.filter(p => p.Decision === "ACCEPT").length;
     const totalAutores = Object.keys(allAuthors).length;
 
     if (totalEnviadosElem) totalEnviadosElem.innerText = totalEnviados;
     if (totalAceptadosElem) totalAceptadosElem.innerText = totalAceptados;
     if (totalAutoresElem) totalAutoresElem.innerText = totalAutores;
-    if (totalAutoresBadgeElem) totalAutoresBadgeElem.innerText = `${totalAutores} personas`;
+    if (totalAutoresBadgeElem) {
+      totalAutoresBadgeElem.innerText = `${totalAutores} personas`;
+      totalAutoresBadgeElem.style.cssText = "background-color: #0984e3 !important; color: #ffffff !important; font-size: 1.1rem !important; font-weight: 700 !important; padding: 8px 16px !important; border-radius: 20px !important;";
+    }
 
     // Populate Author Countries List
     const autoresPaisesElem = document.getElementById("autores-paises-lista");
     if (autoresPaisesElem) {
-      const sortedCountries = Array.from(authorCountries).sort();
+      const sortedCountries = Object.keys(authorCountriesMap).sort();
       autoresPaisesElem.innerHTML = sortedCountries.map(c => `
-        <span class="badge bg-secondary me-1 mb-1 p-2 fs-6">
+        <span class="badge me-1 mb-1 p-2 fs-6" style="background-color: #e0f2fe !important; color: #0369a1 !important; border: 1px solid #7dd3fc !important; font-weight: 600 !important;">
           ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
         </span>
       `).join("");
     }
 
-    // Populate Universities Table
+    // Render Chart 2: Accepted Authors Countries Pie Chart
+    if (document.getElementById("chartAuthorsCountries") && typeof Chart !== "undefined") {
+      const sortedAuthorPairs = Object.entries(authorCountriesMap).sort((a, b) => b[1] - a[1]);
+      const authorLabels = sortedAuthorPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
+      const authorValues = sortedAuthorPairs.map(([, val]) => val);
+      const authorColors = ['#00b4d8', '#0284c7', '#38bdf8', '#50e3c2', '#71c7ec', '#a5f3fc'];
+
+      new Chart(document.getElementById("chartAuthorsCountries").getContext("2d"), {
+        type: 'doughnut',
+        data: {
+          labels: authorLabels,
+          datasets: [{
+            data: authorValues,
+            backgroundColor: authorColors.slice(0, authorValues.length),
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'right', labels: { font: { family: 'Rubik', size: 12 }, padding: 10 } },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                  const val = context.raw;
+                  const pct = ((val / total) * 100).toFixed(1);
+                  return `${context.label}: ${val} (${pct}%)`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Populate Universities Table with Explicit Dark Text Inline Styles
     const univTableBody = document.getElementById("universidades-lista-body");
     if (univTableBody) {
       univTableBody.innerHTML = "";
@@ -298,16 +475,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       sortedUnivs.forEach((u, idx) => {
         const tr = document.createElement("tr");
         tr.innerHTML = `
-          <td><strong>${idx + 1}</strong></td>
-          <td><i class="fas fa-university me-2 text-primary"></i><strong>${u.nombre}</strong></td>
-          <td>${countryFlags[u.pais_code] || '🌐'} ${u.pais}</td>
-          <td><span class="badge bg-primary rounded-pill px-3 py-2 fs-6">${u.autores_count} autores</span></td>
+          <td style="color: #212529 !important;"><strong style="color: #212529 !important;">${idx + 1}</strong></td>
+          <td style="color: #212529 !important;"><i class="fas fa-university me-2 text-primary"></i><strong style="color: #212529 !important;">${u.nombre}</strong></td>
+          <td style="color: #212529 !important;">${countryFlags[u.pais_code] || '🌐'} ${u.pais}</td>
+          <td><span class="badge rounded-pill px-3 py-2 fs-6" style="background-color: #0984e3 !important; color: #ffffff !important; font-weight: 700 !important;">${u.autores_count} autores</span></td>
         `;
         univTableBody.appendChild(tr);
       });
     }
 
-    // Populate Leaflet Map for Universities
+    // Populate Leaflet Map for Universities of ACCEPTED papers ONLY
     if (document.getElementById("map") && typeof L !== "undefined") {
       const map = L.map('map').setView([-15, -60], 3);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -316,7 +493,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }).addTo(map);
 
       const universityIcon = L.divIcon({
-        html: '<div style="background-color: #0984e3; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>',
+        html: '<div style="background-color: #00b4d8; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>',
         className: 'custom-university-marker',
         iconSize: [22, 22],
         iconAnchor: [11, 11]
@@ -352,7 +529,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           const marker = L.marker([lat, lng], { icon: universityIcon }).addTo(map);
           marker.bindPopup(`
             <div style="text-align:center; min-width:180px;">
-              <strong style="color:#0984e3; font-size:1.1em;">${u.nombre}</strong><br>
+              <strong style="color:#00b4d8; font-size:1.1em;">${u.nombre}</strong><br>
               <span style="color:#636e72;">📍 ${u.pais}</span><br>
               <span style="background:#dfe6e9; padding:4px 12px; border-radius:12px; font-size:0.85em; margin-top:6px; display:inline-block; font-weight:bold;">
                 👥 ${u.autores_count} autores
