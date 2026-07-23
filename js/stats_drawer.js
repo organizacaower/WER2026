@@ -106,93 +106,57 @@ document.addEventListener("DOMContentLoaded", async () => {
       "gilda.romero@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115]
     };
 
-    // 3. Process Per Track Stats
-    const allTracks = ["WER-RT", "WER-IT", "WER-MDT", "WER-SRTT", "WER-ST", "WER-JFT", "WER-TT"];
+    // 3. Process Section 1: Por cada Track (Papers)
+    const paperTracks = ["WER-RT", "WER-IT", "WER-MDT", "WER-SRTT", "WER-ST"];
     const trackStats = {};
 
-    allTracks.forEach(t => {
+    paperTracks.forEach(t => {
       trackStats[t] = {
         key: t,
         name: trackNames[t] || t,
         enviados: 0,
-        aceptados: 0,
-        pc_count: 0,
-        pc_paises: new Set()
+        aceptados: 0
       };
     });
 
     papersData.forEach(p => {
       const t = p.Track;
-      if (trackStats[t]) {
-        trackStats[t].enviados += 1;
-        if (p.Decision === "ACCEPT") {
-          trackStats[t].aceptados += 1;
-        }
+      if (!trackStats[t]) {
+        trackStats[t] = { key: t, name: trackNames[t] || t, enviados: 0, aceptados: 0 };
+      }
+      trackStats[t].enviados += 1;
+      if (p.Decision === "ACCEPT") {
+        trackStats[t].aceptados += 1;
       }
     });
 
-    pcData.forEach(m => {
-      const rawT = m.track;
-      const t = trackPcMap[rawT] || rawT;
-      if (trackStats[t]) {
-        trackStats[t].pc_count += 1;
-        if (m.country) {
-          m.country.split(',').forEach(c => {
-            const cleanC = c.trim();
-            if (cleanC) trackStats[t].pc_paises.add(cleanC);
-          });
-        }
-      }
-    });
-
-    // Render Track Section in HTML
+    // Render "Por cada Track" Cards (ONLY Papers: enviados & aceptados)
     const tracksContainer = document.getElementById("tracks-container");
     if (tracksContainer) {
       tracksContainer.innerHTML = "";
-      allTracks.forEach(tKey => {
+      Object.keys(trackStats).forEach(tKey => {
         const tData = trackStats[tKey];
-        const pcCountriesArray = Array.from(tData.pc_paises).sort();
-        const pcCountriesListHtml = pcCountriesArray.length > 0
-          ? pcCountriesArray.map(c => `<span class="badge bg-light text-dark border me-1 mb-1 p-2">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>`).join(" ")
-          : '<span class="text-muted small">Sin información de países</span>';
-
         const col = document.createElement("div");
-        col.className = "col-lg-6 mb-4";
+        col.className = "col-lg-4 col-md-6 mb-4";
         col.innerHTML = `
           <div class="card h-100 border-0 shadow-sm custom-track-card">
-            <div class="card-header bg-primary text-white border-0 py-3">
+            <div class="card-header bg-primary text-white border-0 py-3 text-center">
               <h4 class="h5 mb-0 font-weight-bold text-white">${tData.name}</h4>
             </div>
-            <div class="card-body">
-              
-              <!-- Subsección papers -->
-              <div class="mb-3 p-3 rounded bg-light border-start border-4 border-info">
-                <h6 class="fw-bold text-dark mb-2 me-2"><i class="fas fa-file-alt me-2 text-info"></i>papers</h6>
-                <div class="row text-center mt-2">
+            <div class="card-body p-4">
+              <div class="p-3 rounded bg-light border-start border-4 border-info">
+                <h6 class="fw-bold text-dark mb-3"><i class="fas fa-file-alt me-2 text-info"></i>papers</h6>
+                <div class="row text-center">
                   <div class="col-6">
                     <div class="small text-muted text-uppercase fw-bold">enviados</div>
-                    <div class="fs-3 fw-bold text-primary">${tData.enviados}</div>
+                    <div class="fs-2 fw-bold text-primary">${tData.enviados}</div>
                   </div>
                   <div class="col-6">
                     <div class="small text-muted text-uppercase fw-bold">aceptados</div>
-                    <div class="fs-3 fw-bold text-success">${tData.aceptados}</div>
+                    <div class="fs-2 fw-bold text-success">${tData.aceptados}</div>
                   </div>
                 </div>
               </div>
-
-              <!-- Subsección miembros del comité de programa -->
-              <div class="p-3 rounded bg-light border-start border-4 border-warning">
-                <h6 class="fw-bold text-dark mb-2"><i class="fas fa-user-shield me-2 text-warning"></i>miembros del comité de programa</h6>
-                <div class="mb-2">
-                  <span class="small text-muted text-uppercase fw-bold me-2">cantidad:</span>
-                  <span class="badge bg-warning text-dark fs-6">${tData.pc_count} miembros</span>
-                </div>
-                <div>
-                  <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
-                  <div class="d-flex flex-wrap mt-1">${pcCountriesListHtml}</div>
-                </div>
-              </div>
-
             </div>
           </div>
         `;
@@ -200,7 +164,86 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 
-    // 4. Process Authors, Universities & Countries for Total Section
+    // 4. Process Section 2: Miembros del Comité de Programa (from program_committee.json)
+    const allPcCountries = new Set();
+    const pcTrackStats = {};
+
+    pcData.forEach(m => {
+      const rawT = m.track;
+      const t = trackPcMap[rawT] || rawT;
+      
+      if (!pcTrackStats[t]) {
+        pcTrackStats[t] = {
+          name: trackNames[t] || t,
+          cantidad: 0,
+          paises: new Set()
+        };
+      }
+      
+      pcTrackStats[t].cantidad += 1;
+      if (m.country) {
+        m.country.split(',').forEach(c => {
+          const cleanC = c.trim();
+          if (cleanC) {
+            allPcCountries.add(cleanC);
+            pcTrackStats[t].paises.add(cleanC);
+          }
+        });
+      }
+    });
+
+    // Populate PC Cantidad Total
+    const pcTotalCantidadElem = document.getElementById("pc-total-cantidad");
+    if (pcTotalCantidadElem) {
+      pcTotalCantidadElem.innerText = `${pcData.length} miembros`;
+    }
+
+    // Populate PC Países (lista)
+    const pcPaisesListaElem = document.getElementById("pc-paises-lista");
+    if (pcPaisesListaElem) {
+      const sortedPcCountries = Array.from(allPcCountries).sort();
+      pcPaisesListaElem.innerHTML = sortedPcCountries.map(c => `
+        <span class="badge bg-warning text-dark me-1 mb-1 p-2 fs-6 border">
+          ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
+        </span>
+      `).join("");
+    }
+
+    // Populate PC breakdown per track
+    const pcBreakdownElem = document.getElementById("pc-tracks-breakdown");
+    if (pcBreakdownElem) {
+      pcBreakdownElem.innerHTML = "";
+      Object.keys(pcTrackStats).forEach(tKey => {
+        const pcTData = pcTrackStats[tKey];
+        const pcCountriesArray = Array.from(pcTData.paises).sort();
+        const pcCountriesHtml = pcCountriesArray.map(c => `
+          <span class="badge bg-light text-dark border me-1 mb-1 p-1">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>
+        `).join(" ");
+
+        const col = document.createElement("div");
+        col.className = "col-lg-4 col-md-6 mb-4";
+        col.innerHTML = `
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-header bg-warning text-dark border-0 py-2 font-weight-bold text-center">
+              ${pcTData.name}
+            </div>
+            <div class="card-body p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small text-muted text-uppercase fw-bold">cantidad:</span>
+                <span class="badge bg-dark fs-6">${pcTData.cantidad} miembros</span>
+              </div>
+              <div>
+                <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
+                <div class="d-flex flex-wrap">${pcCountriesHtml}</div>
+              </div>
+            </div>
+          </div>
+        `;
+        pcBreakdownElem.appendChild(col);
+      });
+    }
+
+    // 5. Process Section 3: Total (Autores, Universidades & Países)
     const allAuthors = {};
     const universities = {};
     const authorCountries = new Set();
@@ -264,19 +307,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     });
 
-    // Populate Total Quick Numbers
-    const totalEnviadosElem = document.getElementById("total-enviados");
-    const totalAceptadosElem = document.getElementById("total-aceptados");
-    const totalAutoresElem = document.getElementById("total-autores");
-    const totalAutoresBadgeElem = document.getElementById("total-autores-badge");
-
-    const totalEnviados = papersData.length;
-    const totalAceptados = papersData.filter(p => p.Decision === "ACCEPT").length;
+    // Total Autores Badge
     const totalAutores = Object.keys(allAuthors).length;
-
-    if (totalEnviadosElem) totalEnviadosElem.innerText = totalEnviados;
-    if (totalAceptadosElem) totalAceptadosElem.innerText = totalAceptados;
-    if (totalAutoresElem) totalAutoresElem.innerText = totalAutores;
+    const totalAutoresBadgeElem = document.getElementById("total-autores-badge");
     if (totalAutoresBadgeElem) totalAutoresBadgeElem.innerText = `${totalAutores} personas`;
 
     // Populate Author Countries List

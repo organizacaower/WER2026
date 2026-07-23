@@ -52,12 +52,6 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
     
-    .stats-summary {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-    }
-    
     #map {
       height: 480px;
       border-radius: 10px;
@@ -86,7 +80,7 @@
         <div class="col-lg-10">
           <div class="mb-4">
             <h1 class="display-4 font-weight-bold text-primary">Stats</h1>
-            <p class="lead text-muted">Estadísticas completas de trabajos, comité de programa, autores y universidades participaciones en WER2026.</p>
+            <p class="lead text-muted">Estadísticas completas de trabajos, comité de programa, autores y universidades en WER2026.</p>
           </div>
         </div>
       </div>
@@ -116,37 +110,55 @@
             </div>
           </div>
 
-          <!-- 2. TOTAL -->
+          <!-- 2. MIEMBROS DEL COMITÉ DE PROGRAMA -->
+          <div class="card border-0 shadow-sm mb-5" style="border-radius: 14px; overflow: hidden;">
+            <div class="card-header bg-warning text-dark py-3 px-4">
+              <h2 class="h3 mb-0 text-dark"><i class="fas fa-user-shield me-2"></i>miembros del comité de programa</h2>
+            </div>
+            <div class="card-body p-4">
+              
+              <div class="row mb-4">
+                <!-- Cantidad -->
+                <div class="col-md-6 mb-3">
+                  <div class="p-3 bg-light rounded border h-100">
+                    <h6 class="fw-bold text-secondary text-uppercase small">cantidad</h6>
+                    <div class="mt-2">
+                      <span id="pc-total-cantidad" class="badge bg-warning text-dark fs-4 px-4 py-2">0 miembros</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Países (lista) -->
+                <div class="col-md-6 mb-3">
+                  <div class="p-3 bg-light rounded border h-100">
+                    <h6 class="fw-bold text-secondary text-uppercase small">países (lista)</h6>
+                    <div id="pc-paises-lista" class="mt-2 d-flex flex-wrap gap-2">
+                      <!-- Rendered by JS -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Desglose por Track de Miembros del PC -->
+              <div class="mt-4">
+                <h5 class="text-secondary mb-3"><i class="fas fa-sitemap me-2"></i>Desglose por Track del Comité de Programa</h5>
+                <div id="pc-tracks-breakdown" class="row">
+                  <!-- Rendered by JS -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. TOTAL -->
           <div class="card border-0 shadow-sm mb-5" style="border-radius: 14px; overflow: hidden;">
             <div class="card-header bg-success text-white py-3 px-4">
               <h2 class="h3 mb-0 text-white"><i class="fas fa-chart-pie me-2"></i>Total</h2>
             </div>
             <div class="card-body p-4">
 
-              <!-- Tarjetas de Resumen General -->
-              <div class="row text-center mb-4">
-                <div class="col-md-4 mb-3">
-                  <div class="stats-summary p-4 border">
-                    <h5 class="text-uppercase text-muted small fw-bold">Total Papers Enviados</h5>
-                    <h2 id="total-enviados" class="display-4 font-weight-bold text-primary">0</h2>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="stats-summary p-4 border">
-                    <h5 class="text-uppercase text-muted small fw-bold">Total Papers Aceptados</h5>
-                    <h2 id="total-aceptados" class="display-4 font-weight-bold text-success">0</h2>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="stats-summary p-4 border">
-                    <h5 class="text-uppercase text-muted small fw-bold">Total Autores Diferentes</h5>
-                    <h2 id="total-autores" class="display-4 font-weight-bold text-warning">0</h2>
-                  </div>
-                </div>
-              </div>
-
               <!-- Subsección autores -->
-              <div class="mt-4 p-4 rounded bg-light border">
+              <div class="p-4 rounded bg-light border">
                 <h3 class="h4 text-dark mb-4 border-bottom pb-2">
                   <i class="fas fa-users me-2 text-primary"></i>autores
                 </h3>
