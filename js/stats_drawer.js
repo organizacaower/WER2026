@@ -140,8 +140,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         col.className = "col-lg-4 col-md-6 mb-4";
         col.innerHTML = `
           <div class="card h-100 border-0 shadow-sm custom-track-card">
-            <div class="card-header bg-primary text-white border-0 py-3 text-center">
-              <h4 class="h5 mb-0 font-weight-bold text-white">${tData.name}</h4>
+            <div class="card-header border-0 py-3 text-center" style="background-color: #0984e3 !important; color: #ffffff !important;">
+              <h4 class="h5 mb-0 font-weight-bold" style="color: #ffffff !important;">${tData.name}</h4>
             </div>
             <div class="card-body p-4">
               <div class="p-3 rounded bg-light border-start border-4 border-info">
@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <div class="row text-center">
                   <div class="col-6">
                     <div class="small text-muted text-uppercase fw-bold">enviados</div>
-                    <div class="fs-2 fw-bold text-primary">${tData.enviados}</div>
+                    <div class="fs-2 fw-bold" style="color: #0984e3 !important;">${tData.enviados}</div>
                   </div>
                   <div class="col-6">
                     <div class="small text-muted text-uppercase fw-bold">aceptados</div>
-                    <div class="fs-2 fw-bold text-success">${tData.aceptados}</div>
+                    <div class="fs-2 fw-bold" style="color: #28a745 !important;">${tData.aceptados}</div>
                   </div>
                 </div>
               </div>
@@ -165,7 +165,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // 4. Process Section 2: Miembros del Comité de Programa
-    // Deduplicate PC members for overall PC summary & country distribution (Unique people count)
     const uniquePcMembers = {};
     const allPcCountriesMap = {};
     const pcTrackStats = {};
@@ -213,6 +212,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const pcTotalCantidadElem = document.getElementById("pc-total-cantidad");
     if (pcTotalCantidadElem) {
       pcTotalCantidadElem.innerText = `${uniquePcCount} miembros`;
+      pcTotalCantidadElem.style.cssText = "background-color: #0984e3 !important; color: #ffffff !important; font-size: 1.25rem !important; font-weight: 700 !important; padding: 8px 20px !important; border-radius: 20px !important;";
     }
 
     // Populate PC Países (lista)
@@ -220,13 +220,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (pcPaisesListaElem) {
       const sortedPcCountries = Object.keys(allPcCountriesMap).sort();
       pcPaisesListaElem.innerHTML = sortedPcCountries.map(c => `
-        <span class="badge badge-celeste me-1 mb-1 p-2 fs-6">
+        <span class="badge me-1 mb-1 p-2 fs-6" style="background-color: #e0f2fe !important; color: #0369a1 !important; border: 1px solid #7dd3fc !important; font-weight: 600 !important;">
           ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
         </span>
       `).join("");
     }
 
-    // Render Chart 3: PC Countries Pie Chart (per unique PC member)
+    // Render Chart 3: PC Countries Pie Chart
     if (document.getElementById("chartPcCountries") && typeof Chart !== "undefined") {
       const sortedPcPairs = Object.entries(allPcCountriesMap).sort((a, b) => b[1] - a[1]);
       const pcLabels = sortedPcPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 
-    // Populate PC breakdown per track
+    // Populate PC breakdown per track with BRIGHT BLUE HEADERS and HIGH-CONTRAST BLUE BADGES
     const pcBreakdownElem = document.getElementById("pc-tracks-breakdown");
     if (pcBreakdownElem) {
       pcBreakdownElem.innerHTML = "";
@@ -271,20 +271,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         const pcTData = pcTrackStats[tKey];
         const pcCountriesArray = Array.from(pcTData.paises).sort();
         const pcCountriesHtml = pcCountriesArray.map(c => `
-          <span class="badge bg-light text-dark border me-1 mb-1 p-1">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>
+          <span class="badge me-1 mb-1 p-1" style="background-color: #f8f9fa !important; color: #212529 !important; border: 1px solid #dee2e6 !important; font-weight: 500 !important;">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>
         `).join(" ");
 
         const col = document.createElement("div");
         col.className = "col-lg-4 col-md-6 mb-4";
         col.innerHTML = `
           <div class="card h-100 border-0 shadow-sm">
-            <div class="card-header bg-celeste text-white border-0 py-2 font-weight-bold text-center">
+            <div class="card-header border-0 py-2 text-center" style="background-color: #00b4d8 !important; color: #ffffff !important; font-weight: bold !important;">
               ${pcTData.name}
             </div>
             <div class="card-body p-3">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <span class="small text-muted text-uppercase fw-bold">cantidad:</span>
-                <span class="badge badge-celeste-solid fs-6">${pcTData.cantidad} miembros</span>
+                <span class="badge" style="background-color: #0984e3 !important; color: #ffffff !important; font-size: 0.95rem !important; font-weight: 700 !important; padding: 6px 14px !important; border-radius: 20px !important;">${pcTData.cantidad} miembros</span>
               </div>
               <div>
                 <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
@@ -414,14 +414,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (totalEnviadosElem) totalEnviadosElem.innerText = totalEnviados;
     if (totalAceptadosElem) totalAceptadosElem.innerText = totalAceptados;
     if (totalAutoresElem) totalAutoresElem.innerText = totalAutores;
-    if (totalAutoresBadgeElem) totalAutoresBadgeElem.innerText = `${totalAutores} personas`;
+    if (totalAutoresBadgeElem) {
+      totalAutoresBadgeElem.innerText = `${totalAutores} personas`;
+      totalAutoresBadgeElem.style.cssText = "background-color: #0984e3 !important; color: #ffffff !important; font-size: 1.1rem !important; font-weight: 700 !important; padding: 8px 16px !important; border-radius: 20px !important;";
+    }
 
     // Populate Author Countries List
     const autoresPaisesElem = document.getElementById("autores-paises-lista");
     if (autoresPaisesElem) {
       const sortedCountries = Object.keys(authorCountriesMap).sort();
       autoresPaisesElem.innerHTML = sortedCountries.map(c => `
-        <span class="badge badge-celeste me-1 mb-1 p-2 fs-6">
+        <span class="badge me-1 mb-1 p-2 fs-6" style="background-color: #e0f2fe !important; color: #0369a1 !important; border: 1px solid #7dd3fc !important; font-weight: 600 !important;">
           ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
         </span>
       `).join("");
@@ -475,7 +478,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <td style="color: #212529 !important;"><strong style="color: #212529 !important;">${idx + 1}</strong></td>
           <td style="color: #212529 !important;"><i class="fas fa-university me-2 text-primary"></i><strong style="color: #212529 !important;">${u.nombre}</strong></td>
           <td style="color: #212529 !important;">${countryFlags[u.pais_code] || '🌐'} ${u.pais}</td>
-          <td><span class="badge bg-primary text-white rounded-pill px-3 py-2 fs-6">${u.autores_count} autores</span></td>
+          <td><span class="badge rounded-pill px-3 py-2 fs-6" style="background-color: #0984e3 !important; color: #ffffff !important; font-weight: 700 !important;">${u.autores_count} autores</span></td>
         `;
         univTableBody.appendChild(tr);
       });
