@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (pcPaisesListaElem) {
       const sortedPcCountries = Object.keys(allPcCountriesMap).sort();
       pcPaisesListaElem.innerHTML = sortedPcCountries.map(c => `
-        <span class="badge bg-warning text-dark me-1 mb-1 p-2 fs-6 border">
+        <span class="badge badge-celeste me-1 mb-1 p-2 fs-6">
           ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
         </span>
       `).join("");
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const sortedPcPairs = Object.entries(allPcCountriesMap).sort((a, b) => b[1] - a[1]);
       const pcLabels = sortedPcPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
       const pcValues = sortedPcPairs.map(([, val]) => val);
-      const pcColors = ['#00b894', '#74b9ff', '#fdcb6e', '#e17055', '#6c5ce7', '#00cec9', '#fd79a8', '#ffeaa7', '#55a3f8'];
+      const pcColors = ['#00b4d8', '#0284c7', '#38bdf8', '#50e3c2', '#71c7ec', '#00cec9', '#818cf8', '#a5f3fc', '#38bdf8'];
 
       new Chart(document.getElementById("chartPcCountries").getContext("2d"), {
         type: 'doughnut',
@@ -261,13 +261,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         col.className = "col-lg-4 col-md-6 mb-4";
         col.innerHTML = `
           <div class="card h-100 border-0 shadow-sm">
-            <div class="card-header bg-warning text-dark border-0 py-2 font-weight-bold text-center">
+            <div class="card-header bg-celeste text-white border-0 py-2 font-weight-bold text-center">
               ${pcTData.name}
             </div>
             <div class="card-body p-3">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <span class="small text-muted text-uppercase fw-bold">cantidad:</span>
-                <span class="badge bg-dark fs-6">${pcTData.cantidad} miembros</span>
+                <span class="badge badge-celeste-solid fs-6">${pcTData.cantidad} miembros</span>
               </div>
               <div>
                 <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
@@ -404,7 +404,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (autoresPaisesElem) {
       const sortedCountries = Object.keys(authorCountriesMap).sort();
       autoresPaisesElem.innerHTML = sortedCountries.map(c => `
-        <span class="badge bg-secondary text-dark me-1 mb-1 p-2 fs-6 border">
+        <span class="badge badge-celeste me-1 mb-1 p-2 fs-6">
           ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
         </span>
       `).join("");
@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const sortedAuthorPairs = Object.entries(authorCountriesMap).sort((a, b) => b[1] - a[1]);
       const authorLabels = sortedAuthorPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
       const authorValues = sortedAuthorPairs.map(([, val]) => val);
-      const authorColors = ['#00b894', '#74b9ff', '#fdcb6e', '#fd79a8', '#a29bfe', '#e17055'];
+      const authorColors = ['#00b4d8', '#0284c7', '#38bdf8', '#50e3c2', '#71c7ec', '#a5f3fc'];
 
       new Chart(document.getElementById("chartAuthorsCountries").getContext("2d"), {
         type: 'doughnut',
@@ -473,7 +473,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }).addTo(map);
 
       const universityIcon = L.divIcon({
-        html: '<div style="background-color: #0984e3; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>',
+        html: '<div style="background-color: #00b4d8; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>',
         className: 'custom-university-marker',
         iconSize: [22, 22],
         iconAnchor: [11, 11]
@@ -509,7 +509,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           const marker = L.marker([lat, lng], { icon: universityIcon }).addTo(map);
           marker.bindPopup(`
             <div style="text-align:center; min-width:180px;">
-              <strong style="color:#0984e3; font-size:1.1em;">${u.nombre}</strong><br>
+              <strong style="color:#00b4d8; font-size:1.1em;">${u.nombre}</strong><br>
               <span style="color:#636e72;">📍 ${u.pais}</span><br>
               <span style="background:#dfe6e9; padding:4px 12px; border-radius:12px; font-size:0.85em; margin-top:6px; display:inline-block; font-weight:bold;">
                 👥 ${u.autores_count} autores

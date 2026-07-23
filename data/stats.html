@@ -44,6 +44,29 @@
       color: inherit;
     }
 
+    /* Celeste Theme Classes */
+    .bg-celeste {
+      background-color: #00b4d8 !important;
+      color: #ffffff !important;
+    }
+    
+    .text-celeste {
+      color: #00b4d8 !important;
+    }
+
+    .badge-celeste {
+      background-color: #e0f2fe !important;
+      color: #0369a1 !important;
+      border: 1px solid #7dd3fc !important;
+      font-weight: 600 !important;
+    }
+
+    .badge-celeste-solid {
+      background-color: #0284c7 !important;
+      color: #ffffff !important;
+      font-weight: 600 !important;
+    }
+
     /* Table text contrast fix */
     .table, .table td, .table th, table tbody tr td, table tbody tr td strong {
       color: #212529 !important;
@@ -95,13 +118,6 @@
     .badge.bg-primary {
       background-color: #0984e3 !important;
       color: #ffffff !important;
-      font-weight: 600 !important;
-    }
-
-    .badge.bg-warning {
-      background-color: #ffeaa7 !important;
-      color: #2d3436 !important;
-      border: 1px solid #fdcb6e !important;
       font-weight: 600 !important;
     }
 
@@ -179,8 +195,8 @@
 
           <!-- 2. MIEMBROS DEL COMITÉ DE PROGRAMA -->
           <div class="card border-0 shadow-sm mb-5" style="border-radius: 14px; overflow: hidden;">
-            <div class="card-header bg-warning text-dark py-3 px-4">
-              <h2 class="h3 mb-0 text-dark"><i class="fas fa-user-shield me-2"></i>miembros del comité de programa</h2>
+            <div class="card-header bg-celeste text-white py-3 px-4">
+              <h2 class="h3 mb-0 text-white"><i class="fas fa-user-shield me-2"></i>miembros del comité de programa</h2>
             </div>
             <div class="card-body p-4">
               
@@ -191,7 +207,7 @@
                     <div class="p-3 bg-light rounded border">
                       <h6 class="fw-bold text-secondary text-uppercase small">cantidad</h6>
                       <div class="mt-2">
-                        <span id="pc-total-cantidad" class="badge bg-warning text-dark fs-4 px-4 py-2">0 miembros</span>
+                        <span id="pc-total-cantidad" class="badge badge-celeste-solid fs-4 px-4 py-2">0 miembros</span>
                       </div>
                     </div>
                     <div class="p-3 bg-light rounded border flex-grow-1">
@@ -207,7 +223,7 @@
                 <div class="col-lg-6 mb-3">
                   <div class="p-3 bg-light rounded border h-100 text-center">
                     <h6 class="fw-bold text-secondary text-uppercase small mb-3">
-                      <i class="fas fa-chart-pie me-2 text-warning"></i>Distribución de Países del Comité de Programa
+                      <i class="fas fa-chart-pie me-2 text-celeste"></i>Distribución de Países del Comité de Programa
                     </h6>
                     <div style="position: relative; height: 250px;">
                       <canvas id="chartPcCountries"></canvas>
@@ -253,7 +269,7 @@
                     <div class="col-md-4 mb-3 mb-md-0">
                       <div class="stats-summary p-3 border h-100 d-flex flex-column justify-content-center">
                         <h6 class="text-uppercase text-muted small fw-bold">Total Autores Diferentes (Aceptados)</h6>
-                        <h2 id="total-autores" class="display-4 font-weight-bold text-warning mb-0">0</h2>
+                        <h2 id="total-autores" class="display-4 font-weight-bold text-celeste mb-0">0</h2>
                       </div>
                     </div>
                   </div>
