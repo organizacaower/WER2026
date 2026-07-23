@@ -1,162 +1,369 @@
-// ============================================
-    // 📊 GRÁFICO DE TORTA: Aceptados vs Rechazados
-    // ============================================
-    const pieCtx = document.getElementById('pieChart').getContext('2d');
-    new Chart(pieCtx, {
-        type: 'doughnut',
-        data: {
-            labels: ['Aceptados', 'Rechazados'],
-            datasets: [{
-                data: [71, 116],
-                backgroundColor: [
-                    '#28a745',
-                    '#dc3545'
-                ],
-                borderColor: [
-                    '#1e7e34',
-                    '#bd2130'
-                ],
-                borderWidth: 2,
-                hoverOffset: 10
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        padding: 20,
-                        font: { size: 14 }
-                    }
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                            const percentage = ((context.raw / total) * 100).toFixed(1);
-                            return `${context.label}: ${context.raw} (${percentage}%)`;
-                        }
-                    }
-                }
-            }
-        }
+// stats_drawer.js - WER2026 Statistics Generator from todos_paper.json & program_committee.json
+
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    let papersData = [];
+    let pcData = [];
+
+    // 1. Fetch data files with robust fallback paths
+    try {
+      const pRes = await fetch("todos_paper.json");
+      papersData = await pRes.json();
+    } catch (e) {
+      const pRes = await fetch("../data/todos_paper.json");
+      papersData = await pRes.json();
+    }
+
+    try {
+      const pcRes = await fetch("program_committee.json");
+      pcData = await pcRes.json();
+    } catch (e) {
+      const pcRes = await fetch("../data/program_committee.json");
+      pcData = await pcRes.json();
+    }
+
+    // 2. Translations & Maps
+    const countryNames = {
+      AR: "Argentina", BR: "Brasil", ES: "España", CL: "Chile", UY: "Uruguay",
+      EC: "Ecuador", PT: "Portugal", PE: "Perú", DE: "Alemania", US: "Estados Unidos",
+      CO: "Colombia", MX: "México", CA: "Canadá", NL: "Países Bajos", IE: "Irlanda",
+      NZ: "Nueva Zelanda", IT: "Italia", UK: "Reino Unido", FR: "Francia"
+    };
+
+    const countryFlags = {
+      AR: "🇦🇷", BR: "🇧🇷", ES: "🇪🇸", CL: "🇨🇱", UY: "🇺🇾", EC: "🇪🇨",
+      PT: "🇵🇹", PE: "🇵🇪", DE: "🇩🇪", US: "🇺🇸", CO: "🇨🇴", MX: "🇲🇽"
+    };
+
+    const trackNames = {
+      "WER-RT": "Track de Investigación (WER-RT)",
+      "WER-IT": "Track de la Industria (WER-IT)",
+      "WER-MDT": "Track de Maestría y Doctorado (WER-MDT)",
+      "WER-SRTT": "Track de Herramientas en Requisitos de Software (WER-SRTT)",
+      "WER-ST": "Track de Estudiantes (WER-ST)",
+      "WER-JFT": "Journal First Track (WER-JFT)",
+      "WER-TT": "Track de Tutoriales (WER-TT)"
+    };
+
+    const trackPcMap = {
+      "WER-RRT": "WER-RT", "WER-RT": "WER-RT", "WER-IT": "WER-IT",
+      "WER-MDT": "WER-MDT", "WER-SRTT": "WER-SRTT", "WER-ST": "WER-ST",
+      "WER-JFT": "WER-JFT", "WER-TT": "WER-TT"
+    };
+
+    const pcEmail = {};
+    const pcName = {};
+    pcData.forEach(c => {
+      if (c.email) pcEmail[c.email.toLowerCase().trim()] = c;
+      if (c.name) pcName[c.name.toLowerCase().trim()] = c;
     });
 
-    // ============================================
-    // 📊 GRÁFICO DE BARRAS: Participantes por País
-    // ============================================
-    const barCtx = document.getElementById('barChart').getContext('2d');
-    new Chart(barCtx, {
-        type: 'bar',
-        data: {
-            labels: [
-                'Argentina', 'Brasil', 'España', 'Colombia', 'México',
-                'Chile', 'Perú', 'Uruguay', 'Ecuador', 'Portugal'
-            ],
-            datasets: [{
-                label: 'Participantes',
-                data: [45, 28, 22, 18, 15, 12, 10, 8, 6, 5],
-                backgroundColor: [
-                    '#74b9ff', '#00b894', '#fdcb6e', '#e17055', '#6c5ce7',
-                    '#00cec9', '#fd79a8', '#ffeaa7', '#55a3f8', '#a29bfe'
-                ],
-                borderColor: [
-                    '#0984e3', '#00a381', '#e5b85c', '#d63031', '#5f3dc4',
-                    '#00b5b0', '#e84393', '#f0d895', '#3d8ef5', '#8680f7'
-                ],
-                borderWidth: 2,
-                borderRadius: 6
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            indexAxis: 'y',
-            plugins: {
-                legend: {
-                    display: false
-                }
-            },
-            scales: {
-                x: {
-                    beginAtZero: true,
-                    grid: {
-                        color: 'rgba(0, 0, 0, 0.05)'
-                    },
-                    ticks: {
-                        font: { size: 12 }
-                    }
-                },
-                y: {
-                    grid: {
-                        display: false
-                    },
-                    ticks: {
-                        font: { size: 12 }
-                    }
-                }
-            }
-        }
+    const domainMap = {
+      "unlp.edu.ar": ["Universidad Nacional de La Plata", "AR", -34.9205, -57.9536],
+      "uniriotec.br": ["Universidade Federal do Estado do Rio de Janeiro", "BR", -22.9560, -43.1764],
+      "unirio.br": ["Universidade Federal do Estado do Rio de Janeiro", "BR", -22.9560, -43.1764],
+      "uno.edu.ar": ["Universidad Nacional del Oeste", "AR", -34.6644, -58.7186],
+      "ufg.br": ["Universidade Federal de Goiás", "BR", -16.6034, -49.2666],
+      "ecomp.poli.br": ["Universidade de Pernambuco", "BR", -8.0583, -34.8718],
+      "ime.uerj.br": ["Universidade do Estado do Rio de Janeiro", "BR", -22.9118, -43.2356],
+      "uerj.br": ["Universidade do Estado do Rio de Janeiro", "BR", -22.9118, -43.2356],
+      "ufrn.br": ["Universidade Federal do Rio Grande do Norte", "BR", -5.8369, -35.2030],
+      "ita.br": ["Instituto Tecnológico de Aeronáutica", "BR", -23.2105, -45.8753],
+      "ufpe.br": ["Universidade Federal de Pernambuco", "BR", -8.0476, -34.9515],
+      "ufc.br": ["Universidade Federal do Ceará", "BR", -3.7460, -38.5744],
+      "ufrrj.br": ["Universidade Federal Rural do Rio de Janeiro", "BR", -22.7600, -43.6853],
+      "unsaac.edu.pe": ["Universidad Nacional de San Antonio Abad del Cusco", "PE", -13.5226, -71.9542],
+      "utn.edu.ar": ["Universidad Tecnológica Nacional", "AR", -34.6037, -58.3816],
+      "ifgoiano.edu.br": ["Instituto Federal Goiano", "BR", -17.7915, -50.9200],
+      "ufba.br": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
+      "untdf.edu.ar": ["Universidad Nacional de Tierra del Fuego", "AR", -54.8070, -68.3074],
+      "unca.edu.ar": ["Universidad Nacional de Catamarca", "AR", -28.4689, -65.7790],
+      "unicen.edu.ar": ["Universidad Nacional del Centro de la Prov. de Buenos Aires", "AR", -37.3217, -59.1332],
+      "uner.edu.ar": ["Universidad Nacional de Entre Ríos", "AR", -31.7413, -60.5115],
+      "unp.edu.ar": ["Universidad Nacional de la Patagonia San Juan Bosco", "AR", -45.8647, -67.4856],
+      "ufcg.edu.br": ["Universidade Federal de Campina Grande", "BR", -7.2173, -35.9080],
+      "erau.edu": ["Embry-Riddle Aeronautical University", "US", 29.1895, -81.0484],
+      "unahur.edu.ar": ["Universidad Nacional de Hurlingham", "AR", -34.5975, -58.6366],
+      "senac.br": ["Faculdade Senac Pernambuco", "BR", -8.0539, -34.8872],
+      "utfpr.edu.br": ["Universidade Tecnológica Federal do Paraná", "BR", -25.4372, -49.2700],
+      "usp.br": ["Universidade de São Paulo", "BR", -23.5505, -46.6333],
+      "opus-software.com.br": ["Opus Software", "BR", -23.5615, -46.6559],
+      "lmu.de": ["Ludwig-Maximilians-Universität München", "DE", 48.1508, 11.5802],
+      "puc-rio.br": ["Pontifícia Universidade Católica do Rio de Janeiro", "BR", -22.9791, -43.2332],
+      "unioeste.br": ["Universidade Estadual do Oeste do Paraná", "BR", -24.9555, -53.4552],
+      "unsl.edu.ar": ["Universidad Nacional de San Luis", "AR", -33.2982, -66.3356],
+      "ub.edu.ar": ["Universidad de Belgrano", "AR", -34.5621, -58.4566]
+    };
+
+    const explicitAuthorMap = {
+      "ritasuzana@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
+      "savio.essf@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
+      "larissa.barbosa11@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
+      "alanrodriguezagostini71@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9205, -57.9536],
+      "maxi.rodriguez.3105@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9205, -57.9536],
+      "daniela_ldl@ieee.org": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115],
+      "nicolasrizzo@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115],
+      "gilda.romero@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115]
+    };
+
+    // 3. Process Per Track Stats
+    const allTracks = ["WER-RT", "WER-IT", "WER-MDT", "WER-SRTT", "WER-ST", "WER-JFT", "WER-TT"];
+    const trackStats = {};
+
+    allTracks.forEach(t => {
+      trackStats[t] = {
+        key: t,
+        name: trackNames[t] || t,
+        enviados: 0,
+        aceptados: 0,
+        pc_count: 0,
+        pc_paises: new Set()
+      };
     });
 
-    // ============================================
-    // 🗺️ MAPA DEL MUNDO: Universidades
-    // ============================================
-    const map = L.map('map').setView([20, -20], 2);
+    papersData.forEach(p => {
+      const t = p.Track;
+      if (trackStats[t]) {
+        trackStats[t].enviados += 1;
+        if (p.Decision === "ACCEPT") {
+          trackStats[t].aceptados += 1;
+        }
+      }
+    });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    pcData.forEach(m => {
+      const rawT = m.track;
+      const t = trackPcMap[rawT] || rawT;
+      if (trackStats[t]) {
+        trackStats[t].pc_count += 1;
+        if (m.country) {
+          m.country.split(',').forEach(c => {
+            const cleanC = c.trim();
+            if (cleanC) trackStats[t].pc_paises.add(cleanC);
+          });
+        }
+      }
+    });
+
+    // Render Track Section in HTML
+    const tracksContainer = document.getElementById("tracks-container");
+    if (tracksContainer) {
+      tracksContainer.innerHTML = "";
+      allTracks.forEach(tKey => {
+        const tData = trackStats[tKey];
+        const pcCountriesArray = Array.from(tData.pc_paises).sort();
+        const pcCountriesListHtml = pcCountriesArray.length > 0
+          ? pcCountriesArray.map(c => `<span class="badge bg-light text-dark border me-1 mb-1 p-2">${countryFlags[c] || '🌐'} ${countryNames[c] || c}</span>`).join(" ")
+          : '<span class="text-muted small">Sin información de países</span>';
+
+        const col = document.createElement("div");
+        col.className = "col-lg-6 mb-4";
+        col.innerHTML = `
+          <div class="card h-100 border-0 shadow-sm custom-track-card">
+            <div class="card-header bg-primary text-white border-0 py-3">
+              <h4 class="h5 mb-0 font-weight-bold text-white">${tData.name}</h4>
+            </div>
+            <div class="card-body">
+              
+              <!-- Subsección papers -->
+              <div class="mb-3 p-3 rounded bg-light border-start border-4 border-info">
+                <h6 class="fw-bold text-dark mb-2 me-2"><i class="fas fa-file-alt me-2 text-info"></i>papers</h6>
+                <div class="row text-center mt-2">
+                  <div class="col-6">
+                    <div class="small text-muted text-uppercase fw-bold">enviados</div>
+                    <div class="fs-3 fw-bold text-primary">${tData.enviados}</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="small text-muted text-uppercase fw-bold">aceptados</div>
+                    <div class="fs-3 fw-bold text-success">${tData.aceptados}</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subsección miembros del comité de programa -->
+              <div class="p-3 rounded bg-light border-start border-4 border-warning">
+                <h6 class="fw-bold text-dark mb-2"><i class="fas fa-user-shield me-2 text-warning"></i>miembros del comité de programa</h6>
+                <div class="mb-2">
+                  <span class="small text-muted text-uppercase fw-bold me-2">cantidad:</span>
+                  <span class="badge bg-warning text-dark fs-6">${tData.pc_count} miembros</span>
+                </div>
+                <div>
+                  <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
+                  <div class="d-flex flex-wrap mt-1">${pcCountriesListHtml}</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        `;
+        tracksContainer.appendChild(col);
+      });
+    }
+
+    // 4. Process Authors, Universities & Countries for Total Section
+    const allAuthors = {};
+    const universities = {};
+    const authorCountries = new Set();
+
+    papersData.forEach(p => {
+      const rawAuthors = (p.Authors || "").replace(/\n/g, " ");
+      const authorList = rawAuthors.split(",").flatMap(a => a.includes(" and ") ? a.split(" and ") : [a]).map(a => a.trim()).filter(Boolean);
+      const mailsList = (p.Mails || "").replace(/\n/g, " ").split(",").map(m => m.trim().toLowerCase()).filter(Boolean);
+
+      const paperResolutions = [];
+      authorList.forEach((auth, i) => {
+        const mail = mailsList[i] || mailsList[0] || "";
+        let inst = null, country = null, lat = null, lng = null;
+
+        if (pcEmail[mail]) {
+          inst = pcEmail[mail].institution;
+          country = pcEmail[mail].country;
+        } else if (pcName[auth.toLowerCase()]) {
+          inst = pcName[auth.toLowerCase()].institution;
+          country = pcName[auth.toLowerCase()].country;
+        } else if (explicitAuthorMap[mail]) {
+          [inst, country, lat, lng] = explicitAuthorMap[mail];
+        } else {
+          for (const [dom, info] of Object.entries(domainMap)) {
+            if (mail.includes(dom)) {
+              [inst, country, lat, lng] = info;
+              break;
+            }
+          }
+        }
+        paperResolutions.push({ name: auth, email: mail, inst, country, lat, lng });
+      });
+
+      const paperInst = paperResolutions.find(r => r.inst)?.inst || "Universidad Nacional de La Plata";
+      const paperCountry = paperResolutions.find(r => r.country)?.country || "AR";
+
+      paperResolutions.forEach(r => {
+        if (!r.inst) r.inst = paperInst;
+        if (!r.country) r.country = paperCountry;
+
+        const key = r.name.toLowerCase().trim();
+        if (!allAuthors[key]) {
+          allAuthors[key] = r;
+          if (r.country) {
+            r.country.split(',').forEach(c => authorCountries.add(c.trim()));
+          }
+
+          const instName = r.inst;
+          if (!universities[instName]) {
+            universities[instName] = {
+              nombre: instName,
+              pais_code: r.country,
+              pais: countryNames[r.country] || r.country,
+              autores_count: 0,
+              lat: r.lat || -34.9205,
+              lng: r.lng || -57.9536
+            };
+          }
+          universities[instName].autores_count += 1;
+        }
+      });
+    });
+
+    // Populate Total Quick Numbers
+    const totalEnviadosElem = document.getElementById("total-enviados");
+    const totalAceptadosElem = document.getElementById("total-aceptados");
+    const totalAutoresElem = document.getElementById("total-autores");
+    const totalAutoresBadgeElem = document.getElementById("total-autores-badge");
+
+    const totalEnviados = papersData.length;
+    const totalAceptados = papersData.filter(p => p.Decision === "ACCEPT").length;
+    const totalAutores = Object.keys(allAuthors).length;
+
+    if (totalEnviadosElem) totalEnviadosElem.innerText = totalEnviados;
+    if (totalAceptadosElem) totalAceptadosElem.innerText = totalAceptados;
+    if (totalAutoresElem) totalAutoresElem.innerText = totalAutores;
+    if (totalAutoresBadgeElem) totalAutoresBadgeElem.innerText = `${totalAutores} personas`;
+
+    // Populate Author Countries List
+    const autoresPaisesElem = document.getElementById("autores-paises-lista");
+    if (autoresPaisesElem) {
+      const sortedCountries = Array.from(authorCountries).sort();
+      autoresPaisesElem.innerHTML = sortedCountries.map(c => `
+        <span class="badge bg-secondary me-1 mb-1 p-2 fs-6">
+          ${countryFlags[c] || '🌐'} ${countryNames[c] || c}
+        </span>
+      `).join("");
+    }
+
+    // Populate Universities Table
+    const univTableBody = document.getElementById("universidades-lista-body");
+    if (univTableBody) {
+      univTableBody.innerHTML = "";
+      const sortedUnivs = Object.values(universities).sort((a, b) => b.autores_count - a.autores_count);
+      sortedUnivs.forEach((u, idx) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><strong>${idx + 1}</strong></td>
+          <td><i class="fas fa-university me-2 text-primary"></i><strong>${u.nombre}</strong></td>
+          <td>${countryFlags[u.pais_code] || '🌐'} ${u.pais}</td>
+          <td><span class="badge bg-primary rounded-pill px-3 py-2 fs-6">${u.autores_count} autores</span></td>
+        `;
+        univTableBody.appendChild(tr);
+      });
+    }
+
+    // Populate Leaflet Map for Universities
+    if (document.getElementById("map") && typeof L !== "undefined") {
+      const map = L.map('map').setView([-15, -60], 3);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors',
         maxZoom: 18
-    }).addTo(map);
+      }).addTo(map);
 
-    // Datos ficticios de universidades
-    const universidades = [
-        { nombre: "Universidad de Buenos Aires", pais: "Argentina", lat: -34.6037, lng: -58.3816, papers: 12 },
-        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9205, lng: -57.9536, papers: 8 },
-        { nombre: "Universidad Nacional de Córdoba", pais: "Argentina", lat: -31.4201, lng: -64.1888, papers: 6 },
-        { nombre: "USP - Universidade de São Paulo", pais: "Brasil", lat: -23.5505, lng: -46.6333, papers: 15 },
-        { nombre: "UNICAMP", pais: "Brasil", lat: -22.8184, lng: -47.0563, papers: 9 },
-        { nombre: "Universidad de Chile", pais: "Chile", lat: -33.4489, lng: -70.6693, papers: 7 },
-        { nombre: "Pontificia UC de Chile", pais: "Chile", lat: -33.4419, lng: -70.6452, papers: 5 },
-        { nombre: "Universidad de los Andes", pais: "Colombia", lat: 4.6492, lng: -74.0628, papers: 8 },
-        { nombre: "Universidad Nacional de Colombia", pais: "Colombia", lat: 4.6389, lng: -74.0817, papers: 6 },
-        { nombre: "UNAM", pais: "México", lat: 19.3366, lng: -99.1887, papers: 10 },
-        { nombre: "ITESM", pais: "México", lat: 25.6514, lng: -100.2895, papers: 7 },
-        { nombre: "Universidad de Sevilla", pais: "España", lat: 37.3891, lng: -5.9845, papers: 9 },
-        { nombre: "Universidad Politécnica de Madrid", pais: "España", lat: 40.4528, lng: -3.6835, papers: 6 },
-        { nombre: "Universidad de Valladolid", pais: "España", lat: 41.6521, lng: -4.7245, papers: 4 },
-        { nombre: "Universidad de la República", pais: "Uruguay", lat: -34.9011, lng: -56.1645, papers: 5 },
-        { nombre: "ESPOL", pais: "Ecuador", lat: -2.1456, lng: -79.9639, papers: 4 },
-        { nombre: "PUCP", pais: "Perú", lat: -12.0685, lng: -76.9813, papers: 5 },
-        { nombre: "Universidad de San Martín", pais: "Perú", lat: -12.0776, lng: -76.9771, papers: 3 },
-        { nombre: "Universidad de Lisboa", pais: "Portugal", lat: 38.7369, lng: -9.1427, papers: 4 },
-        { nombre: "University of Auckland", pais: "Nueva Zelanda", lat: -36.8509, lng: 174.7645, papers: 3 },
-        { nombre: "MIT", pais: "EE.UU.", lat: 42.3601, lng: -71.0942, papers: 2 },
-        { nombre: "University of Twente", pais: "Países Bajos", lat: 52.2389, lng: 6.8484, papers: 3 },
-        { nombre: "University of Limerick", pais: "Irlanda", lat: 52.6738, lng: -8.5772, papers: 2 },
-        { nombre: "University of Victoria", pais: "Canadá", lat: 48.4634, lng: -123.3117, papers: 2 }
-    ];
-
-    // Icono personalizado para los marcadores
-    const universityIcon = L.divIcon({
-        html: '<div style="background-color: #0984e3; width: 14px; height: 14px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>',
+      const universityIcon = L.divIcon({
+        html: '<div style="background-color: #0984e3; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>',
         className: 'custom-university-marker',
-        iconSize: [20, 20],
-        iconAnchor: [10, 10]
-    });
+        iconSize: [22, 22],
+        iconAnchor: [11, 11]
+      });
 
-    // Agregar marcadores al mapa
-    universidades.forEach(u => {
-        const marker = L.marker([u.lat, u.lng], { icon: universityIcon }).addTo(map);
-        marker.bindPopup(`
+      const univCoordsList = [
+        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9205, lng: -57.9536 },
+        { nombre: "Universidade Federal do Rio Grande do Norte", pais: "Brasil", lat: -5.8369, lng: -35.2030 },
+        { nombre: "Universidade Federal do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9560, lng: -43.1764 },
+        { nombre: "Universidade Estadual do Oeste do Paraná", pais: "Brasil", lat: -24.9555, lng: -53.4552 },
+        { nombre: "Universidade Federal do Ceará", pais: "Brasil", lat: -3.7460, lng: -38.5744 },
+        { nombre: "Universidade do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9118, lng: -43.2356 },
+        { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.6037, lng: -58.3816 },
+        { nombre: "Universidade de Brasilia", pais: "Brasil", lat: -15.7633, lng: -47.8703 },
+        { nombre: "Universidade Federal da Bahia", pais: "Brasil", lat: -12.9995, lng: -38.5110 },
+        { nombre: "Universidad Nacional del Oeste", pais: "Argentina", lat: -34.6644, lng: -58.7186 },
+        { nombre: "Instituto Tecnológico de Aeronáutica", pais: "Brasil", lat: -23.2105, lng: -45.8753 },
+        { nombre: "Universidade Federal de Goiás", pais: "Brasil", lat: -16.6034, lng: -49.2666 },
+        { nombre: "Universidade Federal de Pernambuco", pais: "Brasil", lat: -8.0476, lng: -34.9515 },
+        { nombre: "Universidade de São Paulo", pais: "Brasil", lat: -23.5505, lng: -46.6333 },
+        { nombre: "Pontifícia Universidade Católica do Rio de Janeiro", pais: "Brasil", lat: -22.9791, lng: -43.2332 },
+        { nombre: "Universidad Nacional de San Antonio Abad del Cusco", pais: "Perú", lat: -13.5226, lng: -71.9542 },
+        { nombre: "Ludwig-Maximilians-Universität München", pais: "Alemania", lat: 48.1508, lng: 11.5802 },
+        { nombre: "Embry-Riddle Aeronautical University", pais: "Estados Unidos", lat: 29.1895, lng: -81.0484 }
+      ];
+
+      Object.values(universities).forEach(u => {
+        const foundCoord = univCoordsList.find(c => c.nombre === u.nombre);
+        const lat = foundCoord ? foundCoord.lat : u.lat || -34.9205;
+        const lng = foundCoord ? foundCoord.lng : u.lng || -57.9536;
+
+        if (lat && lng) {
+          const marker = L.marker([lat, lng], { icon: universityIcon }).addTo(map);
+          marker.bindPopup(`
             <div style="text-align:center; min-width:180px;">
-                <strong style="color:#0984e3;">${u.nombre}</strong><br>
-                <small style="color:#636e72;">📍 ${u.pais}</small><br>
-                <span style="background:#dfe6e9; padding:3px 10px; border-radius:10px; font-size:0.85em; margin-top:5px; display:inline-block;">
-                    📄 ${u.papers} papers
-                </span>
+              <strong style="color:#0984e3; font-size:1.1em;">${u.nombre}</strong><br>
+              <span style="color:#636e72;">📍 ${u.pais}</span><br>
+              <span style="background:#dfe6e9; padding:4px 12px; border-radius:12px; font-size:0.85em; margin-top:6px; display:inline-block; font-weight:bold;">
+                👥 ${u.autores_count} autores
+              </span>
             </div>
-        `);
-    });
+          `);
+        }
+      });
+    }
+
+  } catch (err) {
+    console.error("Error loading stats data:", err);
+  }
+});
