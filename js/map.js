@@ -7,7 +7,6 @@
 
 const lugares = [
   { nombre: "UTN", coords: [-34.904184, -57.9265614] },
-  { nombre: "Informática UNLP", coords: [-34.90348, -57.9376558] },
   { nombre: "Plaza Moreno", coords: [-34.9211, -57.9545] },
   { nombre: "Ezeiza", coords: [-34.8222, -58.5358] },
   { nombre: "Aeroparque", coords: [-34.5592, -58.4156] }
