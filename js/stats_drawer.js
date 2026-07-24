@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     pcData.forEach(m => {
       const rawT = m.track;
       const t = trackPcMap[rawT] || rawT;
-      
+
       if (!pcTrackStats[t]) {
         pcTrackStats[t] = {
           name: trackNames[t] || t,
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           paises: new Set()
         };
       }
-      
+
       pcTrackStats[t].cantidad += 1;
       if (m.country) {
         m.country.split(',').forEach(c => {
@@ -231,7 +231,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       const sortedPcPairs = Object.entries(allPcCountriesMap).sort((a, b) => b[1] - a[1]);
       const pcLabels = sortedPcPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
       const pcValues = sortedPcPairs.map(([, val]) => val);
-      const pcColors = ['#00b4d8', '#0284c7', '#38bdf8', '#50e3c2', '#71c7ec', '#00cec9', '#818cf8', '#a5f3fc', '#38bdf8'];
+      const distinctColors = ['#0088FE', '#FF8042', '#00C49F', '#FFBB28', '#9B51E0', '#E91E63', '#00BCD4', '#8BC34A', '#FF5722', '#3F51B5', '#795548', '#607D8B'];
+      const countryColorMap = {
+        BR: '#0088FE', AR: '#FF8042', ES: '#00C49F', CL: '#9B51E0', UY: '#FFBB28',
+        EC: '#E91E63', PT: '#8BC34A', PE: '#00BCD4', DE: '#FF5722', US: '#3F51B5',
+        CO: '#795548', MX: '#607D8B'
+      };
+      const pcColors = sortedPcPairs.map(([code], idx) => countryColorMap[code] || distinctColors[idx % distinctColors.length]);
 
       new Chart(document.getElementById("chartPcCountries").getContext("2d"), {
         type: 'doughnut',
@@ -239,7 +245,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           labels: pcLabels,
           datasets: [{
             data: pcValues,
-            backgroundColor: pcColors.slice(0, pcValues.length),
+            backgroundColor: pcColors,
             borderWidth: 2
           }]
         },
@@ -250,7 +256,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             legend: { position: 'right', labels: { font: { family: 'Rubik', size: 12 }, padding: 10 } },
             tooltip: {
               callbacks: {
-                label: function(context) {
+                label: function (context) {
                   const total = context.dataset.data.reduce((a, b) => a + b, 0);
                   const val = context.raw;
                   const pct = ((val / total) * 100).toFixed(1);
@@ -287,7 +293,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <span class="badge" style="background-color: #0984e3 !important; color: #ffffff !important; font-size: 0.95rem !important; font-weight: 700 !important; padding: 6px 14px !important; border-radius: 20px !important;">${pcTData.cantidad} miembros</span>
               </div>
               <div>
-                <div class="small text-muted text-uppercase fw-bold mb-1">países (lista):</div>
+                <div class="small text-muted text-uppercase fw-bold mb-1">países:</div>
                 <div class="d-flex flex-wrap">${pcCountriesHtml}</div>
               </div>
             </div>
@@ -305,10 +311,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Render Chart 1: Aceptados vs Rechazados
     if (document.getElementById("chartAcceptanceRate") && typeof Chart !== "undefined") {
+      const pctAceptados = totalEnviados ? ((totalAceptados / totalEnviados) * 100).toFixed(1) : "0.0";
+      const pctRechazados = totalEnviados ? ((totalRechazados / totalEnviados) * 100).toFixed(1) : "0.0";
+
       new Chart(document.getElementById("chartAcceptanceRate").getContext("2d"), {
         type: 'doughnut',
         data: {
-          labels: ['Aceptados', 'Rechazados'],
+          labels: [`Aceptados (${pctAceptados}%)`, `Rechazados (${pctRechazados}%)`],
           datasets: [{
             data: [totalAceptados, totalRechazados],
             backgroundColor: ['#28a745', '#dc3545'],
@@ -323,11 +332,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             legend: { position: 'bottom', labels: { font: { family: 'Rubik', size: 12 } } },
             tooltip: {
               callbacks: {
-                label: function(context) {
+                label: function (context) {
                   const total = context.dataset.data.reduce((a, b) => a + b, 0);
                   const val = context.raw;
-                  const pct = ((val / total) * 100).toFixed(1);
-                  return `${context.label}: ${val} (${pct}%)`;
+                  const pct = total ? ((val / total) * 100).toFixed(1) : "0.0";
+                  return `Cantidad: ${val} (${pct}%)`;
                 }
               }
             }
@@ -435,7 +444,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       const sortedAuthorPairs = Object.entries(authorCountriesMap).sort((a, b) => b[1] - a[1]);
       const authorLabels = sortedAuthorPairs.map(([code]) => `${countryFlags[code] || '🌐'} ${countryNames[code] || code}`);
       const authorValues = sortedAuthorPairs.map(([, val]) => val);
-      const authorColors = ['#00b4d8', '#0284c7', '#38bdf8', '#50e3c2', '#71c7ec', '#a5f3fc'];
+      const distinctColors = ['#0088FE', '#FF8042', '#00C49F', '#FFBB28', '#9B51E0', '#E91E63', '#00BCD4', '#8BC34A', '#FF5722', '#3F51B5', '#795548', '#607D8B'];
+      const countryColorMap = {
+        BR: '#0088FE', AR: '#FF8042', ES: '#00C49F', CL: '#9B51E0', UY: '#FFBB28',
+        EC: '#E91E63', PT: '#8BC34A', PE: '#00BCD4', DE: '#FF5722', US: '#3F51B5',
+        CO: '#795548', MX: '#607D8B'
+      };
+      const authorColors = sortedAuthorPairs.map(([code], idx) => countryColorMap[code] || distinctColors[idx % distinctColors.length]);
 
       new Chart(document.getElementById("chartAuthorsCountries").getContext("2d"), {
         type: 'doughnut',
@@ -443,7 +458,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           labels: authorLabels,
           datasets: [{
             data: authorValues,
-            backgroundColor: authorColors.slice(0, authorValues.length),
+            backgroundColor: authorColors,
             borderWidth: 2
           }]
         },
@@ -454,7 +469,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             legend: { position: 'right', labels: { font: { family: 'Rubik', size: 12 }, padding: 10 } },
             tooltip: {
               callbacks: {
-                label: function(context) {
+                label: function (context) {
                   const total = context.dataset.data.reduce((a, b) => a + b, 0);
                   const val = context.raw;
                   const pct = ((val / total) * 100).toFixed(1);
