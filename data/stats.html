@@ -20,27 +20,38 @@
   <link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
   <link rel="stylesheet" href="../plugins/font-awesome/brands.css">
   <link rel="stylesheet" href="../plugins/font-awesome/solid.css">
-  
+
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  
+
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-  
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  
+
   <style>
     /* Base text color overrides for readability */
     body {
       color: #212529 !important;
     }
-    
-    h1, h2, h3, h4, h5, h6, p, span, div, td, th, strong {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    div,
+    td,
+    th,
+    strong {
       color: inherit;
     }
 
@@ -49,7 +60,7 @@
       background-color: #00b4d8 !important;
       color: #ffffff !important;
     }
-    
+
     .text-celeste {
       color: #00b4d8 !important;
     }
@@ -68,16 +79,21 @@
     }
 
     /* Table text contrast fix */
-    .table, .table td, .table th, table tbody tr td, table tbody tr td strong {
+    .table,
+    .table td,
+    .table th,
+    table tbody tr td,
+    table tbody tr td strong {
       color: #212529 !important;
     }
-    
+
     .table-hover tbody tr:hover {
       background-color: #f1f3f5 !important;
       color: #000000 !important;
     }
 
-    .table-hover tbody tr:hover td, .table-hover tbody tr:hover td strong {
+    .table-hover tbody tr:hover td,
+    .table-hover tbody tr:hover td strong {
       color: #000000 !important;
     }
 
@@ -85,32 +101,36 @@
       background: white;
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
       margin-bottom: 25px;
       color: #212529 !important;
     }
-    
-    .stats-card h3, .stats-card h4, .stats-card h5, .stats-card h6, .stats-card p {
+
+    .stats-card h3,
+    .stats-card h4,
+    .stats-card h5,
+    .stats-card h6,
+    .stats-card p {
       color: #212529 !important;
     }
-    
+
     .custom-track-card {
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       color: #212529 !important;
     }
-    
+
     .custom-track-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     }
-    
+
     .stats-summary {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
       color: #212529 !important;
     }
 
@@ -134,7 +154,7 @@
       border: 1px solid #dee2e6 !important;
       font-weight: 500 !important;
     }
-    
+
     #map {
       height: 480px;
       border-radius: 10px;
@@ -150,7 +170,7 @@
     <div id="navbar"></div>
 
     <script>
-      $(function(){
+      $(function () {
         $('#navbar').load('../es/navbar.html')
       })
     </script>
@@ -163,13 +183,14 @@
         <div class="col-lg-10">
           <div class="mb-4">
             <h1 class="display-4 font-weight-bold text-primary">Stats</h1>
-            <p class="lead text-muted">Estadísticas completas de trabajos, comité de programa, autores y universidades en WER2026.</p>
+            <p class="lead text-muted">Estadísticas completas de trabajos, comité de programa, autores y universidades
+              en WER2026.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <!-- Content Section -->
   <div class="section pt-0">
     <div class="container">
@@ -199,7 +220,7 @@
               <h2 class="h3 mb-0 text-white"><i class="fas fa-user-shield me-2"></i>miembros del comité de programa</h2>
             </div>
             <div class="card-body p-4">
-              
+
               <div class="row mb-4 align-items-stretch">
                 <!-- Cantidad y Países Lista -->
                 <div class="col-lg-6 mb-3">
@@ -211,7 +232,7 @@
                       </div>
                     </div>
                     <div class="p-3 bg-light rounded border flex-grow-1">
-                      <h6 class="fw-bold text-secondary text-uppercase small">países (lista)</h6>
+                      <h6 class="fw-bold text-secondary text-uppercase small">países</h6>
                       <div id="pc-paises-lista" class="mt-2 d-flex flex-wrap gap-2">
                         <!-- Rendered by JS -->
                       </div>
@@ -234,7 +255,8 @@
 
               <!-- Desglose por Track de Miembros del PC -->
               <div class="mt-4">
-                <h5 class="text-secondary mb-3"><i class="fas fa-sitemap me-2"></i>Desglose por Track del Comité de Programa</h5>
+                <h5 class="text-secondary mb-3"><i class="fas fa-sitemap me-2"></i>Desglose por Track del Comité de
+                  Programa</h5>
                 <div id="pc-tracks-breakdown" class="row">
                   <!-- Rendered by JS -->
                 </div>
@@ -300,14 +322,15 @@
                     <div class="p-3 bg-white rounded border h-100">
                       <h6 class="fw-bold text-secondary text-uppercase small">cantidad (personas diferentes)</h6>
                       <div class="mt-2">
-                        <span id="total-autores-badge" class="badge bg-primary fs-5 px-3 py-2 text-white">0 personas</span>
+                        <span id="total-autores-badge" class="badge bg-primary fs-5 px-3 py-2 text-white">0
+                          personas</span>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-md-6 mb-3">
                     <div class="p-3 bg-white rounded border h-100">
-                      <h6 class="fw-bold text-secondary text-uppercase small">países (lista)</h6>
+                      <h6 class="fw-bold text-secondary text-uppercase small">países</h6>
                       <div id="autores-paises-lista" class="mt-2 d-flex flex-wrap gap-2">
                         <!-- Rendered by JS -->
                       </div>
@@ -320,7 +343,8 @@
                   <div class="col-12">
                     <div class="p-3 bg-white rounded border text-center">
                       <h6 class="fw-bold text-secondary text-uppercase small mb-3">
-                        <i class="fas fa-globe-americas me-2 text-primary"></i>Distribución de Países de Autores (Trabajos Aceptados)
+                        <i class="fas fa-globe-americas me-2 text-primary"></i>Distribución de Países de Autores
+                        (Trabajos Aceptados)
                       </h6>
                       <div style="position: relative; height: 260px;">
                         <canvas id="chartAuthorsCountries"></canvas>
@@ -376,7 +400,7 @@
   <!-- Footer -->
   <div id="footer"></div>
   <script>
-    $(function(){
+    $(function () {
       $('#footer').load('../es/footer.html')
     })
   </script>
@@ -389,9 +413,10 @@
 
   <!-- Main Script -->
   <script src="../js/script.js"></script>
-  
+
   <!-- Estadísticas Script -->
   <script src="../js/stats_drawer.js"></script>
 
 </body>
+
 </html>
