@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // --- DOMAIN MAP CORREGIDO ---
     const domainMap = {
       // UNLP: Campus Universitario en La Plata
-      "unlp.edu.ar": ["Universidad Nacional de La Plata", "AR", -34.9076, -57.9422],
+      "unlp.edu.ar": ["Universidad Nacional de La Plata", "AR", -34.9058, -57.9932],
       
       "uniriotec.br": ["Universidade Federal do Estado do Rio de Janeiro", "BR", -22.9560, -43.1764],
       "unirio.br": ["Universidade Federal do Estado do Rio de Janeiro", "BR", -22.9560, -43.1764],
@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       // UNSAAC: Campus Perayoc (Cusco)
       "unsaac.edu.pe": ["Universidad Nacional de San Antonio Abad del Cusco", "PE", -13.5317, -71.9384],
       
-      // UTN: Facultad Regional Buenos Aires (Medrano)
-      "utn.edu.ar": ["Universidad Tecnológica Nacional", "AR", -34.6214, -58.3731],
+      // UTN: Regional La Plata (Berisso)
+      "utn.edu.ar": ["Universidad Tecnológica Nacional", "AR", -34.8550, -57.8850],
       
       "ifgoiano.edu.br": ["Instituto Federal Goiano", "BR", -17.7915, -50.9200],
       "ufba.br": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       "savio.essf@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
       "larissa.barbosa11@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
       // Coordenadas actualizadas a Campus La Plata
-      "alanrodriguezagostini71@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9076, -57.9422],
-      "maxi.rodriguez.3105@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9076, -57.9422],
+      "alanrodriguezagostini71@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9058, -57.9932],
+      "maxi.rodriguez.3105@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9058, -57.9932],
       "daniela_ldl@ieee.org": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115],
       "nicolasrizzo@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115],
       "gilda.romero@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115]
@@ -528,14 +528,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // --- LISTA DE COORDENADAS DEL MAPA ACTUALIZADA ---
       const univCoordsList = [
-        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9076, lng: -57.9422 },
+        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9058, lng: -57.9932 },
         { nombre: "Universidad de Belgrano", pais: "Argentina", lat: -34.5633, lng: -58.4583 },
         { nombre: "Universidade Federal do Rio Grande do Norte", pais: "Brasil", lat: -5.8369, lng: -35.2030 },
         { nombre: "Universidade Federal do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9560, lng: -43.1764 },
         { nombre: "Universidade Estadual do Oeste do Paraná", pais: "Brasil", lat: -24.9555, lng: -53.4552 },
         { nombre: "Universidade Federal do Ceará", pais: "Brasil", lat: -3.7460, lng: -38.5744 },
         { nombre: "Universidade do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9118, lng: -43.2356 },
-        { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.6214, lng: -58.3731 },
+        // UTN actualizada a Berisso (La Plata)
+        { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.8550, lng: -57.8850 },
         { nombre: "Universidade de Brasilia", pais: "Brasil", lat: -15.7633, lng: -47.8703 },
         { nombre: "Universidade Federal da Bahia", pais: "Brasil", lat: -12.9995, lng: -38.5110 },
         { nombre: "Universidad Nacional del Oeste", pais: "Argentina", lat: -34.6644, lng: -58.7186 },
