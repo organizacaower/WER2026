@@ -30,19 +30,19 @@
 
 <body data-track="IT">
 
-    <!-- Navigation -->
-    <header class="navigation bg-tertiary">
-      <div id="navbar"></div>
-  
-      <script>
-        $(function(){
-          $('#navbar').load('../es/navbar.html')
-        })
-        
-  
-        document.getElementById('change-lang').innerHTML = 'Chau'
-      </script>
-    </header>
+  <!-- Navigation -->
+  <header class="navigation bg-tertiary">
+    <div id="navbar"></div>
+
+    <script>
+      $(function () {
+        $('#navbar').load('../es/navbar.html')
+      })
+
+
+      document.getElementById('change-lang').innerHTML = 'Chau'
+    </script>
+  </header>
 
 
   <div class="section">
@@ -55,95 +55,90 @@
             <div class="content">
               <h3 id="heading-1" class="text-success">Archivos Json</h3>
               <table class="table table-bordered table-hover align-middle text-dark">
-              <thead class="table-light">
-                <tr>
-                  <th>Nombre</th>
-                  <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Fechas formateadas</td>
-                  <td>
-                    <div class="d-flex justify-content-end">
-                      <a href="https://organizacaower.github.io/WER2026/data/fechas_formateadas.json"
-                        target="_blank"
-                        class="btn btn-primary btn-sm">
-                        Ver
-                      </a>
-                    </div>
-                  </td>
-                </tr>
+                <thead class="table-light">
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Enlace</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Fechas formateadas</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <a href="https://organizacaower.github.io/WER2026/data/fechas_formateadas.json" target="_blank"
+                          class="btn btn-primary btn-sm">
+                          Ver
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td>Comite del programa</td>
-                  <td>
-                    <div class="d-flex justify-content-end">
-                      <a href="https://organizacaower.github.io/WER2026/data/program_committee.json"
-                        target="_blank"
-                        class="btn btn-primary btn-sm">
-                        Ver
-                      </a>
-                    </div>
-                  </td>
-                </tr>
+                  <tr>
+                    <td>Comite del programa</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <a href="https://organizacaower.github.io/WER2026/data/program_committee.json" target="_blank"
+                          class="btn btn-primary btn-sm">
+                          Ver
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td>Articulos aceptados</td>
-                  <td>
-                    <div class="d-flex justify-content-end">
-                      <a href="https://organizacaower.github.io/WER2026/data/articulos_aceptados.json"
-                        target="_blank"
-                        class="btn btn-primary btn-sm">
-                        Ver
-                      </a>
-                    </div>
-                  </td>
-                </tr>
+                  <tr>
+                    <td>Programa del evento</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <a href="https://organizacaower.github.io/WER2026/data/program.json" target="_blank"
+                          class="btn btn-primary btn-sm">
+                          Ver
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td>Programa</td>
-                  <td>
-                    <div class="d-flex justify-content-end">
-                      <a href="https://organizacaower.github.io/WER2026/data/program.json"
-                        target="_blank"
-                        class="btn btn-primary btn-sm">
-                        Ver
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Todo los papers (ACCEPTED / REJECTED)</td>
-                  <td>
-                    <div class="d-flex justify-content-end">
-                      <a href="https://organizacaower.github.io/WER2026/data/todos_paper.json"
-                        target="_blank"
-                        class="btn btn-primary btn-sm">
-                        Ver
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                
-              </tbody>
-            </table>
+                  <tr>
+                    <td>Articulos aceptados</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <a href="https://organizacaower.github.io/WER2026/data/articulos_aceptados.json" target="_blank"
+                          class="btn btn-primary btn-sm">
+                          Ver
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
 
-            <h3 id="heading-1" class="text-success">Enlaces a paginas privadas o a publicar</h3>
+                  <tr>
+                    <td>Todos los articulos (ACEPTADO / RECHAZADO)</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <a href="https://organizacaower.github.io/WER2026/data/todos_paper.json" target="_blank"
+                          class="btn btn-primary btn-sm">
+                          Ver
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <h3 id="heading-1" class="text-success">Enlaces a paginas privadas o a publicar</h3>
               <table class="table table-bordered table-hover align-middle text-dark">
-              <thead class="table-light">
-                <tr>
-                  <th>Nombre</th>
-                  <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody> 
-                <tr>
+                <thead class="table-light">
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Enlace</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                     <td>Stats</td>
                     <td>
                       <div class="d-flex justify-content-end">
-                        <a href="https://organizacaower.github.io/WER2026/data/stats.html"
-                          target="_blank"
+                        <a href="https://organizacaower.github.io/WER2026/data/stats.html" target="_blank"
                           class="btn btn-primary btn-sm">
                           Ver
                         </a>
@@ -155,34 +150,32 @@
                     <td>
                       <div class="d-flex justify-content-end">
                         <a href="https://organizacaower.github.io/WER2026/refactoring/es/programacao.html"
-                          target="_blank"
-                          class="btn btn-primary btn-sm">
+                          target="_blank" class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr>   
-                  
-
-              </tbody>
-            </table>
+                  </tr>
 
 
-            <h3 id="heading-1" class="text-success">Enlaces a texto plano</h3>
+                </tbody>
+              </table>
+
+
+              <h3 id="heading-1" class="text-success">Templates</h3>
               <table class="table table-bordered table-hover align-middle text-dark">
-              <thead class="table-light">
-                <tr>
-                  <th>Nombre</th>
-                  <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody> 
-                <tr>
+                <thead class="table-light">
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Enlace</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                     <td>CFP</td>
                     <td>
                       <div class="d-flex justify-content-end">
-                        <a href="https://organizacaower.github.io/WER2026/data/CFP.txt"
-                          target="_blank"
+                        <a href="https://organizacaower.github.io/WER2026/data/CFP.txt" target="_blank"
                           class="btn btn-primary btn-sm">
                           Ver
                         </a>
@@ -194,67 +187,61 @@
                     <td>
                       <div class="d-flex justify-content-end">
                         <a href="https://organizacaower.github.io/WER2026/data/Notification_Accept_RT.txt"
-                          target="_blank"
-                          class="btn btn-primary btn-sm">
+                          target="_blank" class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr>  
+                  </tr>
                   <tr>
                     <td>Notification Reject RT</td>
                     <td>
                       <div class="d-flex justify-content-end">
                         <a href="https://organizacaower.github.io/WER2026/data/Notification_Reject_RT.txt"
-                          target="_blank"
-                          class="btn btn-primary btn-sm">
+                          target="_blank" class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr>  
+                  </tr>
                   <tr>
                     <td>Notificacion Accept MDT</td>
                     <td>
                       <div class="d-flex justify-content-end">
                         <a href="https://organizacaower.github.io/WER2026/data/Notificacion_Accept_MDT.txt"
-                          target="_blank"
-                          class="btn btn-primary btn-sm">
+                          target="_blank" class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr> 
+                  </tr>
                   <tr>
-                    <td>PC invitation</td>
+                    <td>PC member invitation</td>
                     <td>
                       <div class="d-flex justify-content-end">
-                        <a href="https://organizacaower.github.io/WER2026/data/PC_invitation.txt"
-                          target="_blank"
+                        <a href="https://organizacaower.github.io/WER2026/data/PC_invitation.txt" target="_blank"
                           class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr>  
+                  </tr>
                   <tr>
                     <td>Notification Reject IT</td>
                     <td>
                       <div class="d-flex justify-content-end">
                         <a href="https://organizacaower.github.io/WER2026/data/Notification_Reject_IT.txt"
-                          target="_blank"
-                          class="btn btn-primary btn-sm">
+                          target="_blank" class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr> 
+                  </tr>
                   <tr>
                     <td>Pedido auspicio</td>
                     <td>
                       <div class="d-flex justify-content-end">
-                        <a href="https://organizacaower.github.io/WER2026/data/pedido_AUSPICIO_v5.docx"
-                          target="_blank"
+                        <a href="https://organizacaower.github.io/WER2026/data/pedido_AUSPICIO_v5.docx" target="_blank"
                           class="btn btn-primary btn-sm">
                           Ver
                         </a>
@@ -266,18 +253,17 @@
                     <td>
                       <div class="d-flex justify-content-end">
                         <a href="https://organizacaower.github.io/WER2026/data/Most frequent Mistakes - lncs-template_WERpapers.pdf"
-                          target="_blank"
-                          class="btn btn-primary btn-sm">
+                          target="_blank" class="btn btn-primary btn-sm">
                           Ver
                         </a>
                       </div>
                     </td>
-                  </tr>     
+                  </tr>
 
-              </tbody>
-            </table>
-              
-              
+                </tbody>
+              </table>
+
+
 
             </div>
           </div>
@@ -285,16 +271,16 @@
       </div>
     </div>
   </div>
-  
-<!-- footer -->
-    <div id="footer"></div>
-    <script>
-      $(function(){
-        $('#footer').load('../es/footer.html')
-      })
-    </script>
-    
-<!-- footer -->
+
+  <!-- footer -->
+  <div id="footer"></div>
+  <script>
+    $(function () {
+      $('#footer').load('../es/footer.html')
+    })
+  </script>
+
+  <!-- footer -->
 
 
   <!-- # JS Plugins -->
