@@ -114,6 +114,43 @@
   "language": "EN",
   "file_name": "https://werpapers.dimap.ufrn.br/papers/WER2025/wer202509.pdf",
   "paper_session": "Regular Research Track (RRT) - Session 2"
+},
+{
+  "track": "ST",
+  "title": "Automatización del análisis, documentación y trazabilidad de requisitos mediante técnicas de inteligencia artificial",
+  "authors": [
+    { "apellido": "Rodriguez Agostini", "nombre": "Alan Hernan", "email": "alanrodriguezagostini71@gmail.com" }
+  ],
+  "keywords": "Inteligencia artificial; Ingeniería de requisitos; Análisis de documentación; Trazabilidad de requisitos; Automatización",
+  "abstract": "El avance de la inteligencia artificial (IA) como herramienta de uso profesional ha generado nuevas oportunidades para su aplicación en la ingeniería de requisitos. En particular, permite analizar su potencial impacto en el análisis de documentación y la trazabilidad de requisitos. El crecimiento de los sistemas de software y el manejo de grandes volúmenes de información incrementan la complejidad de análisis manual, dificultando la identificación precisa de requisitos funcionales (RF) y no funcionales (RNF), así como el mantenimiento de relaciones de trazabilidad entre los distintos artefactos del sistema. En este contexto, el presente trabajo analiza el potencial de la inteligencia artificial para automatizar tareas asociadas a la identificación, clasificación y relación entre requisitos. En este sentido, la incorporación de técnicas basadas en Procesamiento de Lenguaje Natural, Aprendizaje Automático y extracción automatizada de información permitirá aumentar el nivel de automatización en la identificación, clasificación y análisis de requisitos, así como mejorar la trazabilidad, al facilitar la determinación de origen, su relación con los distintos componentes del sistema y su seguimiento a lo largo del ciclo de vida del software. Asimismo, se propone como trabajo futuro la evolución de herramientas basadas en IA para automatizar la identificación y clasificación de RF y RNF a partir de documentación textual, con el objetivo de analizar su potencial aplicación dentro de los procesos de ingeniería de requisitos.",
+  "language": "ES",
+  "file_name": "https://example.com/paper31.pdf",
+  "paper_session": "studenttrack"
+},
+{
+  "track": "ST",
+  "title": "Cuando la IA Programa: El Rol de las Especificaciones en el Futuro del Desarrollo de Software",
+  "authors": [
+    { "apellido": "Rodriguez Martinez", "nombre": "Maximiliano Exequiel", "email": "maxi.rodriguez.3105@gmail.com" }
+  ],
+  "keywords": "Especificaciones; Inteligencia-Artificial; Spec-Driven-Development",
+  "abstract": "La aparición de herramientas capaces de generar código de manera automática puso en evidencia un problema que ya venía creciendo: el vibe coding. Es decir, resultados que parecen correctos a simple vista, pero que no siguen un criterio claro, mezclan estilos y dejan poca trazabilidad entre lo que se pidió y lo que se implementó. Esto termina generando ambigüedad, inconsistencias y dificultades para reproducir el trabajo. En respuesta a este escenario, Spec-Driven Development (SDD) propone volver a poner la especificación en el centro del proceso. No sólo para describir el comportamiento esperado del sistema, sino también para indicar cómo deben trabajar los agentes —humanos o de IA(Principalmente no humanos)— que participan en su construcción: qué rol asumir, qué supuestos respetar y cómo producir, validar y documentar cada artefacto. El trabajo explora cómo este tipo de especificaciones operativas puede aportar orden y coherencia en proyectos donde intervienen modelos generativos. Se Presenta OpenSpec como ejemplo concreto, mostrando cómo un formato de este tipo permite definir roles, criterios de diseño y estrategias de validación para agentes de IA. También se discute el ciclo Specify–Plan–Task–Implement y su utilidad para mantener una relación clara entre intención y resultado. Finalmente, se analiza cómo la precisión de estas instrucciones influye en la calidad del software generado y se argumenta que SDD ofrece un camino para trabajar con mayor disciplina y transparencia en equipos híbridos humano–IA, evitando el vibe coding y favoreciendo prácticas más estables y reproducibles.",
+  "language": "ES",
+  "file_name": "https://example.com/paper32.pdf",
+  "paper_session": "studenttrack"
+},
+{
+  "track": "ST",
+  "title": "Trazabilidad de requisitos en la evolución tecnológica del Museo Virtual STEAM: hacia un Sistema Recomendador de Cápsulas STEAM",
+  "authors": [
+    { "apellido": "Rizzo", "nombre": "Nicolás", "email": "nicolasrizzo@gmail.com" },
+    { "apellido": "López De Luise", "nombre": "Daniela", "email": "daniela_ldl@ieee.org" },
+    { "apellido": "Romero", "nombre": "Gilda R.", "email": "gilda.romero@gmail.com" }
+  ],
+  "keywords": "Trazabilidad; requisitos de software; migración de Plataformas; STEAM; MVS; Sistema Recomendador",
+  "abstract": "El presente trabajo aborda el desafío de resolver la trazabilidad de requisitos durante el proceso de migración y el acondicionamiento de la plataforma \"Museo Virtual STEAM\" (MVS), orientado a establecer las bases para un Sistema Recomendador reglado y probabilístico. Entre otras cosas, se describe la trazabilidad de los requisitos durante la migración desde un entorno de gestión de contenidos hacia una arquitectura capaz de soportar la recomendación de \"cápsulas\" (unidades de aprendizaje STEAM). El núcleo de la propuesta radica en el uso de variables del entorno (sistema y servidor) para auditar y validar el porcentaje de uso de los requerimientos; se analizan las restricciones técnicas para justificar la baja o modificación de funcionalidades, proponiendo métricas específicas para la verificación y validación de requisitos. Este enfoque asegura que la plataforma migrada no solo preserve la integridad de los objetos de aprendizaje, sino que facilite la planificación y evaluación adaptada de actividades. Finalmente, se plantea el diseño para que el sistema sea escalable hacia Aplicaciones Web Progresivas (PWA) en una fase futura. La metodología empleada incluye ingeniería inversa de requisitos y un enfoque mixto para validar que la migración mantenga la integridad de los objetos de aprendizaje. Los resultados muestran que una trazabilidad apropiada permite detectar riesgos en la migración de una implementación y mejorar la calidad del proceso.",
+  "language": "ES",
+  "file_name": "https://example.com/paper33.pdf",
+  "paper_session": "studenttrack"
 }
-
 ]
