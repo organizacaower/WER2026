@@ -579,6 +579,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
       });
 
+      const markersGroup = L.featureGroup();
+
       mapItems.forEach(u => {
         // Find if this university has author count from paper dataset
         const matchedUnivData = Object.values(universities).find(target => 
@@ -593,7 +595,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const lng = u.lng;
 
         if (lat && lng) {
-          const marker = L.marker([lat, lng], { icon: universityIcon }).addTo(map);
+          const marker = L.marker([lat, lng], { icon: universityIcon });
           const addressHtml = u.direccion ? `<br><small style="color:#636e72; font-size:0.8em; display:block; margin-top:2px;">📍 ${u.direccion}</small>` : '';
           const autoresBadgeHtml = autoresCount > 0 
             ? `<span style="background:#0984e3; color:#ffffff; padding:3px 10px; border-radius:12px; font-size:0.85em; margin-top:6px; display:inline-block; font-weight:bold;">👥 ${autoresCount} autor${autoresCount > 1 ? 'es' : ''}</span>`
@@ -607,8 +609,15 @@ document.addEventListener("DOMContentLoaded", async () => {
               ${autoresBadgeHtml}
             </div>
           `);
+          markersGroup.addLayer(marker);
         }
       });
+
+      markersGroup.addTo(map);
+
+      if (markersGroup.getLayers().length > 0) {
+        map.fitBounds(markersGroup.getBounds().pad(0.08));
+      }
     }
 
   } catch (err) {
