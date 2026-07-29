@@ -515,25 +515,26 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
 
       const univCoordsList = [
-        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9205, lng: -57.9536 },
-        { nombre: "Universidade Federal do Rio Grande do Norte", pais: "Brasil", lat: -5.8369, lng: -35.2030 },
-        { nombre: "Universidade Federal do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9560, lng: -43.1764 },
-        { nombre: "Universidade Estadual do Oeste do Paraná", pais: "Brasil", lat: -24.9555, lng: -53.4552 },
-        { nombre: "Universidade Federal do Ceará", pais: "Brasil", lat: -3.7460, lng: -38.5744 },
-        { nombre: "Universidade do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9118, lng: -43.2356 },
-        { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.6037, lng: -58.3816 },
-        { nombre: "Universidade de Brasilia", pais: "Brasil", lat: -15.7633, lng: -47.8703 },
-        { nombre: "Universidade Federal da Bahia", pais: "Brasil", lat: -12.9995, lng: -38.5110 },
-        { nombre: "Universidad Nacional del Oeste", pais: "Argentina", lat: -34.6644, lng: -58.7186 },
-        { nombre: "Instituto Tecnológico de Aeronáutica", pais: "Brasil", lat: -23.2105, lng: -45.8753 },
-        { nombre: "Universidade Federal de Goiás", pais: "Brasil", lat: -16.6034, lng: -49.2666 },
-        { nombre: "Universidade Federal de Pernambuco", pais: "Brasil", lat: -8.0476, lng: -34.9515 },
-        { nombre: "Universidade de São Paulo", pais: "Brasil", lat: -23.5505, lng: -46.6333 },
-        { nombre: "Pontifícia Universidade Católica do Rio de Janeiro", pais: "Brasil", lat: -22.9791, lng: -43.2332 },
-        { nombre: "Universidad Nacional de San Antonio Abad del Cusco", pais: "Perú", lat: -13.5226, lng: -71.9542 },
-        { nombre: "Ludwig-Maximilians-Universität München", pais: "Alemania", lat: 48.1508, lng: 11.5802 },
-        { nombre: "Embry-Riddle Aeronautical University", pais: "Estados Unidos", lat: 29.1895, lng: -81.0484 }
-      ];
+      { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9205, lng: -57.9536 },
+      { nombre: "Universidade Federal do Rio Grande do Norte", pais: "Brasil", lat: -5.8369, lng: -35.2030 },
+      { nombre: "Universidade Federal do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9560, lng: -43.1764 },
+      { nombre: "Universidade Estadual do Oeste do Paraná", pais: "Brasil", lat: -24.9555, lng: -53.4552 },
+      { nombre: "Universidade Federal do Ceará", pais: "Brasil", lat: -3.7460, lng: -38.5744 },
+      { nombre: "Universidade do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9118, lng: -43.2356 },
+      { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.6037, lng: -58.3816 },
+      { nombre: "Universidade de Brasilia", pais: "Brasil", lat: -15.7633, lng: -47.8703 },
+      { nombre: "Universidade Federal da Bahia", pais: "Brasil", lat: -12.9995, lng: -38.5110 },
+      { nombre: "Universidad Nacional del Oeste", pais: "Argentina", lat: -34.6644, lng: -58.7186 },
+      { nombre: "Instituto Tecnológico de Aeronáutica", pais: "Brasil", lat: -23.2105, lng: -45.8753 },
+      { nombre: "Universidade Federal de Goiás", pais: "Brasil", lat: -16.6034, lng: -49.2666 },
+      { nombre: "Universidade Federal de Pernambuco", pais: "Brasil", lat: -8.0476, lng: -34.9515 },
+      { nombre: "Universidade de São Paulo", pais: "Brasil", lat: -23.5505, lng: -46.6333 },
+      { nombre: "Pontifícia Universidade Católica do Rio de Janeiro", pais: "Brasil", lat: -22.9791, lng: -43.2332 },
+      // Coordenadas corregidas: Campus Universitario Perayoc (Sede Principal)
+      { nombre: "Universidad Nacional de San Antonio Abad del Cusco", pais: "Perú", lat: -13.5317, lng: -71.9384 },
+      { nombre: "Ludwig-Maximilians-Universität München", pais: "Alemania", lat: 48.1508, lng: 11.5802 },
+      { nombre: "Embry-Riddle Aeronautical University", pais: "Estados Unidos", lat: 29.1895, lng: -81.0484 }
+    ];
 
       Object.values(universities).forEach(u => {
         const foundCoord = univCoordsList.find(c => c.nombre === u.nombre);
