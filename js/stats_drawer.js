@@ -60,27 +60,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // --- DOMAIN MAP CORREGIDO ---
     const domainMap = {
-      // UNLP: Campus Universitario en La Plata
-      "unlp.edu.ar": ["Universidad Nacional de La Plata", "AR", -34.9058, -57.9932],
+      // UNLP: Rectorado (Av. 7)
+      "unlp.edu.ar": ["Universidad Nacional de La Plata", "AR", -34.9131, -57.9511],
       
       "uniriotec.br": ["Universidade Federal do Estado do Rio de Janeiro", "BR", -22.9560, -43.1764],
       "unirio.br": ["Universidade Federal do Estado do Rio de Janeiro", "BR", -22.9560, -43.1764],
-      "uno.edu.ar": ["Universidad Nacional del Oeste", "AR", -34.6644, -58.7186],
-      "ufg.br": ["Universidade Federal de Goiás", "BR", -16.6034, -49.2666],
+      "uno.edu.ar": ["Universidad Nacional del Oeste", "AR", -34.6650, -58.6994],
+      "ufg.br": ["Universidade Federal de Goiás", "BR", -16.6050, -49.2611],
       "ecomp.poli.br": ["Universidade de Pernambuco", "BR", -8.0583, -34.8718],
       "ime.uerj.br": ["Universidade do Estado do Rio de Janeiro", "BR", -22.9118, -43.2356],
       "uerj.br": ["Universidade do Estado do Rio de Janeiro", "BR", -22.9118, -43.2356],
-      "ufrn.br": ["Universidade Federal do Rio Grande do Norte", "BR", -5.8369, -35.2030],
+      "ufrn.br": ["Universidade Federal do Rio Grande do Norte", "BR", -5.8428, -35.2014],
       "ita.br": ["Instituto Tecnológico de Aeronáutica", "BR", -23.2105, -45.8753],
       "ufpe.br": ["Universidade Federal de Pernambuco", "BR", -8.0476, -34.9515],
       "ufc.br": ["Universidade Federal do Ceará", "BR", -3.7460, -38.5744],
       "ufrrj.br": ["Universidade Federal Rural do Rio de Janeiro", "BR", -22.7600, -43.6853],
       
       // UNSAAC: Campus Perayoc (Cusco)
-      "unsaac.edu.pe": ["Universidad Nacional de San Antonio Abad del Cusco", "PE", -13.5317, -71.9384],
+      "unsaac.edu.pe": ["Universidad Nacional de San Antonio Abad del Cusco", "PE", -13.5228, -71.9547],
       
       // UTN: Regional La Plata (Berisso)
-      "utn.edu.ar": ["Universidad Tecnológica Nacional", "AR", -34.8550, -57.8850],
+      "utn.edu.ar": ["Universidad Tecnológica Nacional", "AR", -34.9080, -57.9255],
       
       "ifgoiano.edu.br": ["Instituto Federal Goiano", "BR", -17.7915, -50.9200],
       "ufba.br": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
@@ -94,15 +94,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       "unahur.edu.ar": ["Universidad Nacional de Hurlingham", "AR", -34.5975, -58.6366],
       "senac.br": ["Faculdade Senac Pernambuco", "BR", -8.0539, -34.8872],
       "utfpr.edu.br": ["Universidade Tecnológica Federal do Paraná", "BR", -25.4372, -49.2700],
-      "usp.br": ["Universidade de São Paulo", "BR", -23.5505, -46.6333],
+      "usp.br": ["Universidade de São Paulo", "BR", -23.5598, -46.7314],
       "opus-software.com.br": ["Opus Software", "BR", -23.5615, -46.6559],
       "lmu.de": ["Ludwig-Maximilians-Universität München", "DE", 48.1508, 11.5802],
       "puc-rio.br": ["Pontifícia Universidade Católica do Rio de Janeiro", "BR", -22.9791, -43.2332],
-      "unioeste.br": ["Universidade Estadual do Oeste do Paraná", "BR", -24.9555, -53.4552],
+      "unioeste.br": ["Universidade Estadual do Oeste do Paraná", "BR", -24.9880, -53.4500],
       "unsl.edu.ar": ["Universidad Nacional de San Luis", "AR", -33.2982, -66.3356],
       
-      // U. Belgrano: CABA
-      "ub.edu.ar": ["Universidad de Belgrano", "AR", -34.5633, -58.4583]
+      // U. Belgrano: Torre Universitaria (Zabala)
+      "ub.edu.ar": ["Universidad de Belgrano", "AR", -34.5635, -58.4489]
     };
 
     // --- EXPLICIT AUTHOR MAP CORREGIDO (Coordenadas UNLP actualizadas) ---
@@ -110,9 +110,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       "ritasuzana@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
       "savio.essf@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
       "larissa.barbosa11@gmail.com": ["Universidade Federal da Bahia", "BR", -12.9995, -38.5110],
-      // Coordenadas actualizadas a Campus La Plata
-      "alanrodriguezagostini71@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9058, -57.9932],
-      "maxi.rodriguez.3105@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9058, -57.9932],
+      // Coordenadas actualizadas a Rectorado UNLP
+      "alanrodriguezagostini71@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9131, -57.9511],
+      "maxi.rodriguez.3105@gmail.com": ["Universidad Nacional de La Plata", "AR", -34.9131, -57.9511],
       "daniela_ldl@ieee.org": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115],
       "nicolasrizzo@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115],
       "gilda.romero@gmail.com": ["Universidad Autónoma de Entre Ríos", "AR", -31.7413, -60.5115]
@@ -528,26 +528,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // --- LISTA DE COORDENADAS DEL MAPA ACTUALIZADA ---
       const univCoordsList = [
-        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9058, lng: -57.9932 },
-        { nombre: "Universidad de Belgrano", pais: "Argentina", lat: -34.5633, lng: -58.4583 },
-        { nombre: "Universidade Federal do Rio Grande do Norte", pais: "Brasil", lat: -5.8369, lng: -35.2030 },
-        { nombre: "Universidade Federal do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9560, lng: -43.1764 },
-        { nombre: "Universidade Estadual do Oeste do Paraná", pais: "Brasil", lat: -24.9555, lng: -53.4552 },
-        { nombre: "Universidade Federal do Ceará", pais: "Brasil", lat: -3.7460, lng: -38.5744 },
-        { nombre: "Universidade do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9118, lng: -43.2356 },
-        // UTN actualizada a Berisso (La Plata)
-        { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.8550, lng: -57.8850 },
-        { nombre: "Universidade de Brasilia", pais: "Brasil", lat: -15.7633, lng: -47.8703 },
-        { nombre: "Universidade Federal da Bahia", pais: "Brasil", lat: -12.9995, lng: -38.5110 },
-        { nombre: "Universidad Nacional del Oeste", pais: "Argentina", lat: -34.6644, lng: -58.7186 },
-        { nombre: "Instituto Tecnológico de Aeronáutica", pais: "Brasil", lat: -23.2105, lng: -45.8753 },
-        { nombre: "Universidade Federal de Goiás", pais: "Brasil", lat: -16.6034, lng: -49.2666 },
-        { nombre: "Universidade Federal de Pernambuco", pais: "Brasil", lat: -8.0476, lng: -34.9515 },
-        { nombre: "Universidade de São Paulo", pais: "Brasil", lat: -23.5505, lng: -46.6333 },
-        { nombre: "Pontifícia Universidade Católica do Rio de Janeiro", pais: "Brasil", lat: -22.9791, lng: -43.2332 },
-        { nombre: "Universidad Nacional de San Antonio Abad del Cusco", pais: "Perú", lat: -13.5317, lng: -71.9384 },
-        { nombre: "Ludwig-Maximilians-Universität München", pais: "Alemania", lat: 48.1508, lng: 11.5802 },
-        { nombre: "Embry-Riddle Aeronautical University", pais: "Estados Unidos", lat: 29.1895, lng: -81.0484 }
+        { nombre: "Universidad Nacional de La Plata", pais: "Argentina", lat: -34.9131, lng: -57.9511 }, // Rectorado (Av. 7)
+        { nombre: "Universidad de Belgrano", pais: "Argentina", lat: -34.5635, lng: -58.4489 }, // Torre Universitaria (Zabala)
+        { nombre: "Universidade Federal do Rio Grande do Norte", pais: "Brasil", lat: -5.8428, lng: -35.2014 }, // Campus Central (Natal)
+        { nombre: "Universidade Federal do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9560, lng: -43.1764 }, // Campus Urca (Río de Janeiro)
+        { nombre: "Universidade Estadual do Oeste do Paraná", pais: "Brasil", lat: -24.9880, lng: -53.4500 }, // Campus Cascavel
+        { nombre: "Universidade Federal do Ceará", pais: "Brasil", lat: -3.7460, lng: -38.5744 }, // Campus do Pici (Fortaleza)
+        { nombre: "Universidade do Estado do Rio de Janeiro", pais: "Brasil", lat: -22.9118, lng: -43.2356 }, // Campus Maracanã (Río de Janeiro)
+        { nombre: "Universidad Tecnológica Nacional", pais: "Argentina", lat: -34.9080, lng: -57.9255 }, // UTN FRLP (Av. 60 y 124 - La Plata/Berisso)
+        { nombre: "Universidade de Brasilia", pais: "Brasil", lat: -15.7633, lng: -47.8703 }, // Campus Darcy Ribeiro (Brasilia)
+        { nombre: "Universidade Federal da Bahia", pais: "Brasil", lat: -12.9995, lng: -38.5110 }, // Campus Ondina/Canela (Salvador)
+        { nombre: "Universidad Nacional del Oeste", pais: "Argentina", lat: -34.6650, lng: -58.6994 }, // Sede Central (Merlo)
+        { nombre: "Instituto Tecnológico de Aeronáutica", pais: "Brasil", lat: -23.2105, lng: -45.8753 }, // São José dos Campos
+        { nombre: "Universidade Federal de Goiás", pais: "Brasil", lat: -16.6050, lng: -49.2611 }, // Campus Samambaia (Goiânia)
+        { nombre: "Universidade Federal de Pernambuco", pais: "Brasil", lat: -8.0476, lng: -34.9515 }, // Campus Recife
+        { nombre: "Universidade de São Paulo", pais: "Brasil", lat: -23.5598, lng: -46.7314 }, // Cidade Universitária (Butantã)
+        { nombre: "Pontifícia Universidade Católica do Rio de Janeiro", pais: "Brasil", lat: -22.9791, lng: -43.2332 }, // Campus Gávea (Río de Janeiro)
+        { nombre: "Universidad Nacional de San Antonio Abad del Cusco", pais: "Perú", lat: -13.5228, lng: -71.9547 }, // Campus Perayoc (Av. de la Cultura, Cusco)
+        { nombre: "Ludwig-Maximilians-Universität München", pais: "Alemania", lat: 48.1508, lng: 11.5802 }, // Geschwister-Scholl-Platz (Múnich)
+        { nombre: "Embry-Riddle Aeronautical University", pais: "Estados Unidos", lat: 29.1895, lng: -81.0484 } // Daytona Beach Campus
       ];
 
       Object.values(universities).forEach(u => {
