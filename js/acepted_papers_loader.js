@@ -16,21 +16,24 @@ const translations = {
     verPaper: "Ver paper",
     noDisponible: "No disponible",
     autores: "Autores:",
-    abstract: "Resumen:"
+    abstract: "Resumen:",
+    descargar: "Descargar"
   },
   en: {
     verMas: "View more",
     verPaper: "View paper",
     noDisponible: "Not available",
     autores: "Authors:",
-    abstract: "Abstract:"
+    abstract: "Abstract:",
+    descargar: "Download"
   },
   pt: {
     verMas: "Ver mais",
     verPaper: "Ver artigo",
     noDisponible: "Não disponível",
     autores: "Autores:",
-    abstract: "Resumo:"
+    abstract: "Resumo:",
+    descargar: "Baixar"
   }
 };
 
@@ -76,10 +79,29 @@ fetch("../data/articulos_aceptados.json")
     }
 
     function crearPaperHTML(paper) {
+      let downloadHTML = "";
+      if (paper.track === "ST") {
+        const downloadText = (translations[lang] && translations[lang].descargar) ? translations[lang].descargar : "Descargar";
+        let fileUrl = paper.file_name;
+        if (!fileUrl || fileUrl.includes("example.com")) {
+          if (paper.title.includes("Automatización del análisis")) {
+            fileUrl = "../archivos/WER2026_paper_55.pdf";
+          } else if (paper.title.includes("Cuando la IA Programa")) {
+            fileUrl = "../archivos/WER2026_paper_56.pdf";
+          } else if (paper.title.includes("Trazabilidad de requisitos")) {
+            fileUrl = "../archivos/WER2026_paper_57.pdf";
+          }
+        }
+        if (fileUrl) {
+          downloadHTML = `<div class="mt-1"><a href="${fileUrl}" target="_blank" download class="text-primary fw-bold me-2"><i class="fas fa-download me-1"></i>${downloadText}</a></div>`;
+        }
+      }
+
       // boton comentado
       return `
-        <li>
+        <li class="mb-3">
           <b>${paper.title}</b>
+          ${downloadHTML}
           <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
           <!--  
          <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
