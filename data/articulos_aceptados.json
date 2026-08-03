@@ -3,440 +3,856 @@
     "track": "RRT",
     "title": "Requerimientos No Funcionales en Aplicaciones Móviles 3D con entornos de Realidad Aumentada",
     "authors": [
-      { "apellido": "Dapoto", "nombre": "Sebastián", "email": "sdapoto@lidi.info.unlp.edu.ar" },
-      { "apellido": "Cristina", "nombre": "Federico", "email": "fcristina@lidi.info.unlp.edu.ar" },
-      { "apellido": "Leodan Arce", "nombre": "Alex", "email": "alexcanada201022@gmail.com" },
-      { "apellido": "Javier Thomas", "nombre": "Pablo", "email": "pthomas@lidi.info.unlp.edu.ar" },
-      { "apellido": "Pesado", "nombre": "Patricia", "email": "ppesado@lidi.info.unlp.edu.ar" }
+      {
+        "apellido": "Dapoto",
+        "nombre": "Sebastián",
+        "email": "sdapoto@lidi.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Cristina",
+        "nombre": "Federico",
+        "email": "fcristina@lidi.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Leodan Arce",
+        "nombre": "Alex",
+        "email": "alexcanada201022@gmail.com"
+      },
+      {
+        "apellido": "Javier Thomas",
+        "nombre": "Pablo",
+        "email": "pthomas@lidi.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Pesado",
+        "nombre": "Patricia",
+        "email": "ppesado@lidi.info.unlp.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 1.",
     "language": "ES",
-    "file_name": "https://example.com/paper1.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202601.html",
     "paper_session": "Session 4"
   },
   {
     "track": "RRT",
     "title": "Enriquecimiento Semántico del Lexico Extendido de Lenguaje (LEL) mediante Ontologías",
     "authors": [
-      { "apellido": "Marinho de Alcântara", "nombre": "Marc", "email": "marc.alcantara@gmail.com" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" },
-      { "apellido": "Torres", "nombre": "Diego", "email": "diego.torres@lifia.info.unlp.edu.ar" }
+      {
+        "apellido": "Marinho de Alcântara",
+        "nombre": "Marc",
+        "email": "marc.alcantara@gmail.com"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Torres",
+        "nombre": "Diego",
+        "email": "diego.torres@lifia.info.unlp.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 2.",
     "language": "ES",
-    "file_name": "https://example.com/paper2.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202602.html",
     "paper_session": "Session 5"
   },
   {
     "track": "RRT",
     "title": "Guías para mejorar la calidad de especificaciones de requerimientos en lenguaje natural",
     "authors": [
-      { "apellido": "Simon Ruffolo", "nombre": "Nicolas", "email": "nruffolo@lifia.info.unlp.edu.ar" },
-      { "apellido": "Maltempo", "nombre": "Giuliana", "email": "gmaltempo@lifia.info.unlp.edu.ar" },
-      { "apellido": "Ailen Delle Ville", "nombre": "Juliana", "email": "jdelleville@lifia.info.unlp.edu.ar" },
-      { "apellido": "Ruben Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" },
-      { "apellido": "Perez", "nombre": "Gabriela", "email": "gperez@lifia.info.unlp.edu.ar" },
-      { "apellido": "Nusch", "nombre": "Carlos", "email": "carlosnusch@gmail.com" }
+      {
+        "apellido": "Simon Ruffolo",
+        "nombre": "Nicolas",
+        "email": "nruffolo@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Maltempo",
+        "nombre": "Giuliana",
+        "email": "gmaltempo@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Ailen Delle Ville",
+        "nombre": "Juliana",
+        "email": "jdelleville@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Ruben Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Perez",
+        "nombre": "Gabriela",
+        "email": "gperez@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Nusch",
+        "nombre": "Carlos",
+        "email": "carlosnusch@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 3.",
     "language": "ES",
-    "file_name": "https://example.com/paper3.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202603.html",
     "paper_session": "Session 5"
   },
   {
     "track": "RRT",
     "title": "Detección Temprana de Escenarios Duplicados en Español mediante Enriquecimiento Semántico basado en LEL",
     "authors": [
-      { "apellido": "Perez", "nombre": "Gabriela", "email": "gabriela.perez@gmail.com" },
-      { "apellido": "Mostaccio", "nombre": "Catalina", "email": "catty@lifia.info.unlp.edu.ar" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" }
+      {
+        "apellido": "Perez",
+        "nombre": "Gabriela",
+        "email": "gabriela.perez@gmail.com"
+      },
+      {
+        "apellido": "Mostaccio",
+        "nombre": "Catalina",
+        "email": "catty@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 4.",
     "language": "ES",
-    "file_name": "https://example.com/paper4.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202604.html",
     "paper_session": "Session 5"
   },
   {
     "track": "RRT",
     "title": "Ambiguity in Requirements Engineering: A Systematic Mapping of AI-Based Approaches",
     "authors": [
-      { "apellido": "Ignacio Torres", "nombre": "Juan", "email": "jitorres@lidi.info.unlp.edu.ar" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" },
-      { "apellido": "Thomas", "nombre": "Pablo", "email": "pthomas@lidi.info.unlp.edu.ar" }
+      {
+        "apellido": "Ignacio Torres",
+        "nombre": "Juan",
+        "email": "jitorres@lidi.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Thomas",
+        "nombre": "Pablo",
+        "email": "pthomas@lidi.info.unlp.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 5.",
     "language": "EN",
-    "file_name": "https://example.com/paper5.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202605.html",
     "paper_session": "Session 5"
   },
   {
     "track": "RRT",
     "title": "Del aula a la práctica profesional temprana",
     "authors": [
-      { "apellido": "Ortiz Quiroz", "nombre": "Valeria", "email": "valeoq@gmail.com" },
-      { "apellido": "Soria", "nombre": "Mercedes", "email": "msoria@frvm.utn.edu.ar" },
-      { "apellido": "Tosselli", "nombre": "Laura", "email": "ltosselli@frvm.utn.edu.ar" },
-      { "apellido": "Laura Achetta", "nombre": "María", "email": "lauraachetta@gmail.com" }
+      {
+        "apellido": "Ortiz Quiroz",
+        "nombre": "Valeria",
+        "email": "valeoq@gmail.com"
+      },
+      {
+        "apellido": "Soria",
+        "nombre": "Mercedes",
+        "email": "msoria@frvm.utn.edu.ar"
+      },
+      {
+        "apellido": "Tosselli",
+        "nombre": "Laura",
+        "email": "ltosselli@frvm.utn.edu.ar"
+      },
+      {
+        "apellido": "Laura Achetta",
+        "nombre": "María",
+        "email": "lauraachetta@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 6.",
     "language": "ES",
-    "file_name": "https://example.com/paper6.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202621.html",
     "paper_session": "Session 4"
   },
   {
     "track": "RRT",
     "title": "Evaluating Generative Artificial Intelligence for User Stories",
     "authors": [
-      { "apellido": "Marcos", "nombre": "Claudia", "email": "cmarcos@exa.unicen.edu.ar" },
-      { "apellido": "Rodríguez", "nombre": "Guillermo", "email": "exarodriguez@gmail.com" },
-      { "apellido": "Villarreal Garrido", "nombre": "Delfina", "email": "dvillarrealgarrido@alumnos.exa.unicen.edu.ar" }
+      {
+        "apellido": "Marcos",
+        "nombre": "Claudia",
+        "email": "cmarcos@exa.unicen.edu.ar"
+      },
+      {
+        "apellido": "Rodríguez",
+        "nombre": "Guillermo",
+        "email": "exarodriguez@gmail.com"
+      },
+      {
+        "apellido": "Villarreal Garrido",
+        "nombre": "Delfina",
+        "email": "dvillarrealgarrido@alumnos.exa.unicen.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 7.",
     "language": "EN",
-    "file_name": "https://example.com/paper7.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202606.html",
     "paper_session": "Session 3"
   },
   {
     "track": "RRT",
     "title": "Toward a Framework for Explainability in Intelligent Systems: Preliminary Results",
     "authors": [
-      { "apellido": "Mancine", "nombre": "Lívia", "email": "livia.mancine@ifgoiano.edu.br" },
-      { "apellido": "Braga", "nombre": "Renata", "email": "renatadbraga@ufg.br" },
-      { "apellido": "Bulcão-Neto", "nombre": "Renato", "email": "rbulcao@ufg.br" }
+      {
+        "apellido": "Mancine",
+        "nombre": "Lívia",
+        "email": "livia.mancine@ifgoiano.edu.br"
+      },
+      {
+        "apellido": "Braga",
+        "nombre": "Renata",
+        "email": "renatadbraga@ufg.br"
+      },
+      {
+        "apellido": "Bulcão-Neto",
+        "nombre": "Renato",
+        "email": "rbulcao@ufg.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 8.",
     "language": "EN",
-    "file_name": "https://example.com/paper8.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202607.html",
     "paper_session": "Session 1"
   },
   {
     "track": "RRT",
     "title": "A Requirements Engineering Perspective on Explainability Privacy Trade-offs in Decision Support Systems",
     "authors": [
-      { "apellido": "Girotto Vargas", "nombre": "Andressa", "email": "andressa.girotto@hotmail.com" },
-      { "apellido": "Dias Canedo", "nombre": "Edna", "email": "edna.canedo@gmail.com" }
+      {
+        "apellido": "Girotto Vargas",
+        "nombre": "Andressa",
+        "email": "andressa.girotto@hotmail.com"
+      },
+      {
+        "apellido": "Dias Canedo",
+        "nombre": "Edna",
+        "email": "edna.canedo@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 9.",
     "language": "EN",
-    "file_name": "https://example.com/paper9.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202608.html",
     "paper_session": "Session 1"
   },
   {
     "track": "RRT",
     "title": "Evaluación empírica del proceso ValReCo con propuesta de mejora asistida por IA",
     "authors": [
-      { "apellido": "Santana", "nombre": "Sonia", "email": "sonia.santana@uner.edu.ar" }
+      {
+        "apellido": "Santana",
+        "nombre": "Sonia",
+        "email": "sonia.santana@uner.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 10.",
     "language": "ES",
-    "file_name": "https://example.com/paper10.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202609.html",
     "paper_session": "Session 5"
   },
   {
     "track": "RRT",
     "title": "Uso de Abordagens da Engenharia de Requisitos Orientada a Objetivos na Indústria: Uma Revisão Sistemática da Literatura",
     "authors": [
-      { "apellido": "Lima", "nombre": "Rafael", "email": "ferreira.rfl@gmail.com" },
-      { "apellido": "Santander", "nombre": "Victor", "email": "vfasantander@gmail.com" }
+      {
+        "apellido": "Lima",
+        "nombre": "Rafael",
+        "email": "ferreira.rfl@gmail.com"
+      },
+      {
+        "apellido": "Santander",
+        "nombre": "Victor",
+        "email": "vfasantander@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 11.",
     "language": "PT",
-    "file_name": "https://example.com/paper11.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202610.html",
     "paper_session": "Session 2"
   },
   {
     "track": "RRT",
     "title": "A Fuzzing-Based Framework for Ethical Risk Detection in Large Language Models",
     "authors": [
-      { "apellido": "Lucas Vasconcelos", "nombre": "João", "email": "joao.brasilpv@gmail.com" },
-      { "apellido": "Dias Canedo", "nombre": "Edna", "email": "edna.canedo@gmail.com" }
+      {
+        "apellido": "Lucas Vasconcelos",
+        "nombre": "João",
+        "email": "joao.brasilpv@gmail.com"
+      },
+      {
+        "apellido": "Dias Canedo",
+        "nombre": "Edna",
+        "email": "edna.canedo@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 12.",
     "language": "EN",
-    "file_name": "https://example.com/paper12.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202611.html",
     "paper_session": "Session 3"
   },
   {
     "track": "MDT",
     "title": "Hacia un método para definir escenarios a partir de User Story Mapping",
     "authors": [
-      { "apellido": "Alegretti", "nombre": "Andrea", "email": "andyalegretti@gmail.com" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" },
-      { "apellido": "Panizzi", "nombre": "Marisa", "email": "marisa.panizzi@unahur.edu.ar" }
+      {
+        "apellido": "Alegretti",
+        "nombre": "Andrea",
+        "email": "andyalegretti@gmail.com"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Panizzi",
+        "nombre": "Marisa",
+        "email": "marisa.panizzi@unahur.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 13.",
     "language": "ES",
-    "file_name": "https://example.com/paper13.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202623.html",
     "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "RRT",
     "title": "Defining Requirements for Perishable Goods Management Systems (SAFE_GOOD)",
     "authors": [
-      { "apellido": "Anjos Neto", "nombre": "Samuel", "email": "scan@cin.ufpe.br" },
-      { "apellido": "Castro", "nombre": "Jaelson", "email": "jbc@cin.ufpe.br" },
-      { "apellido": "Causil", "nombre": "Over", "email": "overcausil@pe.senac.br" },
-      { "apellido": "Lencastre", "nombre": "Maria", "email": "mlpm@ecomp.poli.br" }
+      {
+        "apellido": "Anjos Neto",
+        "nombre": "Samuel",
+        "email": "scan@cin.ufpe.br"
+      },
+      {
+        "apellido": "Castro",
+        "nombre": "Jaelson",
+        "email": "jbc@cin.ufpe.br"
+      },
+      {
+        "apellido": "Causil",
+        "nombre": "Over",
+        "email": "overcausil@pe.senac.br"
+      },
+      {
+        "apellido": "Lencastre",
+        "nombre": "Maria",
+        "email": "mlpm@ecomp.poli.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 14.",
     "language": "EN",
-    "file_name": "https://example.com/paper14.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202612.html",
     "paper_session": "Session 4"
   },
   {
     "track": "RRT",
     "title": "Requirements People Debt: Conceptualizing Human Factors in Requirements Engineering Debt",
     "authors": [
-      { "apellido": "Pinheiro", "nombre": "Larissa", "email": "larissa.barbosa11@gmail.com" },
-      { "apellido": "Freire", "nombre": "Sávio", "email": "savio.essf@gmail.com" },
-      { "apellido": "Suzana Pitangueira Maciel", "nombre": "Rita", "email": "ritasuzana@gmail.com" }
+      {
+        "apellido": "Pinheiro",
+        "nombre": "Larissa",
+        "email": "larissa.barbosa11@gmail.com"
+      },
+      {
+        "apellido": "Freire",
+        "nombre": "Sávio",
+        "email": "savio.essf@gmail.com"
+      },
+      {
+        "apellido": "Suzana Pitangueira Maciel",
+        "nombre": "Rita",
+        "email": "ritasuzana@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 15.",
     "language": "EN",
-    "file_name": "https://example.com/paper15.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202613.html",
     "paper_session": "Session 2"
   },
   {
     "track": "RRT",
     "title": "Goal-Oriented Requirements Engineering: An Updated Systematic Mapping Study (2021–2025)",
     "authors": [
-      { "apellido": "Henrique Medaber Jambo", "nombre": "Claudio", "email": "claudiojambo@gmail.com" },
-      { "apellido": "Henrique Mendonca", "nombre": "Flavio", "email": "flavio.hm95@gmail.com" },
-      { "apellido": "Roberto Silva dos Reis", "nombre": "Paulo", "email": "paulodsea@gmail.com" },
-      { "apellido": "Ferenzini Martins Sirqueira", "nombre": "Tassio", "email": "tassio.sirqueira@ime.uerj.br" },
-      { "apellido": "Maria Werneck", "nombre": "Vera", "email": "vera@ime.uerj.br" }
+      {
+        "apellido": "Henrique Medaber Jambo",
+        "nombre": "Claudio",
+        "email": "claudiojambo@gmail.com"
+      },
+      {
+        "apellido": "Henrique Mendonca",
+        "nombre": "Flavio",
+        "email": "flavio.hm95@gmail.com"
+      },
+      {
+        "apellido": "Roberto Silva dos Reis",
+        "nombre": "Paulo",
+        "email": "paulodsea@gmail.com"
+      },
+      {
+        "apellido": "Ferenzini Martins Sirqueira",
+        "nombre": "Tassio",
+        "email": "tassio.sirqueira@ime.uerj.br"
+      },
+      {
+        "apellido": "Maria Werneck",
+        "nombre": "Vera",
+        "email": "vera@ime.uerj.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 16.",
     "language": "EN",
-    "file_name": "https://example.com/paper16.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202614.html",
     "paper_session": "Session 2"
   },
   {
     "track": "RRT",
     "title": "Un enfoque híbrido LLM + OCL para la detección de inconsistencias en escenarios",
     "authors": [
-      { "apellido": "Perez", "nombre": "Gabriela", "email": "gabriela.perez@gmail.com" },
-      { "apellido": "Mostaccio", "nombre": "Catalina", "email": "catty@lifia.info.unlp.edu.ar" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" }
+      {
+        "apellido": "Perez",
+        "nombre": "Gabriela",
+        "email": "gabriela.perez@gmail.com"
+      },
+      {
+        "apellido": "Mostaccio",
+        "nombre": "Catalina",
+        "email": "catty@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 17.",
     "language": "ES",
-    "file_name": "https://example.com/paper17.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202615.html",
     "paper_session": "Session 3"
   },
   {
     "track": "RRT",
     "title": "Use of LLMs in Requirements Engineering: An Exploratory Study in Industry",
     "authors": [
-      { "apellido": "Levy Siqueira", "nombre": "Fabio", "email": "levy.siqueira@gmail.com" },
-      { "apellido": "Moussa Assumpção", "nombre": "Caio", "email": "caioma@usp.br" },
-      { "apellido": "Marcos de Mattos Barguil", "nombre": "João", "email": "jbarguil@opus-software.com.br" },
-      { "apellido": "Cesar Sampaio do Prado Leite", "nombre": "Julio", "email": "julioleite.ufba@gmail.com" }
+      {
+        "apellido": "Levy Siqueira",
+        "nombre": "Fabio",
+        "email": "levy.siqueira@gmail.com"
+      },
+      {
+        "apellido": "Moussa Assumpção",
+        "nombre": "Caio",
+        "email": "caioma@usp.br"
+      },
+      {
+        "apellido": "Marcos de Mattos Barguil",
+        "nombre": "João",
+        "email": "jbarguil@opus-software.com.br"
+      },
+      {
+        "apellido": "Cesar Sampaio do Prado Leite",
+        "nombre": "Julio",
+        "email": "julioleite.ufba@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 18.",
     "language": "EN",
-    "file_name": "https://example.com/paper18.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202616.html",
     "paper_session": "Session 3"
   },
   {
     "track": "RRT",
     "title": "Translating EU AI Act Transparency Requirements into Software Engineering Specifications",
     "authors": [
-      { "apellido": "Almentero", "nombre": "Eduardo", "email": "almentero@ufrrj.br" },
-      { "apellido": "de Sá Sousa", "nombre": "Henrique", "email": "hsousa@uniriotec.br" },
-      { "apellido": "Portugal", "nombre": "Roxana", "email": "roxana.portugal@ifkw.lmu.de" },
-      { "apellido": "Classe", "nombre": "Tadeu", "email": "tadeu.classe@uniriotec.br" },
-      { "apellido": "Kalinowski", "nombre": "Marcos", "email": "kalinowski@inf.puc-rio.br" }
+      {
+        "apellido": "Almentero",
+        "nombre": "Eduardo",
+        "email": "almentero@ufrrj.br"
+      },
+      {
+        "apellido": "de Sá Sousa",
+        "nombre": "Henrique",
+        "email": "hsousa@uniriotec.br"
+      },
+      {
+        "apellido": "Portugal",
+        "nombre": "Roxana",
+        "email": "roxana.portugal@ifkw.lmu.de"
+      },
+      {
+        "apellido": "Classe",
+        "nombre": "Tadeu",
+        "email": "tadeu.classe@uniriotec.br"
+      },
+      {
+        "apellido": "Kalinowski",
+        "nombre": "Marcos",
+        "email": "kalinowski@inf.puc-rio.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 19.",
     "language": "EN",
-    "file_name": "https://example.com/paper19.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202617.html",
     "paper_session": "Session 1"
   },
   {
     "track": "RRT",
     "title": "Avaliação do Impacto da Engenharia de Prompt na Elicitação e Documentação de Requisitos com LLMs",
     "authors": [
-      { "apellido": "Soares", "nombre": "Álvaro", "email": "alvaroass2110@gmail.com" },
-      { "apellido": "Fernandes", "nombre": "Lyrene", "email": "lyrene@gmail.com" }
+      {
+        "apellido": "Soares",
+        "nombre": "Álvaro",
+        "email": "alvaroass2110@gmail.com"
+      },
+      {
+        "apellido": "Fernandes",
+        "nombre": "Lyrene",
+        "email": "lyrene@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 20.",
     "language": "PT",
-    "file_name": "https://example.com/paper20.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202618.html",
     "paper_session": "Session 3"
   },
   {
     "track": "RRT",
     "title": "Modelagem Conceitual do Aprendizado Autodidata no Ambiente Online Orientado por Competências",
     "authors": [
-      { "apellido": "Caetano Correia", "nombre": "Luísa", "email": "luisa.c.correia@edu.unirio.br" },
-      { "apellido": "Prado de Sá Sousa", "nombre": "Henrique", "email": "hsousa@uniriotec.br" },
-      { "apellido": "Sérgio Medeiros", "nombre": "Paulo", "email": "pasemes@uniriotec.br" },
-      { "apellido": "Luiz Massollar da Silva", "nombre": "Jobson", "email": "jobson@uniriotec.br" },
-      { "apellido": "Sarmiento Calisaya", "nombre": "Edgar", "email": "edgarsc22@gmail.com" }
+      {
+        "apellido": "Caetano Correia",
+        "nombre": "Luísa",
+        "email": "luisa.c.correia@edu.unirio.br"
+      },
+      {
+        "apellido": "Prado de Sá Sousa",
+        "nombre": "Henrique",
+        "email": "hsousa@uniriotec.br"
+      },
+      {
+        "apellido": "Sérgio Medeiros",
+        "nombre": "Paulo",
+        "email": "pasemes@uniriotec.br"
+      },
+      {
+        "apellido": "Luiz Massollar da Silva",
+        "nombre": "Jobson",
+        "email": "jobson@uniriotec.br"
+      },
+      {
+        "apellido": "Sarmiento Calisaya",
+        "nombre": "Edgar",
+        "email": "edgarsc22@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 21.",
     "language": "PT",
-    "file_name": "https://example.com/paper21.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202622.html",
     "paper_session": "Session 4"
   },
   {
     "track": "RRT",
     "title": "Utilizando a Engenharia de Software Experimental para avaliar a implementação das Regras de Garantia de Consistência na ferramenta JGOOSE",
     "authors": [
-      { "apellido": "Campos", "nombre": "Kauan", "email": "kauan.campos@unioeste.br" },
-      { "apellido": "Lima", "nombre": "Rafael", "email": "ferreira.rfl@gmail.com" },
-      { "apellido": "Santander", "nombre": "Victor", "email": "vfasantander@gmail.com" }
+      {
+        "apellido": "Campos",
+        "nombre": "Kauan",
+        "email": "kauan.campos@unioeste.br"
+      },
+      {
+        "apellido": "Lima",
+        "nombre": "Rafael",
+        "email": "ferreira.rfl@gmail.com"
+      },
+      {
+        "apellido": "Santander",
+        "nombre": "Victor",
+        "email": "vfasantander@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 22.",
     "language": "PT",
-    "file_name": "https://example.com/paper22.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202619.html",
     "paper_session": "Session 2"
   },
   {
     "track": "RRT",
     "title": "Extensões BPMN para Conformidade com a LGPD e GDPR: Um Panorama do Estado da Arte",
     "authors": [
-      { "apellido": "Gabriel Crelier dos Santos", "nombre": "Geraldo", "email": "geraldo.santos@edu.unirio.br" },
-      { "apellido": "Prado de Sá Sousa", "nombre": "Henrique", "email": "hsousa@uniriotec.br" },
-      { "apellido": "Kinder Almentero", "nombre": "Eduardo", "email": "ealmentero@ufrrj.br" },
-      { "apellido": "Classe", "nombre": "Tadeu", "email": "tadeu.classe@uniriotec.br" }
+      {
+        "apellido": "Gabriel Crelier dos Santos",
+        "nombre": "Geraldo",
+        "email": "geraldo.santos@edu.unirio.br"
+      },
+      {
+        "apellido": "Prado de Sá Sousa",
+        "nombre": "Henrique",
+        "email": "hsousa@uniriotec.br"
+      },
+      {
+        "apellido": "Kinder Almentero",
+        "nombre": "Eduardo",
+        "email": "ealmentero@ufrrj.br"
+      },
+      {
+        "apellido": "Classe",
+        "nombre": "Tadeu",
+        "email": "tadeu.classe@uniriotec.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 23.",
     "language": "PT",
-    "file_name": "https://example.com/paper23.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202620.html",
     "paper_session": "Session 1"
   },
   {
     "track": "MDT",
     "title": "Explainability Requirements Engineering in AI-enabled Systems",
     "authors": [
-      { "apellido": "Mancine", "nombre": "Lívia", "email": "livia.mancine@ifgoiano.edu.br" },
-      { "apellido": "Braga", "nombre": "Renata", "email": "renatadbraga@ufg.br" },
-      { "apellido": "Bulcão-Neto", "nombre": "Renato", "email": "rbulcao@ufg.br" }
+      {
+        "apellido": "Mancine",
+        "nombre": "Lívia",
+        "email": "livia.mancine@ifgoiano.edu.br"
+      },
+      {
+        "apellido": "Braga",
+        "nombre": "Renata",
+        "email": "renatadbraga@ufg.br"
+      },
+      {
+        "apellido": "Bulcão-Neto",
+        "nombre": "Renato",
+        "email": "rbulcao@ufg.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 24.",
     "language": "EN",
-    "file_name": "https://example.com/paper24.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202624.html",
     "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "MDT",
     "title": "Uma Abordagem para Elicitação de Requisitos em Ambientes Ágeis baseada na Integração entre Design Thinking e Engenharia de Requisitos",
     "authors": [
-      { "apellido": "Augusta Nascimento de Moura", "nombre": "Maria", "email": "manm@ecomp.poli.br" },
-      { "apellido": "Maria Ribeiro de Alencar", "nombre": "Fernanda", "email": "fernanda.ralencar@ufpe.br" }
+      {
+        "apellido": "Augusta Nascimento de Moura",
+        "nombre": "Maria",
+        "email": "manm@ecomp.poli.br"
+      },
+      {
+        "apellido": "Maria Ribeiro de Alencar",
+        "nombre": "Fernanda",
+        "email": "fernanda.ralencar@ufpe.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 25.",
     "language": "PT",
-    "file_name": "https://example.com/paper25.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202625.html",
     "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "IT",
     "title": "Using ChatGPT to Support Accessibility Requirements Specification: Experience from a Public Sector Platform",
     "authors": [
-      { "apellido": "Beatriz Marques", "nombre": "Anna", "email": "beatriz.marques@ufc.br" },
-      { "apellido": "Oliveira", "nombre": "Rhenara", "email": "rhenaraalves21@alu.ufc.br" },
-      { "apellido": "Luna", "nombre": "Ramon", "email": "ramonnicolas@alu.ufc.br" },
-      { "apellido": "Sousa", "nombre": "Amanda", "email": "amandasousa@great.ufc.br" },
-      { "apellido": "Antônio Macêdo", "nombre": "José", "email": "jose.macedo@insightlab.ufc.br" },
-      { "apellido": "Andrade", "nombre": "Rossana", "email": "rossana@ufc.br" }
+      {
+        "apellido": "Beatriz Marques",
+        "nombre": "Anna",
+        "email": "beatriz.marques@ufc.br"
+      },
+      {
+        "apellido": "Oliveira",
+        "nombre": "Rhenara",
+        "email": "rhenaraalves21@alu.ufc.br"
+      },
+      {
+        "apellido": "Luna",
+        "nombre": "Ramon",
+        "email": "ramonnicolas@alu.ufc.br"
+      },
+      {
+        "apellido": "Sousa",
+        "nombre": "Amanda",
+        "email": "amandasousa@great.ufc.br"
+      },
+      {
+        "apellido": "Antônio Macêdo",
+        "nombre": "José",
+        "email": "jose.macedo@insightlab.ufc.br"
+      },
+      {
+        "apellido": "Andrade",
+        "nombre": "Rossana",
+        "email": "rossana@ufc.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 26.",
     "language": "EN",
-    "file_name": "https://example.com/paper26.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202628.html",
     "paper_session": "industryandsrtt"
   },
   {
     "track": "MDT",
     "title": "Proceso Visual de Conceptualización del Universo de Discurso",
     "authors": [
-      { "apellido": "Sebastian", "nombre": "Alberto", "email": "alberto.sebastian@comunidad.ub.edu.ar" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" },
-      { "apellido": "Dora Susana Hadad", "nombre": "Graciela", "email": "ghadad@uno.edu.ar" }
+      {
+        "apellido": "Sebastian",
+        "nombre": "Alberto",
+        "email": "alberto.sebastian@comunidad.ub.edu.ar"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      },
+      {
+        "apellido": "Dora Susana Hadad",
+        "nombre": "Graciela",
+        "email": "ghadad@uno.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 27.",
     "language": "ES",
-    "file_name": "https://example.com/paper27.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202626.html",
     "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "MDT",
     "title": "Métricas de Processo Observáveis em Repositórios Publicos: Um Catálogo Fundamentado na Literatura Scrum",
     "authors": [
-      { "apellido": "Henrique Mendonça", "nombre": "Flávio", "email": "flavio.hm95@gmail.com" },
-      { "apellido": "Ferenzini Martins Sirqueira", "nombre": "Tassio", "email": "tassio.sirqueira@ime.uerj.br" },
-      { "apellido": "Maria Werneck", "nombre": "Vera", "email": "vera@ime.uerj.br" }
+      {
+        "apellido": "Henrique Mendonça",
+        "nombre": "Flávio",
+        "email": "flavio.hm95@gmail.com"
+      },
+      {
+        "apellido": "Ferenzini Martins Sirqueira",
+        "nombre": "Tassio",
+        "email": "tassio.sirqueira@ime.uerj.br"
+      },
+      {
+        "apellido": "Maria Werneck",
+        "nombre": "Vera",
+        "email": "vera@ime.uerj.br"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 28.",
     "language": "PT",
-    "file_name": "https://example.com/paper28.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202627.html",
     "paper_session": "mastersanddoctoraltracksession1"
   },
   {
     "track": "IT1",
     "title": "From Workshop Transcripts to Requirements Models A Heuristic and RAG-Based Approach for Reusing Elicitation Data",
     "authors": [
-      { "apellido": "Portugal", "nombre": "Roxana", "email": "roxana.quintanilla@unsaac.edu.pe" },
-      { "apellido": "C. S. P. Leite", "nombre": "Julio", "email": "julioleite@ufba.br" },
-      { "apellido": "F. Silva", "nombre": "Lyrene", "email": "lyrene@gmail.com" },
-      { "apellido": "Sarmiento", "nombre": "Edgar", "email": "edgarsc22@gmail.com" }
+      {
+        "apellido": "Portugal",
+        "nombre": "Roxana",
+        "email": "roxana.quintanilla@unsaac.edu.pe"
+      },
+      {
+        "apellido": "C. S. P. Leite",
+        "nombre": "Julio",
+        "email": "julioleite@ufba.br"
+      },
+      {
+        "apellido": "F. Silva",
+        "nombre": "Lyrene",
+        "email": "lyrene@gmail.com"
+      },
+      {
+        "apellido": "Sarmiento",
+        "nombre": "Edgar",
+        "email": "edgarsc22@gmail.com"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 29.",
     "language": "EN",
-    "file_name": "https://example.com/paper29.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202629.html",
     "paper_session": "industrytrack"
   },
   {
     "track": "SRTT",
     "title": "Construcción incremental de LEL en español asistida por LLM con trazabilidad e integración semántica",
     "authors": [
-      { "apellido": "Perez", "nombre": "Gabriela", "email": "gabriela.perez@gmail.com" },
-      { "apellido": "Nogueira", "nombre": "Joaquina", "email": "njoaquina50@gmail.com" },
-      { "apellido": "Ruiz", "nombre": "German", "email": "geruiz@gmail.com" },
-      { "apellido": "Antonelli", "nombre": "Leandro", "email": "lanto@lifia.info.unlp.edu.ar" }
+      {
+        "apellido": "Perez",
+        "nombre": "Gabriela",
+        "email": "gabriela.perez@gmail.com"
+      },
+      {
+        "apellido": "Nogueira",
+        "nombre": "Joaquina",
+        "email": "njoaquina50@gmail.com"
+      },
+      {
+        "apellido": "Ruiz",
+        "nombre": "German",
+        "email": "geruiz@gmail.com"
+      },
+      {
+        "apellido": "Antonelli",
+        "nombre": "Leandro",
+        "email": "lanto@lifia.info.unlp.edu.ar"
+      }
     ],
     "keywords": "keyword1; keyword2",
     "abstract": "Abstract del paper 30.",
     "language": "ES",
-    "file_name": "https://example.com/paper30.pdf",
+    "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202630.html",
     "paper_session": "industryandsrtt"
   },
   {
     "track": "ST",
     "title": "Automatización del análisis, documentación y trazabilidad de requisitos mediante técnicas de inteligencia artificial",
     "authors": [
-      { "apellido": "Rodriguez Agostini", "nombre": "Alan Hernan", "email": "alanrodriguezagostini71@gmail.com" }
+      {
+        "apellido": "Rodriguez Agostini",
+        "nombre": "Alan Hernan",
+        "email": "alanrodriguezagostini71@gmail.com"
+      }
     ],
     "keywords": "Inteligencia artificial; Ingeniería de requisitos; Análisis de documentación; Trazabilidad de requisitos; Automatización",
     "abstract": "El avance de la inteligencia artificial (IA) como herramienta de uso profesional ha generado nuevas oportunidades para su aplicación en la ingeniería de requisitos. En particular, permite analizar su potencial impacto en el análisis de documentación y la trazabilidad de requisitos. El crecimiento de los sistemas de software y el manejo de grandes volúmenes de información incrementan la complejidad de análisis manual, dificultando la identificación precisa de requisitos funcionales (RF) y no funcionales (RNF), así como el mantenimiento de relaciones de trazabilidad entre los distintos artefactos del sistema. En este contexto, el presente trabajo analiza el potencial de la inteligencia artificial para automatizar tareas asociadas a la identificación, clasificación y relación entre requisitos. En este sentido, la incorporación de técnicas basadas en Procesamiento de Lenguaje Natural, Aprendizaje Automático y extracción automatizada de información permitirá aumentar el nivel de automatización en la identificación, clasificación y análisis de requisitos, así como mejorar la trazabilidad, al facilitar la determinación de origen, su relación con los distintos componentes del sistema y su seguimiento a lo largo del ciclo de vida del software. Asimismo, se propone como trabajo futuro la evolución de herramientas basadas en IA para automatizar la identificación y clasificación de RF y RNF a partir de documentación textual, con el objetivo de analizar su potencial aplicación dentro de los procesos de ingeniería de requisitos.",
@@ -448,7 +864,11 @@
     "track": "ST",
     "title": "Cuando la IA Programa: El Rol de las Especificaciones en el Futuro del Desarrollo de Software",
     "authors": [
-      { "apellido": "Rodriguez Martinez", "nombre": "Maximiliano Exequiel", "email": "maxi.rodriguez.3105@gmail.com" }
+      {
+        "apellido": "Rodriguez Martinez",
+        "nombre": "Maximiliano Exequiel",
+        "email": "maxi.rodriguez.3105@gmail.com"
+      }
     ],
     "keywords": "Especificaciones; Inteligencia-Artificial; Spec-Driven-Development",
     "abstract": "La aparición de herramientas capaces de generar código de manera automática puso en evidencia un problema que ya venía creciendo: el vibe coding. Es decir, resultados que parecen correctos a simple vista, pero que no siguen un criterio claro, mezclan estilos y dejan poca trazabilidad entre lo que se pidió y lo que se implementó. Esto termina generando ambigüedad, inconsistencias y dificultades para reproducir el trabajo. En respuesta a este escenario, Spec-Driven Development (SDD) propone volver a poner la especificación en el centro del proceso. No sólo para describir el comportamiento esperado del sistema, sino también para indicar cómo deben trabajar los agentes —humanos o de IA(Principalmente no humanos)— que participan en su construcción: qué rol asumir, qué supuestos respetar y cómo producir, validar y documentar cada artefacto. El trabajo explora cómo este tipo de especificaciones operativas puede aportar orden y coherencia en proyectos donde intervienen modelos generativos. Se Presenta OpenSpec como ejemplo concreto, mostrando cómo un formato de este tipo permite definir roles, criterios de diseño y estrategias de validación para agentes de IA. También se discute el ciclo Specify–Plan–Task–Implement y su utilidad para mantener una relación clara entre intención y resultado. Finalmente, se analiza cómo la precisión de estas instrucciones influye en la calidad del software generado y se argumenta que SDD ofrece un camino para trabajar con mayor disciplina y transparencia en equipos híbridos humano–IA, evitando el vibe coding y favoreciendo prácticas más estables y reproducibles.",
@@ -460,9 +880,21 @@
     "track": "ST",
     "title": "Trazabilidad de requisitos en la evolución tecnológica del Museo Virtual STEAM: hacia un Sistema Recomendador de Cápsulas STEAM",
     "authors": [
-      { "apellido": "Rizzo", "nombre": "Nicolás", "email": "nicolasrizzo@gmail.com" },
-      { "apellido": "López De Luise", "nombre": "Daniela", "email": "daniela_ldl@ieee.org" },
-      { "apellido": "Romero", "nombre": "Gilda R.", "email": "gilda.romero@gmail.com" }
+      {
+        "apellido": "Rizzo",
+        "nombre": "Nicolás",
+        "email": "nicolasrizzo@gmail.com"
+      },
+      {
+        "apellido": "López De Luise",
+        "nombre": "Daniela",
+        "email": "daniela_ldl@ieee.org"
+      },
+      {
+        "apellido": "Romero",
+        "nombre": "Gilda R.",
+        "email": "gilda.romero@gmail.com"
+      }
     ],
     "keywords": "Trazabilidad; requisitos de software; migración de Plataformas; STEAM; MVS; Sistema Recomendador",
     "abstract": "El presente trabajo aborda el desafío de resolver la trazabilidad de requisitos durante el proceso de migración y el acondicionamiento de la plataforma \"Museo Virtual STEAM\" (MVS), orientado a establecer las bases para un Sistema Recomendador reglado y probabilístico. Entre otras cosas, se describe la trazabilidad de los requisitos durante la migración desde un entorno de gestión de contenidos hacia una arquitectura capaz de soportar la recomendación de \"cápsulas\" (unidades de aprendizaje STEAM). El núcleo de la propuesta radica en el uso de variables del entorno (sistema y servidor) para auditar y validar el porcentaje de uso de los requerimientos; se analizan las restricciones técnicas para justificar la baja o modificación de funcionalidades, proponiendo métricas específicas para la verificación y validación de requisitos. Este enfoque asegura que la plataforma migrada no solo preserve la integridad de los objetos de aprendizaje, sino que facilite la planificación y evaluación adaptada de actividades. Finalmente, se plantea el diseño para que el sistema sea escalable hacia Aplicaciones Web Progresivas (PWA) en una fase futura. La metodología empleada incluye ingeniería inversa de requisitos y un enfoque mixto para validar que la migración mantenga la integridad de los objetos de aprendizaje. Los resultados muestran que una trazabilidad apropiada permite detectar riesgos en la migración de una implementación y mejorar la calidad del proceso.",

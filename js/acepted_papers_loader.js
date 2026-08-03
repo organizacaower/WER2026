@@ -97,17 +97,16 @@ fetch("../data/articulos_aceptados.json")
         }
       }
 
-      // boton comentado
+      const paperJsonEscaped = JSON.stringify(paper).replace(/'/g, "&apos;");
+
       return `
         <li class="mb-3">
           <b>${paper.title}</b>
           ${downloadHTML}
           <p><small><i>${formatearAutores(paper.authors)}</i></small></p>
-          <!--  
-         <button class="btn btn-sm btn-primary" onclick='abrirModal(${JSON.stringify(paper)})'>
-          ${translations[lang].verMas} 
-        </button>
-         -->
+          <button class="btn btn-sm btn-primary mt-1" onclick='abrirModal(${paperJsonEscaped})'>
+            ${translations[lang].verMas} 
+          </button>
         </li>
       `;
     }
