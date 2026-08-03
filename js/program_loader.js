@@ -55,11 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (ev.tipo === "break") {
           clase = "bg-primary text-white rounded p-1";
+        } else if (ev.tipo === "note") {
+          clase = "text-muted fst-italic small mt-2";
         }
+
+        const horaStr = ev.hora ? `<b>${ev.hora}</b> ` : "";
 
         html += `
           <p class="${clase}">
-            <b>${ev.hora || ""}</b> ${t(ev.titulo)}
+            ${horaStr}${t(ev.titulo)}
           </p>
         `;
       });

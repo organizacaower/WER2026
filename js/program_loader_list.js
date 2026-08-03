@@ -101,11 +101,20 @@ function renderPrograma() {
         ? 'style="padding:7px 12px; border-radius:10px;"'
         : '';
 
-      html += `
-        <h4 class="${clase}" ${style}>
-          ${evento.hora} | ${t(evento.titulo)}
-        </h4>
-      `;
+      if (evento.tipo === "note") {
+        html += `
+          <p class="text-muted fst-italic mt-3">
+            ${t(evento.titulo)}
+          </p>
+        `;
+      } else {
+        const horaStr = evento.hora ? `${evento.hora} | ` : "";
+        html += `
+          <h4 class="${clase}" ${style}>
+            ${horaStr}${t(evento.titulo)}
+          </h4>
+        `;
+      }
 
       const claveEvento = normalizarKey(evento.titulo);
 

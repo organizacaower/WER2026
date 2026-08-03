@@ -29,7 +29,8 @@
     "reunioncomitedeorganizacion": "Reunión Comité de Organización",
     "cerimoniadeencerramiento": "Cierre",
     "cerimoniaadw": "Premiacion y presentación WER 2027",
-    "cena": "Cena"
+    "cena": "Cena",
+    "notastudenttrack": "* Durante esta jornada se podrá interactuar con los autores de los poster del Track de Estudiantes"
   },
   "en": {
     "11agosto": "August 11",
@@ -61,7 +62,8 @@
     "reunioncomitedeorganizacion": "Organization Committee Meeting",
     "cerimoniaadw": "Awards and WER 2027 presentation",
     "cerimoniadeencerramiento": "Closing Ceremony",
-    "cena": "Dinner"
+    "cena": "Dinner",
+    "notastudenttrack": "* During this day you will be able to interact with the authors of the Student Track posters"
   },
   "pt": {
     "11agosto": "11 de Agosto",
@@ -93,6 +95,7 @@
     "reunioncomitedeorganizacion": "Reunião da Comissão de Organização",
     "cerimoniaadw": "Premiação e apresentação WER 2027",
     "cerimoniadeencerramiento": "Encerramento",
-    "cena": "Jantar"
+    "cena": "Jantar",
+    "notastudenttrack": "* Durante este dia será possível interagir com os autores dos pôsteres da Trilha de Estudantes"
   }
 }
