@@ -29,8 +29,8 @@
         "email": "ppesado@lidi.info.unlp.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 1.",
+    "keywords": "Requerimientos No Funcionales Aplicaciones Móviles 3D Realidad Aumentada Rendimiento gráfico Unity",
+    "abstract": "Los Requerimientos No Funcionales (RNF) son características que especifican los criterios de calidad y restricciones que un sistema debe cumplir. Estos requerimientos son esenciales en el desarrollo exitoso de software, particularmente en Aplicaciones Móviles 3D, ya que tienen un impacto directo en la experiencia del usuario. El rendimiento gráfico es uno de los RNF más críticos en este tipo de aplicaciones, dado que afecta tanto la experiencia del usuario como la viabilidad de estas aplicaciones en dispositivos con diferentes capacidades de hardware. Las aplicaciones con Realidad Aumentada superponen objetos virtuales 3D al mundo físico en tiempo real, utilizando sensores y capacidades gráficas del dispositivo. En este trabajo, se examina la incidencia de los RNF en las Aplicaciones Móviles 3D con Realidad Aumentada, particularmente enfocado en las principales variables que influyen en el rendimiento gráfico, tales como el modelado 3D, el uso de texturas, la iluminación, los efectos visuales y los efectos físicos. Se presenta una experimentación en la que se evalúa el impacto de las distintas características en la tasa de cuadros por segundo. Los resultados obtenidos permiten identificar los principales cuellos de botella en uno de los requerimientos no funcionales más críticos, lo que contribuye a optimizar el rendimiento y mejorar la calidad final de las Aplicaciones Móviles 3D con Realidad Aumentada.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202601.html",
     "paper_session": "Session 4"
@@ -55,8 +55,8 @@
         "email": "diego.torres@lifia.info.unlp.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 2.",
+    "keywords": "Léxico Extendido del Lenguaje (LEL) Vocabulario de Dominio Elicitación GAP Semántico Ontologías OWL Web Semántica",
+    "abstract": "La fase de elicitación en ingeniería de requisitos tiene como objetivo comprender el Universo de Discurso (UofD) y construir un vocabulario compartido entre los stakeholders y el equipo de desarrollo. El Léxico Extendido del Lenguaje (LEL) es una técnica ampliamente utilizada para este fin, ya que permite representar el conocimiento del dominio mediante lenguaje natural; sin embargo, la ambigüedad inherente a este tipo de lenguaje dificulta la verificación sistemática de la consistencia del léxico a medida que este evoluciona. Este trabajo propone un metamodelo del LEL formalizado en el Lenguaje de Ontologías Web (OWL), que explicita los elementos estructurales del léxico y sus relaciones como un modelo verificable. A diferencia de enfoques tradicionales, en los que el LEL se mantiene como un artefacto descriptivo, la propuesta permite incorporar restricciones formales que habilitan la detección automática de inconsistencias durante la elicitación. Asimismo, este trabajo define un proceso incremental de construcción del léxico guiado por dicho metamodelo, integrando la validación estructural como parte del flujo de trabajo del ingeniero de requisitos y promoviendo la coherencia y trazabilidad del conocimiento del dominio desde etapas tempranas. La propuesta se ilustra mediante su aplicación en un caso de estudio del dominio de una línea aérea, demostrando la viabilidad del enfoque mediante el uso de OWL y SPARQL como base tecnológica.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202602.html",
     "paper_session": "Session 5"
@@ -96,8 +96,8 @@
         "email": "carlosnusch@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 3.",
+    "keywords": "calidad en especificaciones procesamiento de lenguaje natural especificaciones semiestructuradas",
+    "abstract": "La calidad de los requerimientos impacta directamente en el desarrollo del software. Una especificación ambigua o incompleta puede generar un costo de retrabajo para corregir código incorrecto de entre 100 y 200 veces el esfuerzo invertido en especificar requerimientos. El lenguaje natural es el más utilizado para especificar requerimientos dado que los requerimientos es el medio de comunicación entre los usuarios y el equipo de desarrollo. Ahora bien, es común encontrar diferentes defectos en especificaciones de lenguaje natural tales como: ambigüedad, falta de precisión, redundancia, etc. La detección de estos defectos es muy útil, dado que permite reducir el retrabajo por errores. Este artículo tiene por objetivo presentar una serie de guías para revisar ciertos aspectos de oraciones escritas en lenguaje natural con el fin de mejorar la calidad de las mismas. Si bien las guías pueden ser consideradas como una lista de chequeo para el ingeniero de requerimientos, este artículo también muestra una herramienta que utiliza Inteligencia Artificial y que implementa servicios para que las revisiones puedan ser reutilizables por otra aplicaciones.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202603.html",
     "paper_session": "Session 5"
@@ -122,8 +122,8 @@
         "email": "lanto@lifia.info.unlp.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 4.",
+    "keywords": "Ingeniería de Requerimientos Escenarios LEL Similaridad Semántica NLP Sentence BERT",
+    "abstract": "La detección temprana de escenarios duplicados es un proble- ma relevante en ingeniería de requisitos, especialmente cuando distintos analistas describen una misma situación con vocabulario diferente. Los modelos de embeddings capturan regularidades lingüísticas generales, pero no conocimiento conceptual específico del dominio. En este traba- jo se propone una estrategia de enriquecimiento semántico que integra el Léxico Extendido del Lenguaje (LEL), ampliando cada escenario con definiciones del dominio antes de generar sus embeddings. La estrate- gia se evalúa sobre un dataset de 126 pares de escenarios agrícolas en español anotados por tres analistas. Los resultados muestran mejoras significativas en la correlación con las evaluaciones humanas, alcanzando un Spearman de 0.83 en la configuración título-objetivo, frente a 0.57 del baseline sin enriquecimiento. Los resultados sugieren que reutilizar artefactos propios del proceso de ingeniería de requisitos como fuente de conocimiento estructurado constituye una estrategia efectiva y de bajo costo de adopción, particularmente valiosa en etapas tempranas donde los escenarios contienen poca información y los modelos generales no dis- ponen de suficiente contenido textual para capturar el vocabulario del dominio.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202604.html",
     "paper_session": "Session 5"
@@ -148,8 +148,8 @@
         "email": "pthomas@lidi.info.unlp.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 5.",
+    "keywords": "Ambiguity detection Requirements Engineering Artificial Intelligence Systematic Mapping Study",
+    "abstract": "Ambiguity in requirements engineering is a pervasive quality defect that can lead to misunderstandings, rework, and increased development costs. In recent years, Artificial Intelligence (AI) techniques have been increasingly explored to support the detection and analysis of ambiguity in natural language requirements. However, existing research is dispersed across different ambiguity types, AI techniques, and Requirements Engineering (RE) activities, making it difficult to obtain a consolidated view of the state of the art. This paper presents a Systematic Mapping Study (SMS) that examines AI-based approaches for addressing ambiguity in requirements engineering. Following established guidelines for systematic studies in software engineering, the literature was systematically identified, selected, and analyzed. The study provides a structured overview of existing approaches, identifies research trends and limitations, and highlights directions for future research in AI-supported requirements quality analysis.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202605.html",
     "paper_session": "Session 5"
@@ -179,8 +179,8 @@
         "email": "lauraachetta@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 6.",
+    "keywords": "Educación en Ingeniería Ingeniería de requerimientos Elicitación de requerimientos Aprendizaje Basado en Proyectos",
+    "abstract": "La formación en Ingeniería de Requerimientos en los primeros años de las carreras de ingeniería presenta el desafío de promover la comprensión del dominio y la aplicación de conceptos teóricos en ausencia de experiencias profesionales directas. Este trabajo analiza una experiencia en la asignatura Análisis de Sistemas de Información del segundo año de Ingeniería en Sistemas de Información, orientada al desarrollo temprano de habilidades en elicitación, especificación y validación de requerimientos. La propuesta consistió en un Trabajo Práctico Integrador desarrollado bajo modalidad de Aprendizaje Basado en Proyectos, centrado en el análisis de un nuevo sistema de estacionamiento de la propia facultad, dominio organizacional auténtico y cercano al estudiantado. El proceso se estructuró en tres entregas con retroalimentación docente, donde las profesoras asumieron el rol de cliente institucional, promoviendo ciclos iterativos de revisión y validación de los modelos elaborados. Se adoptó un enfoque metodológico mixto que combinó el análisis de los entregables producidos por los equipos — evaluados mediante rúbricas sobre procesos, reglas de negocio y soluciones modeladas con BPMN y UML — con los resultados de una encuesta aplicada al finalizar la experiencia. El análisis de la primera iteración (elicitación) evidenció la identificación de procesos centrales y actores relevantes, así como dificultades iniciales en la delimitación del alcance y formalización de reglas operativas. Los resultados sugieren que la inmersión en contextos auténticos, complementada con retroalimentación sistemática, constituye una estrategia viable para introducir tempranamente prácticas de descubrimiento y análisis de requerimientos en la formación en ingeniería.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202621.html",
     "paper_session": "Session 4"
@@ -205,8 +205,8 @@
         "email": "dvillarrealgarrido@alumnos.exa.unicen.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 7.",
+    "keywords": "Generative Artificial Intelligence User Stories Software Engineering Education INVEST criteria Pedagogical Assistance",
+    "abstract": "Generative Artificial Intelligence (GAI) has demonstrated significant potential as a pedagogical assistant across various disciplines. In Software Engineering, User Stories (US) constitute a fundamental technique for requirement specification from the user's perspective, relying on the \"\"Three Cs\"\" framework (Card, Conversation, and Confirmation) to ensure functional and non-functional understanding. Nevertheless, teaching this technique in massive university environments poses a significant challenge due to the requirement for continuous feedback. This paper presents a study structured into four experiments with incremental context levels to evaluate GAI's capability to generate US aligned with specific pedagogical objectives. The methodology ranged from the exclusive provision of problem statements to the inclusion of detailed theoretical material and faculty-resolved examples. The results, evaluated through direct comparison with official solutions and compliance with the INVEST criteria, demonstrate that model precision significantly improves as domain-specific information is provided. The scenario integrating both theory and practice achieved the highest performance. However, persistent limitations were detected regarding the models' ability to adjust granularity and establish coherent relationships between stories. It is concluded that GAI is a valuable tool for fostering autonomous learning, although its use does not replace the supervision of a specialized instructor.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202606.html",
     "paper_session": "Session 3"
@@ -231,8 +231,8 @@
         "email": "rbulcao@ufg.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 8.",
+    "keywords": "Requirements Explainability Intelligent Systems OpenUP",
+    "abstract": "The widespread adoption of Intelligent Systems has highlighted the need for explainability as a key non-functional requirement to promote transparency, trust, and user acceptance. Despite its relevance, existing Requirements Engineering (RE) practices still provide limited support for systematically addressing explainability, especially in early development stages. This work aims to integrate explainability into RE through a systematic and process-oriented approach. The paper presents OpenUPExp, an extension of the Open Unified Process that introduces explicit roles, activities, and artifacts for explainability requirements. The framework structures explainability concerns across RE activities and supports their progressive refinement throughout development. An initial fragment of the framework was evaluated through an illustrative scenario analyzed by RE specialists to assess coherence and artifact clarity. The evaluation indicates that OpenUPExp provides useful guidance for incorporating explainability into RE, while also revealing aspects that require further refinement. The findings suggest the potential of the framework to support a more systematic treatment of explainability in Intelligent Systems.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202607.html",
     "paper_session": "Session 1"
@@ -252,8 +252,8 @@
         "email": "edna.canedo@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 9.",
+    "keywords": "Requirements Engineering Explainable Artificial Intelligence Privacy-Preserving Systems Non-Functional Requirements Decision Support Systems",
+    "abstract": "Context: The growing adoption of Artificial Intelligence (AI) in decision support systems operating on sensitive data has intensified demands for transparency, accountability, and privacy protection. In these contexts, explainability and privacy preservation often emerge as competing non-functional requirements. While explainable AI techniques aim to improve transparency and justification of automated decisions, privacy-preserving mechanisms restrict information disclosure to protect sensitive data, creating inherent tensions that remain insufficiently understood from a Requirements Engineering perspective. Goal: This study investigates how explainability and privacy requirements interact in AI-based decision support systems, focusing on identifying compatibility conditions, trade-offs, and stakeholder expectations. Method: We adopted a qualitative approach combining a structured literature analysis with an exploratory focus group involving eight stakeholders from technical, managerial, and governance roles. Results: The findings indicate that explainability and privacy-preserving techniques are compatible only under context-dependent conditions. Participants perceived global and aggregated explanations as more appropriate for privacy-constrained environments, whereas local explanations raised higher risks of information disclosure. Stakeholders also emphasized that explanations should be role-appropriate rather than maximally transparent. Conclusion: By conceptualizing explainability and privacy as competing non-functional requirements, this study provides a stakeholder-centered perspective that supports requirements elicitation, analysis, and negotiation in the design of trustworthy and privacy-preserving decision support systems.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202608.html",
     "paper_session": "Session 1"
@@ -268,8 +268,8 @@
         "email": "sonia.santana@uner.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 10.",
+    "keywords": "Validación de Requerimientos Proceso Colaborativo Procesamiento de Lenguaje Natural Inteligencia Artificial",
+    "abstract": "La validación de requerimientos es una actividad fundamental en la ingeniería de software, especialmente en contextos colaborativos donde intervienen múltiples stakeholders con perspectivas heterogéneas. En estos escenarios, la subjetividad del lenguaje natural, la gestión del consenso y la trazabilidad entre requerimientos representan desafíos significativos. Este trabajo presenta una contribución metodológica y empírica al campo de la ingeniería de requerimientos del proceso ValReCo, orientado a la validación colaborativa de requerimientos, mediante una adaptación de la System Usability Scale aplicada a un conjunto de stakeholders. A partir de este análisis, se propone mejoras asistidas por la inteligencia artificial, donde la IA desempeña un rol clave como facilitador de la colaboración y la trazabilidad, manteniendo el juicio experto humano como elemento central del proceso.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202609.html",
     "paper_session": "Session 5"
@@ -289,8 +289,8 @@
         "email": "vfasantander@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 11.",
+    "keywords": "Engenharia de requisitos orientada a objetivos (GORE) Revisão sistemática da literatura Pequenas e médias empresas",
+    "abstract": "Este artigo apresenta uma Revisão Sistemática da Literatura (RSL) cujo objetivo é identificar e analisar evidências sobre o uso de técnicas e métodos da Engenharia de Requisitos Orientada a Objetivos (GORE) no desenvolvimento de software, com atenção particular ao contexto de pequenas e médias empresas (PMEs). O trabalho foi conduzido seguindo diretrizes consolidadas para RSL na Engenharia de Software. A análise dos estudos selecionados permitiu identificar as principais técnicas da GORE empregadas, as atividades da Engenharia de Requisitos em que são aplicadas e os contextos organizacionais em que têm sido utilizadas, bem como as vantagens e limitações relatadas na literatura. Os resultados indicam que a GORE tem sido amplamente investigada e aplicada em diferentes contextos organizacionais, incluindo PMEs. Observa-se o uso recorrente de técnicas como i*, NFR Framework e KAOS, principalmente nas atividades de elicitação, análise e negociação de requisitos. Entre as principais vantagens relatadas destacam-se a melhoria da comunicação, o alinhamento entre objetivos organizacionais e requisitos de software e o apoio à tomada de decisão. Por outro lado, limitações como a complexidade das técnicas, a curva de aprendizado e o esforço necessário para manutenção dos modelos podem dificultar sua adoção contínua em ambientes industriais.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202610.html",
     "paper_session": "Session 2"
@@ -310,8 +310,8 @@
         "email": "edna.canedo@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 12.",
+    "keywords": "AI Ethics Ethical Fuzzing Large Language Models Fairness Testing Accountability Transparency",
+    "abstract": "Context: Ethical risks in Large Language Models (LLMs) are difficult to validate reproducibly because principles such as Fairness, Accountability, and Transparency (FAT) are often stated as abstract guidelines rather than measurable requirements. From a Requirements Engineering perspective, these principles can be treated as non-functional requirements, but current evaluation practices frequently rely on non-deterministic evaluators or LLM-as-a-judge approaches, limiting reproducibility. Goal: This paper proposes a systematic framework for the automated validation of ethical properties derived from FAT principles in LLMs. Method: We introduce an ethical fuzzing framework that operationalizes six of eleven FAT-derived ethical risks (R-F1, R-F2, R-F4, R-A2, R-T1, R-T2) as testing modules combining mutation-based, generation-based, differential, metamorphic, and adversarial techniques. The framework relies on deterministic oracles defined a priori, combining statistical metrics, semantic similarity via fixed SBERT embeddings, and structural verification, without depending on human or LLM-based judges. Results: The framework was evaluated on three commercial LLMs, GPT (gpt-5.2), Gemini (gemini-3-flash), and DeepSeek (deepseek-chat), comprising 8{,}880 cases and 14,160 API calls. Results show a global failure rate of 32.69% [31.72; 33.67], with the highest rates in counterfactual fairness (R-F1: 79.17%) and sensitivity to irrelevant attributes (R-T2: 70.00%). They also reveal a strong asymmetry in R-T1 between direct explanation (22.50-27.00%) and meta-explanation (0.00-1.50%), suggesting that LLM explanations may be more reliable in abstract descriptions than in concrete decision cases. Conclusion: The framework offers Requirements Engineering a mechanism to translate abstract ethical principles into measurable and auditable acceptance criteria, supporting evidence-based validation practices for AI-based systems.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202611.html",
     "paper_session": "Session 3"
@@ -336,8 +336,8 @@
         "email": "marisa.panizzi@unahur.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 13.",
+    "keywords": "Especificación de Requisitos User Story Mapping Escenarios Método Operacional Trazabilidad",
+    "abstract": "La especificación de requisitos en lenguaje natural continúa siendo una fuente de ambigüedades e inconsistencias que generan retrabajo en el desarrollo de softwa-re. En la Ingeniería de Requisitos, los escenarios proporcionan descripciones na-rrativas contextualizadas, mientras que el User Story Mapping (USM) ofrece una representación visual de la experiencia del usuario y facilita la priorización incre-mental. Este artículo presenta el proceso de investigación y los métodos aplicados en cada avance logrado. Primero, una encuesta exploratoria caracterizó el uso de estas técnicas en la industria del software de Argentina, identificando un alto inte-rés por combinarlas y una marcada carencia de soporte metodológico. Para el es-tado del arte, se desarrolló un mapeo sistemático de la literatura que evidenció una concentración en servicios en la nube y marcos ágiles, pero una carencia de guías operacionales validadas, con un 46% de trabajos limitados a propuestas teóricas. Basándose en estas evidencias, se diseñó la versión preliminar de un método para definir escenarios a partir de USM preservando la trazabilidad. Finalmente, se realizó una validación mediante un estudio de caso en una Pequeña y Mediana Empresa (PyME) de Argentina, demostrando una percepción favorable de facili-dad, utilidad e intención de uso, junto con hallazgos cualitativos sobre condicio-nes de adopción y puntos de mejora como el tratamiento de tareas ejecutadas por múltiples roles.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202623.html",
     "paper_session": "mastersanddoctoraltracksession1"
@@ -367,8 +367,8 @@
         "email": "mlpm@ecomp.poli.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 14.",
+    "keywords": "Requirements Engineering Regulatory Compliance Perishable Products Inventory Management Systems Logistics Systems",
+    "abstract": "Abstract. Context: Logistics management of perishable products in Brazil requires aligning complex supply chain operations from production and stor-age to final delivery to consumers. In Brazil, the management of perishable inventories must be complied with regulations established by the National Health Surveillance Agency (ANVISA) and the Ministry of Agriculture and Livestock (MAPA). Hence, the supporting information systems are required not only to manage the relevant information but ensure that all regulatory requirements are fulfilled. Objective: Our goal is to propose the Perishable Goods Management Requirements Catalog (SAFE_GOOD) to guide the de-velopment or the selection of supporting management systems for logistics of perishable goods. Method: Regulatory standards issued by ANVISA and MAPA were collected and analyzed alongside a review of relevant literature. The identified regulatory and operational requirements were systematically extracted, and a Requirements Catalogue for the domain of perishable goods management was proposed. Finally, we will discuss how the catalog will be evaluated. Results: We proposed the SAFE_GOOD Requirements Catalog comprising 11 functional, and 5 non-functional requirements. The Func-tional Requirements description was based on the VOLERE template, while Non-Functional Requirement relied on an adapted version of the iNFR template. Some points for future improvement were also identified. Con-clusion: The SAFE_GOOD Requirements Catalog constitutes a reusable re-quirement engineering artifact that supports the development of manage-ment systems aligned with regulatory standards in the perishable products sector.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202612.html",
     "paper_session": "Session 4"
@@ -393,8 +393,8 @@
         "email": "ritasuzana@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 15.",
+    "keywords": "requirements engineering requirement debt conceptual map",
+    "abstract": "Context. Requirements debt (RD) refers to decisions regarding which requirements the development team should implement or how they should be implemented. While prior work has investigated RD from multiple perspectives, limited attention has been given to explicitly conceptualizing the role of human factors in its emergence. Goal. This work introduces Requirements People Debt (RPD), a human-centered perspective on RD that explains how human-related conditions lead to observable deficiencies in requirements artifacts and activities. Method. We cross-analyzed findings from two complementary empirical studies on desirable and undesirable attributes of requirements engineers. Results. We identified 12 causes of RPD, with difficulties in interpersonal relationships and lack of communication being the most frequently mentioned. We also found 55 preventive practices, the most notable being participation in training activities, maintaining frequent communication with stakeholders, and improving business understanding. Conclusion. We organized the findings on RPD into a conceptual map, which may support initiatives aimed at addressing RPD items in software projects and motivate future research in this area.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202613.html",
     "paper_session": "Session 2"
@@ -429,8 +429,8 @@
         "email": "vera@ime.uerj.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 16.",
+    "keywords": "Goal-oriented Modeling Requirements Engineering Systematic Mapping Study",
+    "abstract": "This paper presents a Systematic Mapping Study (SMS) on Goal-Oriented Requirements Engineering (GORE), covering research publications from 2021 to 2025.This paper presents a Systematic Mapping Study (SMS) on Goal-Oriented Requirements Engineering (GORE), covering research publications from 2021 to 2025. The study extends previous mapping efforts in the field, particularly the work of Delima et al. (2021), which analyzed the period from 2016 to 2020, allowing a comparison of recent research trends. Based on an analysis of 71 primary studies, the mapping examines publication venues, research contribution types, and application domains related to GORE. The results indicate a relatively stable publication volume during the analyzed period, with a balanced distribution between conference proceedings and journal articles. At the same time, the findings suggest changes in contributions, with more studies proposing new approaches than incremental improvements to existing methods. Another observed trend is the growing integration between GORE and artificial intelligence techniques, particularly from 2022 onwards. Some studies explore the use of Large Language Models (LLMs) to support activities such as requirements elicitation, analysis, and goal model generation. The mapping provides an updated overview of the research landscape, indicating that GORE research is progressively incorporating automated and AI-supported techniques, reflecting broader developments in software engineering research and practice.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202614.html",
     "paper_session": "Session 2"
@@ -455,8 +455,8 @@
         "email": "lanto@lifia.info.unlp.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 17.",
+    "keywords": "Ingeniería de requisitos Escenarios Metamodelo OCL LLM Detección de inconsistencias Verificación formal",
+    "abstract": "La especificación de requisitos mediante escenarios escritos en lenguaje natural es una práctica usada en ingeniería de requisitos. La forma narrativa de los escenarios dificulta su análisis sistemático, dado que los episodios suelen introducir actores y recursos de forma implícita y la consistencia entre la declaración estructural del escenario y su conte- nido narrativo raramente puede verificarse de manera automática. Este trabajo propone un enfoque híbrido que combina modelos de lenguaje de gran escala con invariantes formales expresadas en OCL para abordar este problema. Se define un metamodelo basado en los escenarios defini- dos por Leite, que formaliza los conceptos del dominio y las propiedades que toda especificación válida debe satisfacer. El proceso sigue un pipe- line de cuatro etapas que incluye la construcción del modelo mediante un esquema de dos pasadas con intersección semántica, la resolución de referencias entre escenarios y la evaluación de invariantes OCL. El enfo- que fue implementado en Python y validado sobre un corpus del dominio de huerta urbana, detectando inconsistencias concretas entre las decla- raciones estructurales de los escenarios y el contenido narrativo de sus episodios.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202615.html",
     "paper_session": "Session 3"
@@ -486,8 +486,8 @@
         "email": "julioleite.ufba@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 18.",
+    "keywords": "LLM requirements engineer chat",
+    "abstract": "Large language models (LLMs) can support requirements engineering activities in different ways. Prior studies have investigated this potential through surveys and interviews with practitioners, focusing on how LLMs are reportedly used in RE tasks. However, these studies do not examine the actual prompts employed by software engineers in real-world contexts. To address this gap, this exploratory study analyzes a log of interactions between software engineers and LLMs during the execution of requirements engineering activities. These interactions are compared with the most frequently reported uses of LLMs in requirements engineering, as identified through queries to Gemini, ChatGPT, and Claude. Our motivation is to gain insights into how practitioners are using LLMs in their requirements engineering practice. The results indicate that software engineers issue a wide variety of requests to LLMs, many of which diverge from the commonly reported usage patterns. Furthermore, the identified queries span all requirements engineering activities, suggesting a broader and more heterogeneous use of LLMs.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202616.html",
     "paper_session": "Session 3"
@@ -522,8 +522,8 @@
         "email": "kalinowski@inf.puc-rio.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 19.",
+    "keywords": "EU AI Act NFR Framework ISO/IEC 25059 Requirements Engineering AI Transparency Software Quality.",
+    "abstract": "The European Union Artificial Intelligence Act introduces strict obligations for high-risk AI systems, yet a significant translation gap remains between its legal mandates and the precise specifications that software engineering practice demands. Article 13 in particular, which governs transparency requirements, is written at a level of abstraction that resists direct technical implementation. This paper proposes a five-phase operationalization process that bridges this gap by integrating the Non-Functional Requirements Framework with the ISO/IEC 25059:2023 quality model. Starting from the legal text, the process extracts atomic obligations, maps them to standardized quality characteristics, and pro-duces measurable acceptance criteria organized in a bidirectional traceability matrix. Applied to a credit scoring AI system, the process yields nine traceable requirements across nine quality dimensions. The analysis shows that while Article 13 can be largely operationalized through this approach, some provisions remain technically indeterminate and require organizational governance mechanisms beyond what engineering specification alone can provide. The paper contributes a structured vocabulary and a concrete roadmap for translating AI regulation into verifiable software requirements.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202617.html",
     "paper_session": "Session 1"
@@ -543,8 +543,8 @@
         "email": "lyrene@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 20.",
+    "keywords": "Engenharia de Requisitos Elicitação de requisitos Documentação de requisitos Large Language Models (LLMs) Engenharia de prompt",
+    "abstract": "A Engenharia de Requisitos é uma etapa fundamental no desenvolvimento de sistemas, responsável por identificar, compreender e documentar as necessidades dos stakeholders a partir da análise do contexto do sistema. Avanços recentes em Large Language Models (LLMs) têm impulsionado seu uso como ferramenta de apoio à Engenharia de Requisitos, embora ainda existam desafios relacionados à qualidade, consistência e confiabilidade dos resultados gerados. Este estudo avalia o impacto da Engenharia de Prompt nesse contexto, comparando diferentes abordagens de elicitação e escrita de requisitos. Para isso, foi definido um pipeline de prompts dividido em contextualização, elicitação (entrevista e seis chapéus do pensamento) e documentação (estruturada e não estruturada), cujos resultados foram avaliados com base em critérios de qualidade de requisitos. Os resultados indicam que prompts estruturados produzem requisitos mais consistentes e rastreáveis, enquanto prompts não estruturados apresentam maior flexibilidade e cobertura do domínio. Além disso, a técnica dos seis chapéus do pensamento apresentou melhores resultados nos critérios avaliados, enquanto entrevistas geraram informações mais focadas e alinhadas ao contexto do sistema. Conclui-se que a Engenharia de Prompt e as técnicas de elicitação utilizadas influenciam significativamente a qualidade dos artefatos gerados por LLMs.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202618.html",
     "paper_session": "Session 3"
@@ -579,8 +579,8 @@
         "email": "edgarsc22@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 21.",
+    "keywords": "Aprendizagem autodidata Processo de aprendizagem Aprendizado orientado por competências Aprendizagem online Modelagem conceitual",
+    "abstract": "O aprendizado autodidata no ambiente virtual está sendo cada vez mais utilizado devido à evolução rápida das tecnologias, à popularização dos cursos online e à disponibilização de material técnico em redes sociais. No entanto, o processo de construção do conhecimento e aquisição de competências por pessoas autodidatas passa por dificuldades, por exemplo, na garantia de fontes confiáveis, ausência de encadeamento lógico de estudo e dificuldade de autoavaliação sobre o domínio do tema. Em busca de minimizar as dificuldades destes aprendizes, neste artigo buscamos entender conceitualmente as características de um processo de aprendizagem autodidata através do entendimento de diversos autores. Posteriormente, alinhamos essa teoria com a formalização da estrutura de conhecimento baseada na teoria de competências, a qual permite a projeção de múltiplos métodos para se alcançar o mesmo objetivo. Isso permitiria a proposição de construção de diferentes caminhos de aprendizagem de uma mesma competência, podendo alinhar-se ao determinado perfil do estudante. Consolidamos o conhecimento elicitado através de um mapeamento conceitual que servirá de base para a proposição futura de um método minimamente sistemático que mantenha as características de flexibilidade do aprendizado autodidata no ambiente virtual, reduzindo as barreiras que podem levar os estudantes a não alcançar seus objetivos iniciais.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202622.html",
     "paper_session": "Session 4"
@@ -605,8 +605,8 @@
         "email": "vfasantander@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 22.",
+    "keywords": "Engenharia de software experimental Derivação semi-automática Ferramen-ta CASE",
+    "abstract": "A Engenharia de Requisitos de Software busca identificar, documentar e gerenciar requisitos ao longo do ciclo de vida de sistemas, sendo a consistência entre diferentes modelos um desafio recorrente na Engenharia de Software. Modelos como iStar e Casos de Uso da UML são amplamente utilizados, mas sua integração exige mecanismos que assegurem coerência entre artefatos ao longo da evolução do software. Este estudo tem como objetivo avaliar a implementação das Regras de Garantia de Consistência na ferramenta JGOOSE, verificando sua capacidade de manter a consistência semiautomática entre casos de uso e modelos iStar. A pesquisa foi conduzida sob princípios da Engenharia de Software Experimental, utilizando a estratégia de quase-experimento. O planejamento envolveu hipóteses formais, definição de variáveis e aplicação da abordagem GQM para estruturar métricas de avaliação. Os resultados indicam que, mesmo havendo oportunidades para ajustes futuros, as Regras de Garantia de Consistência foram aplicadas corretamente em diversos cenários, garantindo a derivação semi-automática consistente entre os modelos e contribuindo para a evolução da ferramenta.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202619.html",
     "paper_session": "Session 2"
@@ -636,8 +636,8 @@
         "email": "tadeu.classe@uniriotec.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 23.",
+    "keywords": "BPMN LGPD GDPR Privacy-by-Design Conformidade legal Modelagem organizacional",
+    "abstract": "A entrada em vigor de regulamentações de proteção de dados, em destaque o GDPR (General Data Protection Regulation) na Europa e a LGPD (Lei Geral de Proteção de Dados) no Brasil, criou demanda por técnicas de modelagem capazes de representar requisitos de privacidade em modelos de processos de negócio para apoiar, por exemplo, a análise de aderência à Lei e o mapeamento de requisitos tecnológicos. Embora a BPMN seja o padrão de fato para modelagem de processos, ela não possui elementos que representem explicitamente conceitos vinculados à proteção de dados pessoais. Neste artigo apresentamos os resultados de um Mapeamento Sistemático da Literatura (MSL) que investiga como a BPMN tem sido adaptada para suportar a representação de conceitos legais vinculados à GDPR e à LGPD. Os resultados indicam o crescimento do tema a partir de 2018 e revelam contribuições em anotação visual, extensões ontológicas, verificação semiautomatizada e detecção de conflitos entre requisitos de privacidade. Apesar da GDPR ser alvo de maior número de estudos neste tema, destaca-se que foi encontrado apenas um estudo relacionado à LGPD, evidenciando uma lacuna significativa no contexto brasileiro.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202620.html",
     "paper_session": "Session 1"
@@ -662,8 +662,8 @@
         "email": "rbulcao@ufg.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 24.",
+    "keywords": "Requirements Engineering Explainability AI-enabled Systems OpenUP Design Science Research",
+    "abstract": "Explainability is the ability to make the behavior and decisions of AI-enabled Systems understandable to stakeholders and has become essential for trust, transparency, and informed decision-making across application domains. However, Requirements Engineering (RE) still lacks systematic approaches for integrating explainability throughout the development lifecycle in a structured and stakeholder-oriented manner. This doctoral research proposes OpenUPExp, a process-oriented RE framework that extends the Open Unified Process by introducing roles, activities, and artifacts to support explainability by design as a non-functional requirement. The research follows the Design Science Research methodology and evaluates the framework through illustrative scenarios and real-world case studies involving AI-enabled Systems. The main contribution is OpenUPExp, a process-oriented RE approach for the systematic treatment of explainability from conception through elicitation, analysis, and specification. The framework aims to support stakeholder-centered explainability, improve the traceability and documentation of explainability requirements, and facilitate their alignment with different stakeholder needs and contexts.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202624.html",
     "paper_session": "mastersanddoctoraltracksession1"
@@ -683,8 +683,8 @@
         "email": "fernanda.ralencar@ufpe.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 25.",
+    "keywords": "Engenharia de Requisitos Design Thinking Métodos Ágeis Elicitação de Requisitos Desenvolvimento de Software",
+    "abstract": "No contexto do desenvolvimento de software, a Engenharia de Requisitos desempenha papel fundamental na compreensão e definição das necessidades dos stakeholders. Em ambientes ágeis, no entanto, essa atividade enfrenta desafios relacionados à compreensão do problema, à comunicação entre os envolvidos e à adaptação a mudanças, o que pode impactar diretamente a qualidade dos requisitos definidos. Como alter- nativa, o Design Thinking tem sido explorado como uma abordagem complementar, por promover uma perspectiva centrada no usuário e fa- vorecer a exploração do problema antes da definição da solução. Diante desse cenário, este trabalho tem como objetivo propor um guia prático que apoie a elicitação de requisitos por meio da integração entre Design Thinking e Engenharia de Requisitos em ambientes ágeis. Para isso, será conduzida uma Revisão Rápida da Literatura, com o intuito de iden- tificar práticas, contribuições e lacunas relacionadas a essa integração. Como resultado, espera-se contribuir para a definição de requisitos mais claros, consistentes e alinhados às necessidades dos stakeholders.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202625.html",
     "paper_session": "mastersanddoctoraltracksession1"
@@ -724,8 +724,8 @@
         "email": "rossana@ufc.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 26.",
+    "keywords": "Accessibility Requirements Large Language Models Requirements Engineering",
+    "abstract": "Accessibility is a key quality requirement for digital systems, especially in the public sector, where inclusive access is essential. However, specifying accessibility requirements remains challenging in Requirements Engineering, as it requires specialized knowledge and careful interpretation of standards such as WCAG. Although Large Language Models (LLMs) have been explored for requirements-related tasks, there is limited empirical evidence of their use for accessibility requirements in real-world projects. This paper reports an industry experience using ChatGPT to support the specification of accessibility requirements for the Plataforma Antonieta de Barros, a public-sector digital platform designed to support data-driven decision-making in education. The goal is to investigate how an LLM can assist in generating requirements aligned with WCAG 2.2 and to evaluate their quality from practitioners’ perspectives. The findings suggest that ChatGPT can support the initial specification of clear, relevant accessibility requirements, but human validation and iterative refinement are essential to ensure quality and applicability. The experience also highlights the importance of structured prompts and multidisciplinary evaluation to transform AI-generated outputs into actionable requirements for real-world software projects.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202628.html",
     "paper_session": "industryandsrtt"
@@ -750,8 +750,8 @@
         "email": "ghadad@uno.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 27.",
+    "keywords": "Elicitación Facilitación Gráfica Mapas Conceptuales Mapas Mentales Modelado Conceptual",
+    "abstract": "Las actividades de elicitación y modelado en el proceso de ingeniería de requisitos involucran la participación de diferentes personas, tales como usuarios, expertos e ingenieros de requisitos, y la construcción de varios modelos con distintas perspectivas. Dado los inconvenientes que surgen debido a la falta de comprensión del problema por parte de los ingenieros y la dificultad de comunicación entre las partes involucradas, construir un modelo Léxico Extendido del Lenguaje (LEL) mitiga esta situación al capturar el lenguaje del dominio. Sin embargo, varios estudios han detectado la persistencia de defectos en este modelo. Se propone entonces un proceso visual de conceptualización del problema, divido en dos fases. La primera tiene como objetivo comprender el problema dado por los usuarios a través de un artefacto gráfico basado en modelos visuales como los mapas conceptuales, mapas mentales o diagramas de facilitación gráfica. La segunda fase implica la construcción de un modelo LEL derivado a partir de esos modelos visuales, con el propósito describir el vocabulario del mundo real en el cual se encuentra inmerso el problema y la solución. De esta manera, se intenta mejorar la calidad del modelo LEL y, por ende, la calidad de los modelos que se generen a partir de él. Los primeros estudios de caso realizados dan indicios que la integración de modelos visuales y su validación con usuarios no solo facilitan la comprensión del dominio y la delimitación del problema, sino que colaboran en la comunicación y en la detección de inconsistencias en la información elicitada.",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202626.html",
     "paper_session": "mastersanddoctoraltracksession1"
@@ -776,8 +776,8 @@
         "email": "vera@ime.uerj.br"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 28.",
+    "keywords": "Métricas ágeis Catálogo de métricas Requisitos de qualidade ISO/IEC 25010 Scrum Projetos open source",
+    "abstract": "A especificação e o monitoramento de requisitos de qualidade de processo em equipes ágeis constituem um desafio recorrente na Engenharia de Requisitos. Métricas de gestão podem atuar como instrumentos para avaliar atributos de qualidade associados ao desempenho de times de software, conectando requisitos a indicadores observáveis. A literatura, contudo, permanece fragmentada quanto à seleção e operacionalização dessas métricas em ambientes Scrum. Este artigo propõe um catálogo preliminar de métricas de gestão, derivado de um Mapeamento Sistemático da Literatura conduzido segundo o PRISMA e organizado conforme os atributos de qualidade da ISO/IEC 25010. Como estudo de aplicabilidade, o catálogo é instanciado com dados públicos de repositórios open source, com a análise de indicadores de fluxo, estabilidade e engajamento ao longo do ciclo de vida. Os resultados preliminares sugerem que o catálogo pode apoiar a identificação de padrões comportamentais em projetos em diferentes estágios de maturidade. O trabalho contribui com um artefato estruturado que organiza métricas dispersas e oferece uma referência para a avaliação de requisitos de qualidade de processo em contextos ágeis.",
     "language": "PT",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202627.html",
     "paper_session": "mastersanddoctoraltracksession1"
@@ -807,8 +807,8 @@
         "email": "edgarsc22@gmail.com"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 29.",
+    "keywords": "Elicitation Data Requirements Modeling Interpretative Reasoning Data Reuse Qualitative Data Semantic Analysis.",
+    "abstract": "Elicitation activities such as workshops generate rich qualitative data; however their reuse in Requirements Engineering (RE) remains limited due to the lack of explicit structure and traceable interpretation. While modeling approaches such as i* and the NFR Framework define modeling constructs, they do not make explicit how model elements are derived from elicitation data. In this paper, we present an industrial case based on workshop transcripts and conduct an exploratory exercise of how RE engineers derive goals, tasks, and quality concerns from the same textual input. From a limited but representative sample, we identify recurring patterns in their interpretive reasoning and derive an initial set of heuristics that make this reasoning explicit. We further illustrate how these heuristics can be operationalized within a Retrieval-Augmented Generation (RAG) pipeline, enabling semantic and semi-automated processing grounded in RE engineers’ interpretations while preserving traceability. Our results suggest that, in this exploratory setting, making interpretative reasoning explicit supports the reuse of elicitation data through requirements models.",
     "language": "EN",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202629.html",
     "paper_session": "industrytrack"
@@ -838,8 +838,8 @@
         "email": "lanto@lifia.info.unlp.edu.ar"
       }
     ],
-    "keywords": "keyword1; keyword2",
-    "abstract": "Abstract del paper 30.",
+    "keywords": "Ingeniería de Requerimientos LEL NLP Modelos generativos Trazabilidad",
+    "abstract": "La construcción del Léxico Extendido del Lenguaje (LEL) es una técnica utilizada en Ingeniería de Requisitos para capturar el vocabulario específico del dominio y establecer definiciones acordadas que faciliten la comprensión del sistema bajo estudio. Sin embargo, su adopción en proyectos reales se ve limitada por la naturaleza tediosa de la construcción manual, la ausencia de trazabilidad entre las definiciones y sus textos de origen, y la escasez de herramientas adecuadas para el español. Este trabajo presenta un método implementado con LEL-Constructor, una herramienta que aborda estas limitaciones combinando spaCy para la extracción de sintagmas candidatos, un modelo de lenguaje de gran escala (Gemma 3) para la generación y integración de definiciones, y búsqueda semántica sobre embeddings multilingües para detectar entradas redundantes, registrando automáticamente el texto de origen de cada decisión para garantizar trazabilidad. El método mantiene al analista de requisitos como responsable de todas las decisiones semánticas. Una evaluación preliminar con estudiantes de la Licenciatura en Sistemas sugiere que la asistencia automática reduce el esfuerzo inicial en la creación de definiciones sin reemplazar el juicio experto del analista ni su responsabilidad sobre el glosario producido. ********************************************** VIDEO -> https://youtu.be/_79ZimBIV04 **********************************************",
     "language": "ES",
     "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202630.html",
     "paper_session": "industryandsrtt"
@@ -871,7 +871,7 @@
       }
     ],
     "keywords": "Especificaciones; Inteligencia-Artificial; Spec-Driven-Development",
-    "abstract": "La aparición de herramientas capaces de generar código de manera automática puso en evidencia un problema que ya venía creciendo: el vibe coding. Es decir, resultados que parecen correctos a simple vista, pero que no siguen un criterio claro, mezclan estilos y dejan poca trazabilidad entre lo que se pidió y lo que se implementó. Esto termina generando ambigüedad, inconsistencias y dificultades para reproducir el trabajo. En respuesta a este escenario, Spec-Driven Development (SDD) propone volver a poner la especificación en el centro del proceso. No sólo para describir el comportamiento esperado del sistema, sino también para indicar cómo deben trabajar los agentes —humanos o de IA(Principalmente no humanos)— que participan en su construcción: qué rol asumir, qué supuestos respetar y cómo producir, validar y documentar cada artefacto. El trabajo explora cómo este tipo de especificaciones operativas puede aportar orden y coherencia en proyectos donde intervienen modelos generativos. Se Presenta OpenSpec como ejemplo concreto, mostrando cómo un formato de este tipo permite definir roles, criterios de diseño y estrategias de validación para agentes de IA. También se discute el ciclo Specify–Plan–Task–Implement y su utilidad para mantener una relación clara entre intención y resultado. Finalmente, se analiza cómo la precisión de estas instrucciones influye en la calidad del software generado y se argumenta que SDD ofrece un camino para trabajar con mayor disciplina y transparencia en equipos híbridos humano–IA, evitando el vibe coding y favoreciendo prácticas más estables y reproducibles.",
+    "abstract": "La aparición de herramientas capaces de generar código de manera automática puso en evidencia un problema que ya venía creciendo: el vibe coding. Es decir, resultados que parecen correctos a simple vista, pero que no siguen un criterio claro, mezclan estilos y dejan poca trazabilidad entre lo que se pidió y lo que se implementó. Esto termina generando ambigüedad, inconsistencias y dificultades para reproducir el trabajo. En respuesta a este escenario, Spec‑Driven Development (SDD) propone volver a poner la especificación en el centro del proceso. No sólo para describir el comportamiento esperado del sistema, sino también para indicar cómo deben trabajar los agentes —humanos o de IA(Principalmente no humanos)— que participan en su construcción: qué rol asumir, qué supuestos respetar y cómo producir, validar y documentar cada artefacto. El trabajo explora cómo este tipo de especificaciones operativas puede aportar orden y coherencia en proyectos donde intervienen modelos generativos. Se Presenta OpenSpec como ejemplo concreto, mostrando cómo un formato de este tipo permite definir roles, criterios de diseño y estrategias de validación para agentes de IA. También se discute el ciclo Specify–Plan–Task–Implement y su utilidad para mantener una relación clara entre intención y resultado. Finalmente, se analiza cómo la precisión de estas instrucciones influye en la calidad del software generado y se argumenta que SDD ofrece un camino para trabajar con mayor disciplina y transparencia en equipos híbridos humano–IA, evitando el vibe coding y favoreciendo prácticas más estables y reproducibles.",
     "language": "ES",
     "file_name": "../archivos/WER2026_paper_56.pdf",
     "paper_session": "studenttrack"
@@ -897,7 +897,7 @@
       }
     ],
     "keywords": "Trazabilidad; requisitos de software; migración de Plataformas; STEAM; MVS; Sistema Recomendador",
-    "abstract": "El presente trabajo aborda el desafío de resolver la trazabilidad de requisitos durante el proceso de migración y el acondicionamiento de la plataforma \"Museo Virtual STEAM\" (MVS), orientado a establecer las bases para un Sistema Recomendador reglado y probabilístico. Entre otras cosas, se describe la trazabilidad de los requisitos durante la migración desde un entorno de gestión de contenidos hacia una arquitectura capaz de soportar la recomendación de \"cápsulas\" (unidades de aprendizaje STEAM). El núcleo de la propuesta radica en el uso de variables del entorno (sistema y servidor) para auditar y validar el porcentaje de uso de los requerimientos; se analizan las restricciones técnicas para justificar la baja o modificación de funcionalidades, proponiendo métricas específicas para la verificación y validación de requisitos. Este enfoque asegura que la plataforma migrada no solo preserve la integridad de los objetos de aprendizaje, sino que facilite la planificación y evaluación adaptada de actividades. Finalmente, se plantea el diseño para que el sistema sea escalable hacia Aplicaciones Web Progresivas (PWA) en una fase futura. La metodología empleada incluye ingeniería inversa de requisitos y un enfoque mixto para validar que la migración mantenga la integridad de los objetos de aprendizaje. Los resultados muestran que una trazabilidad apropiada permite detectar riesgos en la migración de una implementación y mejorar la calidad del proceso.",
+    "abstract": "El presente trabajo aborda el desafío de resolver la trazabilidad de requisitos durante el proceso de migración y el condicionamiento de la plataforma \"\"Museo Virtual STEAM\"\" (MVS), orientado a establecer las bases para un Sistema Recomendador reglado y probabilístico. Entre otras cosas, se describe la trazabilidad de los requisitos durante la migración desde un entorno de gestión de contenidos hacia una arquitectura capaz de soportar la recomendación de \"\"cápsulas\"\" (unidades de aprendizaje STEAM). El núcleo de la propuesta radica en el uso de variables del entorno (sistema y servidor) para auditar y validar el porcentaje de uso de los requerimientos; se analizan las restricciones técnicas para justificar la baja o modificación de funcionalidades, proponiendo métricas específicas para la verificación y validación de requisitos. Este enfoque asegura que la plataforma migrada no solo preserve la integridad de los objetos de aprendizaje, sino que facilite la planificación y evaluación adaptada de actividades. Finalmente, se plantea el diseño para que el sistema sea escalable hacia Aplicaciones Web Progresivas (PWA) en una fase futura. La metodología empleada incluye ingeniería inversa de requisitos y un enfoque mixto para validar que la migración mantenga la integridad de los objetos de aprendizaje. Los resultados muestran que una trazabilidad apropiada permite detectar riesgos en la migración de una implementación y mejorar la calidad del proceso.",
     "language": "ES",
     "file_name": "../archivos/WER2026_paper_57.pdf",
     "paper_session": "studenttrack"
