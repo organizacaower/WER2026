@@ -901,36 +901,5 @@
     "language": "ES",
     "file_name": "../archivos/WER2026_paper_57.pdf",
     "paper_session": "studenttrack"
-  },
-  {
-  "track": "IT",
-  "title": "From Workshop Transcripts to Requirements Models A Heuristic and RAG-Based Approach for Reusing Elicitation Data",
-  "authors": [
-    {
-      "apellido": "Portugal",
-      "nombre": "Roxana",
-      "email": ""
-    },
-    {
-      "apellido": "Leite",
-      "nombre": "Julio C. S. P.",
-      "email": ""
-    },
-    {
-      "apellido": "Silva",
-      "nombre": "Lyrene F.",
-      "email": ""
-    },
-    {
-      "apellido": "Sarmiento",
-      "nombre": "Edgar",
-      "email": ""
-    }
-  ],
-  "keywords": "Elicitation Data; Requirements Modeling; Interpretative Reasoning; Data Reuse; Qualitative Data; Semantic Analysis.",
-  "abstract": "Elicitation activities such as workshops generate rich qualitative data; however their reuse in Requirements Engineering (RE) remains limited due to the lack of explicit structure and traceable interpretation. While modeling approaches such as i* and the NFR Framework define modeling constructs, they do not make explicit how model elements are derived from elicitation data. In this paper, we present an industrial case based on workshop transcripts and conduct an exploratory exercise of how RE engineers derive goals, tasks, and quality concerns from the same textual input. From a limited but representative sample, we identify recurring patterns in their interpretive reasoning and derive an initial set of heuristics that make this reasoning explicit. We further illustrate how these heuristics can be operationalized within a Retrieval-Augmented Generation (RAG) pipeline, enabling semantic and semi-automated processing grounded in RE engineers’ interpretations while preserving traceability. Our results suggest that, in this exploratory setting, making interpretative reasoning explicit supports the reuse of elicitation data through requirements models.",
-  "language": "EN",
-  "file_name": "https://werpapers.dimap.ufrn.br/proceedings/WER2026/wer202629.html",
-  "paper_session": ""
-}
+  }
 ]
