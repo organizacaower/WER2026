@@ -25,6 +25,13 @@ function t(key) {
 
 
 function obtenerClavePrograma(paper) {
+  if (paper.paper_session) {
+    const sessionNorm = normalizarKey(paper.paper_session);
+    if (sessionNorm === "industrytrack" || sessionNorm === "industry") {
+      return "industry";
+    }
+  }
+
   const match = paper.paper_session?.match(/(\d+)/);
   const session = match ? match[1] : null;
   const trackMap = {
