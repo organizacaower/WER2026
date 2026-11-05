@@ -9,6 +9,30 @@ let traducciones = {};
 let programa = {};
 let papers = [];
 
+const textosDetalle = {
+  es: {
+    coordinador: "Coordinador",
+    panelistas: "Panelistas",
+    verMasPanel: "Ver más detalles del panel",
+    titulo: "Título",
+    presentadores: "Presentadores"
+  },
+  en: {
+    coordinador: "Coordinator",
+    panelistas: "Panelists",
+    verMasPanel: "View panel details",
+    titulo: "Title",
+    presentadores: "Presenters"
+  },
+  pt: {
+    coordinador: "Coordenador",
+    panelistas: "Painelistas",
+    verMasPanel: "Ver mais detalhes do painel",
+    titulo: "Título",
+    presentadores: "Apresentadores"
+  }
+};
+
 // 🔧 normalizador (CLAVE para que todo coincida)
 function normalizarKey(texto) {
   return texto
@@ -115,35 +139,56 @@ function renderPrograma() {
 
       const claveEvento = normalizarKey(evento.titulo);
 
-      // 🔥 buscar papers (con fallback a track)
-     
-      let papersEvento = papersPorSesion[claveEvento];
-
-      if (!papersEvento) {
-        const claveTrack = claveEvento.replace(/session\d+/, "");
-        papersEvento = papersPorSesion[claveTrack];
-      }
-
-      // render
-      if (papersEvento) {
-
-        html += `<ul>`;
-
-        papersEvento.forEach(paper => {
-
-          const autores = paper.authors
-            .map(a => `${a.nombre} ${a.apellido}`)
-            .join(", ");
-
-          html += `
+      // 🔥 eventos especiales (Panel de Industria y Tutorial)
+      if (claveEvento === "panelindustria" || claveEvento.includes("panelindustria")) {
+        const txt = textosDetalle[lang] || textosDetalle.es;
+        html += `
+          <ul>
             <li>
-              <b>${paper.title}</b><br>
-              <small>${autores}</small><br>
+              <b>${txt.coordinador}:</b> Alejandro Oliveros<br>
+              <b>${txt.panelistas}:</b> Sandra D'Agostino, Marcelo Talamona, Diego Fontdevila<br>
+              <a href="industryPanel.html" class="text-primary"><small>${txt.verMasPanel} &rarr;</small></a>
             </li>
-          `;
-        });
+          </ul>
+        `;
+      } else if (claveEvento === "tutorialtrack" || claveEvento === "tutorialcontinuacion") {
+        const txt = textosDetalle[lang] || textosDetalle.es;
+        html += `
+          <ul>
+            <li>
+              <b>${txt.titulo}:</b> Visión Socio-Técnica de la Gestión de los Requisitos<br>
+              <small><b>${txt.presentadores}:</b> Graciela D.S. Hadad &amp; Julio C.S.P. Leite</small><br>
+            </li>
+          </ul>
+        `;
+      } else {
+        // 🔥 buscar papers (con fallback a track)
+        let papersEvento = papersPorSesion[claveEvento];
 
-        html += `</ul>`;
+        if (!papersEvento) {
+          const claveTrack = claveEvento.replace(/session\d+/, "");
+          papersEvento = papersPorSesion[claveTrack];
+        }
+
+        // render
+        if (papersEvento) {
+          html += `<ul>`;
+
+          papersEvento.forEach(paper => {
+            const autores = paper.authors
+              .map(a => `${a.nombre} ${a.apellido}`)
+              .join(", ");
+
+            html += `
+              <li>
+                <b>${paper.title}</b><br>
+                <small>${autores}</small><br>
+              </li>
+            `;
+          });
+
+          html += `</ul>`;
+        }
       }
 
     });
